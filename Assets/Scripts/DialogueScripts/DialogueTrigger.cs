@@ -22,7 +22,7 @@ public class DialogueTrigger : MonoBehaviour
     private const string THIRD = "Third";
     private const string FOURTH = "Fourth";
     
-    private bool playerInRange;
+    [SerializeField] private bool playerInRange;
 
     private void Awake()
     {
