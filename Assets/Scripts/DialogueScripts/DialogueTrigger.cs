@@ -22,7 +22,7 @@ public class DialogueTrigger : MonoBehaviour
     private const string THIRD = "Third";
     private const string FOURTH = "Fourth";
     
-    private bool playerInRange;
+    [SerializeField] private bool playerInRange;
 
     private void Awake()
     {
@@ -79,7 +79,7 @@ public class DialogueTrigger : MonoBehaviour
         //DataPersistenceManager.instance.SaveGame();
     }
     
-    /*public void LoadData(GameData data)
+    public void LoadData(GameData data)
     {
         data.npcStages.TryGetValue(npcId, out currentStage);
     }
@@ -98,7 +98,7 @@ public class DialogueTrigger : MonoBehaviour
     public void LoadPuzzleData(GameData data)
     {
         data.npcStages.TryGetValue(npcId, out currentStage);
-    }*/
+    }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {

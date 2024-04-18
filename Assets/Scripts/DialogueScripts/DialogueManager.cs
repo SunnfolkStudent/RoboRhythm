@@ -58,7 +58,7 @@ public class DialogueManager : MonoBehaviour
             }
             instance = this;
     
-            _dialogueVariables = new DialogueVariables(loadGlobalsJSON);
+            //_dialogueVariables = new DialogueVariables(loadGlobalsJSON);
     
             _audioSource = GetComponent<AudioSource>();
             currentAudioInfo = defaultAudioInfo;
@@ -117,7 +117,7 @@ public class DialogueManager : MonoBehaviour
                 return;
             }
     
-            if (currentStory.currentChoices.Count == 0 && canContinueToNextLine && Input.GetKeyDown(KeyCode.Space))
+            if (currentStory.currentChoices.Count == 0 && canContinueToNextLine && Input.GetKeyDown(KeyCode.E))
             {
                 ContinueStory();
             }
@@ -132,11 +132,11 @@ public class DialogueManager : MonoBehaviour
             dialogueIsPlaying = true;
             dialoguePanel.SetActive(true);
     
-            _dialogueVariables.StartListening(currentStory);
+            //_dialogueVariables.StartListening(currentStory);
     
-            displayNameText.text = "???";
-            portraitAnimator.Play("Default");
-            layoutAnimator.Play("left");
+            //displayNameText.text = "???";
+            //portraitAnimator.Play("Default");
+            //layoutAnimator.Play("left");
     
             ContinueStory();
         }
@@ -145,7 +145,7 @@ public class DialogueManager : MonoBehaviour
         {
             yield return new WaitForSeconds(0.2f);
             
-            _dialogueVariables.StopListening(currentStory);
+            //_dialogueVariables.StopListening(currentStory);
             //PlayerInputScript.GetInstance().RegisterInteractPressed();
             
             dialogueIsPlaying = false;

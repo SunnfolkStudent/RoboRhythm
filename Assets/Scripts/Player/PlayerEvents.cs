@@ -12,6 +12,8 @@ public static class PlayerEvents
 
     public static PlayerEvent playerMoved;
 
+    public static PlayerEvent playerInteract;
+
     public delegate void ReturnPlayerEvent(GameObject player);
     public static ReturnPlayerEvent returnPlayer;
 }
