@@ -13,19 +13,24 @@ MonoBehaviour:
   m_Name: NotePuzzleScrub
   m_EditorClassIdentifier: 
   notes:
-  - note: C
+  - KeyBind: 65
+    Key: 
     timeToWait: 1
     nextIsDouble: 0
-  - note: C
+  - KeyBind: 65
+    Key: 
     timeToWait: 1
     nextIsDouble: 0
-  - note: C
+  - KeyBind: 74
+    Key: 
     timeToWait: 1
     nextIsDouble: 0
-  - note: C
+  - KeyBind: 75
+    Key: 
     timeToWait: 1
     nextIsDouble: 0
-  - note: C
+  - KeyBind: 76
+    Key: 
     timeToWait: 1
     nextIsDouble: 0
   speed: 1

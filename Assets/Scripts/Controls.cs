@@ -28,117 +28,54 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             ""id"": ""0feebf0e-dc0f-40ce-8ae4-30bb9e2e35fa"",
             ""actions"": [
                 {
-                    ""name"": ""C Key"",
+                    ""name"": ""AKey"",
                     ""type"": ""Button"",
-                    ""id"": ""8882a75e-42e2-4a98-b57b-3abfebe57131"",
+                    ""id"": ""c72042f0-131e-4fec-bd16-859c53398629"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""D Key"",
+                    ""name"": ""SKey"",
                     ""type"": ""Button"",
-                    ""id"": ""15401883-a911-443a-a8f3-5fffd7ea20a4"",
+                    ""id"": ""c9483e44-aad3-4f2e-ac72-4e4811e2a96a"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""E Key"",
+                    ""name"": ""DKey"",
                     ""type"": ""Button"",
-                    ""id"": ""0e007c3f-355f-4252-b493-f352c3af91be"",
+                    ""id"": ""07c90c0b-1ab0-43ea-adea-df5071e18366"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""F Key"",
+                    ""name"": ""JKey"",
                     ""type"": ""Button"",
-                    ""id"": ""2bf7ad67-da4b-494a-89a9-b4e77d1c676d"",
+                    ""id"": ""821838f4-f03b-49f7-b9fc-9b1b678d0f45"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""G Key"",
+                    ""name"": ""KKey"",
                     ""type"": ""Button"",
-                    ""id"": ""ade0ab06-fae1-40f1-a90d-f7fee9ef31f9"",
+                    ""id"": ""fc3acf26-3e73-40e1-96ff-ce5714bf0759"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""A Key"",
+                    ""name"": ""LKey"",
                     ""type"": ""Button"",
-                    ""id"": ""5addd00f-84e2-4c19-9bf5-a434ba34231f"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""B Key"",
-                    ""type"": ""Button"",
-                    ""id"": ""eb5a940a-9785-47fc-ab38-1007f4511579"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""C Octave"",
-                    ""type"": ""Button"",
-                    ""id"": ""0de7e2a1-bbe7-47da-8e89-17e317af7c59"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""CSharp Key"",
-                    ""type"": ""Button"",
-                    ""id"": ""4768b4e3-8f56-4862-920c-4acac86d8afe"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""DSharp Key"",
-                    ""type"": ""Button"",
-                    ""id"": ""69c260d6-231d-41b9-83ce-66876151a2e3"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""FSharp Key"",
-                    ""type"": ""Button"",
-                    ""id"": ""91267d99-f0fb-4c9d-9e5e-07cb38863f21"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""GSharp Key"",
-                    ""type"": ""Button"",
-                    ""id"": ""d60bf24a-49c7-4856-be91-a3bae2eaf83a"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""ASharp Key"",
-                    ""type"": ""Button"",
-                    ""id"": ""ef786f24-aeeb-4962-a824-eb38bd9ca643"",
+                    ""id"": ""a31e1f23-1546-4751-97bf-93252734fbaa"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -148,144 +85,155 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""86417b9a-f880-4c4a-b602-b4539a4fe79d"",
+                    ""id"": ""82e06973-3d97-4d93-a980-7e229834f434"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""C Key"",
+                    ""action"": ""AKey"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""8612b63d-878b-4fb6-9c9a-1bdb9da93f97"",
+                    ""id"": ""8586f855-134c-4538-97ac-991b8c852fd8"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""D Key"",
+                    ""action"": ""SKey"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""e9fc3abd-9ecf-40a4-a5c0-49a631ffcfcf"",
+                    ""id"": ""e8738781-417f-4d64-94f5-fc1dac6222a6"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""E Key"",
+                    ""action"": ""DKey"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""350e834c-bf30-4750-b596-9c2fe3497402"",
-                    ""path"": ""<Keyboard>/f"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""F Key"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""4e99d96d-f5f7-4367-b651-26c463e815be"",
-                    ""path"": ""<Keyboard>/h"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""G Key"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""0e02e815-ff4b-4200-b5fd-0b1b9748cde3"",
+                    ""id"": ""4118ad1f-4ba2-4c8e-b8a6-7168dbdc8314"",
                     ""path"": ""<Keyboard>/j"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""A Key"",
+                    ""action"": ""JKey"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""c473075a-6a23-425c-84d2-2d7cdc9a9214"",
+                    ""id"": ""a1618662-ce7c-412d-b852-1145152ddd82"",
                     ""path"": ""<Keyboard>/k"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""B Key"",
+                    ""action"": ""KKey"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""35418fd9-578e-4031-8fba-d0a207157540"",
+                    ""id"": ""47c35a9f-1cb9-4f0d-9e05-81baa594da2e"",
                     ""path"": ""<Keyboard>/l"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""C Octave"",
+                    ""action"": ""LKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Player"",
+            ""id"": ""d4dfd6d1-7511-4ab5-b8fb-fbf7298870fd"",
+            ""actions"": [
+                {
+                    ""name"": ""Up"",
+                    ""type"": ""Button"",
+                    ""id"": ""bd79dae0-898e-4e09-9480-91c976907578"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Down"",
+                    ""type"": ""Button"",
+                    ""id"": ""7b0a6a9b-608d-47d7-a834-01e213f0192d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Left"",
+                    ""type"": ""Button"",
+                    ""id"": ""3719c7b1-f982-4f99-a6b5-0c61e9d16e5a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Right"",
+                    ""type"": ""Button"",
+                    ""id"": ""11a0d2e9-ba64-4ab6-883d-5f3d4a9f69cd"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""ed60e9c1-16a9-44c8-a437-19a8f28c2a67"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Down"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""4b5e1c3c-2c3c-48e1-bcbd-dca3a77afc72"",
-                    ""path"": ""<Keyboard>/c"",
+                    ""id"": ""59cea285-93ef-471b-8fc9-41de66067f6d"",
+                    ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""CSharp Key"",
+                    ""action"": ""Left"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""e67c007c-d51b-4aa2-a65a-c44af89cef01"",
-                    ""path"": ""<Keyboard>/v"",
+                    ""id"": ""e51fdb94-03e0-44c0-9768-09d01ef32a2b"",
+                    ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""DSharp Key"",
+                    ""action"": ""Right"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""c88efb95-b656-439c-a39b-d015721c07aa"",
-                    ""path"": ""<Keyboard>/g"",
+                    ""id"": ""60b7d8e1-7c80-4875-81f1-46794a3dd3c2"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""FSharp Key"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""bbe6745c-fabf-4864-a4f2-2f3e860494e1"",
-                    ""path"": ""<Keyboard>/b"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""GSharp Key"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""bf5cfa2a-f879-4858-92c3-06765858a114"",
-                    ""path"": ""<Keyboard>/n"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""ASharp Key"",
+                    ""action"": ""Up"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -296,19 +244,18 @@ public partial class @Controls: IInputActionCollection2, IDisposable
 }");
         // Puzzle
         m_Puzzle = asset.FindActionMap("Puzzle", throwIfNotFound: true);
-        m_Puzzle_CKey = m_Puzzle.FindAction("C Key", throwIfNotFound: true);
-        m_Puzzle_DKey = m_Puzzle.FindAction("D Key", throwIfNotFound: true);
-        m_Puzzle_EKey = m_Puzzle.FindAction("E Key", throwIfNotFound: true);
-        m_Puzzle_FKey = m_Puzzle.FindAction("F Key", throwIfNotFound: true);
-        m_Puzzle_GKey = m_Puzzle.FindAction("G Key", throwIfNotFound: true);
-        m_Puzzle_AKey = m_Puzzle.FindAction("A Key", throwIfNotFound: true);
-        m_Puzzle_BKey = m_Puzzle.FindAction("B Key", throwIfNotFound: true);
-        m_Puzzle_COctave = m_Puzzle.FindAction("C Octave", throwIfNotFound: true);
-        m_Puzzle_CSharpKey = m_Puzzle.FindAction("CSharp Key", throwIfNotFound: true);
-        m_Puzzle_DSharpKey = m_Puzzle.FindAction("DSharp Key", throwIfNotFound: true);
-        m_Puzzle_FSharpKey = m_Puzzle.FindAction("FSharp Key", throwIfNotFound: true);
-        m_Puzzle_GSharpKey = m_Puzzle.FindAction("GSharp Key", throwIfNotFound: true);
-        m_Puzzle_ASharpKey = m_Puzzle.FindAction("ASharp Key", throwIfNotFound: true);
+        m_Puzzle_AKey = m_Puzzle.FindAction("AKey", throwIfNotFound: true);
+        m_Puzzle_SKey = m_Puzzle.FindAction("SKey", throwIfNotFound: true);
+        m_Puzzle_DKey = m_Puzzle.FindAction("DKey", throwIfNotFound: true);
+        m_Puzzle_JKey = m_Puzzle.FindAction("JKey", throwIfNotFound: true);
+        m_Puzzle_KKey = m_Puzzle.FindAction("KKey", throwIfNotFound: true);
+        m_Puzzle_LKey = m_Puzzle.FindAction("LKey", throwIfNotFound: true);
+        // Player
+        m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
+        m_Player_Up = m_Player.FindAction("Up", throwIfNotFound: true);
+        m_Player_Down = m_Player.FindAction("Down", throwIfNotFound: true);
+        m_Player_Left = m_Player.FindAction("Left", throwIfNotFound: true);
+        m_Player_Right = m_Player.FindAction("Right", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -370,36 +317,22 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     // Puzzle
     private readonly InputActionMap m_Puzzle;
     private List<IPuzzleActions> m_PuzzleActionsCallbackInterfaces = new List<IPuzzleActions>();
-    private readonly InputAction m_Puzzle_CKey;
-    private readonly InputAction m_Puzzle_DKey;
-    private readonly InputAction m_Puzzle_EKey;
-    private readonly InputAction m_Puzzle_FKey;
-    private readonly InputAction m_Puzzle_GKey;
     private readonly InputAction m_Puzzle_AKey;
-    private readonly InputAction m_Puzzle_BKey;
-    private readonly InputAction m_Puzzle_COctave;
-    private readonly InputAction m_Puzzle_CSharpKey;
-    private readonly InputAction m_Puzzle_DSharpKey;
-    private readonly InputAction m_Puzzle_FSharpKey;
-    private readonly InputAction m_Puzzle_GSharpKey;
-    private readonly InputAction m_Puzzle_ASharpKey;
+    private readonly InputAction m_Puzzle_SKey;
+    private readonly InputAction m_Puzzle_DKey;
+    private readonly InputAction m_Puzzle_JKey;
+    private readonly InputAction m_Puzzle_KKey;
+    private readonly InputAction m_Puzzle_LKey;
     public struct PuzzleActions
     {
         private @Controls m_Wrapper;
         public PuzzleActions(@Controls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @CKey => m_Wrapper.m_Puzzle_CKey;
-        public InputAction @DKey => m_Wrapper.m_Puzzle_DKey;
-        public InputAction @EKey => m_Wrapper.m_Puzzle_EKey;
-        public InputAction @FKey => m_Wrapper.m_Puzzle_FKey;
-        public InputAction @GKey => m_Wrapper.m_Puzzle_GKey;
         public InputAction @AKey => m_Wrapper.m_Puzzle_AKey;
-        public InputAction @BKey => m_Wrapper.m_Puzzle_BKey;
-        public InputAction @COctave => m_Wrapper.m_Puzzle_COctave;
-        public InputAction @CSharpKey => m_Wrapper.m_Puzzle_CSharpKey;
-        public InputAction @DSharpKey => m_Wrapper.m_Puzzle_DSharpKey;
-        public InputAction @FSharpKey => m_Wrapper.m_Puzzle_FSharpKey;
-        public InputAction @GSharpKey => m_Wrapper.m_Puzzle_GSharpKey;
-        public InputAction @ASharpKey => m_Wrapper.m_Puzzle_ASharpKey;
+        public InputAction @SKey => m_Wrapper.m_Puzzle_SKey;
+        public InputAction @DKey => m_Wrapper.m_Puzzle_DKey;
+        public InputAction @JKey => m_Wrapper.m_Puzzle_JKey;
+        public InputAction @KKey => m_Wrapper.m_Puzzle_KKey;
+        public InputAction @LKey => m_Wrapper.m_Puzzle_LKey;
         public InputActionMap Get() { return m_Wrapper.m_Puzzle; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -409,88 +342,46 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_PuzzleActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_PuzzleActionsCallbackInterfaces.Add(instance);
-            @CKey.started += instance.OnCKey;
-            @CKey.performed += instance.OnCKey;
-            @CKey.canceled += instance.OnCKey;
-            @DKey.started += instance.OnDKey;
-            @DKey.performed += instance.OnDKey;
-            @DKey.canceled += instance.OnDKey;
-            @EKey.started += instance.OnEKey;
-            @EKey.performed += instance.OnEKey;
-            @EKey.canceled += instance.OnEKey;
-            @FKey.started += instance.OnFKey;
-            @FKey.performed += instance.OnFKey;
-            @FKey.canceled += instance.OnFKey;
-            @GKey.started += instance.OnGKey;
-            @GKey.performed += instance.OnGKey;
-            @GKey.canceled += instance.OnGKey;
             @AKey.started += instance.OnAKey;
             @AKey.performed += instance.OnAKey;
             @AKey.canceled += instance.OnAKey;
-            @BKey.started += instance.OnBKey;
-            @BKey.performed += instance.OnBKey;
-            @BKey.canceled += instance.OnBKey;
-            @COctave.started += instance.OnCOctave;
-            @COctave.performed += instance.OnCOctave;
-            @COctave.canceled += instance.OnCOctave;
-            @CSharpKey.started += instance.OnCSharpKey;
-            @CSharpKey.performed += instance.OnCSharpKey;
-            @CSharpKey.canceled += instance.OnCSharpKey;
-            @DSharpKey.started += instance.OnDSharpKey;
-            @DSharpKey.performed += instance.OnDSharpKey;
-            @DSharpKey.canceled += instance.OnDSharpKey;
-            @FSharpKey.started += instance.OnFSharpKey;
-            @FSharpKey.performed += instance.OnFSharpKey;
-            @FSharpKey.canceled += instance.OnFSharpKey;
-            @GSharpKey.started += instance.OnGSharpKey;
-            @GSharpKey.performed += instance.OnGSharpKey;
-            @GSharpKey.canceled += instance.OnGSharpKey;
-            @ASharpKey.started += instance.OnASharpKey;
-            @ASharpKey.performed += instance.OnASharpKey;
-            @ASharpKey.canceled += instance.OnASharpKey;
+            @SKey.started += instance.OnSKey;
+            @SKey.performed += instance.OnSKey;
+            @SKey.canceled += instance.OnSKey;
+            @DKey.started += instance.OnDKey;
+            @DKey.performed += instance.OnDKey;
+            @DKey.canceled += instance.OnDKey;
+            @JKey.started += instance.OnJKey;
+            @JKey.performed += instance.OnJKey;
+            @JKey.canceled += instance.OnJKey;
+            @KKey.started += instance.OnKKey;
+            @KKey.performed += instance.OnKKey;
+            @KKey.canceled += instance.OnKKey;
+            @LKey.started += instance.OnLKey;
+            @LKey.performed += instance.OnLKey;
+            @LKey.canceled += instance.OnLKey;
         }
 
         private void UnregisterCallbacks(IPuzzleActions instance)
         {
-            @CKey.started -= instance.OnCKey;
-            @CKey.performed -= instance.OnCKey;
-            @CKey.canceled -= instance.OnCKey;
-            @DKey.started -= instance.OnDKey;
-            @DKey.performed -= instance.OnDKey;
-            @DKey.canceled -= instance.OnDKey;
-            @EKey.started -= instance.OnEKey;
-            @EKey.performed -= instance.OnEKey;
-            @EKey.canceled -= instance.OnEKey;
-            @FKey.started -= instance.OnFKey;
-            @FKey.performed -= instance.OnFKey;
-            @FKey.canceled -= instance.OnFKey;
-            @GKey.started -= instance.OnGKey;
-            @GKey.performed -= instance.OnGKey;
-            @GKey.canceled -= instance.OnGKey;
             @AKey.started -= instance.OnAKey;
             @AKey.performed -= instance.OnAKey;
             @AKey.canceled -= instance.OnAKey;
-            @BKey.started -= instance.OnBKey;
-            @BKey.performed -= instance.OnBKey;
-            @BKey.canceled -= instance.OnBKey;
-            @COctave.started -= instance.OnCOctave;
-            @COctave.performed -= instance.OnCOctave;
-            @COctave.canceled -= instance.OnCOctave;
-            @CSharpKey.started -= instance.OnCSharpKey;
-            @CSharpKey.performed -= instance.OnCSharpKey;
-            @CSharpKey.canceled -= instance.OnCSharpKey;
-            @DSharpKey.started -= instance.OnDSharpKey;
-            @DSharpKey.performed -= instance.OnDSharpKey;
-            @DSharpKey.canceled -= instance.OnDSharpKey;
-            @FSharpKey.started -= instance.OnFSharpKey;
-            @FSharpKey.performed -= instance.OnFSharpKey;
-            @FSharpKey.canceled -= instance.OnFSharpKey;
-            @GSharpKey.started -= instance.OnGSharpKey;
-            @GSharpKey.performed -= instance.OnGSharpKey;
-            @GSharpKey.canceled -= instance.OnGSharpKey;
-            @ASharpKey.started -= instance.OnASharpKey;
-            @ASharpKey.performed -= instance.OnASharpKey;
-            @ASharpKey.canceled -= instance.OnASharpKey;
+            @SKey.started -= instance.OnSKey;
+            @SKey.performed -= instance.OnSKey;
+            @SKey.canceled -= instance.OnSKey;
+            @DKey.started -= instance.OnDKey;
+            @DKey.performed -= instance.OnDKey;
+            @DKey.canceled -= instance.OnDKey;
+            @JKey.started -= instance.OnJKey;
+            @JKey.performed -= instance.OnJKey;
+            @JKey.canceled -= instance.OnJKey;
+            @KKey.started -= instance.OnKKey;
+            @KKey.performed -= instance.OnKKey;
+            @KKey.canceled -= instance.OnKKey;
+            @LKey.started -= instance.OnLKey;
+            @LKey.performed -= instance.OnLKey;
+            @LKey.canceled -= instance.OnLKey;
         }
 
         public void RemoveCallbacks(IPuzzleActions instance)
@@ -508,20 +399,90 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         }
     }
     public PuzzleActions @Puzzle => new PuzzleActions(this);
+
+    // Player
+    private readonly InputActionMap m_Player;
+    private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
+    private readonly InputAction m_Player_Up;
+    private readonly InputAction m_Player_Down;
+    private readonly InputAction m_Player_Left;
+    private readonly InputAction m_Player_Right;
+    public struct PlayerActions
+    {
+        private @Controls m_Wrapper;
+        public PlayerActions(@Controls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Up => m_Wrapper.m_Player_Up;
+        public InputAction @Down => m_Wrapper.m_Player_Down;
+        public InputAction @Left => m_Wrapper.m_Player_Left;
+        public InputAction @Right => m_Wrapper.m_Player_Right;
+        public InputActionMap Get() { return m_Wrapper.m_Player; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PlayerActions set) { return set.Get(); }
+        public void AddCallbacks(IPlayerActions instance)
+        {
+            if (instance == null || m_Wrapper.m_PlayerActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PlayerActionsCallbackInterfaces.Add(instance);
+            @Up.started += instance.OnUp;
+            @Up.performed += instance.OnUp;
+            @Up.canceled += instance.OnUp;
+            @Down.started += instance.OnDown;
+            @Down.performed += instance.OnDown;
+            @Down.canceled += instance.OnDown;
+            @Left.started += instance.OnLeft;
+            @Left.performed += instance.OnLeft;
+            @Left.canceled += instance.OnLeft;
+            @Right.started += instance.OnRight;
+            @Right.performed += instance.OnRight;
+            @Right.canceled += instance.OnRight;
+        }
+
+        private void UnregisterCallbacks(IPlayerActions instance)
+        {
+            @Up.started -= instance.OnUp;
+            @Up.performed -= instance.OnUp;
+            @Up.canceled -= instance.OnUp;
+            @Down.started -= instance.OnDown;
+            @Down.performed -= instance.OnDown;
+            @Down.canceled -= instance.OnDown;
+            @Left.started -= instance.OnLeft;
+            @Left.performed -= instance.OnLeft;
+            @Left.canceled -= instance.OnLeft;
+            @Right.started -= instance.OnRight;
+            @Right.performed -= instance.OnRight;
+            @Right.canceled -= instance.OnRight;
+        }
+
+        public void RemoveCallbacks(IPlayerActions instance)
+        {
+            if (m_Wrapper.m_PlayerActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IPlayerActions instance)
+        {
+            foreach (var item in m_Wrapper.m_PlayerActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_PlayerActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public PlayerActions @Player => new PlayerActions(this);
     public interface IPuzzleActions
     {
-        void OnCKey(InputAction.CallbackContext context);
-        void OnDKey(InputAction.CallbackContext context);
-        void OnEKey(InputAction.CallbackContext context);
-        void OnFKey(InputAction.CallbackContext context);
-        void OnGKey(InputAction.CallbackContext context);
         void OnAKey(InputAction.CallbackContext context);
-        void OnBKey(InputAction.CallbackContext context);
-        void OnCOctave(InputAction.CallbackContext context);
-        void OnCSharpKey(InputAction.CallbackContext context);
-        void OnDSharpKey(InputAction.CallbackContext context);
-        void OnFSharpKey(InputAction.CallbackContext context);
-        void OnGSharpKey(InputAction.CallbackContext context);
-        void OnASharpKey(InputAction.CallbackContext context);
+        void OnSKey(InputAction.CallbackContext context);
+        void OnDKey(InputAction.CallbackContext context);
+        void OnJKey(InputAction.CallbackContext context);
+        void OnKKey(InputAction.CallbackContext context);
+        void OnLKey(InputAction.CallbackContext context);
+    }
+    public interface IPlayerActions
+    {
+        void OnUp(InputAction.CallbackContext context);
+        void OnDown(InputAction.CallbackContext context);
+        void OnLeft(InputAction.CallbackContext context);
+        void OnRight(InputAction.CallbackContext context);
     }
 }

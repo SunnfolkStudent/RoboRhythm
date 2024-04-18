@@ -6,57 +6,48 @@ public class Input_Controller : MonoBehaviour
     
     private void Update()
     {
-        if (_input.Puzzle.CKey.triggered)
+        if (_input.Puzzle.AKey.triggered)
         {
-            PuzzleEvents.OnKeyPressed?.Invoke("C");
+            PuzzleEvents.OnKeyPressed?.Invoke('A');
+        }
+        if (_input.Puzzle.SKey.triggered)
+        {
+            PuzzleEvents.OnKeyPressed?.Invoke('S');
         }
         if (_input.Puzzle.DKey.triggered)
         {
-            PuzzleEvents.OnKeyPressed?.Invoke("D");
+            PuzzleEvents.OnKeyPressed?.Invoke('D');
         }
-        if (_input.Puzzle.EKey.triggered)
+        if (_input.Puzzle.JKey.triggered)
         {
-            PuzzleEvents.OnKeyPressed?.Invoke("E");
+            PuzzleEvents.OnKeyPressed?.Invoke('J');
         }
-        if (_input.Puzzle.FKey.triggered)
+        if (_input.Puzzle.KKey.triggered)
         {
-            PuzzleEvents.OnKeyPressed?.Invoke("F");
+            PuzzleEvents.OnKeyPressed?.Invoke('K');
         }
-        if (_input.Puzzle.GKey.triggered)
+        if (_input.Puzzle.LKey.triggered)
         {
-            PuzzleEvents.OnKeyPressed?.Invoke("G");
+            PuzzleEvents.OnKeyPressed?.Invoke('L');
         }
-        if (_input.Puzzle.AKey.triggered)
+        
+        
+
+        if (_input.Player.Up.IsPressed())
         {
-            PuzzleEvents.OnKeyPressed?.Invoke("A");
+            PlayerEvents.playerUp?.Invoke();
         }
-        if (_input.Puzzle.BKey.triggered)
+        if (_input.Player.Down.IsPressed())
         {
-            PuzzleEvents.OnKeyPressed?.Invoke("B");
+            PlayerEvents.playerDown?.Invoke();
         }
-        if (_input.Puzzle.COctave.triggered)
+        if (_input.Player.Left.IsPressed())
         {
-            PuzzleEvents.OnKeyPressed?.Invoke("C Octave");
+            PlayerEvents.playerLeft?.Invoke();
         }
-        if (_input.Puzzle.CSharpKey.triggered)
+        if (_input.Player.Right.IsPressed())
         {
-            PuzzleEvents.OnKeyPressed?.Invoke("C#");
-        }
-        if (_input.Puzzle.DSharpKey.triggered)
-        {
-            PuzzleEvents.OnKeyPressed?.Invoke("D#");
-        }
-        if (_input.Puzzle.FSharpKey.triggered)
-        {
-            PuzzleEvents.OnKeyPressed?.Invoke("F#");
-        }
-        if (_input.Puzzle.GSharpKey.triggered)
-        {
-            PuzzleEvents.OnKeyPressed?.Invoke("G#");
-        }
-        if (_input.Puzzle.ASharpKey.triggered)
-        {
-            PuzzleEvents.OnKeyPressed?.Invoke("A#");
+            PlayerEvents.playerRight?.Invoke();
         }
     }
     private void Awake()
