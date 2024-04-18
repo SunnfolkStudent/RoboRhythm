@@ -4,7 +4,7 @@ using UnityEngine;
 [System.Serializable]
 public class NoteData
 {
-    public char note;
+    public string note;
     public float timeToWait;
     public bool nextIsDouble;
 }
