@@ -91,6 +91,10 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data)
     {
         data.npcStages.TryGetValue(npcId, out currentStage);
+        if (currentStage != FIRST)
+        {
+            taskCollider.SetActive(true);
+        }
     }
 
     public void SaveData(GameData data)
@@ -98,6 +102,10 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
         if (data.npcStages.ContainsKey(npcId))
         {
             data.npcStages.Remove(npcId);
+        }
+        if(currentStage == null)
+        {
+            currentStage = "First";
         }
         data.npcStages.Add(npcId, currentStage);
     }

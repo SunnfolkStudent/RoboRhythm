@@ -7,6 +7,9 @@ public class RBossHealthManager : MonoBehaviour
 {
     [SerializeField] private float songLengthInSeconds;
     [SerializeField] private GameObject bossHealthBar;
+
+    [SerializeField] private BossManager _bossManager;
+    
     private RSongPosition _songPosition;
 
     private void Awake()
@@ -30,6 +33,6 @@ public class RBossHealthManager : MonoBehaviour
 
     private void BossDefeated()
     {
-        
+        BossManager.GetInstance().BossOver();
     }
 }
