@@ -27,6 +27,7 @@ public class DialogueManager : MonoBehaviour
         
         [Header("Dialogue UI")]
         [SerializeField] private GameObject dialoguePanel;
+        [SerializeField] private Animator dialoguePanelAnimator;
         [SerializeField] private GameObject continueIcon;
         [SerializeField] private TextMeshProUGUI dialogueText;
         [SerializeField] private TextMeshProUGUI displayNameText;
@@ -47,6 +48,7 @@ public class DialogueManager : MonoBehaviour
         private const string PORTRAIT_TAG = "portrait";
         private const string LAYOUT_TAG = "layout";
         private const string AUDIO_TAG = "audio";
+        private const string KEY_TAG = "key";
     
         private DialogueVariables _dialogueVariables;
         
@@ -73,8 +75,9 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueIsPlaying = false;
             dialoguePanel.SetActive(false);
+            //dialoguePanelAnimator.Play("Exit");
     
-            layoutAnimator = dialoguePanel.GetComponent<Animator>();
+            //layoutAnimator = dialoguePanel.GetComponent<Animator>();
     
             choicesText = new TextMeshProUGUI[choices.Length];
             int index = 0;
@@ -122,8 +125,13 @@ public class DialogueManager : MonoBehaviour
                 ContinueStory();
             }
         }
-    
+
         public void EnterDialogueMode(TextAsset inkJSON)
+        {
+            StartCoroutine(EnterDialogue(inkJSON));
+        }
+    
+        private IEnumerator EnterDialogue(TextAsset inkJSON)
         {
             //PlayerInputScript.GetInstance().RegisterSubmitPressed();
             //PlayerInputScript.GetInstance().RegisterInteractPressed();
@@ -131,12 +139,15 @@ public class DialogueManager : MonoBehaviour
             currentStory = new Story(inkJSON.text);
             dialogueIsPlaying = true;
             dialoguePanel.SetActive(true);
+            dialoguePanelAnimator.Play("Enter");
     
             //_dialogueVariables.StartListening(currentStory);
     
             //displayNameText.text = "???";
             //portraitAnimator.Play("Default");
             //layoutAnimator.Play("left");
+            
+            yield return new WaitForSeconds(1);
     
             ContinueStory();
         }
@@ -149,10 +160,14 @@ public class DialogueManager : MonoBehaviour
             //PlayerInputScript.GetInstance().RegisterInteractPressed();
             
             dialogueIsPlaying = false;
-            dialoguePanel.SetActive(false);
+            dialoguePanelAnimator.Play("Exit");
             dialogueText.text = "";
             
             SetCurrentAudioInfo(defaultAudioInfo.id);
+            
+            yield return new WaitForSeconds(1);
+            
+            dialoguePanel.SetActive(false);
         }
     
         private void ContinueStory()
@@ -293,6 +308,9 @@ public class DialogueManager : MonoBehaviour
                         break;
                     case AUDIO_TAG:
                         SetCurrentAudioInfo(tagValue);
+                        break;
+                    case KEY_TAG:
+                        Debug.Log("Key Obtained");
                         break;
                     default:
                         Debug.LogWarning("Tag came in but is not currently being handled: " + tag);
