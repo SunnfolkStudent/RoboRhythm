@@ -10,9 +10,12 @@ public class TaskManager : MonoBehaviour, IDataPersistence
     {
         if (instance != null)
         {
-            Debug.Log("Found more than one Puzzle Manager in scene");
+            Debug.Log("Found more than one Task Manager in scene");
+            Destroy(this.gameObject);
+            return;
         }
         instance = this;
+        DontDestroyOnLoad(this.gameObject);
     }
     
     public static TaskManager GetInstance()
@@ -40,6 +43,5 @@ public class TaskManager : MonoBehaviour, IDataPersistence
         data.npcStages.Add(tasknpcId, "Third");
         Debug.Log("add new stage to npc");
     }
-    
     public void LoadTaskData(GameData data) { }
 }

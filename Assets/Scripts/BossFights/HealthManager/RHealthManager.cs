@@ -10,11 +10,10 @@ public class RHealthManager : MonoBehaviour
     {
         playerHealth -= damageTaken;
         healthBar.transform.localScale = new Vector3(1,playerHealth/100,1);
-
         
         if (playerHealth <= 0)
         {
-            SceneManager.LoadScene("SkellyDeath");
+            Debug.Log("GameOver");
         }
     }
 }
