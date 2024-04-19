@@ -10,6 +10,8 @@ public class RNoteHit : MonoBehaviour
     [SerializeField] private int soundClipNumber;
     [Header("Best To Worst Range")]
     [SerializeField] private RRangeInformation[] rRangeInformation;
+
+    private bool _playerInLane;
     
     private RProjectileMovement projectileMovement;
     private RScoreManager scoreManager;
@@ -24,6 +26,7 @@ public class RNoteHit : MonoBehaviour
 
     private void Update()
     {
+        if(!_playerInLane) {return;}
         if(!Input.GetKeyDown(KeyCode.Space)) {return;}
         var noteLocation = projectileMovement.timeVariable + projectileMovement.timeVariable1;
         for (int i = 0; i < rRangeInformation.Length; i++)
@@ -37,6 +40,22 @@ public class RNoteHit : MonoBehaviour
                 Destroy(gameObject);
                 return;
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.name == "LaneCheck")
+        {
+            _playerInLane = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.name == "LaneCheck")
+        {
+            _playerInLane = false;
         }
     }
 }
