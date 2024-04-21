@@ -49,6 +49,8 @@ public class DialogueManager : MonoBehaviour
         private const string LAYOUT_TAG = "layout";
         private const string AUDIO_TAG = "audio";
         private const string KEY_TAG = "key";
+
+        private string keyGot;
     
         private DialogueVariables _dialogueVariables;
         
@@ -310,7 +312,9 @@ public class DialogueManager : MonoBehaviour
                         SetCurrentAudioInfo(tagValue);
                         break;
                     case KEY_TAG:
-                        Debug.Log("Key Obtained");
+                        Debug.Log("Key Obtained: " + tagValue);
+                        keyGot = tagValue;
+                        TaskManager.GetInstance().KeyObtained(tagValue);
                         break;
                     default:
                         Debug.LogWarning("Tag came in but is not currently being handled: " + tag);

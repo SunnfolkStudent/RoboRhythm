@@ -27,7 +27,8 @@ public class DataPersistenceManager : MonoBehaviour
             return;
         }
         instance = this;
-        //DontDestroyOnLoad(this.gameObject);
+        
+        DontDestroyOnLoad(this.gameObject);
         
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName, useEncryption);
     }
@@ -100,7 +101,10 @@ public class DataPersistenceManager : MonoBehaviour
             return;
         }
         
-        TaskManager.GetInstance().SaveTaskData(gameData);
+        foreach (IDataPersistence dataPersistenceOBJ in dataPersistenceObjects)
+        {
+            dataPersistenceOBJ.SaveTaskData(gameData);
+        }
         
         // save that data to a file using the data handler
         dataHandler.Save(gameData);
@@ -125,6 +129,44 @@ public class DataPersistenceManager : MonoBehaviour
         foreach (IDataPersistence dataPersistenceOBJ in dataPersistenceObjects)
         {
             dataPersistenceOBJ.LoadTaskData(gameData);
+        }
+    }
+
+    public void SaveKeyData()
+    {
+        if (this.gameObject == null)
+        {
+            Debug.LogWarning("No data was found. A New Game needs to be started before data can be saved.");
+            return;
+        }
+        
+        foreach (IDataPersistence dataPersistenceOBJ in dataPersistenceObjects)
+        {
+            dataPersistenceOBJ.SaveKeyData(gameData);
+        }
+        
+        // save that data to a file using the data handler
+        dataHandler.Save(gameData);
+    }
+
+    public void LoadKeyData()
+    {
+        this.gameData = dataHandler.Load();
+
+        if (this.gameData == null && initializeDataIfNull)
+        {
+            NewGame();
+        }
+
+        if (this.gameData == null)
+        {
+            Debug.Log("No data was found. A New Game needs to be started before data can be loaded.");
+            return;
+        }
+
+        foreach (IDataPersistence dataPersistenceOBJ in dataPersistenceObjects)
+        {
+            dataPersistenceOBJ.LoadKeyData(gameData);
         }
     }
 

@@ -140,4 +140,6 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     public void SaveTaskData(GameData data) { }
     public void LoadTaskData(GameData data) { }
+    public void LoadKeyData(GameData data){}
+    public void SaveKeyData(GameData data){}
 }

@@ -10,10 +10,16 @@ public class TransportToBoss : MonoBehaviour, IDataPersistence
     [SerializeField] private string bossSceneName;
     [SerializeField] private bool taskDone;
     [SerializeField] private Collider2D _collider;
+    private string npcStage;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void Awake()
     {
-        if (other.tag == "Player")
+        _collider.enabled = false;
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.tag == "Player" && Input.GetKey(KeyCode.E) && !taskDone)
         {
             DataPersistenceManager.instance.SaveGame();
             SceneManager.LoadScene(bossSceneName);
@@ -23,9 +29,10 @@ public class TransportToBoss : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data)
     {
         data.tasksList.TryGetValue(taskId, out taskDone);
-        if (!taskDone)
+        data.npcStages.TryGetValue(taskId, out npcStage);
+        if (npcStage == "First")
         {
-            _collider.enabled = true;
+            _collider.enabled = false;
         }
     }
 
@@ -40,5 +47,21 @@ public class TransportToBoss : MonoBehaviour, IDataPersistence
     }
     
     public void SaveTaskData(GameData data) { }
-    public void LoadTaskData(GameData data) { }
+
+    public void LoadTaskData(GameData data)
+    {
+        data.tasksList.TryGetValue(taskId, out taskDone);
+        data.npcStages.TryGetValue(taskId, out npcStage);
+        if (!taskDone)
+        {
+            _collider.enabled = true;
+        }
+        if (npcStage == "First" || npcStage == "")
+        {
+            _collider.enabled = false;
+        }
+    }
+    
+    public void LoadKeyData(GameData data){}
+    public void SaveKeyData(GameData data){}
 }

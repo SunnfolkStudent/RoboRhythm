@@ -4,7 +4,7 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
 {
     [Header("NPC Information")]
     [SerializeField] private string npcId;
-    [SerializeField] private GameObject taskCollider;
+    [SerializeField] private Collider2D taskCollider;
     [SerializeField] private string currentStage = "";
     [SerializeField] private bool givenTask = false;
     
@@ -67,7 +67,7 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
                 givenTask = true;
                 if(taskCollider != null)
                 {
-                    taskCollider.SetActive(true);
+                    taskCollider.enabled = true;
                 }
                 break;
             case SECOND:
@@ -93,7 +93,7 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
         data.npcStages.TryGetValue(npcId, out currentStage);
         if (currentStage != FIRST)
         {
-            taskCollider.SetActive(true);
+            taskCollider.enabled = true;
         }
     }
 
@@ -133,4 +133,7 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
             playerInRange = false;
         }
     }
+    
+    public void LoadKeyData(GameData data){}
+    public void SaveKeyData(GameData data){}
 }

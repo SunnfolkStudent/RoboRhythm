@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossManager : MonoBehaviour, IDataPersistence
 {
@@ -34,6 +35,8 @@ public class BossManager : MonoBehaviour, IDataPersistence
     {
         taskDone = true;
         TaskManager.GetInstance().TaskComplete(taskId);
+        DataPersistenceManager.instance.SaveGame();
+        SceneManager.LoadScene("PlayTestScene");
     }
     
     public void LoadData(GameData data)
@@ -54,4 +57,7 @@ public class BossManager : MonoBehaviour, IDataPersistence
     public void SaveTaskData(GameData data) { }
     
     public void LoadTaskData(GameData data) { }
+    
+    public void LoadKeyData(GameData data){}
+    public void SaveKeyData(GameData data){}
 }

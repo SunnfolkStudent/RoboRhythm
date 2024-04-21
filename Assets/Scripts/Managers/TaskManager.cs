@@ -1,8 +1,13 @@
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TaskManager : MonoBehaviour, IDataPersistence
 {
     [SerializeField] private string tasknpcId;
+    [SerializeField] private string keyGotId;
+
+    private bool falseKey = false;
     
     private static TaskManager instance;
 
@@ -28,6 +33,12 @@ public class TaskManager : MonoBehaviour, IDataPersistence
         tasknpcId = taskId;
         DataPersistenceManager.instance.SaveTaskData();
     }
+
+    public void KeyObtained(string keyId)
+    {
+        keyGotId = keyId;
+        DataPersistenceManager.instance.SaveKeyData();
+    }
     
     public void LoadData(GameData data) { }
 
@@ -44,4 +55,19 @@ public class TaskManager : MonoBehaviour, IDataPersistence
         Debug.Log("add new stage to npc");
     }
     public void LoadTaskData(GameData data) { }
+    
+    public void LoadKeyData(GameData data){}
+
+    public void SaveKeyData(GameData data)
+    {
+        if (data.keysFound.ContainsKey(keyGotId))
+        {
+            data.keysFound.Remove(keyGotId, out falseKey);
+        }
+        if(keyGotId != "")
+        {
+            data.keysFound.Add(keyGotId, true);
+        }
+        Debug.Log("Set key: " + keyGotId + " to true");
+    }
 }

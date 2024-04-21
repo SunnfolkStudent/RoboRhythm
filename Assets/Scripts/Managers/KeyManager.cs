@@ -2,16 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class KeyManager : MonoBehaviour, IDataPersistence
 {
     [SerializeField] private string keyId;
-    [SerializeField] private bool keyObtained;
-    private SpriteRenderer _spriteRenderer;
+    [SerializeField] private bool keyObtained = false;
+    [SerializeField] private Image image;
 
     private static KeyManager instance;
 
-    private void Awake()
+   /* private void Awake()
     {
         if (instance != null)
         {
@@ -19,16 +20,21 @@ public class KeyManager : MonoBehaviour, IDataPersistence
         }
 
         instance = this;
-    }
+    }*/
 
-    public static KeyManager GetInstance()
+    /*public static KeyManager GetInstance()
     {
         return instance;
+    }*/
+
+    private void Start()
+    {
+        image = GetComponent<Image>();
     }
 
     public void KeyObtained(string keyId)
     {
-        _spriteRenderer.enabled = true;
+        image.enabled = true;
     }
 
     public void LoadData(GameData data)
@@ -36,11 +42,11 @@ public class KeyManager : MonoBehaviour, IDataPersistence
         data.keysFound.TryGetValue(keyId, out keyObtained);
         if (keyObtained)
         {
-            _spriteRenderer.enabled = true;
+            image.enabled = true;
         }
         else
         {
-            _spriteRenderer.enabled = false;
+            image.enabled = false;
         }
     }
 
@@ -48,11 +54,26 @@ public class KeyManager : MonoBehaviour, IDataPersistence
     {
         if (data.keysFound.ContainsKey(keyId))
         {
-            data.keysFound.Remove(keyId);
+            data.keysFound.Remove(keyId, out keyObtained);
         }
         data.keysFound.Add(keyId, keyObtained);
     }
     
     public void SaveTaskData(GameData data) { }
+
     public void LoadTaskData(GameData data) { }
+
+    public void LoadKeyData(GameData data)
+    {
+        data.keysFound.TryGetValue(keyId, out keyObtained);
+        if (keyObtained)
+        {
+            image.enabled = true;
+        }
+        else
+        {
+            image.enabled = false;
+        }
+    }
+    public void SaveKeyData(GameData data){}
 }
