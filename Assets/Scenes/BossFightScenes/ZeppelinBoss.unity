@@ -774,7 +774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songLengthInSeconds: 20
   bossHealthBar: {fileID: 1036393902}
-  _bossManager: {fileID: 0}
+  _bossManager: {fileID: 1999629779}
 --- !u!1 &932661827
 GameObject:
   m_ObjectHideFlags: 0
