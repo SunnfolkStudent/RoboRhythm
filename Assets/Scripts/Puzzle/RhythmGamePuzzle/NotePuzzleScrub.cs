@@ -7,7 +7,6 @@ public class NoteData
     public char KeyBind;
     public string Key;
     public float timeToWait;
-    public bool nextIsDouble;
 }
 
 [CreateAssetMenu(fileName = "NotePuzzleScrub", menuName = "Puzzle/NotePuzzleScrub")]

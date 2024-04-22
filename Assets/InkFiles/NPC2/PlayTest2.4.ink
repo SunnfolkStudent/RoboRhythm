@@ -1,2 +1,2 @@
-Sorry, I only had one <color=\#F8FF30>Key</color>.
+Sorry, I only had one <color=\#F8FF30>Key</color>. #audio:TestBeep2
 But I heard that guy to the right had one.

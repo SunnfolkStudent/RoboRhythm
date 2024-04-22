@@ -1,13 +1,13 @@
-Dialogue seems to be working!
-And the save system is finally working! For now...
+Hello little guy! #audio:TestBeep
+I am the traveling Merchent Piccolo!
 Can you answer a question?
     + [Of Course!]
     -> leave
     + [No!]
     -> leave
-    + [Third option?]
+    + [Probably.]
     -> leave
-    + [Fourth 0ption!]
+    + [Maybe?]
     -> leave
     
 === leave ===

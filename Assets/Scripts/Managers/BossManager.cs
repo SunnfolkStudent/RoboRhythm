@@ -8,23 +8,6 @@ public class BossManager : MonoBehaviour, IDataPersistence
     [Header("Task Id")] 
     [SerializeField] private string taskId;
     [SerializeField] private bool taskDone;
-    
-    private static BossManager instance;
-
-    private void Awake()
-    {
-        if (instance != null)
-        {
-            Debug.Log("Found more than one Key Manager in scene!");
-        }
-
-        instance = this;
-    }
-
-    public static BossManager GetInstance()
-    {
-        return instance;
-    }
 
     private void Start()
     {
