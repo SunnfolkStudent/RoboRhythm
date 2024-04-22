@@ -836,49 +836,31 @@ MonoBehaviour:
   file: {fileID: 4900000, guid: 83a613444a3f2664eaeebfba2c53963f, type: 3}
   notePropertiesArray:
   - noteType: 0
-    beatNumber: 4
+    beatNumber: 5
     holdTime: 1
   - noteType: 0
-    beatNumber: 8
+    beatNumber: 9
     holdTime: 1
   - noteType: 0
-    beatNumber: 12
+    beatNumber: 13
     holdTime: 1
   - noteType: 0
-    beatNumber: 16
+    beatNumber: 17
     holdTime: 1
   - noteType: 0
-    beatNumber: 20
-    holdTime: 1
-  - noteType: 0
-    beatNumber: 22
-    holdTime: 1
-  - noteType: 0
-    beatNumber: 23
-    holdTime: 1
-  - noteType: 0
-    beatNumber: 24
+    beatNumber: 21
     holdTime: 1
   - noteType: 0
     beatNumber: 25
     holdTime: 1
   - noteType: 0
-    beatNumber: 26
+    beatNumber: 29
     holdTime: 1
   - noteType: 0
-    beatNumber: 27
+    beatNumber: 33
     holdTime: 1
   - noteType: 0
-    beatNumber: 28
-    holdTime: 1
-  - noteType: 0
-    beatNumber: 30
-    holdTime: 1
-  - noteType: 0
-    beatNumber: 32
-    holdTime: 1
-  - noteType: 0
-    beatNumber: 34
+    beatNumber: 37
     holdTime: 1
 --- !u!114 &932661831
 MonoBehaviour:
@@ -895,6 +877,7 @@ MonoBehaviour:
   songPosition: 0
   songPosInBeats: 0
   secPerBeat: 0
+  dsptimesong: 0
 --- !u!114 &932661832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1961,7 +1944,7 @@ Animator:
   m_GameObject: {fileID: 6969460406944941509}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: -6682434330266920497, guid: 2faea7e2fdd889d4099c916bc5c4df0f, type: 3}
+  m_Controller: {fileID: -5867567085452571227, guid: c9236c7b074323b4186d216e552f9c6f, type: 3}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2117,7 +2100,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1264169688591547611, guid: 2faea7e2fdd889d4099c916bc5c4df0f, type: 3}
+  m_Sprite: {fileID: 4190694096339989269, guid: c9236c7b074323b4186d216e552f9c6f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2174,10 +2157,10 @@ GameObject:
   - component: {fileID: 3626916397509411401}
   - component: {fileID: 1160356261104508773}
   - component: {fileID: 7878350319977885091}
-  - component: {fileID: 7878350319977885090}
   - component: {fileID: 7878350319977885089}
   - component: {fileID: 7878350319977885093}
   - component: {fileID: 7878350319977885092}
+  - component: {fileID: 7878350319977885094}
   m_Layer: 0
   m_Name: mc_animations
   m_TagString: Player
@@ -2249,18 +2232,6 @@ MonoBehaviour:
   - {x: 0, y: -5.3}
   - {x: 2.6, y: -5.3}
   - {x: 5.3, y: -5.3}
---- !u!114 &7878350319977885090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6969460406944941509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19b523a4aa0afdd49bccbe5a97423d5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7878350319977885091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2345,6 +2316,108 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7878350319977885094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969460406944941509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 1d956c6f01b6897459a153fc295a5b88, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c72042f0-131e-4fec-bd16-859c53398629
+    m_ActionName: Puzzle/AKey[/Keyboard/a]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c9483e44-aad3-4f2e-ac72-4e4811e2a96a
+    m_ActionName: Puzzle/SKey[/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 07c90c0b-1ab0-43ea-adea-df5071e18366
+    m_ActionName: Puzzle/DKey[/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 821838f4-f03b-49f7-b9fc-9b1b678d0f45
+    m_ActionName: Puzzle/JKey[/Keyboard/j]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fc3acf26-3e73-40e1-96ff-ce5714bf0759
+    m_ActionName: Puzzle/KKey[/Keyboard/k]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a31e1f23-1546-4751-97bf-93252734fbaa
+    m_ActionName: Puzzle/LKey[/Keyboard/l]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: bd79dae0-898e-4e09-9480-91c976907578
+    m_ActionName: Player/Up[/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7b0a6a9b-608d-47d7-a834-01e213f0192d
+    m_ActionName: Player/Down[/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3719c7b1-f982-4f99-a6b5-0c61e9d16e5a
+    m_ActionName: Player/Left[/Keyboard/a]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 11a0d2e9-ba64-4ab6-883d-5f3d4a9f69cd
+    m_ActionName: Player/Right[/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 023aef8d-90e4-4e14-8817-daefcf83dbb3
+    m_ActionName: Player/Interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0ce82280-b695-4095-b2f8-bcb2c88fb521
+    m_ActionName: UI/Submit[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0869b703-3ddf-4838-a9e2-a61a875e2dbe
+    m_ActionName: UI/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6f16a064-9f61-4e3f-9296-38129227f2a4
+    m_ActionName: UI/Point[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: faf894de-0df0-4e9d-b795-87a526c9900b
+    m_ActionName: UI/Click[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a18c488a-4d97-4e59-aae7-34ca9b0ac34a
+    m_ActionName: BossFight/Left[/Keyboard/a]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b8c0b511-6768-4057-a9fe-c036e7382194
+    m_ActionName: BossFight/Right[/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a46b30c4-996c-4cf5-8f96-08608122d704
+    m_ActionName: BossFight/Attack[/Keyboard/space]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: BossFight
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

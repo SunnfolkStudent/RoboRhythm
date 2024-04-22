@@ -2,16 +2,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class RPlayerMovement : MonoBehaviour
+public class RPlayerController : MonoBehaviour
 {
     [Header("Must Be 5!")]
     [SerializeField] private Vector2[] positionStates = new Vector2[5];
-    private RPlayerInput playerInput;
-
+    private Controls _bossFightControls;
     private void Awake()
     {
-        playerInput = GetComponent<RPlayerInput>();
+        _bossFightControls = new Controls();
     }
     
     private int currentState;
@@ -22,24 +22,21 @@ public class RPlayerMovement : MonoBehaviour
         MoveToState();
     }
 
-    private void Update()
+    private void OnLeft()
     {
-        if (playerInput.A())
+        if (currentState > 0)
         {
-            if (currentState > 0)
-            {
-                currentState -= 1;
-                MoveToState();
-            }
+            currentState -= 1;
+            MoveToState();
         }
-        
-        if (playerInput.D())
+    }
+
+    private void OnRight()
+    {
+        if (currentState < 4)
         {
-            if (currentState < 4)
-            {
-                currentState += 1;
-                MoveToState();
-            }
+            currentState += 1;
+            MoveToState();
         }
     }
 

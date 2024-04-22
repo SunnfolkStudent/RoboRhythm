@@ -6,16 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class ROtherControls : MonoBehaviour
 {
-    private RPlayerInput playerInput;
-
-    private void Awake()
-    {
-        playerInput = GetComponent<RPlayerInput>();
-    }
-
     private void Update()
     {
-        if (playerInput.E())
+        if (Input.GetKeyDown(KeyCode.E))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }

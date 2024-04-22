@@ -14,28 +14,36 @@ public class RSongPosition : MonoBehaviour
     public float songPosition;
     public float songPosInBeats;
     public  float secPerBeat;
-    private float dsptimesong;
+    public float dsptimesong;
+
+    private bool _songStarted;
+
+    private AudioSource _audioSource;
 
     private void Awake()
     {
         bossFightSettings = GetComponent<RBossFightSettings>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
-    void Start()
+    private void Start()
     {
-        secPerBeat = 60f / bossFightSettings.songBpm;
-        //record the time when the song starts
+        secPerBeat = 60f / 140; //Fix Later To Boss Fight Settings
         dsptimesong = (float) AudioSettings.dspTime;
-        GetComponent<AudioSource>().Play();
+        _audioSource.Play();
+        _songStarted = true;
     }
     
     void Update()
     {
+        if(!_songStarted) return;
         //calculate the position in seconds
         songPosition = (float) (AudioSettings.dspTime - dsptimesong);
 
-        //calculate the position in beats
-        songPosInBeats = songPosition / secPerBeat;
+        //calculate the position in beatse
+        songPosInBeats = (songPosition / secPerBeat) + 1;
+        
+        Debug.Log(songPosInBeats);
         
     }
 }

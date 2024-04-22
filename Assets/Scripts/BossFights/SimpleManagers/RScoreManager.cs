@@ -15,7 +15,6 @@ public class RScoreManager : MonoBehaviour
         tmpScoreText.text = currentScore.ToString();
         tmpFeedbackText.text = scoreText;
         tmpFeedbackText.color = textColor;
-        Debug.Log(textColor);
 
         if (perfectHit)
         {
