@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class RhythmPuzzleController : MonoBehaviour
 {
     [SerializeField] private RhythmPuzzleScrub puzzleData;
-    [SerializeField] private Button _button;
+    [SerializeField] private Button startButton;
     [SerializeField] private Button victoryButton;
     
     private float _lastClickTime = 0f;
@@ -65,7 +65,7 @@ public class RhythmPuzzleController : MonoBehaviour
     
     public void StartButtonMethod()
     {
-        _button.gameObject.SetActive(false);
+        startButton.gameObject.SetActive(false);
         StartCoroutine(PuzzleCoroutine());
     }
     

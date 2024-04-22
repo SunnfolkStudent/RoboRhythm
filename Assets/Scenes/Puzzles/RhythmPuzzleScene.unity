@@ -810,7 +810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleData: {fileID: 11400000, guid: 50d3301f07d2b734fa4623ae63f4c2d8, type: 2}
-  _button: {fileID: 1107675644}
+  startButton: {fileID: 1907524550}
   victoryButton: {fileID: 2031593650}
 --- !u!1 &1815162454
 GameObject:
