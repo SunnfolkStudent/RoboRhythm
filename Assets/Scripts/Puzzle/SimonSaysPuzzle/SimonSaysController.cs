@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class Puzzle2Controller : MonoBehaviour
 {
@@ -9,13 +10,10 @@ public class Puzzle2Controller : MonoBehaviour
     
     [SerializeField] private Button[] _buttons;
     
-    private int _currentNumber;
+    [SerializeField] private Button startButton;
+    [SerializeField] private Button victoryButton;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        StartCoroutine(Puzzle2Coroutine());
-    }
+    private int _currentNumber;
     
     private IEnumerator Puzzle2Coroutine()
     {
@@ -48,7 +46,27 @@ public class Puzzle2Controller : MonoBehaviour
         
         if (_currentNumber == _scrub.puzzle.Length)
         {
-            print("Puzzle 2 complete!");
+            PuzzleCompleted();
         }
+    }
+    
+    public void StartButtonMethod()
+    {
+        startButton.gameObject.SetActive(false);
+        StartCoroutine(Puzzle2Coroutine());
+    }
+    
+    public void VictoryButtonMethod()
+    {
+        // Get the current scene
+        Scene currentScene = gameObject.scene;
+
+        // Unload the current scene
+        SceneManager.UnloadSceneAsync(currentScene);
+    }
+    
+    private void PuzzleCompleted()
+    {
+        victoryButton.gameObject.SetActive(true);
     }
 }
