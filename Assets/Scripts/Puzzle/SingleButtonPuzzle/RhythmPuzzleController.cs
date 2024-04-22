@@ -1,32 +1,34 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class RhythmPuzzleController : MonoBehaviour
 {
     [SerializeField] private RhythmPuzzleScrub puzzleData;
     [SerializeField] private Button _button;
+    [SerializeField] private Button victoryButton;
     
     private float _lastClickTime = 0f;
     private int _currentNumber;
+    private Animator _animator;
     
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(PuzzleCoroutine());
+        _animator = GetComponent<Animator>();
     }
 
     private IEnumerator PuzzleCoroutine()
     {
+        _lastClickTime = 0f;
+        
         Cursor.lockState = CursorLockMode.Locked;
         
         foreach (var value in puzzleData.rhythm)
         {
-            _button.Select();
-            yield return new WaitForSeconds(0.1f);
-            EventSystem.current.SetSelectedGameObject(null);
-            yield return new WaitForSeconds(value-0.1f);
+            _animator.Play("Light");
+            yield return new WaitForSeconds(value);
         }
         
         Cursor.lockState = CursorLockMode.None;
@@ -34,13 +36,15 @@ public class RhythmPuzzleController : MonoBehaviour
 
     public void ButtonMethod()
     {
+        _animator.Play("ButtonDown");
         float currentTime = Time.time;
         if (_lastClickTime != 0f)
         {
             float timeBetweenClicks = currentTime - _lastClickTime;
             Debug.Log("Time between clicks: " + timeBetweenClicks + " seconds");
 
-            if (timeBetweenClicks > (puzzleData.rhythm[_currentNumber] - 0.15) && timeBetweenClicks < (puzzleData.rhythm[_currentNumber] + 0.15))
+            if (timeBetweenClicks > (puzzleData.rhythm[_currentNumber] - 0.20 * puzzleData.rhythm[_currentNumber]) 
+                && timeBetweenClicks < (puzzleData.rhythm[_currentNumber] + 0.20 * puzzleData.rhythm[_currentNumber]))
             {
                 _currentNumber++;
             }
@@ -48,13 +52,34 @@ public class RhythmPuzzleController : MonoBehaviour
             {
                 _currentNumber = 0;
                 StartCoroutine(PuzzleCoroutine());
+                return;
             }
 
             if (_currentNumber == puzzleData.rhythm.Length)
             {
-                print("Rhythm puzzle complete!");
+                PuzzleCompleted();
             }
         }
         _lastClickTime = currentTime;
+    }
+    
+    public void StartButtonMethod()
+    {
+        _button.gameObject.SetActive(false);
+        StartCoroutine(PuzzleCoroutine());
+    }
+    
+    public void VictoryButtonMethod()
+    {
+        // Get the current scene
+        Scene currentScene = gameObject.scene;
+
+        // Unload the current scene
+        SceneManager.UnloadSceneAsync(currentScene);
+    }
+    
+    private void PuzzleCompleted()
+    {
+        victoryButton.gameObject.SetActive(true);
     }
 }
