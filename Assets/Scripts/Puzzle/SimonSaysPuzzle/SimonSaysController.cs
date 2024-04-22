@@ -7,11 +7,11 @@ using UnityEngine.SceneManagement;
 public class Puzzle2Controller : MonoBehaviour
 {
     [SerializeField] private Puzzle2Scrub _scrub;
-    
     [SerializeField] private Button[] _buttons;
-    
     [SerializeField] private Button startButton;
     [SerializeField] private Button victoryButton;
+    
+    [SerializeField] private PuzzleManager _puzzleManager;
     
     private int _currentNumber;
     
@@ -67,6 +67,7 @@ public class Puzzle2Controller : MonoBehaviour
     
     private void PuzzleCompleted()
     {
+        _puzzleManager.PuzzleOver();
         victoryButton.gameObject.SetActive(true);
     }
 }

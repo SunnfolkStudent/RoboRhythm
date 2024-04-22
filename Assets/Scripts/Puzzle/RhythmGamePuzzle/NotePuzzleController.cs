@@ -12,6 +12,8 @@ public class NotePuzzleController : MonoBehaviour
     [SerializeField] private Button _startButton;
     [SerializeField] private Button victoryButton;
     
+    [SerializeField] private PuzzleManager _puzzleManager;
+    
     // Start is called before the first frame update
     private void Start()
     {
@@ -53,6 +55,7 @@ public class NotePuzzleController : MonoBehaviour
     
     private void PuzzleCompleted()
     {
+        _puzzleManager.PuzzleOver();
         victoryButton.gameObject.SetActive(true);
     }
 }

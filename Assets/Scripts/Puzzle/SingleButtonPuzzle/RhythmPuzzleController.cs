@@ -9,6 +9,8 @@ public class RhythmPuzzleController : MonoBehaviour
     [SerializeField] private Button startButton;
     [SerializeField] private Button victoryButton;
     
+    [SerializeField] private PuzzleManager _puzzleManager;
+    
     private float _lastClickTime = 0f;
     private int _currentNumber;
     private Animator _animator;
@@ -80,6 +82,7 @@ public class RhythmPuzzleController : MonoBehaviour
     
     private void PuzzleCompleted()
     {
+        _puzzleManager.PuzzleOver();
         victoryButton.gameObject.SetActive(true);
     }
 }
