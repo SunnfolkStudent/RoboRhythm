@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IDataPersistence
 {
     [Header("Movement variables")] 
     private bool _frozen;
@@ -127,4 +127,19 @@ public class PlayerMovement : MonoBehaviour
     {
         _frozen = false;
     }
+    
+    public void LoadData(GameData data)
+    {
+        this.transform.position = data.playerPosition;
+    }
+
+    public void SaveData(GameData data)
+    {
+        data.playerPosition = this.transform.position;
+    }
+
+    public void SaveTaskData(GameData data) { }
+    public void LoadTaskData(GameData data) { }
+    public void LoadKeyData(GameData data){}
+    public void SaveKeyData(GameData data){}
 }

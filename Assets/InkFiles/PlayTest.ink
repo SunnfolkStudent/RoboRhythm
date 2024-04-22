@@ -1,5 +1,5 @@
-Hey, is the typing effect only working on the first line?
-How weird is that? I have no idea how to fix that...
+Dialogue seems to be working!
+And the save system is finally working! For now...
 Can you answer a question?
     + [Of Course!]
     -> leave

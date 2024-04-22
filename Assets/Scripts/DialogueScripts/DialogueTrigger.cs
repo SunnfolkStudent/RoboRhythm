@@ -1,12 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueTrigger : MonoBehaviour
+public class DialogueTrigger : MonoBehaviour, IDataPersistence
 {
     [Header("NPC Information")]
     [SerializeField] private string npcId;
-    private string currentStage;
+    [SerializeField] private Collider2D taskCollider;
+    [SerializeField] private string currentStage = "";
+    [SerializeField] private bool givenTask = false;
     
     [Header("Visual Cue")] 
     [SerializeField] private GameObject visualCue;
@@ -28,6 +28,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         playerInRange = false;
         visualCue.SetActive(false);
+        givenTask = false;
     }
 
     private void Update()
@@ -48,11 +49,14 @@ public class DialogueTrigger : MonoBehaviour
 
     private void PickDialogue()
     {
-        //DataPersistenceManager.instance.LoadPuzzleData();
-        
-        if (currentStage == null)
+        if(currentStage == null)
         {
-            currentStage = FIRST;
+            currentStage = "First";
+        }
+
+        if(givenTask)
+        {
+            DataPersistenceManager.instance.LoadTaskData();
         }
         
         switch (currentStage)
@@ -60,6 +64,11 @@ public class DialogueTrigger : MonoBehaviour
             case FIRST:
                 DialogueManager.GetInstance().EnterDialogueMode(firstInkJSON);
                 currentStage = "Second";
+                givenTask = true;
+                if(taskCollider != null)
+                {
+                    taskCollider.enabled = true;
+                }
                 break;
             case SECOND:
                 DialogueManager.GetInstance().EnterDialogueMode(beforeKeyInkJSON);
@@ -76,12 +85,16 @@ public class DialogueTrigger : MonoBehaviour
                 break;
         }
         
-        //DataPersistenceManager.instance.SaveGame();
+        DataPersistenceManager.instance.SaveGame();
     }
     
     public void LoadData(GameData data)
     {
         data.npcStages.TryGetValue(npcId, out currentStage);
+        if (currentStage != FIRST)
+        {
+            taskCollider.enabled = true;
+        }
     }
 
     public void SaveData(GameData data)
@@ -90,15 +103,20 @@ public class DialogueTrigger : MonoBehaviour
         {
             data.npcStages.Remove(npcId);
         }
+        if(currentStage == null)
+        {
+            currentStage = "First";
+        }
         data.npcStages.Add(npcId, currentStage);
     }
 
-    public void SavePuzzleData(GameData data) { }
+    public void SaveTaskData(GameData data) { }
 
-    public void LoadPuzzleData(GameData data)
+    public void LoadTaskData(GameData data)
     {
         data.npcStages.TryGetValue(npcId, out currentStage);
     }
+    
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -115,4 +133,7 @@ public class DialogueTrigger : MonoBehaviour
             playerInRange = false;
         }
     }
+    
+    public void LoadKeyData(GameData data){}
+    public void SaveKeyData(GameData data){}
 }

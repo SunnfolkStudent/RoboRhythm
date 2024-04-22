@@ -27,6 +27,7 @@ public class DataPersistenceManager : MonoBehaviour
             return;
         }
         instance = this;
+        
         DontDestroyOnLoad(this.gameObject);
         
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName, useEncryption);
@@ -92,7 +93,7 @@ public class DataPersistenceManager : MonoBehaviour
         dataHandler.Save(gameData);
     }
     
-    public void SavePuzzleData()
+    public void SaveTaskData()
     {
         if (this.gameObject == null)
         {
@@ -100,13 +101,16 @@ public class DataPersistenceManager : MonoBehaviour
             return;
         }
         
-        //PuzzleManager.GetInstance().SavePuzzleData(gameData);
+        foreach (IDataPersistence dataPersistenceOBJ in dataPersistenceObjects)
+        {
+            dataPersistenceOBJ.SaveTaskData(gameData);
+        }
         
         // save that data to a file using the data handler
         dataHandler.Save(gameData);
     }
 
-    public void LoadPuzzleData()
+    public void LoadTaskData()
     {
         // load any saved data from a file using the data handler
         this.gameData = dataHandler.Load();
@@ -124,7 +128,45 @@ public class DataPersistenceManager : MonoBehaviour
 
         foreach (IDataPersistence dataPersistenceOBJ in dataPersistenceObjects)
         {
-            dataPersistenceOBJ.LoadPuzzleData(gameData);
+            dataPersistenceOBJ.LoadTaskData(gameData);
+        }
+    }
+
+    public void SaveKeyData()
+    {
+        if (this.gameObject == null)
+        {
+            Debug.LogWarning("No data was found. A New Game needs to be started before data can be saved.");
+            return;
+        }
+        
+        foreach (IDataPersistence dataPersistenceOBJ in dataPersistenceObjects)
+        {
+            dataPersistenceOBJ.SaveKeyData(gameData);
+        }
+        
+        // save that data to a file using the data handler
+        dataHandler.Save(gameData);
+    }
+
+    public void LoadKeyData()
+    {
+        this.gameData = dataHandler.Load();
+
+        if (this.gameData == null && initializeDataIfNull)
+        {
+            NewGame();
+        }
+
+        if (this.gameData == null)
+        {
+            Debug.Log("No data was found. A New Game needs to be started before data can be loaded.");
+            return;
+        }
+
+        foreach (IDataPersistence dataPersistenceOBJ in dataPersistenceObjects)
+        {
+            dataPersistenceOBJ.LoadKeyData(gameData);
         }
     }
 
