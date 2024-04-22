@@ -156,6 +156,9 @@ public class DialogueManager : MonoBehaviour
     
         private IEnumerator ExitDialogueMode()
         {
+            DataPersistenceManager.instance.SaveKeyData();
+            DataPersistenceManager.instance.LoadKeyData();
+            
             yield return new WaitForSeconds(0.2f);
             
             //_dialogueVariables.StopListening(currentStory);
@@ -372,11 +375,11 @@ public class DialogueManager : MonoBehaviour
             return variableValue;
         }
     
-        public void OnApplicationQuit()
+        /*public void OnApplicationQuit()
         {
             if(_dialogueVariables != null)
             {
                 _dialogueVariables.SaveVariable();
             }
-        }
+        }*/
 }

@@ -1,28 +1,40 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TransportToBoss : MonoBehaviour, IDataPersistence
+public class PuzzlePortal : MonoBehaviour, IDataPersistence
 {
     [SerializeField] private string taskId;
-    [SerializeField] private string bossSceneName;
+    [SerializeField] private string puzzleSceneName;
     [SerializeField] private bool taskDone;
     [SerializeField] private Collider2D _collider;
+    
+    [SerializeField] private GameObject visualCue;
+    
     private string npcStage;
+
+    [SerializeField] private bool playerInRange;
 
     private void Awake()
     {
-        _collider.enabled = false;
+        playerInRange = false;
+        visualCue.SetActive(false);
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void Update()
     {
-        if (other.tag == "Player" && Input.GetKey(KeyCode.E) && !taskDone)
+        if (playerInRange)
         {
-            DataPersistenceManager.instance.SaveGame();
-            SceneManager.LoadScene(bossSceneName);
+            visualCue.SetActive(true);
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                DataPersistenceManager.instance.SaveGame();
+                SceneManager.LoadSceneAsync(puzzleSceneName);
+            }
+        }
+        else
+        {
+            visualCue.SetActive(false);
         }
     }
 
@@ -30,7 +42,8 @@ public class TransportToBoss : MonoBehaviour, IDataPersistence
     {
         data.tasksList.TryGetValue(taskId, out taskDone);
         data.npcStages.TryGetValue(taskId, out npcStage);
-        if (npcStage == "First")
+        
+        if (taskDone)
         {
             _collider.enabled = false;
         }
@@ -54,14 +67,26 @@ public class TransportToBoss : MonoBehaviour, IDataPersistence
         data.npcStages.TryGetValue(taskId, out npcStage);
         if (!taskDone)
         {
-            _collider.enabled = true;
-        }
-        if (npcStage == "First" || npcStage == "")
-        {
             _collider.enabled = false;
         }
     }
     
     public void LoadKeyData(GameData data){}
     public void SaveKeyData(GameData data){}
+    
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "Player")
+        {
+            playerInRange = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "Player")
+        {
+            playerInRange = false;
+        }
+    }
 }
