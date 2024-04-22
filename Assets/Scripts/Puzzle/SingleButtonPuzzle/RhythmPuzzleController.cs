@@ -77,7 +77,7 @@ public class RhythmPuzzleController : MonoBehaviour
         Scene currentScene = gameObject.scene;
 
         // Unload the current scene
-        SceneManager.UnloadSceneAsync(currentScene);
+        PuzzleEvents.unloadPuzzle?.Invoke(currentScene.ToString());
     }
     
     private void PuzzleCompleted()

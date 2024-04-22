@@ -21,6 +21,16 @@ public class PuzzlePortal : MonoBehaviour, IDataPersistence
         visualCue.SetActive(false);
     }
 
+    private void OnEnable()
+    {
+        PuzzleEvents.unloadPuzzle += UnLoadPuzzle;
+    }
+    
+    private void OnDisable()
+    {
+        PuzzleEvents.unloadPuzzle -= UnLoadPuzzle;
+    }
+
     private void Update()
     {
         if (playerInRange)
@@ -88,5 +98,10 @@ public class PuzzlePortal : MonoBehaviour, IDataPersistence
         {
             playerInRange = false;
         }
+    }
+    
+    private void UnLoadPuzzle(string sceneName)
+    {
+        SceneManager.UnloadSceneAsync(sceneName);
     }
 }
