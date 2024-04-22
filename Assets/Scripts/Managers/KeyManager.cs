@@ -12,21 +12,6 @@ public class KeyManager : MonoBehaviour, IDataPersistence
 
     private static KeyManager instance;
 
-   /* private void Awake()
-    {
-        if (instance != null)
-        {
-            Debug.Log("Found more than one Key Manager in scene!");
-        }
-
-        instance = this;
-    }*/
-
-    /*public static KeyManager GetInstance()
-    {
-        return instance;
-    }*/
-
     private void Start()
     {
         image = GetComponent<Image>();

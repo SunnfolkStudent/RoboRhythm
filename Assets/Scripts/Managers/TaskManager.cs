@@ -68,6 +68,5 @@ public class TaskManager : MonoBehaviour, IDataPersistence
         {
             data.keysFound.Add(keyGotId, true);
         }
-        Debug.Log("Set key: " + keyGotId + " to true");
     }
 }

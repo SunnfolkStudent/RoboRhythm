@@ -33,6 +33,6 @@ public class RBossHealthManager : MonoBehaviour
 
     private void BossDefeated()
     {
-        BossManager.GetInstance().BossOver();
+        _bossManager.BossOver();
     }
 }

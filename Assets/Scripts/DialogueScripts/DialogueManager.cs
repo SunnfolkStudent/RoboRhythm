@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 
 public class DialogueManager : MonoBehaviour
 {
-    [Header("Params")] 
+        [Header("Params")] 
         [SerializeField] private float typingSpeed = 0.04f;
         
         [Header("Load Globals JSON")]
@@ -33,6 +33,8 @@ public class DialogueManager : MonoBehaviour
         [SerializeField] private TextMeshProUGUI displayNameText;
         [SerializeField] private Animator portraitAnimator;
         private Animator layoutAnimator;
+
+        [SerializeField] private Animator playerAnimator;
         
         public bool dialogueIsPlaying { get; private set; }
         
@@ -76,7 +78,7 @@ public class DialogueManager : MonoBehaviour
         private void Start()
         {
             dialogueIsPlaying = false;
-            dialoguePanel.SetActive(false);
+            //dialoguePanel.SetActive(false);
             //dialoguePanelAnimator.Play("Exit");
     
             //layoutAnimator = dialoguePanel.GetComponent<Animator>();
@@ -130,6 +132,7 @@ public class DialogueManager : MonoBehaviour
 
         public void EnterDialogueMode(TextAsset inkJSON)
         {
+            dialogueIsPlaying = true;
             StartCoroutine(EnterDialogue(inkJSON));
         }
     
@@ -139,8 +142,7 @@ public class DialogueManager : MonoBehaviour
             //PlayerInputScript.GetInstance().RegisterInteractPressed();
             
             currentStory = new Story(inkJSON.text);
-            dialogueIsPlaying = true;
-            dialoguePanel.SetActive(true);
+            //dialoguePanel.SetActive(true);
             dialoguePanelAnimator.Play("Enter");
     
             //_dialogueVariables.StartListening(currentStory);
@@ -156,12 +158,14 @@ public class DialogueManager : MonoBehaviour
     
         private IEnumerator ExitDialogueMode()
         {
+            DataPersistenceManager.instance.SaveKeyData();
+            DataPersistenceManager.instance.LoadKeyData();
+            
             yield return new WaitForSeconds(0.2f);
             
             //_dialogueVariables.StopListening(currentStory);
             //PlayerInputScript.GetInstance().RegisterInteractPressed();
             
-            dialogueIsPlaying = false;
             dialoguePanelAnimator.Play("Exit");
             dialogueText.text = "";
             
@@ -169,7 +173,8 @@ public class DialogueManager : MonoBehaviour
             
             yield return new WaitForSeconds(1);
             
-            dialoguePanel.SetActive(false);
+            //dialoguePanel.SetActive(false);
+            dialogueIsPlaying = false;
         }
     
         private void ContinueStory()
@@ -205,6 +210,7 @@ public class DialogueManager : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
+                    Debug.Log("Dialogue Skipped");
                     dialogueText.maxVisibleCharacters = line.Length;
                     break;
                 }
@@ -291,7 +297,7 @@ public class DialogueManager : MonoBehaviour
                 string[] splitTag = tag.Split(':');
                 if (splitTag.Length != 2)
                 {
-                    Debug.LogError("Tag could not be appropriatley parsed: " + tag);
+                    Debug.LogError("Tag could not be parsed: " + tag);
                 }
     
                 string tagKey = splitTag[0].Trim();
@@ -314,6 +320,7 @@ public class DialogueManager : MonoBehaviour
                     case KEY_TAG:
                         Debug.Log("Key Obtained: " + tagValue);
                         keyGot = tagValue;
+                        // TODO playerAnimator.Play("GotKey");
                         TaskManager.GetInstance().KeyObtained(tagValue);
                         break;
                     default:
@@ -372,11 +379,11 @@ public class DialogueManager : MonoBehaviour
             return variableValue;
         }
     
-        public void OnApplicationQuit()
+        /*public void OnApplicationQuit()
         {
             if(_dialogueVariables != null)
             {
                 _dialogueVariables.SaveVariable();
             }
-        }
+        }*/
 }

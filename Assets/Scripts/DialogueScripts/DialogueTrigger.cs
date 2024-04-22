@@ -86,12 +86,13 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
         }
         
         DataPersistenceManager.instance.SaveGame();
+        DataPersistenceManager.instance.LoadGame();
     }
     
     public void LoadData(GameData data)
     {
         data.npcStages.TryGetValue(npcId, out currentStage);
-        if (currentStage != FIRST)
+        if (currentStage == SECOND)
         {
             taskCollider.enabled = true;
         }

@@ -1,0 +1,1843 @@
+fileFormatVersion: 2
+guid: b060042b30808e74e883484535c07587
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638493895659886505
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: robo blacksmith
+    originalName: 
+    pivot: {x: 0.7980769, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 763
+      width: 52
+      height: 61
+    spriteID: d12709636ac03df4aa167d4ee50b0b64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 191, y: 763}
+  - name: robo blacksmith_Frame_1
+    originalName: 
+    pivot: {x: 0.76851857, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 4
+      width: 54
+      height: 61
+    spriteID: 0c5ff16f6585b0b469df91e6941e7e06
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 4}
+  - name: robo blacksmith_Frame_2
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 142
+      width: 53
+      height: 61
+    spriteID: f86ee0a07bd644b49b877aae11f515e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 142}
+  - name: robo blacksmith_Frame_3
+    originalName: 
+    pivot: {x: 0.7980769, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 832
+      width: 52
+      height: 61
+    spriteID: 87a953e1702344c4e80c79036a6dbd6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 191, y: 832}
+  - name: robo blacksmith_Frame_4
+    originalName: 
+    pivot: {x: 0.81372553, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 4
+      width: 51
+      height: 61
+    spriteID: b1e1bb93c5af6614f9743fcb21ebaf16
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 4}
+  - name: robo blacksmith_Frame_5
+    originalName: 
+    pivot: {x: 0.8469388, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 280
+      width: 49
+      height: 61
+    spriteID: b239214d0a09a5643923ce3faa17c1d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 280}
+  - name: robo blacksmith_Frame_6
+    originalName: 
+    pivot: {x: 0.81372553, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 73
+      width: 51
+      height: 61
+    spriteID: 098327bd67ecdb44395796b27c06b428
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 73}
+  - name: robo blacksmith_Frame_7
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 211
+      width: 53
+      height: 61
+    spriteID: 6306255ca265abb46b871a9e1c4a58b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 211}
+  - name: robo blacksmith_Frame_8
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 280
+      width: 53
+      height: 61
+    spriteID: d727738142a52bf43a9ad9f5d7c90096
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 280}
+  - name: robo blacksmith_Frame_9
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 349
+      width: 53
+      height: 61
+    spriteID: 2e8a7d302022f0f4785e7dc83c7cf46a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 349}
+  - name: robo blacksmith_Frame_10
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 418
+      width: 53
+      height: 61
+    spriteID: 6432c4416bcae9b45a9d255f5fa088c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 418}
+  - name: robo blacksmith_Frame_11
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 487
+      width: 53
+      height: 61
+    spriteID: 0bd175550af18264096faf3faff844c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 487}
+  - name: robo blacksmith_Frame_12
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 556
+      width: 53
+      height: 61
+    spriteID: 614ebd20174ad2f4e888e6d75d66de3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 556}
+  - name: robo blacksmith_Frame_13
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 625
+      width: 53
+      height: 61
+    spriteID: f952defaa948b9048a73cb6037cc48dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 625}
+  - name: robo blacksmith_Frame_14
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 694
+      width: 53
+      height: 61
+    spriteID: d242804f16e43c04cbbc38b6adbe6280
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 694}
+  - name: robo blacksmith_Frame_15
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 763
+      width: 53
+      height: 61
+    spriteID: ee1b45479c7bbb9458d79356394c3be6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 763}
+  - name: robo blacksmith_Frame_16
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 832
+      width: 53
+      height: 61
+    spriteID: e18eddfa5a70609469795f0e99369acc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 832}
+  - name: robo blacksmith_Frame_17
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 901
+      width: 53
+      height: 61
+    spriteID: 93650bd23130cfe48927a8401eda582a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 901}
+  - name: robo blacksmith_Frame_18
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 76
+      width: 53
+      height: 61
+    spriteID: 36ee3bd886b7efb43a822d9a178d04cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 76}
+  - name: robo blacksmith_Frame_19
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 145
+      width: 53
+      height: 61
+    spriteID: ea35314474c5da74b8f58b8e6c88cb64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 145}
+  - name: robo blacksmith_Frame_20
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 214
+      width: 53
+      height: 61
+    spriteID: 9b8bfb32b3a43ed46a400cd4d10b76db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 214}
+  - name: robo blacksmith_Frame_21
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 283
+      width: 53
+      height: 61
+    spriteID: 68e8116e37476974cb5a8627989b5b86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 283}
+  - name: robo blacksmith_Frame_22
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 352
+      width: 53
+      height: 61
+    spriteID: 956eebdbdf24f9e46b123474e58cdfc5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 352}
+  - name: robo blacksmith_Frame_23
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 421
+      width: 53
+      height: 61
+    spriteID: c2ae995c4667b1740b07ac1c03f3cbbb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 421}
+  - name: robo blacksmith_Frame_24
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 490
+      width: 53
+      height: 61
+    spriteID: c3150a0b435951848a3caf30a62e320b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 490}
+  - name: robo blacksmith_Frame_25
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 559
+      width: 53
+      height: 61
+    spriteID: f0a7efee080af5c40a583d25207275ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 559}
+  - name: robo blacksmith_Frame_26
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 628
+      width: 53
+      height: 61
+    spriteID: 287b806994612a542bbb9df404b33717
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 628}
+  - name: robo blacksmith_Frame_27
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 697
+      width: 53
+      height: 61
+    spriteID: 1d892e40bb300494eae0460b46227c8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 697}
+  - name: robo blacksmith_Frame_28
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 766
+      width: 53
+      height: 61
+    spriteID: 89c8288eee7d53f40a87a90ecc2e50ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 766}
+  - name: robo blacksmith_Frame_29
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 835
+      width: 53
+      height: 61
+    spriteID: c9ccba5dc3a70394b8dc607609608c50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 835}
+  - name: robo blacksmith_Frame_30
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 904
+      width: 53
+      height: 61
+    spriteID: 82c55e34a7a54db4e8d8cb9860fdf1fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 904}
+  - name: robo blacksmith_Frame_31
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 4
+      width: 53
+      height: 61
+    spriteID: b5fa0fe804d51e44daf2537207e86a79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 191, y: 4}
+  - name: robo blacksmith_Frame_32
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.59375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 900
+      width: 53
+      height: 64
+    spriteID: 56f9d43650f811c4d8d6d79caa951168
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 900}
+  - name: robo blacksmith_Frame_33
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.5671642}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 750
+      width: 53
+      height: 67
+    spriteID: d5f12629c7dd5f84296c72edb2f99480
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 750}
+  - name: robo blacksmith_Frame_34
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.5507246}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 596
+      width: 53
+      height: 69
+    spriteID: 35700d3f02abc4d4b8fe66e5e305ebbd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 596}
+  - name: robo blacksmith_Frame_35
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.53521127}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 359
+      width: 53
+      height: 71
+    spriteID: d4b4f035ea148fd429aca330a1348350
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 359}
+  - name: robo blacksmith_Frame_36
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.53521127}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 438
+      width: 53
+      height: 71
+    spriteID: 38ef97ad5aeb6e745acd8058426e4711
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 438}
+  - name: robo blacksmith_Frame_37
+    originalName: 
+    pivot: {x: 0.76851857, y: -0.54285717}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 281
+      width: 54
+      height: 70
+    spriteID: 76d06eda647775043ba9a20c2020fdfb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 281}
+  - name: robo blacksmith_Frame_38
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.4691358}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 192
+      width: 53
+      height: 81
+    spriteID: 533582eee9f7bc4429d9382fb9faac3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 192}
+  - name: robo blacksmith_Frame_39
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.44705883}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 99
+      width: 53
+      height: 85
+    spriteID: 343f9b6cd53f5f547a5d0f1fb9beb172
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 99}
+  - name: robo blacksmith_Frame_40
+    originalName: 
+    pivot: {x: 0.7410714, y: -0.43678162}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 56
+      height: 87
+    spriteID: d4df84595a1b0bb4982b545ace276fbe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: robo blacksmith_Frame_41
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.53521127}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 517
+      width: 53
+      height: 71
+    spriteID: 39f4ea3ddf12a084a80171a19a82fbc7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 517}
+  - name: robo blacksmith_Frame_42
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.5507246}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 673
+      width: 53
+      height: 69
+    spriteID: 9d86f1bf61c8e984f8d615b7762ef24b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 673}
+  - name: robo blacksmith_Frame_43
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.5671642}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 825
+      width: 53
+      height: 67
+    spriteID: d1a1e47f778daf746b08a2b8e3798c4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 825}
+  - name: robo blacksmith_Frame_44
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.59375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 4
+      width: 53
+      height: 64
+    spriteID: fac09658136475b45a514af0d276d34f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 4}
+  - name: robo blacksmith_Frame_45
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 73
+      width: 53
+      height: 61
+    spriteID: 1999d8afe847e5042958b5b6fe55113d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 191, y: 73}
+  - name: robo blacksmith_Frame_46
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 142
+      width: 53
+      height: 61
+    spriteID: ed563b723e419c04c8c67a28679f7e27
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 191, y: 142}
+  - name: robo blacksmith_Frame_47
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 211
+      width: 53
+      height: 61
+    spriteID: f7f613d873c8a1b49ae07c76b6131993
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 191, y: 211}
+  - name: robo blacksmith_Frame_48
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 280
+      width: 53
+      height: 61
+    spriteID: d12e7f273e0deba468313c6d02ccfae7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 191, y: 280}
+  - name: robo blacksmith_Frame_49
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 349
+      width: 53
+      height: 61
+    spriteID: c3d88bd04d27df34991182939aa09c69
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 191, y: 349}
+  - name: robo blacksmith_Frame_50
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 418
+      width: 53
+      height: 61
+    spriteID: 87df92e3dbdf622489ea0b252ce5173f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 191, y: 418}
+  - name: robo blacksmith_Frame_51
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 487
+      width: 53
+      height: 61
+    spriteID: ba42044bf507c974cb78ee60e207d080
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 191, y: 487}
+  - name: robo blacksmith_Frame_52
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 556
+      width: 53
+      height: 61
+    spriteID: 452a528475d367e4db28e26d6f7a7aa9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 191, y: 556}
+  - name: robo blacksmith_Frame_53
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 625
+      width: 53
+      height: 61
+    spriteID: 47c3efcf0b8bb314689db0b285bb7006
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 191, y: 625}
+  - name: robo blacksmith_Frame_54
+    originalName: 
+    pivot: {x: 0.81372553, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 142
+      width: 51
+      height: 61
+    spriteID: 5351ec2bc8150314495156b8b4650fd1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 142}
+  - name: robo blacksmith_Frame_55
+    originalName: 
+    pivot: {x: 0.8469388, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 349
+      width: 49
+      height: 61
+    spriteID: fa30ab6839496d0409858bb32d94ff30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 349}
+  - name: robo blacksmith_Frame_56
+    originalName: 
+    pivot: {x: 0.81372553, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 211
+      width: 51
+      height: 61
+    spriteID: dd5bb23b06dc75849bfc198ec5dca35e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 211}
+  - name: robo blacksmith_Frame_57
+    originalName: 
+    pivot: {x: 0.7980769, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 901
+      width: 52
+      height: 61
+    spriteID: 71ff9327171eaf640aa2ee28d9280b8a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 191, y: 901}
+  - name: robo blacksmith_Frame_58
+    originalName: 
+    pivot: {x: 0.7830189, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 694
+      width: 53
+      height: 61
+    spriteID: 1f9156cca0c677149a825d285a1d23cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 191, y: 694}
+  - name: robo blacksmith_Frame_59
+    originalName: 
+    pivot: {x: 0.76851857, y: -0.6229508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 73
+      width: 54
+      height: 61
+    spriteID: 6da5150eb3f501e43b4a9081b8e666e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 73}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 843472796
+    name: robo blacksmith
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: robo blacksmith_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 17
+        y: 38
+        width: 52
+        height: 61
+      spriteId: d12709636ac03df4aa167d4ee50b0b64
+    - name: robo blacksmith_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 17
+        y: 38
+        width: 54
+        height: 61
+      spriteId: 0c5ff16f6585b0b469df91e6941e7e06
+    - name: robo blacksmith_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: f86ee0a07bd644b49b877aae11f515e2
+    - name: robo blacksmith_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 17
+        y: 38
+        width: 52
+        height: 61
+      spriteId: 87a953e1702344c4e80c79036a6dbd6f
+    - name: robo blacksmith_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 17
+        y: 38
+        width: 51
+        height: 61
+      spriteId: b1e1bb93c5af6614f9743fcb21ebaf16
+    - name: robo blacksmith_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 17
+        y: 38
+        width: 49
+        height: 61
+      spriteId: b239214d0a09a5643923ce3faa17c1d5
+    - name: robo blacksmith_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 17
+        y: 38
+        width: 51
+        height: 61
+      spriteId: 098327bd67ecdb44395796b27c06b428
+    - name: robo blacksmith_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 6306255ca265abb46b871a9e1c4a58b1
+    - name: robo blacksmith_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: d727738142a52bf43a9ad9f5d7c90096
+    - name: robo blacksmith_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 2e8a7d302022f0f4785e7dc83c7cf46a
+    - name: robo blacksmith_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 6432c4416bcae9b45a9d255f5fa088c1
+    - name: robo blacksmith_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 0bd175550af18264096faf3faff844c6
+    - name: robo blacksmith_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 614ebd20174ad2f4e888e6d75d66de3a
+    - name: robo blacksmith_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: f952defaa948b9048a73cb6037cc48dd
+    - name: robo blacksmith_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: d242804f16e43c04cbbc38b6adbe6280
+    - name: robo blacksmith_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: ee1b45479c7bbb9458d79356394c3be6
+    - name: robo blacksmith_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: e18eddfa5a70609469795f0e99369acc
+    - name: robo blacksmith_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 93650bd23130cfe48927a8401eda582a
+    - name: robo blacksmith_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 36ee3bd886b7efb43a822d9a178d04cd
+    - name: robo blacksmith_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: ea35314474c5da74b8f58b8e6c88cb64
+    - name: robo blacksmith_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 9b8bfb32b3a43ed46a400cd4d10b76db
+    - name: robo blacksmith_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 68e8116e37476974cb5a8627989b5b86
+    - name: robo blacksmith_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 956eebdbdf24f9e46b123474e58cdfc5
+    - name: robo blacksmith_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: c2ae995c4667b1740b07ac1c03f3cbbb
+    - name: robo blacksmith_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: c3150a0b435951848a3caf30a62e320b
+    - name: robo blacksmith_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: f0a7efee080af5c40a583d25207275ea
+    - name: robo blacksmith_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 287b806994612a542bbb9df404b33717
+    - name: robo blacksmith_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 1d892e40bb300494eae0460b46227c8e
+    - name: robo blacksmith_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 89c8288eee7d53f40a87a90ecc2e50ff
+    - name: robo blacksmith_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: c9ccba5dc3a70394b8dc607609608c50
+    - name: robo blacksmith_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 82c55e34a7a54db4e8d8cb9860fdf1fe
+    - name: robo blacksmith_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: b5fa0fe804d51e44daf2537207e86a79
+    - name: robo blacksmith_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 64
+      spriteId: 56f9d43650f811c4d8d6d79caa951168
+    - name: robo blacksmith_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 67
+      spriteId: d5f12629c7dd5f84296c72edb2f99480
+    - name: robo blacksmith_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 69
+      spriteId: 35700d3f02abc4d4b8fe66e5e305ebbd
+    - name: robo blacksmith_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 71
+      spriteId: d4b4f035ea148fd429aca330a1348350
+    - name: robo blacksmith_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 71
+      spriteId: 38ef97ad5aeb6e745acd8058426e4711
+    - name: robo blacksmith_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 17
+        y: 38
+        width: 54
+        height: 70
+      spriteId: 76d06eda647775043ba9a20c2020fdfb
+    - name: robo blacksmith_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 81
+      spriteId: 533582eee9f7bc4429d9382fb9faac3e
+    - name: robo blacksmith_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 85
+      spriteId: 343f9b6cd53f5f547a5d0f1fb9beb172
+    - name: robo blacksmith_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 17
+        y: 38
+        width: 56
+        height: 87
+      spriteId: d4df84595a1b0bb4982b545ace276fbe
+    - name: robo blacksmith_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 71
+      spriteId: 39f4ea3ddf12a084a80171a19a82fbc7
+    - name: robo blacksmith_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 69
+      spriteId: 9d86f1bf61c8e984f8d615b7762ef24b
+    - name: robo blacksmith_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 67
+      spriteId: d1a1e47f778daf746b08a2b8e3798c4f
+    - name: robo blacksmith_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 64
+      spriteId: fac09658136475b45a514af0d276d34f
+    - name: robo blacksmith_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 1999d8afe847e5042958b5b6fe55113d
+    - name: robo blacksmith_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: ed563b723e419c04c8c67a28679f7e27
+    - name: robo blacksmith_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: f7f613d873c8a1b49ae07c76b6131993
+    - name: robo blacksmith_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: d12e7f273e0deba468313c6d02ccfae7
+    - name: robo blacksmith_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: c3d88bd04d27df34991182939aa09c69
+    - name: robo blacksmith_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 87df92e3dbdf622489ea0b252ce5173f
+    - name: robo blacksmith_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: ba42044bf507c974cb78ee60e207d080
+    - name: robo blacksmith_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 452a528475d367e4db28e26d6f7a7aa9
+    - name: robo blacksmith_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 47c3efcf0b8bb314689db0b285bb7006
+    - name: robo blacksmith_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 17
+        y: 38
+        width: 51
+        height: 61
+      spriteId: 5351ec2bc8150314495156b8b4650fd1
+    - name: robo blacksmith_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 17
+        y: 38
+        width: 49
+        height: 61
+      spriteId: fa30ab6839496d0409858bb32d94ff30
+    - name: robo blacksmith_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 17
+        y: 38
+        width: 51
+        height: 61
+      spriteId: dd5bb23b06dc75849bfc198ec5dca35e
+    - name: robo blacksmith_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 17
+        y: 38
+        width: 52
+        height: 61
+      spriteId: 71ff9327171eaf640aa2ee28d9280b8a
+    - name: robo blacksmith_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 17
+        y: 38
+        width: 53
+        height: 61
+      spriteId: 1f9156cca0c677149a825d285a1d23cd
+    - name: robo blacksmith_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 17
+        y: 38
+        width: 54
+        height: 61
+      spriteId: 6da5150eb3f501e43b4a9081b8e666e1
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 117, y: 152}
