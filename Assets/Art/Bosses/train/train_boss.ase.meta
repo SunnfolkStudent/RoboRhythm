@@ -1,0 +1,587 @@
+fileFormatVersion: 2
+guid: 8527409664b9ae740862f18b9b1c2afd
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: train_boss_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: -0.35338345}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 338
+      width: 320
+      height: 133
+    spriteID: b302a8958b45538488c6c3201e28933c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 338}
+  - name: train_boss_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -0.35338345}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 338
+      width: 320
+      height: 133
+    spriteID: 0b38956843c92874b85213494bd920f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 338}
+  - name: train_boss_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 660
+      y: 619
+      width: 320
+      height: 120
+    spriteID: 42d108e7486b5ff41ac07f46d0ee91a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 660, y: 619}
+  - name: train_boss_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 752
+      width: 320
+      height: 120
+    spriteID: 4467c44effb62c54e91cce54a71b97df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 752}
+  - name: train_boss_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -0.44000003}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 619
+      width: 320
+      height: 125
+    spriteID: 8d9f91d9ab097824280e6392508f56ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 619}
+  - name: train_boss_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -0.44000003}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 619
+      width: 320
+      height: 125
+    spriteID: 85ba475f177259f41817159e51359f75
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 619}
+  - name: train_boss_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: -0.36363637}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 660
+      y: 338
+      width: 320
+      height: 132
+    spriteID: 505ab1ad95f1b1d47b5d85ecec9b5ad6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 660, y: 338}
+  - name: train_boss_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -0.36363637}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 479
+      width: 320
+      height: 132
+    spriteID: d7a15fe4f12fe0c4d8c332c53986e90f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 479}
+  - name: train_boss_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: -0.1392405}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 660
+      y: 4
+      width: 320
+      height: 158
+    spriteID: 59979d2442ede8a4cbb61b118025d3cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 660, y: 4}
+  - name: train_boss_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: -0.1392405}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 172
+      width: 320
+      height: 158
+    spriteID: 13443f60b0214ff4f826df4e51b8e329
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 172}
+  - name: train_boss_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 320
+      height: 160
+    spriteID: 81e5bb615b4f6274bbee2e3b7169bd6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: train_boss_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 4
+      width: 320
+      height: 160
+    spriteID: 2c5db21c93c75934dba484479f2b41a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 4}
+  - name: train_boss_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: -0.36363637}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 479
+      width: 320
+      height: 132
+    spriteID: 024679c2de157b840a089dcc2e2315d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 479}
+  - name: train_boss_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: -0.36363637}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 660
+      y: 479
+      width: 320
+      height: 132
+    spriteID: adc0e8e24cddc0240a40613a46a22b49
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 660, y: 479}
+  - name: train_boss_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: -0.3138686}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 172
+      width: 320
+      height: 137
+    spriteID: 1f5ba38dc1ed01e428e75b173c7ca5c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 172}
+  - name: train_boss_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: -0.3138686}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 660
+      y: 172
+      width: 320
+      height: 137
+    spriteID: 9c091734d343bff4c9ef0d27ca82f697
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 660, y: 172}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -496116416
+    name: train_boss
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: train_boss_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 47
+        width: 320
+        height: 133
+      spriteId: b302a8958b45538488c6c3201e28933c
+    - name: train_boss_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 47
+        width: 320
+        height: 133
+      spriteId: 0b38956843c92874b85213494bd920f7
+    - name: train_boss_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 60
+        width: 320
+        height: 120
+      spriteId: 42d108e7486b5ff41ac07f46d0ee91a4
+    - name: train_boss_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: 60
+        width: 320
+        height: 120
+      spriteId: 4467c44effb62c54e91cce54a71b97df
+    - name: train_boss_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 0
+        y: 55
+        width: 320
+        height: 125
+      spriteId: 8d9f91d9ab097824280e6392508f56ab
+    - name: train_boss_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: 55
+        width: 320
+        height: 125
+      spriteId: 85ba475f177259f41817159e51359f75
+    - name: train_boss_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 0
+        y: 48
+        width: 320
+        height: 132
+      spriteId: 505ab1ad95f1b1d47b5d85ecec9b5ad6
+    - name: train_boss_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 0
+        y: 48
+        width: 320
+        height: 132
+      spriteId: d7a15fe4f12fe0c4d8c332c53986e90f
+    - name: train_boss_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: 22
+        width: 320
+        height: 158
+      spriteId: 59979d2442ede8a4cbb61b118025d3cf
+    - name: train_boss_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 0
+        y: 22
+        width: 320
+        height: 158
+      spriteId: 13443f60b0214ff4f826df4e51b8e329
+    - name: train_boss_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 0
+        y: 20
+        width: 320
+        height: 160
+      spriteId: 81e5bb615b4f6274bbee2e3b7169bd6c
+    - name: train_boss_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 0
+        y: 20
+        width: 320
+        height: 160
+      spriteId: 2c5db21c93c75934dba484479f2b41a7
+    - name: train_boss_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 0
+        y: 48
+        width: 320
+        height: 132
+      spriteId: 024679c2de157b840a089dcc2e2315d2
+    - name: train_boss_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 0
+        y: 48
+        width: 320
+        height: 132
+      spriteId: adc0e8e24cddc0240a40613a46a22b49
+    - name: train_boss_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 0
+        y: 43
+        width: 320
+        height: 137
+      spriteId: 1f5ba38dc1ed01e428e75b173c7ca5c3
+    - name: train_boss_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 0
+        y: 43
+        width: 320
+        height: 137
+      spriteId: 9c091734d343bff4c9ef0d27ca82f697
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 320, y: 180}

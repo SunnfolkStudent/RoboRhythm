@@ -23,11 +23,9 @@ public class RNoteHit : MonoBehaviour
         scoreManager = FindObjectOfType<RScoreManager>();
         _soundEffectsManager = FindObjectOfType<RSoundEffectsManager>();
     }
-
-    private void Update()
+    private void AttackPressed()
     {
         if(!_playerInLane) {return;}
-        if(!Input.GetKeyDown(KeyCode.Space)) {return;}
         var noteLocation = projectileMovement.timeVariable + projectileMovement.timeVariable1;
         for (int i = 0; i < rRangeInformation.Length; i++)
         {
@@ -57,5 +55,15 @@ public class RNoteHit : MonoBehaviour
         {
             _playerInLane = false;
         }
+    }
+
+    private void OnEnable()
+    {
+        RPlayerController.AttackHasOccured += AttackPressed;
+    }
+
+    private void OnDisable()
+    {
+        RPlayerController.AttackHasOccured -= AttackPressed;
     }
 }

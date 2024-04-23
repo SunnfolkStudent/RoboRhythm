@@ -16,21 +16,16 @@ MonoBehaviour:
   - KeyBind: 65
     Key: 
     timeToWait: 1
-    nextIsDouble: 0
   - KeyBind: 65
     Key: 
     timeToWait: 1
-    nextIsDouble: 0
   - KeyBind: 74
     Key: 
     timeToWait: 1
-    nextIsDouble: 0
   - KeyBind: 75
     Key: 
     timeToWait: 1
-    nextIsDouble: 0
   - KeyBind: 76
     Key: 
     timeToWait: 1
-    nextIsDouble: 0
-  speed: 1
+  speed: 6

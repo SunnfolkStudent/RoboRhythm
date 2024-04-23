@@ -4,7 +4,6 @@ using Object = UnityEngine.Object;
 
 public class NoteSpawner
 {
-    private MonoBehaviour _monoBehaviour;
     private NotePuzzleScrub _notePuzzleScrub;
     private GameObject _noteObj;
     
@@ -13,9 +12,8 @@ public class NoteSpawner
     private float _minYPosition = -4f;
     private float _maxYPosition = 1.5f;
 
-    public NoteSpawner(MonoBehaviour monoBehaviour, NotePuzzleScrub notePuzzleScrub, GameObject noteObj)
+    public NoteSpawner(NotePuzzleScrub notePuzzleScrub, GameObject noteObj)
     {
-        _monoBehaviour = monoBehaviour;
         _notePuzzleScrub = notePuzzleScrub;
         _noteObj = noteObj;
     }
@@ -58,22 +56,22 @@ public class NoteSpawner
             switch (_notePuzzleScrub.notes[i].KeyBind)
             {
                 case 'A':
-                    ySpawnPosition = spawnPositions[0];
+                    ySpawnPosition = spawnPositions[5];
                     break;
                 case 'S':
-                    ySpawnPosition = spawnPositions[1];
-                    break;
-                case 'D':
-                    ySpawnPosition = spawnPositions[2];
-                    break;
-                case 'J':
-                    ySpawnPosition = spawnPositions[3];
-                    break;
-                case 'K':
                     ySpawnPosition = spawnPositions[4];
                     break;
+                case 'D':
+                    ySpawnPosition = spawnPositions[3];
+                    break;
+                case 'J':
+                    ySpawnPosition = spawnPositions[2];
+                    break;
+                case 'K':
+                    ySpawnPosition = spawnPositions[1];
+                    break;
                 default:
-                    ySpawnPosition = spawnPositions[5];
+                    ySpawnPosition = spawnPositions[0];
                     break;
             }
 
@@ -84,6 +82,7 @@ public class NoteSpawner
             NoteScript noteScript = note.GetComponent<NoteScript>();
             noteScript.startTime = _startTimes[i];
             noteScript.noteData = _notePuzzleScrub.notes[i];
+            noteScript.speed = _notePuzzleScrub.speed;
             if (_notePuzzleScrub.notes.Length - 1 == i)
             {
                 noteScript.isLast = true;

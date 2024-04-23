@@ -7,6 +7,7 @@ public class NoteScript : MonoBehaviour
     public float startTime;
     public bool isLast;
     private Rigidbody2D _rb;
+    public float speed = 6f;
 
     private void Start()
     {
@@ -27,7 +28,7 @@ public class NoteScript : MonoBehaviour
     {
         if (Time.time >= startTime)
         {
-            _rb.velocity = new Vector2(-3f, 0);
+            _rb.velocity = new Vector2(-speed, 0);
         }
     }
     
