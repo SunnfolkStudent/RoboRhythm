@@ -58,22 +58,22 @@ public class NoteSpawner
             switch (_notePuzzleScrub.notes[i].KeyBind)
             {
                 case 'A':
-                    ySpawnPosition = spawnPositions[0];
+                    ySpawnPosition = spawnPositions[5];
                     break;
                 case 'S':
-                    ySpawnPosition = spawnPositions[1];
-                    break;
-                case 'D':
-                    ySpawnPosition = spawnPositions[2];
-                    break;
-                case 'J':
-                    ySpawnPosition = spawnPositions[3];
-                    break;
-                case 'K':
                     ySpawnPosition = spawnPositions[4];
                     break;
+                case 'D':
+                    ySpawnPosition = spawnPositions[3];
+                    break;
+                case 'J':
+                    ySpawnPosition = spawnPositions[2];
+                    break;
+                case 'K':
+                    ySpawnPosition = spawnPositions[1];
+                    break;
                 default:
-                    ySpawnPosition = spawnPositions[5];
+                    ySpawnPosition = spawnPositions[0];
                     break;
             }
 
