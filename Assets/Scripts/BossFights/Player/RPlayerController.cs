@@ -1,17 +1,21 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(RPlayerAnimator))]
 public class RPlayerController : MonoBehaviour
 {
+    public delegate void AttackEvent();
+
+    public static event AttackEvent AttackHasOccured;
+    
     [Header("Must Be 5!")]
     [SerializeField] private Vector2[] positionStates = new Vector2[5];
+    
+    private RPlayerAnimator _animation;
     private Controls _bossFightControls;
     private void Awake()
     {
         _bossFightControls = new Controls();
+        _animation = GetComponent<RPlayerAnimator>();
     }
     
     private int currentState;
@@ -28,6 +32,7 @@ public class RPlayerController : MonoBehaviour
         {
             currentState -= 1;
             MoveToState();
+            _animation.PlayAnimation("jump_left");
         }
     }
 
@@ -37,7 +42,14 @@ public class RPlayerController : MonoBehaviour
         {
             currentState += 1;
             MoveToState();
+            _animation.PlayAnimation("jump_right");
         }
+    }
+
+    private void OnAttack()
+    {
+        if (AttackHasOccured != null) AttackHasOccured();
+        _animation.PlayAnimation("attack");
     }
 
     private void MoveToState()
