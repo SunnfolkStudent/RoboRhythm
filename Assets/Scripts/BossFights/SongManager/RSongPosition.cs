@@ -43,7 +43,5 @@ public class RSongPosition : MonoBehaviour
         //calculate the position in beatse
         songPosInBeats = (songPosition / secPerBeat) + 1;
         
-        Debug.Log(songPosInBeats);
-        
     }
 }

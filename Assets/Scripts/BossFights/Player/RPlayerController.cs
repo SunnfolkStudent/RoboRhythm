@@ -4,7 +4,6 @@ using UnityEngine;
 public class RPlayerController : MonoBehaviour
 {
     public delegate void AttackEvent();
-
     public static event AttackEvent AttackHasOccured;
     
     [Header("Must Be 5!")]
