@@ -147,7 +147,7 @@ public class DialogueManager : MonoBehaviour
     
             //_dialogueVariables.StartListening(currentStory);
     
-            //displayNameText.text = "???";
+            displayNameText.text = "";
             //portraitAnimator.Play("Default");
             //layoutAnimator.Play("left");
             
@@ -320,7 +320,7 @@ public class DialogueManager : MonoBehaviour
                     case KEY_TAG:
                         Debug.Log("Key Obtained: " + tagValue);
                         keyGot = tagValue;
-                        // TODO playerAnimator.Play("GotKey");
+                        playerAnimator.SetTrigger("GotKey");
                         TaskManager.GetInstance().KeyObtained(tagValue);
                         break;
                     default:
@@ -377,6 +377,13 @@ public class DialogueManager : MonoBehaviour
             }
     
             return variableValue;
+        }
+
+        private IEnumerator GotKey()
+        {
+            playerAnimator.SetTrigger("GotKey");
+            yield return new WaitForSeconds(1.31f);
+            playerAnimator.Play("Idle");
         }
     
         /*public void OnApplicationQuit()

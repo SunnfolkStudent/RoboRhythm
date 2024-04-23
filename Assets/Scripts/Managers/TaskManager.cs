@@ -1,10 +1,9 @@
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TaskManager : MonoBehaviour, IDataPersistence
 {
-    [SerializeField] private string tasknpcId;
+    [SerializeField] private string taskNpcId;
     [SerializeField] private string keyGotId;
 
     private bool falseKey = false;
@@ -30,7 +29,7 @@ public class TaskManager : MonoBehaviour, IDataPersistence
 
     public void TaskComplete(string taskId)
     {
-        tasknpcId = taskId;
+        taskNpcId = taskId;
         DataPersistenceManager.instance.SaveTaskData();
     }
 
@@ -46,12 +45,12 @@ public class TaskManager : MonoBehaviour, IDataPersistence
     
     public void SaveTaskData(GameData data)
     { 
-        if (data.npcStages.ContainsKey(tasknpcId))
+        if (data.npcStages.ContainsKey(taskNpcId))
         {
-            data.npcStages.Remove(tasknpcId);
+            data.npcStages.Remove(taskNpcId);
         }
 
-        data.npcStages.Add(tasknpcId, "Third");
+        data.npcStages.Add(taskNpcId, "Third");
         Debug.Log("add new stage to npc");
     }
     public void LoadTaskData(GameData data) { }
