@@ -24,7 +24,6 @@ public class RBossHealthManager : MonoBehaviour
 
         if (songPercent <= 0)
         {
-            Debug.Log("Boss Is Defeated!!!!");
             BossDefeated();
         }
     }
