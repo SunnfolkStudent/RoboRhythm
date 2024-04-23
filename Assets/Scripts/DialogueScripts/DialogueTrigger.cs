@@ -6,7 +6,7 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
     [SerializeField] private string npcId;
     [SerializeField] private Collider2D taskCollider;
     [SerializeField] private string currentStage = "";
-    [SerializeField] private bool givenTask = false;
+    [SerializeField] private bool givenTask;
     
     [Header("Visual Cue")] 
     [SerializeField] private GameObject visualCue;

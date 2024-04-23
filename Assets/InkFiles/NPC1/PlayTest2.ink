@@ -1,4 +1,4 @@
-Hey this is the second dialogue! #audio:TestBeep
+Hey this is the second dialogue! #audio:TestBeep #speaker:Piccolo
 Nice!
 Do you want to do a <b>Task</b> for me? I might even give you a <color=\#F8FF30>Key</color> for your troubles.
     + [Yes!]

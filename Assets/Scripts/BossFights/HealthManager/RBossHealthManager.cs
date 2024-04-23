@@ -1,14 +1,12 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RBossHealthManager : MonoBehaviour
 {
     [SerializeField] private float songLengthInSeconds;
     [SerializeField] private GameObject bossHealthBar;
 
-    [SerializeField] private BossManager _bossManager;
+    [SerializeField] private string taskId = "Piccolo";
     
     private RSongPosition _songPosition;
 
@@ -33,6 +31,7 @@ public class RBossHealthManager : MonoBehaviour
 
     private void BossDefeated()
     {
-        _bossManager.BossOver();
+        TaskManager.GetInstance().TaskComplete(taskId);
+        SceneManager.LoadScene("PlayTestScene");
     }
 }
