@@ -1051,7 +1051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2f5ba13d8f7a014fb320684ad9add8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  taskId: 
+  taskId: Bell
 --- !u!4 &1117529356
 Transform:
   m_ObjectHideFlags: 0
@@ -1331,7 +1331,7 @@ MonoBehaviour:
   _noteObj: {fileID: 7567445131934640033, guid: 4f6f52c57119eee4e9d2a3d16c2510bf, type: 3}
   _startButton: {fileID: 100625474}
   victoryButton: {fileID: 646030126}
-  _puzzleManager: {fileID: 0}
+  _puzzleManager: {fileID: 1117529355}
 --- !u!4 &1756639781
 Transform:
   m_ObjectHideFlags: 0

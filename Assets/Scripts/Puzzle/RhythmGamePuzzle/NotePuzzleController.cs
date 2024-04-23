@@ -15,7 +15,7 @@ public class NotePuzzleController : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        _noteSpawner = new NoteSpawner(this, _notePuzzleScrub, _noteObj);
+        _noteSpawner = new NoteSpawner(_notePuzzleScrub, _noteObj);
     }
 
     private void OnEnable()
