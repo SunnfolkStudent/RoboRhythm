@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class RDamageOnComplete : MonoBehaviour
+public class RProjectileDamager : MonoBehaviour
 {
-    [SerializeField] private int takeDamage;
+    [SerializeField] private int dealDamage;
     
     private RHealthManager _healthManager;
     void Start()
@@ -12,9 +12,10 @@ public class RDamageOnComplete : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "PlayerPlatform")
+        if (other.name == "PlayerHitBox")
         {
-            _healthManager.TakeDamage(takeDamage);
+            Debug.Log("Hit");
+            _healthManager.TakeDamage(dealDamage);
             Destroy(gameObject);
         }
     }

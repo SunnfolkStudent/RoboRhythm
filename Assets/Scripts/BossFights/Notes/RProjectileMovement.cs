@@ -21,6 +21,7 @@ public class RProjectileMovement : MonoBehaviour
         noteSettings = GetComponent<RProjectileSettings>();
         bossFightSettings = FindObjectOfType<RBossFightSettings>();
         songPosition = FindObjectOfType<RSongPosition>();
+        SetZInFront();
     }
 
     private void Update()
@@ -43,12 +44,13 @@ public class RProjectileMovement : MonoBehaviour
     {
         var beatsInAdvance = bossFightSettings.beatsShownInAdvance;
         timeVariable = (beatsInAdvance - (noteSettings.beatOfThisNote - songPosition.songPosInBeats)) / beatsInAdvance;
-        gameObject.transform.position = Vector2.Lerp(
+        gameObject.transform.position = Vector3.Lerp(
             noteSettings.spawnPos,
             noteSettings.hitPosition,
             (timeVariable));
         
         if(timeVariable < 1) {return;}
+        SetZInFront();
         currentNoteState++;
     }
 
@@ -56,14 +58,20 @@ public class RProjectileMovement : MonoBehaviour
     {
         var beatsInAdvance = bossFightSettings.beatsShownInAdvance;
         timeVariable1 = (beatsInAdvance - (noteSettings.beatOfThisNote - (songPosition.songPosInBeats - beatsInAdvance))) / beatsInAdvance;
-        gameObject.transform.position = Vector2.Lerp(
+        gameObject.transform.position = Vector3.Lerp(
             noteSettings.hitPosition,
             noteSettings.removePos,
             (timeVariable1));
         
         if(timeVariable1 < 1) {return;}
         currentNoteState++;
+        SetZInFront();
     }
-    
-    
+
+    private void SetZInFront()
+    {
+        Vector3 currentPosition = gameObject.transform.position;
+        currentPosition.z = -3;
+        gameObject.transform.position = currentPosition;
+    }
 }

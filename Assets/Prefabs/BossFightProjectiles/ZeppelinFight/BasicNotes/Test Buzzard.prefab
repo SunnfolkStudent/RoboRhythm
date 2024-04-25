@@ -12,14 +12,11 @@ GameObject:
   - component: {fileID: 3134189749108322634}
   - component: {fileID: 140529314411172745}
   - component: {fileID: 7396209187976953710}
-  - component: {fileID: 5630996439737585339}
-  - component: {fileID: 4035815695952507743}
-  - component: {fileID: -5122347776125998996}
+  - component: {fileID: 7697015428625818930}
   - component: {fileID: -5935485340937788003}
   - component: {fileID: 3997332809692133069}
-  - component: {fileID: -3504878707573335110}
   m_Layer: 0
-  m_Name: TestNote
+  m_Name: Test Buzzard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: 868141d74f4ae424c8e7e4565aa216a4, type: 3}
-  m_Color: {r: 1, g: 0.8898821, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -105,9 +102,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatOfThisNote: 0
-  spawnPos: {x: 0, y: 0.4}
-  hitPosition: {x: 0, y: -3}
-  removePos: {x: 0, y: -6.4}
+  spawnPos: {x: 12, y: 7}
+  hitPosition: {x: 0, y: -5}
+  removePos: {x: -12, y: -17}
 --- !u!114 &7396209187976953710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,7 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeVariable: 0
   timeVariable1: 0
---- !u!114 &5630996439737585339
+--- !u!114 &7697015428625818930
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,44 +128,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2939978378781843975}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b3e57d30fae59b4b9fd91eb86d8e97b, type: 3}
+  m_Script: {fileID: 11500000, guid: c3f33c896ff99534cb0083c711c8577e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundClipNumber: 0
-  rRangeInformation:
-  - lowerRange: 0.5
-    upperRange: 1.5
-    noteWorth: 5
-    scoreText: Nice!
-    textColor: {r: 1, g: 0, b: 0.7976351, a: 1}
-    perfectHit: 1
---- !u!114 &4035815695952507743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2939978378781843975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bca9bf4722a644d4bb3d5b5574499d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startScale: 0.8
-  endScale: 3
---- !u!114 &-5122347776125998996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2939978378781843975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d501df03dba6f2e42b347ec69055ade4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  takeDamage: 10
+  dealDamage: 10
 --- !u!50 &-5935485340937788003
 Rigidbody2D:
   serializedVersion: 4
@@ -241,16 +204,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-3504878707573335110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2939978378781843975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3f33c896ff99534cb0083c711c8577e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dealDamage: 80
