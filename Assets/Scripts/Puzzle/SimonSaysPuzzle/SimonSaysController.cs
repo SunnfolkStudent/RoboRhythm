@@ -2,16 +2,12 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 
-public class Puzzle2Controller : MonoBehaviour
+public class Puzzle2Controller : PuzzleControllerBase
 {
     [SerializeField] private Puzzle2Scrub _scrub;
     [SerializeField] private Button[] _buttons;
     [SerializeField] private Button startButton;
-    [SerializeField] private Button victoryButton;
-    
-    [SerializeField] private PuzzleManager _puzzleManager;
     
     private int _currentNumber;
     
@@ -54,20 +50,5 @@ public class Puzzle2Controller : MonoBehaviour
     {
         startButton.gameObject.SetActive(false);
         StartCoroutine(Puzzle2Coroutine());
-    }
-    
-    public void VictoryButtonMethod()
-    {
-        // Get the current scene
-        Scene currentScene = gameObject.scene;
-
-        // Unload the current scene
-        PuzzleEvents.unloadPuzzle?.Invoke(currentScene);
-    }
-    
-    private void PuzzleCompleted()
-    {
-        _puzzleManager.PuzzleOver();
-        victoryButton.gameObject.SetActive(true);
     }
 }

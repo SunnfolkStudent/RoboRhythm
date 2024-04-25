@@ -1022,51 +1022,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029466954}
   m_CullTransparentMesh: 1
---- !u!1 &1117529354
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1117529356}
-  - component: {fileID: 1117529355}
-  m_Layer: 0
-  m_Name: PuzzleManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1117529355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1117529354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2f5ba13d8f7a014fb320684ad9add8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  taskId: Bell
---- !u!4 &1117529356
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1117529354}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4342608, y: 1.2927821, z: 5.225447}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1215694259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,11 +1282,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc500934c7d82da45966717dc1bff9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  victoryButton: {fileID: 646030126}
+  taskId: 
   _notePuzzleScrub: {fileID: 11400000, guid: 580b8c1899b7c8243b7b23b5052bbc7f, type: 2}
   _noteObj: {fileID: 7567445131934640033, guid: 4f6f52c57119eee4e9d2a3d16c2510bf, type: 3}
   _startButton: {fileID: 100625474}
-  victoryButton: {fileID: 646030126}
-  _puzzleManager: {fileID: 1117529355}
 --- !u!4 &1756639781
 Transform:
   m_ObjectHideFlags: 0
@@ -1563,4 +1518,3 @@ SceneRoots:
   - {fileID: 261271910}
   - {fileID: 1756639781}
   - {fileID: 1239463089}
-  - {fileID: 1117529356}

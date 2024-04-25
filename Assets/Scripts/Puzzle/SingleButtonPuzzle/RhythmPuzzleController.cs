@@ -3,13 +3,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class RhythmPuzzleController : MonoBehaviour
+public class RhythmPuzzleController : PuzzleControllerBase
 {
     [SerializeField] private RhythmPuzzleScrub puzzleData;
     [SerializeField] private Button startButton;
-    [SerializeField] private Button victoryButton;
-    
-    [SerializeField] private PuzzleManager _puzzleManager;
     
     private float _lastClickTime = 0f;
     private int _currentNumber;
@@ -69,20 +66,5 @@ public class RhythmPuzzleController : MonoBehaviour
     {
         startButton.gameObject.SetActive(false);
         StartCoroutine(PuzzleCoroutine());
-    }
-    
-    public void VictoryButtonMethod()
-    {
-        // Get the current scene
-        Scene currentScene = gameObject.scene;
-
-        // Unload the current scene
-        PuzzleEvents.unloadPuzzle?.Invoke(currentScene);
-    }
-    
-    private void PuzzleCompleted()
-    {
-        _puzzleManager.PuzzleOver();
-        victoryButton.gameObject.SetActive(true);
     }
 }
