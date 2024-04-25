@@ -78,8 +78,6 @@ public class DialogueManager : MonoBehaviour
         private void Start()
         {
             dialogueIsPlaying = false;
-            //dialoguePanel.SetActive(false);
-            //dialoguePanelAnimator.Play("Exit");
     
             //layoutAnimator = dialoguePanel.GetComponent<Animator>();
     
@@ -133,14 +131,12 @@ public class DialogueManager : MonoBehaviour
         public void EnterDialogueMode(TextAsset inkJSON)
         {
             dialogueIsPlaying = true;
+            PlayerEvents.playerFrozen?.Invoke();
             StartCoroutine(EnterDialogue(inkJSON));
         }
     
         private IEnumerator EnterDialogue(TextAsset inkJSON)
         {
-            //PlayerInputScript.GetInstance().RegisterSubmitPressed();
-            //PlayerInputScript.GetInstance().RegisterInteractPressed();
-            
             currentStory = new Story(inkJSON.text);
             //dialoguePanel.SetActive(true);
             dialoguePanelAnimator.Play("Enter");
@@ -175,6 +171,7 @@ public class DialogueManager : MonoBehaviour
             
             //dialoguePanel.SetActive(false);
             dialogueIsPlaying = false;
+            PlayerEvents.playerUnfrozen?.Invoke();
         }
     
         private void ContinueStory()
@@ -367,7 +364,7 @@ public class DialogueManager : MonoBehaviour
             }
         }
     
-        public Ink.Runtime.Object GetVariableState(string variableName)
+        /*public Ink.Runtime.Object GetVariableState(string variableName)
         {
             Ink.Runtime.Object variableValue = null;
             _dialogueVariables.variables.TryGetValue(variableName, out variableValue);
@@ -377,7 +374,7 @@ public class DialogueManager : MonoBehaviour
             }
     
             return variableValue;
-        }
+        }*/
 
         private IEnumerator GotKey()
         {

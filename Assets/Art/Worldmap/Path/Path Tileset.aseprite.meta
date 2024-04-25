@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c48198a5f1bbe7044abe5fb7788c7e9a
+guid: 7ec6900183c8fcc488bfe8b7d7b63c33
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 16
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -71,7 +71,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -84,7 +84,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638496416331882305
+  platformSettingsDirtyTick: 638496412022034523
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,38 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: robo rhythm title_Frame_0
+  - name: Path Tileset
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 192
-      width: 320
-      height: 180
-    spriteID: 41391acc308bafb488f5780ad6de9141
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 192}
-  - name: robo rhythm title_Frame_1
-    originalName: 
-    pivot: {x: 0.41025642, y: 0}
+    pivot: {x: 0.46875, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 390
-      height: 180
-    spriteID: 22d770c18f0ef1e41bf05e82bf45a7df
+      width: 512
+      height: 32
+    spriteID: 5aaaeef445bf99e46a5ed6672cad6d9d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,120 +140,24 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
-  - name: robo rhythm title_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 380
-      width: 320
-      height: 180
-    spriteID: aa4ba3eb215bc4848ad5e0f5e1def9c2
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 380}
-  spriteSheetImportData:
-  - name: Second_Menu
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 380
-      width: 320
-      height: 180
-    spriteID: 92d27e7a1b29c00449e1d8794127639c
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: First_Menu
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 192
-      width: 320
-      height: 180
-    spriteID: 7d5ab8f2c1c709847ab363d6fc13964f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: BossMode_Menu
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 320
-      height: 180
-    spriteID: 281781a95444cc34590a42809cd5c9e8
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
+    uvTransform: {x: -28, y: 4}
+  spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 101082768
-    name: robo rhythm title
+    guid: 2124791035
+    name: Path Tileset
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: robo rhythm title_Frame_0
+    - name: Path Tileset
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
-        width: 320
-        height: 180
-      spriteId: 41391acc308bafb488f5780ad6de9141
-    - name: robo rhythm title_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 0
-        y: 0
-        width: 390
-        height: 180
-      spriteId: 22d770c18f0ef1e41bf05e82bf45a7df
-    - name: robo rhythm title_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 0
-        y: 0
-        width: 320
-        height: 180
-      spriteId: aa4ba3eb215bc4848ad5e0f5e1def9c2
+        width: 544
+        height: 32
+      spriteId: 5aaaeef445bf99e46a5ed6672cad6d9d
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -304,4 +188,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 320, y: 180}
+  canvasSize: {x: 544, y: 32}
