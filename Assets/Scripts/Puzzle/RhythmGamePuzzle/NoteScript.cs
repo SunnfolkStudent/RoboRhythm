@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class NoteScript : MonoBehaviour
@@ -36,12 +35,13 @@ public class NoteScript : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
-    private void OnDestroy()
+    
+    public void NoteHit()
     {
         if (isLast)
         {
             PuzzleEvents.puzzleCompleted?.Invoke();
         }
+        Destroy(gameObject);
     }
 }

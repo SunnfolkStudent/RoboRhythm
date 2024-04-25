@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c48198a5f1bbe7044abe5fb7788c7e9a
+guid: c08b190947914944482e068cb45af43c
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,38 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: robo rhythm title_Frame_0
+  - name: Tree Assets
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 192
-      width: 320
-      height: 180
-    spriteID: 41391acc308bafb488f5780ad6de9141
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 192}
-  - name: robo rhythm title_Frame_1
-    originalName: 
-    pivot: {x: 0.41025642, y: 0}
+    pivot: {x: 0.49865228, y: -0.027522936}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 390
-      height: 180
-    spriteID: 22d770c18f0ef1e41bf05e82bf45a7df
+      width: 371
+      height: 218
+    spriteID: e0cc4fde6fba7d34c888cb0ba0372f01
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -161,63 +141,27 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: robo rhythm title_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 380
-      width: 320
-      height: 180
-    spriteID: 3c0122970b0802b40a25f8c4e92757a9
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 380}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 101082768
-    name: robo rhythm title
+    guid: 1414509649
+    name: Tree Assets
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: robo rhythm title_Frame_0
+    - name: Tree Assets
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 320
-        height: 180
-      spriteId: 41391acc308bafb488f5780ad6de9141
-    - name: robo rhythm title_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 0
-        y: 0
-        width: 390
-        height: 180
-      spriteId: 22d770c18f0ef1e41bf05e82bf45a7df
-    - name: robo rhythm title_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 0
-        y: 0
-        width: 320
-        height: 180
-      spriteId: 3c0122970b0802b40a25f8c4e92757a9
+        x: 7
+        y: 6
+        width: 371
+        height: 218
+      spriteId: e0cc4fde6fba7d34c888cb0ba0372f01
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 320, y: 180}
+  canvasSize: {x: 384, y: 240}

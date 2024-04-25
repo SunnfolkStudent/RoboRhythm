@@ -5,6 +5,7 @@ public class BarScript : MonoBehaviour
 {
     private ColourChanger _colourChanger;
     [SerializeField] private GameObject colorChangeObject;
+    [SerializeField] private ParticleSystem noteParticles;
     
     private void Start()
     {
@@ -48,7 +49,9 @@ public class BarScript : MonoBehaviour
                 if (Note == key)
                 {
                     oneIsNote = true;
-                    Destroy(hit.gameObject);
+                    noteParticles.transform.position = hit.transform.position;
+                    noteParticles.Play();
+                    hit.gameObject.GetComponent<NoteScript>().NoteHit();
                     _colourChanger.ChangeColour(colorChangeObject, Color.green);
                 }
             }

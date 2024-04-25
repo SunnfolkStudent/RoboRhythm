@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notes:
   - KeyBind: 65
-    Key: 
-    timeToWait: 1
-  - KeyBind: 65
-    Key: 
-    timeToWait: 1
+    Key: C
+    timeToWait: 0.5
+  - KeyBind: 83
+    Key: D
+    timeToWait: 0.5
+  - KeyBind: 68
+    Key: E
+    timeToWait: 0.5
   - KeyBind: 74
-    Key: 
-    timeToWait: 1
-  - KeyBind: 75
-    Key: 
-    timeToWait: 1
-  - KeyBind: 76
-    Key: 
-    timeToWait: 1
+    Key: G
+    timeToWait: 0.5
+  - KeyBind: 74
+    Key: G
+    timeToWait: 0.5
   speed: 6
