@@ -102,8 +102,8 @@ public class PuzzlePortal : MonoBehaviour, IDataPersistence
         }
     }
     
-    private void UnLoadPuzzle(string sceneName)
+    private void UnLoadPuzzle(Scene sceneName)
     {
-        SceneManager.UnloadScene(sceneId);
+        SceneManager.UnloadScene(sceneName);
     }
 }
