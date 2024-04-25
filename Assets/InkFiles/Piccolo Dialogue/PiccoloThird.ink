@@ -1,4 +1,5 @@
-Is there anything I can help you with? #speaker:Piccolo
+What a beautiful hat you have! #speaker:Piccolo
+Is there anything I can help you with?
     +[I'm looking for keys to the gate.]
     -> LookingForKeys
     +[I'm lost.]
@@ -22,10 +23,9 @@ Is there anything else I can help you with? #speaker:Piccolo
     
 === LookingForKeys ===
 Looking for keys to the gate? Those are quiet rare indeed.
-
 I do happen to have one in my possession but it is part of my exclusive collection.
-
-You would need to trade me something quiet special for me to give up my key.
+That hat of yours looks very nice, I will give you my key in exchange. #key:Piccolo
+Thank you for the business!
     -> AnythingElse
     
 === Lost ===

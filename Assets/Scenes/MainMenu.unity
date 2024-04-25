@@ -470,6 +470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f097e909ea60947a507c1457a38430, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameSceneName: MainCityScene
   firstMenu: {fileID: 1996128286}
   secondMenu: {fileID: 1705191834}
   bossModeMenu: {fileID: 1674470225}
@@ -1261,7 +1262,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6488233750819838749, guid: c48198a5f1bbe7044abe5fb7788c7e9a, type: 3}
+  m_Sprite: {fileID: 493749314093986532, guid: c48198a5f1bbe7044abe5fb7788c7e9a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1340,7 +1341,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1208602029166948592, guid: c48198a5f1bbe7044abe5fb7788c7e9a, type: 3}
+  m_Sprite: {fileID: 1032972482854817789, guid: c48198a5f1bbe7044abe5fb7788c7e9a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1548,7 +1549,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 996690401160528401, guid: c48198a5f1bbe7044abe5fb7788c7e9a, type: 3}
+  m_Sprite: {fileID: -6717037769254682384, guid: c48198a5f1bbe7044abe5fb7788c7e9a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
