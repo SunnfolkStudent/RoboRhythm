@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private GameObject firstMenu;
     [SerializeField] private GameObject secondMenu;
+    [SerializeField] private GameObject bossModeMenu;
+    
     
     [SerializeField] private Button newGameButton;
     [SerializeField] private Button continueGameButton;
@@ -16,6 +18,7 @@ public class MainMenu : MonoBehaviour
     {
         firstMenu.SetActive(true);
         secondMenu.SetActive(false);
+        bossModeMenu.SetActive(false);
         
         if (!DataPersistenceManager.instance.HasGameData())
         {
@@ -49,7 +52,8 @@ public class MainMenu : MonoBehaviour
 
     public void OnBossModeClicked()
     {
-        Debug.Log("boss mode button clicked");
+        bossModeMenu.SetActive(true);
+        secondMenu.SetActive(false);
     }
 
     public void OnQuitClicked()
@@ -57,6 +61,12 @@ public class MainMenu : MonoBehaviour
         DataPersistenceManager.instance.SaveGame();
         Application.Quit();
         Debug.Log("Application quit");
+    }
+
+    public void OnExitClicked()
+    {
+        secondMenu.SetActive(true);
+        bossModeMenu.SetActive(false);
     }
 
     private void DisableMenuButtons()

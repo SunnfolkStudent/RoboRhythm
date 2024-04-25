@@ -13,28 +13,31 @@ public class RNoteHit : MonoBehaviour
 
     private bool _playerInLane;
     
-    private RProjectileMovement projectileMovement;
-    private RScoreManager scoreManager;
+    private RProjectileMovement _projectileMovement;
+    private RScoreManager _scoreManager;
+    private REffectsManager _effectsManager;
     private RSoundEffectsManager _soundEffectsManager;
     
     private void Start()
     {
-        projectileMovement = GetComponent<RProjectileMovement>();
-        scoreManager = FindObjectOfType<RScoreManager>();
+        _projectileMovement = GetComponent<RProjectileMovement>();
+        _scoreManager = FindObjectOfType<RScoreManager>();
+        _effectsManager = FindObjectOfType<REffectsManager>();
         _soundEffectsManager = FindObjectOfType<RSoundEffectsManager>();
     }
     private void AttackPressed()
     {
         if(!_playerInLane) {return;}
-        var noteLocation = projectileMovement.timeVariable + projectileMovement.timeVariable1;
+        var noteLocation = _projectileMovement.timeVariable + _projectileMovement.timeVariable1;
         for (int i = 0; i < rRangeInformation.Length; i++)
         {
             if (noteLocation > rRangeInformation[i].lowerRange && noteLocation < rRangeInformation[i].upperRange)
             {
                 var rangeInfo = rRangeInformation[i];
                 Debug.Log(rangeInfo.scoreText);
-                scoreManager.NoteHit(rangeInfo.noteWorth,rangeInfo.scoreText,rangeInfo.textColor,rangeInfo.perfectHit);
+                _scoreManager.NoteHit(rangeInfo.noteWorth,rangeInfo.scoreText,rangeInfo.textColor,rangeInfo.perfectHit);
                 _soundEffectsManager.HitSoundEffect(soundClipNumber);
+                _effectsManager.OnNoteHitSmall();
                 Destroy(gameObject);
                 return;
             }

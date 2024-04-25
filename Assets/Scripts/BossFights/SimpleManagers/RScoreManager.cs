@@ -11,7 +11,7 @@ public class RScoreManager : MonoBehaviour
     
     public void NoteHit(int pointWorth, string scoreText, Color32 textColor, bool perfectHit)
     {
-        currentScore += pointWorth + currentBonus;
+        currentScore += pointWorth;
         tmpScoreText.text = currentScore.ToString();
         tmpFeedbackText.text = scoreText;
         tmpFeedbackText.color = textColor;
@@ -20,7 +20,9 @@ public class RScoreManager : MonoBehaviour
         {
             if (currentBonus > 0)
             {
+                currentScore += 2;
                 tmpFeedbackText.text = scoreText + "x" + (currentBonus + 1);
+                tmpScoreText.text = currentScore.ToString();
             }
             currentBonus += 1;
         }

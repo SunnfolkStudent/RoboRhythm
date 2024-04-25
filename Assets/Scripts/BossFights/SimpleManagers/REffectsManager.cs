@@ -1,8 +1,17 @@
 using System;
 using UnityEngine;
-using TMPro;
 
 public class REffectsManager : MonoBehaviour
 {
-    
+    private CameraScript _cameraScript;
+
+    private void Awake()
+    {
+        _cameraScript = FindObjectOfType<CameraScript>();
+    }
+
+    public void OnNoteHitSmall()
+    {
+        _cameraScript.PlaySmallZoom();
+    }
 }
