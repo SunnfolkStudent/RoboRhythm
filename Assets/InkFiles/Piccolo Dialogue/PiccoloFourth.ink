@@ -22,10 +22,8 @@ Is there anything else I can help you with? #speaker:Piccolo
     
 === LookingForKeys ===
 Looking for keys to the gate? Those are quiet rare indeed.
-
-I do happen to have one in my possession but it is part of my exclusive collection.
-
-You would need to trade me something quiet special for me to give up my key.
+I have heard the blacksmith holds one.
+He works down near the mine if you want to speak with him.
     -> AnythingElse
     
 === Lost ===
