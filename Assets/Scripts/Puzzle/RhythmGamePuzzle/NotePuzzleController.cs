@@ -42,7 +42,7 @@ public class NotePuzzleController : MonoBehaviour
         Scene currentScene = gameObject.scene;
 
         // Unload the current scene
-        PuzzleEvents.unloadPuzzle?.Invoke(currentScene.ToString());
+        PuzzleEvents.unloadPuzzle?.Invoke(currentScene);
 
     }
     

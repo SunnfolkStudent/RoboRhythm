@@ -1,11 +1,13 @@
 using System;
+using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class PuzzlePortal : MonoBehaviour, IDataPersistence
 {
     [SerializeField] private string taskId;
-    [SerializeField] private string puzzleSceneName;
+    [SerializeField] private int sceneId;
     [SerializeField] private bool taskDone;
     [SerializeField] private Collider2D _collider;
     
@@ -39,7 +41,7 @@ public class PuzzlePortal : MonoBehaviour, IDataPersistence
             if(Input.GetKeyDown(KeyCode.E))
             {
                 DataPersistenceManager.instance.SaveGame();
-                SceneManager.LoadSceneAsync(puzzleSceneName);
+                SceneManager.LoadScene(sceneId, LoadSceneMode.Additive);
             }
         }
         else
@@ -100,8 +102,8 @@ public class PuzzlePortal : MonoBehaviour, IDataPersistence
         }
     }
     
-    private void UnLoadPuzzle(string sceneName)
+    private void UnLoadPuzzle(Scene sceneName)
     {
-        SceneManager.UnloadSceneAsync(sceneName);
+        SceneManager.UnloadScene(sceneName);
     }
 }
