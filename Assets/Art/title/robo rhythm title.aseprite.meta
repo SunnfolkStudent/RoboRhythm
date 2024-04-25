@@ -71,7 +71,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -84,7 +84,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638496416331882305
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -129,10 +129,30 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 192
       width: 320
       height: 180
     spriteID: 41391acc308bafb488f5780ad6de9141
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 192}
+  - name: robo rhythm title_Frame_1
+    originalName: 
+    pivot: {x: 0.41025642, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 390
+      height: 180
+    spriteID: 22d770c18f0ef1e41bf05e82bf45a7df
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -149,10 +169,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 192
+      y: 380
       width: 320
       height: 180
-    spriteID: 22d770c18f0ef1e41bf05e82bf45a7df
+    spriteID: 
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,7 +180,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 192}
+    uvTransform: {x: 0, y: 0}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -177,7 +197,15 @@ ScriptedImporter:
         y: 0
         width: 320
         height: 180
-      spriteId: 41391acc308bafb488f5780ad6de9141
+      spriteId: 51cb389b753fe0b4fbe42f91f7bfe51e
+    - name: robo rhythm title_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 0
+        width: 390
+        height: 180
+      spriteId: 9232d69f5fe3bee4981952de57c73657
     - name: robo rhythm title_Frame_1
       frameIndex: 1
       cellRect:
@@ -185,7 +213,7 @@ ScriptedImporter:
         y: 0
         width: 320
         height: 180
-      spriteId: 22d770c18f0ef1e41bf05e82bf45a7df
+      spriteId: 84a2c39612bbba0419ec529fa76e484b
     linkedCells: []
     parentIndex: -1
   platformSettings: []

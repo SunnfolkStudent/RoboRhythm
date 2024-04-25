@@ -7,7 +7,7 @@ public class PuzzleControllerBase : MonoBehaviour
     [SerializeField] private Button victoryButton;
     [SerializeField] private string taskId;
     
-    public void PuzzleCompleted()
+    protected void PuzzleCompleted()
     {
         victoryButton.gameObject.SetActive(true);
         TaskManager.GetInstance().TaskComplete(taskId);
