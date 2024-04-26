@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Puzzles/SimonSaysPuzzleScene.unity
     guid: 15cc22bda88c8de4d94b0fba8143384e
+  - enabled: 1
+    path: Assets/Scenes/MainCityScene.unity
+    guid: de879f2a40c34f2459e20e3ce813342d
   m_configObjects: {}

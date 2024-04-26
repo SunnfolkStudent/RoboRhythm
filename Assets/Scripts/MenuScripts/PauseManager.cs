@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
@@ -7,17 +8,18 @@ public class PauseManager : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 0;
-        
+        GameEvents.gamePaused?.Invoke();
     }
     
     public void ResumeGame()
     {
         Time.timeScale = 1;
+        GameEvents.gameUnpaused?.Invoke();
         GameEvents.unloadScene?.Invoke("PauseMenu");
     }
     
-    public void QuitGame()
+    public void BackToMenu()
     {
-        Application.Quit();
+        SceneManager.LoadScene("MainMenu");
     }
 }

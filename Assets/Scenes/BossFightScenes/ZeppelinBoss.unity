@@ -149,11 +149,11 @@ Transform:
   m_GameObject: {fileID: 130737029}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 3.9598446, y: 0.8097496, z: 0.01902771}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 753673819}
+  m_Father: {fileID: 1592462713}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &130737031
 MonoBehaviour:
@@ -274,8 +274,7 @@ Transform:
   m_LocalPosition: {x: 3.9598446, y: 0.8097496, z: 0.01902771}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 130737030}
+  m_Children: []
   m_Father: {fileID: 1592462713}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &753673820
@@ -515,7 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837f43c6aedf1754d9c0a0554d66c344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  songLengthInSeconds: 2
+  songLengthInSeconds: 200
   bossHealthBar: {fileID: 782489640}
   taskId: Piccolo
 --- !u!1 &846284158
@@ -552,8 +551,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 56.484}
-  m_SizeDelta: {x: 9, y: 113.03476}
+  m_AnchoredPosition: {x: 0, y: 58.06173}
+  m_SizeDelta: {x: 9, y: 116.19022}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &846284160
 MonoBehaviour:
@@ -654,31 +653,19 @@ MonoBehaviour:
   file: {fileID: 4900000, guid: 83a613444a3f2664eaeebfba2c53963f, type: 3}
   notePropertiesArray:
   - noteType: 0
-    beatNumber: 5
+    beatNumber: 4
+    holdTime: 1
+  - noteType: 1
+    beatNumber: 6
     holdTime: 1
   - noteType: 0
-    beatNumber: 9
+    beatNumber: 8
+    holdTime: 1
+  - noteType: 2
+    beatNumber: 10
     holdTime: 1
   - noteType: 0
-    beatNumber: 13
-    holdTime: 1
-  - noteType: 0
-    beatNumber: 17
-    holdTime: 1
-  - noteType: 0
-    beatNumber: 21
-    holdTime: 1
-  - noteType: 0
-    beatNumber: 25
-    holdTime: 1
-  - noteType: 0
-    beatNumber: 29
-    holdTime: 1
-  - noteType: 0
-    beatNumber: 33
-    holdTime: 1
-  - noteType: 0
-    beatNumber: 37
+    beatNumber: 12
     holdTime: 1
 --- !u!114 &932661831
 MonoBehaviour:
@@ -712,6 +699,8 @@ MonoBehaviour:
   beatsShownInAdvance: 2
   noteObjects:
   - {fileID: 2939978378781843975, guid: 8c2a87fff7e3f0648b1604eab2b0ce17, type: 3}
+  - {fileID: 2939978378781843975, guid: bff632e9dda522c4c8ab0cecba3a16e3, type: 3}
+  - {fileID: 2939978378781843975, guid: 8084b202a3998224fab6b029c8092f09, type: 3}
 --- !u!4 &932661833
 Transform:
   m_ObjectHideFlags: 0
@@ -1391,6 +1380,83 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 0ca19020bcdcb3b46a86e76e48d56b6a, type: 3}
+--- !u!1 &1427791703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1427791704}
+  - component: {fileID: 1427791705}
+  m_Layer: 0
+  m_Name: PlayerHitBox
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1427791704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427791703}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7878350319977885088}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1427791705
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427791703}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.20209432}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.25742006}
+  m_EdgeRadius: 0
 --- !u!1 &1527140637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,6 +1524,7 @@ Transform:
   m_Children:
   - {fileID: 932661833}
   - {fileID: 753673819}
+  - {fileID: 130737030}
   - {fileID: 772501753}
   - {fileID: 1030723004}
   m_Father: {fileID: 0}
@@ -1545,7 +1612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
+  m_ReferencePixelsPerUnit: 16
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 320, y: 180}
   m_ScreenMatchMode: 0
@@ -1900,7 +1967,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.3, y: 50.2}
+  m_AnchoredPosition: {x: 14.3, y: 48.1}
   m_SizeDelta: {x: 340.0758, y: 18.87205}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2010179088
@@ -1932,8 +1999,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294902002
+  m_fontColor: {r: 0.9509201, g: 0, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2039,8 +2106,8 @@ Camera:
   m_GameObject: {fileID: 2045349976}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.8705883, g: 0.9294118, b: 0.93725497, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2189,9 +2256,9 @@ MonoBehaviour:
   m_AssetsPPU: 16
   m_RefResolutionX: 320
   m_RefResolutionY: 180
-  m_CropFrame: 0
-  m_GridSnapping: 2
-  m_FilterMode: 0
+  m_CropFrame: 4
+  m_GridSnapping: 1
+  m_FilterMode: 1
   m_UpscaleRT: 0
   m_PixelSnapping: 0
   m_CropFrameX: 0
@@ -2285,11 +2352,10 @@ GameObject:
   - component: {fileID: 7878350319977885089}
   - component: {fileID: 7878350319977885095}
   - component: {fileID: 7878350319977885093}
-  - component: {fileID: 7878350319977885092}
   - component: {fileID: 7878350319977885094}
   m_Layer: 0
   m_Name: mc_animations
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2303,11 +2369,12 @@ Transform:
   m_GameObject: {fileID: 6969460406944941509}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.3, z: -3}
+  m_LocalPosition: {x: 0, y: -5.3, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1275399232}
+  - {fileID: 1427791704}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7878350319977885089
@@ -2340,51 +2407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d7103b483328024f984168c896de852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &7878350319977885092
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6969460406944941509}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.03125}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: -0.032258064}
-    oldSize: {x: 1.125, y: 1.9375}
-    newSize: {x: 1.125, y: 1.9375}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.125, y: 1.9375}
-  m_EdgeRadius: 0
 --- !u!50 &7878350319977885093
 Rigidbody2D:
   serializedVersion: 4

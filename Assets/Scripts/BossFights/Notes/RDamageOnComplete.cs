@@ -1,10 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 
-[RequireComponent(typeof(RProjectileMovement))]
 public class RDamageOnComplete : MonoBehaviour
 {
     [SerializeField] private int takeDamage;

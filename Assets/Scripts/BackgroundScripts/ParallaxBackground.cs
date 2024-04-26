@@ -35,6 +35,7 @@ public class ParallaxBackground : MonoBehaviour
             {
                 layer.name = "Layer-" + i;
                 parallaxLayers.Add(layer);
+                //layer.transform.Translate(0,0,0);
             }
         }
     }
