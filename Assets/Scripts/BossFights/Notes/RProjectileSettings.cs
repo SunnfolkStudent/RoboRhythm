@@ -5,7 +5,7 @@ using UnityEngine;
 public class RProjectileSettings : MonoBehaviour
 {
     public float beatOfThisNote;
-    public Vector2 spawnPos;
-    public Vector2 hitPosition;
-    public Vector2 removePos;
+    public Vector3 spawnPos;
+    public Vector3 hitPosition;
+    public Vector3 removePos;
 }

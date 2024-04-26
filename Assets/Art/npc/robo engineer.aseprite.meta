@@ -1,0 +1,1115 @@
+fileFormatVersion: 2
+guid: 42c10217b4be7e844b6b7fb661a7d97d
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638497299187271043
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: robo engineer_Frame_0
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 52
+      height: 50
+    spriteID: 76177b99992c6ed4f825a20255906cb9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: robo engineer_Frame_1
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 4
+      width: 52
+      height: 50
+    spriteID: 9e018f3f359f82b4fb89c18194d5f039
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 64, y: 4}
+  - name: robo engineer_Frame_2
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 4
+      width: 52
+      height: 50
+    spriteID: 5448ddf31ad2a164daed04a877de11b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 4}
+  - name: robo engineer_Frame_3
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 4
+      width: 52
+      height: 50
+    spriteID: 403fd997993d4834280bdf4be02134ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 184, y: 4}
+  - name: robo engineer_Frame_4
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 4
+      width: 52
+      height: 50
+    spriteID: 622761b49d6902a47bb704f4c7a3a174
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 244, y: 4}
+  - name: robo engineer_Frame_5
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 304
+      y: 4
+      width: 52
+      height: 50
+    spriteID: f5450477e7463de43a9e6494f2223bc0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 304, y: 4}
+  - name: robo engineer_Frame_6
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 4
+      width: 52
+      height: 50
+    spriteID: f9da039001f4ed94bad63ec29201f34e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 4}
+  - name: robo engineer_Frame_7
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 424
+      y: 4
+      width: 52
+      height: 50
+    spriteID: a7ac50e7ae4445b45b0fcf39b475a972
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 424, y: 4}
+  - name: robo engineer_Frame_8
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 62
+      width: 52
+      height: 50
+    spriteID: 5df2249b413558e438efeea756234995
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 62}
+  - name: robo engineer_Frame_9
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 62
+      width: 52
+      height: 50
+    spriteID: 3aa1ba9dbf8ba1848a5829a56f01a079
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 64, y: 62}
+  - name: robo engineer_Frame_10
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 62
+      width: 52
+      height: 50
+    spriteID: 832de2389531d46408ef1f390eb04994
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 62}
+  - name: robo engineer_Frame_11
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 62
+      width: 52
+      height: 50
+    spriteID: c469a4a70370cd94b9a354ac2ec3bfa9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 184, y: 62}
+  - name: robo engineer_Frame_12
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 62
+      width: 52
+      height: 50
+    spriteID: e621ac6353c16b849a62fc6262fd461a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 244, y: 62}
+  - name: robo engineer_Frame_13
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 304
+      y: 62
+      width: 52
+      height: 50
+    spriteID: f52bd16c69f9b9e419b3cdfd4e8fcdfe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 304, y: 62}
+  - name: robo engineer_Frame_14
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 62
+      width: 52
+      height: 50
+    spriteID: b1ad8737fd5a69342b97450d6cad2e1e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 62}
+  - name: robo engineer_Frame_15
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 424
+      y: 62
+      width: 52
+      height: 50
+    spriteID: 9ed036aea1b564d4a9f6e22b0c7f721e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 424, y: 62}
+  - name: robo engineer_Frame_16
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 120
+      width: 52
+      height: 50
+    spriteID: cb35be9555e4aa748ad5508b66c2d697
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 120}
+  - name: robo engineer_Frame_17
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 120
+      width: 52
+      height: 50
+    spriteID: 2d6eb2f803bdd3f4a867e0ba82995492
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 64, y: 120}
+  - name: robo engineer_Frame_18
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 120
+      width: 52
+      height: 50
+    spriteID: eb70dc1fd0fedc840b1a7915a502a0b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 120}
+  - name: robo engineer_Frame_19
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 120
+      width: 52
+      height: 50
+    spriteID: a5860fd6250cb6646957ff57d20dd338
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 184, y: 120}
+  - name: robo engineer_Frame_20
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 120
+      width: 52
+      height: 50
+    spriteID: 46469e8877aeb9b4b84b90b2f44a9ad0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 244, y: 120}
+  - name: robo engineer_Frame_21
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 304
+      y: 120
+      width: 52
+      height: 50
+    spriteID: c539c375360e2df4fb2de153cd8c4725
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 304, y: 120}
+  - name: robo engineer_Frame_22
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 120
+      width: 52
+      height: 50
+    spriteID: ce63fe58b2b4a6c4390cb47ee0d81154
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 120}
+  - name: robo engineer_Frame_23
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 424
+      y: 120
+      width: 52
+      height: 50
+    spriteID: e679d43b089b21e4dbc245e219ba4c03
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 424, y: 120}
+  - name: robo engineer_Frame_24
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 178
+      width: 52
+      height: 50
+    spriteID: 928701d538e51eb4ca25ae3baba7ccd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 178}
+  - name: robo engineer_Frame_25
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 178
+      width: 52
+      height: 50
+    spriteID: e88c744c7c00b3743b3f3a453b782357
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 64, y: 178}
+  - name: robo engineer_Frame_26
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 178
+      width: 52
+      height: 50
+    spriteID: cdedc5cb0e06ba544abd6c8e1ef1782e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 178}
+  - name: robo engineer_Frame_27
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 178
+      width: 52
+      height: 50
+    spriteID: 3ec6e486deedd3a4ea5db05fbf34c15e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 184, y: 178}
+  - name: robo engineer_Frame_28
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 178
+      width: 52
+      height: 50
+    spriteID: 558bc21683dbfd54a870afbf21c0b8c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 244, y: 178}
+  - name: robo engineer_Frame_29
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 304
+      y: 178
+      width: 52
+      height: 50
+    spriteID: 5f8bb39dc797de0448640872cb293453
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 304, y: 178}
+  - name: robo engineer_Frame_30
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 178
+      width: 52
+      height: 50
+    spriteID: e0cd9c7902a18264fb433474ac1ea4f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 178}
+  - name: robo engineer_Frame_31
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 424
+      y: 178
+      width: 52
+      height: 50
+    spriteID: eb6d2b477972d9340bd1dcc7e52fc2e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 424, y: 178}
+  - name: robo engineer_Frame_32
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 236
+      width: 52
+      height: 50
+    spriteID: 6612ba385ae47fd4d8a5b5d16b99e858
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 236}
+  - name: robo engineer_Frame_33
+    originalName: 
+    pivot: {x: 0.41346154, y: -0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 236
+      width: 52
+      height: 50
+    spriteID: e883ebc32af1e4b4fbd7c80e7663e46f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 64, y: 236}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1030873747
+    name: robo engineer
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: robo engineer_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: 76177b99992c6ed4f825a20255906cb9
+    - name: robo engineer_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: 9e018f3f359f82b4fb89c18194d5f039
+    - name: robo engineer_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: 5448ddf31ad2a164daed04a877de11b1
+    - name: robo engineer_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: 403fd997993d4834280bdf4be02134ef
+    - name: robo engineer_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: 622761b49d6902a47bb704f4c7a3a174
+    - name: robo engineer_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: f5450477e7463de43a9e6494f2223bc0
+    - name: robo engineer_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: f9da039001f4ed94bad63ec29201f34e
+    - name: robo engineer_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: a7ac50e7ae4445b45b0fcf39b475a972
+    - name: robo engineer_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: 5df2249b413558e438efeea756234995
+    - name: robo engineer_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: 3aa1ba9dbf8ba1848a5829a56f01a079
+    - name: robo engineer_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: 832de2389531d46408ef1f390eb04994
+    - name: robo engineer_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: c469a4a70370cd94b9a354ac2ec3bfa9
+    - name: robo engineer_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: e621ac6353c16b849a62fc6262fd461a
+    - name: robo engineer_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: f52bd16c69f9b9e419b3cdfd4e8fcdfe
+    - name: robo engineer_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: b1ad8737fd5a69342b97450d6cad2e1e
+    - name: robo engineer_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: 9ed036aea1b564d4a9f6e22b0c7f721e
+    - name: robo engineer_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: cb35be9555e4aa748ad5508b66c2d697
+    - name: robo engineer_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: 2d6eb2f803bdd3f4a867e0ba82995492
+    - name: robo engineer_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: eb70dc1fd0fedc840b1a7915a502a0b3
+    - name: robo engineer_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: a5860fd6250cb6646957ff57d20dd338
+    - name: robo engineer_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: 46469e8877aeb9b4b84b90b2f44a9ad0
+    - name: robo engineer_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: c539c375360e2df4fb2de153cd8c4725
+    - name: robo engineer_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: ce63fe58b2b4a6c4390cb47ee0d81154
+    - name: robo engineer_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: e679d43b089b21e4dbc245e219ba4c03
+    - name: robo engineer_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: 928701d538e51eb4ca25ae3baba7ccd5
+    - name: robo engineer_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: e88c744c7c00b3743b3f3a453b782357
+    - name: robo engineer_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: cdedc5cb0e06ba544abd6c8e1ef1782e
+    - name: robo engineer_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: 3ec6e486deedd3a4ea5db05fbf34c15e
+    - name: robo engineer_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: 558bc21683dbfd54a870afbf21c0b8c1
+    - name: robo engineer_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: 5f8bb39dc797de0448640872cb293453
+    - name: robo engineer_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: e0cd9c7902a18264fb433474ac1ea4f7
+    - name: robo engineer_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: eb6d2b477972d9340bd1dcc7e52fc2e7
+    - name: robo engineer_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: 6612ba385ae47fd4d8a5b5d16b99e858
+    - name: robo engineer_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 13
+        y: 2
+        width: 52
+        height: 50
+      spriteId: e883ebc32af1e4b4fbd7c80e7663e46f
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 69, y: 57}

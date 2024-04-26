@@ -47,6 +47,15 @@ TagManager:
   - name: Assets
     uniqueID: 3658103111
     locked: 0
+  - name: Behind Player
+    uniqueID: 4149624631
+    locked: 0
+  - name: Player
+    uniqueID: 1621669207
+    locked: 0
+  - name: Front of Player
+    uniqueID: 2774731983
+    locked: 0
   - name: UI
     uniqueID: 3698358067
     locked: 0
