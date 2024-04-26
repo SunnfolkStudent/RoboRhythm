@@ -4,11 +4,12 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class ParallaxLayer : MonoBehaviour
 {
-    public float parallaxFactor;
+    [SerializeField] private float parallaxFactor;
+    [SerializeField] private float yLevel;
 
     private void Start()
     {
-        transform.localPosition = new Vector3(0, 0, 0);
+        transform.localPosition = new Vector3(0, yLevel, 0);
     }
 
     public void Move(float delta)
