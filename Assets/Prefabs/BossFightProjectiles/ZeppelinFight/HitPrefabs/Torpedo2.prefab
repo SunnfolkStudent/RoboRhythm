@@ -106,9 +106,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatOfThisNote: 0
-  spawnPos: {x: 0, y: 4}
-  hitPosition: {x: 0, y: -3}
-  removePos: {x: 0, y: -10}
+  spawnPos: {x: 0, y: 4, z: 0}
+  hitPosition: {x: 0, y: -3, z: 0}
+  removePos: {x: 0, y: -10, z: 0}
 --- !u!114 &1269541802203979366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,25 +135,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b3e57d30fae59b4b9fd91eb86d8e97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 865691633192658861, guid: 1afd4361a3599244ab38921c7a53d5fb, type: 3}
   soundClipNumber: 0
   rRangeInformation:
-  - lowerRange: 0.98
-    upperRange: 1.03
+  - lowerRange: 0.95
+    upperRange: 1.05
     noteWorth: 5
-    scoreText: Perfect!
-    textColor: {r: 1, g: 0, b: 0.8437729, a: 1}
+    scoreFeedbackNumber: 3
     perfectHit: 1
-  - lowerRange: 0.93
-    upperRange: 1.07
-    noteWorth: 4
-    scoreText: Great!
-    textColor: {r: 0, g: 1, b: 0.04958749, a: 1}
-    perfectHit: 0
   - lowerRange: 0.84
     upperRange: 1.16
     noteWorth: 3
-    scoreText: Ok
-    textColor: {r: 0.3658597, g: 0.90188676, b: 0.8602627, a: 1}
+    scoreFeedbackNumber: 2
     perfectHit: 0
 --- !u!114 &-3306891671756799876
 MonoBehaviour:

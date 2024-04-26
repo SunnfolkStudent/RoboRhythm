@@ -7,6 +7,7 @@ using UnityEngine;
 [RequireComponent(typeof(RProjectileMovement))]
 public class RNoteHit : MonoBehaviour
 {
+    [SerializeField] private GameObject explosion;
     [SerializeField] private int soundClipNumber;
     [Header("Best To Worst Range")]
     [SerializeField] private RRangeInformation[] rRangeInformation;
@@ -34,10 +35,10 @@ public class RNoteHit : MonoBehaviour
             if (noteLocation > rRangeInformation[i].lowerRange && noteLocation < rRangeInformation[i].upperRange)
             {
                 var rangeInfo = rRangeInformation[i];
-                Debug.Log(rangeInfo.scoreText);
-                _scoreManager.NoteHit(rangeInfo.noteWorth,rangeInfo.scoreText,rangeInfo.textColor,rangeInfo.perfectHit);
-                _soundEffectsManager.HitSoundEffect(soundClipNumber);
+                _scoreManager.NoteHit(rangeInfo.noteWorth,rangeInfo.scoreFeedbackNumber,rangeInfo.perfectHit);
+                //_soundEffectsManager.HitSoundEffect(soundClipNumber);
                 _effectsManager.OnNoteHitSmall();
+                Instantiate(explosion);
                 Destroy(gameObject);
                 return;
             }

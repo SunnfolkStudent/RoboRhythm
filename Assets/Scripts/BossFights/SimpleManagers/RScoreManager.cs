@@ -1,27 +1,26 @@
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class RScoreManager : MonoBehaviour
 {
-    [SerializeField] private TMP_Text tmpFeedbackText;
+    [SerializeField] private Animator feedBackImageAnimator;
     [SerializeField] private TMP_Text tmpScoreText;
     
     private int currentScore;
     private int currentBonus;
     
-    public void NoteHit(int pointWorth, string scoreText, Color32 textColor, bool perfectHit)
+    public void NoteHit(int pointWorth, int scoreFeedback, bool perfectHit)
     {
         currentScore += pointWorth;
         tmpScoreText.text = currentScore.ToString();
-        tmpFeedbackText.text = scoreText;
-        tmpFeedbackText.color = textColor;
+        SetFeedBackImage(scoreFeedback);
 
         if (perfectHit)
         {
             if (currentBonus > 0)
             {
                 currentScore += 2;
-                tmpFeedbackText.text = scoreText + "x" + (currentBonus + 1);
                 tmpScoreText.text = currentScore.ToString();
             }
             currentBonus += 1;
@@ -29,8 +28,29 @@ public class RScoreManager : MonoBehaviour
         else
         {
             currentBonus = 0;
-            tmpFeedbackText.text = scoreText;
         }
     }
-    
+
+    private void SetFeedBackImage(int scoreFeedbackNumber)
+    {
+        switch (scoreFeedbackNumber)
+        {
+            case 0:
+                feedBackImageAnimator.Play("Null",-1,0f);
+                break;
+            case 1:
+                feedBackImageAnimator.Play("Bad",-1,0f);
+                break;
+            case 2:
+                feedBackImageAnimator.Play("Good",-1,0f);
+                break;
+            case 3:
+                feedBackImageAnimator.Play("Great",-1,0f);
+                break;
+            default:
+                Debug.Log("Something went wrong");
+                break;
+        }
+    }
+
 }
