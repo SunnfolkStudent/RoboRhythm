@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +11,16 @@ public class Puzzle2Controller : PuzzleControllerBase
     [SerializeField] private Button startButton;
     
     private int _currentNumber;
-    
+
+    private void Start()
+    {
+        //Make every button except startbutton disabled
+        foreach (var button in _buttons)
+        {
+            button.interactable = false;
+        }
+    }
+
     private IEnumerator Puzzle2Coroutine()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -48,6 +58,12 @@ public class Puzzle2Controller : PuzzleControllerBase
     
     public void StartButtonMethod()
     {
+        //Make buttons enabled
+        foreach (var button in _buttons)
+        {
+            button.interactable = true;
+        }
+        
         startButton.gameObject.SetActive(false);
         StartCoroutine(Puzzle2Coroutine());
     }

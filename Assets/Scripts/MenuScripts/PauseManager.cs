@@ -13,6 +13,7 @@ public class PauseManager : MonoBehaviour
     
     public void ResumeGame()
     {
+        print("hI");
         Time.timeScale = 1;
         GameEvents.gameUnpaused?.Invoke();
         GameEvents.unloadScene?.Invoke("PauseMenu");
