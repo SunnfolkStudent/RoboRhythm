@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c08b190947914944482e068cb45af43c
+guid: 5e7ab4d51715b084b96424b18c5d90ee
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638498310648409691
+  platformSettingsDirtyTick: 638498294544045362
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Tree Assets
+  - name: Starter House
     originalName: 
-    pivot: {x: 0.49865228, y: -0.027522936}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 371
-      height: 218
-    spriteID: fb2b58fbee7948241b73c46b244ae19f
+      width: 320
+      height: 180
+    spriteID: bfbe7ffe9389651478cedb48cbd3cc31
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,20 +144,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1414509649
-    name: Tree Assets
+    guid: 672125455
+    name: Starter House
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Tree Assets
+    - name: Starter House
       frameIndex: 0
       cellRect:
-        x: 7
-        y: 6
-        width: 371
-        height: 218
-      spriteId: fb2b58fbee7948241b73c46b244ae19f
+        x: 0
+        y: 0
+        width: 320
+        height: 180
+      spriteId: bfbe7ffe9389651478cedb48cbd3cc31
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -188,4 +188,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 384, y: 240}
+  canvasSize: {x: 320, y: 180}
