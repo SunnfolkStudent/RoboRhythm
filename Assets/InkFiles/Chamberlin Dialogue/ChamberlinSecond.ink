@@ -25,7 +25,7 @@ I would give anything to see it!
 === LookingKeys ===
 I do happen to have one such key in my possession, but you would have to do something for me to get it.
 I have been struggling with one of my creations lately.
-If you can help me finish it, consider the key yours!
+If you can help me finish it, consider the key yours! #haton:true
     ->HowCanHelp
     
 === Goodbye ===

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour, IDataPersistence
@@ -28,7 +29,18 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
     {
         playerInRange = false;
         visualCue.SetActive(false);
-        givenTask = false;
+    }
+
+    private void Start()
+    {
+        if (currentStage != "First")
+        {
+            givenTask = true;
+        }
+        else
+        {
+            givenTask = false;
+        }
     }
 
     private void Update()
@@ -49,7 +61,7 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
 
     private void PickDialogue()
     {
-        if(currentStage == null)
+        if(string.IsNullOrEmpty(currentStage))
         {
             currentStage = "First";
         }
@@ -96,6 +108,10 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
         {
             taskCollider.enabled = true;
         }
+        if(string.IsNullOrEmpty(currentStage))
+        {
+            currentStage = "First";
+        }
     }
 
     public void SaveData(GameData data)
@@ -104,7 +120,7 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
         {
             data.npcStages.Remove(npcId);
         }
-        if(currentStage == null)
+        if(string.IsNullOrEmpty(currentStage))
         {
             currentStage = "First";
         }

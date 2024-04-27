@@ -5,7 +5,7 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : MonoBehaviour, IDataPersistence
 {
         [Header("Params")] 
         [SerializeField] private float typingSpeed = 0.04f;
@@ -51,6 +51,10 @@ public class DialogueManager : MonoBehaviour
         private const string LAYOUT_TAG = "layout";
         private const string AUDIO_TAG = "audio";
         private const string KEY_TAG = "key";
+        private const string HATON_TAG = "haton";
+        private const string HATOFF_TAG = "hatoff";
+
+        private bool hasHat;
 
         private string keyGot;
     
@@ -68,6 +72,7 @@ public class DialogueManager : MonoBehaviour
     
             _audioSource = GetComponent<AudioSource>();
             currentAudioInfo = defaultAudioInfo;
+            dialoguePanel.SetActive(false);
         }
     
         public static DialogueManager GetInstance()
@@ -138,7 +143,7 @@ public class DialogueManager : MonoBehaviour
         private IEnumerator EnterDialogue(TextAsset inkJSON)
         {
             currentStory = new Story(inkJSON.text);
-            //dialoguePanel.SetActive(true);
+            dialoguePanel.SetActive(true);
             dialoguePanelAnimator.Play("Enter");
     
             //_dialogueVariables.StartListening(currentStory);
@@ -156,6 +161,8 @@ public class DialogueManager : MonoBehaviour
         {
             DataPersistenceManager.instance.SaveKeyData();
             DataPersistenceManager.instance.LoadKeyData();
+            DataPersistenceManager.instance.SaveGame();
+            DataPersistenceManager.instance.LoadGame();
             
             yield return new WaitForSeconds(0.2f);
             
@@ -169,7 +176,7 @@ public class DialogueManager : MonoBehaviour
             
             yield return new WaitForSeconds(1);
             
-            //dialoguePanel.SetActive(false);
+            dialoguePanel.SetActive(false);
             dialogueIsPlaying = false;
             PlayerEvents.playerUnfrozen?.Invoke();
         }
@@ -320,6 +327,14 @@ public class DialogueManager : MonoBehaviour
                         playerAnimator.SetTrigger("GotKey");
                         TaskManager.GetInstance().KeyObtained(tagValue);
                         break;
+                    case HATON_TAG:
+                        playerAnimator.SetBool("WearingHat", true);
+                        hasHat = true;
+                        break;
+                    case HATOFF_TAG:
+                        playerAnimator.SetBool("WearingHat", false);
+                        hasHat = false;
+                        break;
                     default:
                         Debug.LogWarning("Tag came in but is not currently being handled: " + tag);
                         break;
@@ -390,4 +405,37 @@ public class DialogueManager : MonoBehaviour
                 _dialogueVariables.SaveVariable();
             }
         }*/
+
+        public void LoadData(GameData data)
+        {
+            hasHat = data.hatOn;
+
+            if (hasHat)
+            {
+                playerAnimator.SetBool("WearingHat", true);
+            }
+            else if (!hasHat)
+            {
+                playerAnimator.SetBool("WearingHat", false);
+            }
+        }
+
+        public void SaveData(GameData data)
+        {
+            data.hatOn = hasHat;
+        }
+    
+        public void SaveTaskData(GameData data) {}
+
+        public void LoadTaskData(GameData data)
+        {
+            if (hasHat)
+            {
+                TaskManager.GetInstance().TaskComplete("Piccolo"); 
+            }
+        }
+    
+        public void LoadKeyData(GameData data){}
+
+        public void SaveKeyData(GameData data) { }
 }

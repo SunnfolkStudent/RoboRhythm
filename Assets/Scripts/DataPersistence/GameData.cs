@@ -5,6 +5,8 @@ using UnityEngine;
 public class GameData
 {
     public Vector3 playerPosition;
+    public bool hatOn;
+    public bool hasAllKeys;
 
     public SerializableDictionary<string, string> npcStages;
     public SerializableDictionary<string, bool> tasksList;
@@ -13,6 +15,8 @@ public class GameData
     public GameData()
     {
         playerPosition = Vector3.zero;
+        hatOn = false;
+        hasAllKeys = false;
         npcStages = new SerializableDictionary<string, string>();
         tasksList = new SerializableDictionary<string, bool>();
         keysFound = new SerializableDictionary<string, bool>();
