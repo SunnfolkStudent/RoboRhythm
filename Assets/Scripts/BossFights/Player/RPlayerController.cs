@@ -3,6 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(RPlayerAnimator))]
 public class RPlayerController : MonoBehaviour
 {
+    public static int currentState;
     public delegate void AttackEvent();
     public static event AttackEvent AttackHasOccured;
     
@@ -16,8 +17,6 @@ public class RPlayerController : MonoBehaviour
         _bossFightControls = new Controls();
         _animation = GetComponent<RPlayerAnimator>();
     }
-    
-    private int currentState;
 
     private void Start()
     {

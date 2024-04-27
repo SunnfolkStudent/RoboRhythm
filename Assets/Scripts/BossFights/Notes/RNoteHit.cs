@@ -7,12 +7,13 @@ using UnityEngine;
 [RequireComponent(typeof(RProjectileMovement))]
 public class RNoteHit : MonoBehaviour
 {
-    [SerializeField] private GameObject explosion;
+    [Header("0-4")]
+    [SerializeField] private int rowNumber;
+    [Header("Other Stuff")]
+    [SerializeField] private GameObject hitExplosion;
     [SerializeField] private int soundClipNumber;
     [Header("Best To Worst Range")]
     [SerializeField] private RRangeInformation[] rRangeInformation;
-
-    private bool _playerInLane;
     
     private RProjectileMovement _projectileMovement;
     private RScoreManager _scoreManager;
@@ -28,7 +29,7 @@ public class RNoteHit : MonoBehaviour
     }
     private void AttackPressed()
     {
-        if(!_playerInLane) {return;}
+        if(rowNumber != RPlayerController.currentState) {return;}
         var noteLocation = _projectileMovement.timeVariable + _projectileMovement.timeVariable1;
         for (int i = 0; i < rRangeInformation.Length; i++)
         {
@@ -38,26 +39,10 @@ public class RNoteHit : MonoBehaviour
                 _scoreManager.NoteHit(rangeInfo.noteWorth,rangeInfo.scoreFeedbackNumber,rangeInfo.perfectHit);
                 //_soundEffectsManager.HitSoundEffect(soundClipNumber);
                 _effectsManager.OnNoteHitSmall();
-                Instantiate(explosion);
+                Instantiate(hitExplosion,gameObject.transform.position,Quaternion.identity);
                 Destroy(gameObject);
                 return;
             }
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.name == "LaneCheck")
-        {
-            _playerInLane = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.name == "LaneCheck")
-        {
-            _playerInLane = false;
         }
     }
 

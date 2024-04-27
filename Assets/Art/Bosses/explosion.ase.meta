@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: 80b0c4fb1d5b5cf49b52459c7386d4a8
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: explosion_Clip
+    second: {fileID: 7400000, guid: 7f71d194b53a3824a8fff87aa53784c0, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -97,7 +102,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638497407440665254
+  platformSettingsDirtyTick: 638498112588280843
   textureAssetName: 
   singleSpriteImportData:
   - name: 

@@ -60,7 +60,7 @@ public class RProjectileMovement : MonoBehaviour
         timeVariable1 = (beatsInAdvance - (noteSettings.beatOfThisNote - (songPosition.songPosInBeats - beatsInAdvance))) / beatsInAdvance;
         gameObject.transform.position = Vector3.Lerp(
             noteSettings.hitPosition,
-            noteSettings.removePos,
+            noteSettings.hitPosition + (noteSettings.hitPosition - noteSettings.spawnPos),
             (timeVariable1));
         
         if(timeVariable1 < 1) {return;}
