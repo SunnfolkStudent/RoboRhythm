@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class RProjectileDamager : MonoBehaviour
 {
+    [SerializeField] private GameObject explosion;
     [SerializeField] private int dealDamage;
     
     private RHealthManager _healthManager;
@@ -16,6 +17,7 @@ public class RProjectileDamager : MonoBehaviour
         {
             Debug.Log("Hit");
             _healthManager.TakeDamage(dealDamage);
+            Instantiate(explosion,gameObject.transform.position,Quaternion.identity);
             Destroy(gameObject);
         }
     }

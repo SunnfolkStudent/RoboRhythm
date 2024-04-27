@@ -30,7 +30,6 @@ public class RNoteData : MonoBehaviour
         {
             noteType = int.TryParse(parts[0], out var i) ? i : 0,
             beatNumber = float.TryParse(parts[1], out var f) ? f : 0,
-            holdTime = int.TryParse(parts[2], out var h) ? h : 1,
         };
     }
 }

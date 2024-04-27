@@ -28,7 +28,7 @@ public class RSongPosition : MonoBehaviour
 
     private void Start()
     {
-        secPerBeat = 60f / 140; //Fix Later To Boss Fight Settings
+        secPerBeat = 60f / bossFightSettings.songBpm;
         dsptimesong = (float) AudioSettings.dspTime;
         _audioSource.Play();
         _songStarted = true;

@@ -34,13 +34,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8084541212325763255}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.13052624, w: 0.9914449}
   m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15}
 --- !u!212 &2996353885449498910
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -106,9 +106,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatOfThisNote: 0
-  spawnPos: {x: 0, y: 4, z: 0}
-  hitPosition: {x: 0, y: -3, z: 0}
-  removePos: {x: 0, y: -10, z: 0}
+  spawnPos: {x: -0.75, y: 4, z: 0}
+  hitPosition: {x: -2, y: -3, z: 0}
 --- !u!114 &1269541802203979366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b3e57d30fae59b4b9fd91eb86d8e97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 865691633192658861, guid: 1afd4361a3599244ab38921c7a53d5fb, type: 3}
+  rowNumber: 1
+  hitExplosion: {fileID: 865691633192658861, guid: 424db14fdcb068044a27f3b15a3c27fb, type: 3}
   soundClipNumber: 0
   rRangeInformation:
   - lowerRange: 0.95
@@ -160,6 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d501df03dba6f2e42b347ec69055ade4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rowExplosion: {fileID: 865691633192658861, guid: d8e5898fd6cc4f74e8e18e2ff7c4f024, type: 3}
   takeDamage: 10
 --- !u!114 &-8033524680854275289
 MonoBehaviour:
@@ -204,7 +205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3f33c896ff99534cb0083c711c8577e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dealDamage: 20
+  explosion: {fileID: 865691633192658861, guid: 1afd4361a3599244ab38921c7a53d5fb, type: 3}
+  dealDamage: 15
 --- !u!95 &-6274302224557061414
 Animator:
   serializedVersion: 5
