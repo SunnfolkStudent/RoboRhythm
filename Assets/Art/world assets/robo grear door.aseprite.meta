@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0bf1d38c8005edc4b87303fb5b6a8e6e
+guid: 608b5bd9947aa71428fa9fa0f19227ab
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638499023999887028
+  platformSettingsDirtyTick: 638499024054688278
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: robo bench
+  - name: robo grear door
     originalName: 
-    pivot: {x: 0.52272725, y: -0.044444446}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 66
-      height: 45
-    spriteID: a017ba7988a49104d8bb9082f27f1e35
+      width: 32
+      height: 64
+    spriteID: 21b1b57862ce2d344a7513a3be0a6161
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,20 +144,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 632807832
-    name: robo bench
+    guid: 1492778877
+    name: robo grear door
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: robo bench
+    - name: robo grear door
       frameIndex: 0
       cellRect:
-        x: 7
-        y: 2
-        width: 66
-        height: 45
-      spriteId: a017ba7988a49104d8bb9082f27f1e35
+        x: 0
+        y: 0
+        width: 32
+        height: 64
+      spriteId: 21b1b57862ce2d344a7513a3be0a6161
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -188,4 +188,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 83, y: 51}
+  canvasSize: {x: 32, y: 64}
