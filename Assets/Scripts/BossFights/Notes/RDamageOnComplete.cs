@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class RDamageOnComplete : MonoBehaviour
 {
+    [SerializeField] private GameObject rowExplosion;
     [SerializeField] private int takeDamage;
     
     private RHealthManager _healthManager;
@@ -15,6 +16,7 @@ public class RDamageOnComplete : MonoBehaviour
         if (other.name == "PlayerPlatform")
         {
             _healthManager.TakeDamage(takeDamage);
+            Instantiate(rowExplosion,new Vector3(0,-4.7f,-5),Quaternion.identity);
             Destroy(gameObject);
         }
     }

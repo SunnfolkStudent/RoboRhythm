@@ -12,7 +12,6 @@ public class REffectsManager : MonoBehaviour
 
     public void OnNoteHitSmall()
     {
-        Debug.Log("zoom");
         _cameraScript.PlaySmallZoom();
     }
 }

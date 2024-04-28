@@ -6,7 +6,6 @@ public class RRangeInformation
     public float lowerRange;
     public float upperRange;
     public int noteWorth;
-    public string scoreText;
-    public Color textColor;
+    public int scoreFeedbackNumber;
     public bool perfectHit;
 }

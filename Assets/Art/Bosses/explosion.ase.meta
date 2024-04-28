@@ -1,8 +1,13 @@
 fileFormatVersion: 2
-guid: 5580a9dbb8492c6469a125f546fdde12
+guid: 80b0c4fb1d5b5cf49b52459c7386d4a8
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: explosion_Clip
+    second: {fileID: 7400000, guid: 7f71d194b53a3824a8fff87aa53784c0, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -35,7 +40,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 16
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -97,7 +102,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638498112588280843
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -132,7 +137,7 @@ ScriptedImporter:
       y: 485
       width: 11
       height: 12
-    spriteID: 581d77859d7f74c4da2eb3e9d7eb8009
+    spriteID: c60f27db5e5430a42b8ecbba67543fcc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +157,7 @@ ScriptedImporter:
       y: 455
       width: 37
       height: 33
-    spriteID: ac4fa696c682bcd42a83863500f4b864
+    spriteID: ea337a66ee152d8488e9e8ecc45dd563
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +177,7 @@ ScriptedImporter:
       y: 94
       width: 43
       height: 55
-    spriteID: e727cb93c6de46d45bb728c0155f9010
+    spriteID: 65f8ae79591315a499b0a9b418b0eaf3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +197,7 @@ ScriptedImporter:
       y: 383
       width: 54
       height: 94
-    spriteID: 6bee760bdd2e2554aa755056d0266cdb
+    spriteID: 8cc639a853622be4f81401296bbe0a78
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +217,7 @@ ScriptedImporter:
       y: 94
       width: 60
       height: 77
-    spriteID: 257af9ff8021ff4428374a6b9610d32b
+    spriteID: fdaa9d488f4cdc041b065041e77e74e6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +237,7 @@ ScriptedImporter:
       y: 179
       width: 57
       height: 77
-    spriteID: ce735b5a80119f54db5c0816e9fa4980
+    spriteID: 93b58a14c96b8094cb25efaede315f24
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,7 +257,7 @@ ScriptedImporter:
       y: 291
       width: 63
       height: 84
-    spriteID: 5d0683166e792ca488af4e544470b574
+    spriteID: c4afb5fd22c74b2449121a3b5ba61639
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -272,7 +277,7 @@ ScriptedImporter:
       y: 4
       width: 65
       height: 88
-    spriteID: 925cb37ddc32bd34eba41f83f8b5272b
+    spriteID: 11d26abfbff82224cad30c7811505b6c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -292,7 +297,7 @@ ScriptedImporter:
       y: 197
       width: 62
       height: 86
-    spriteID: 9253ff4ccf756a74fa2ad90311718af9
+    spriteID: aa192937f01164a4f8173d5d3b5aaf0b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -312,7 +317,7 @@ ScriptedImporter:
       y: 100
       width: 62
       height: 89
-    spriteID: a6078f8d80b78db4da223b5202635a21
+    spriteID: c3fe627ee494da249b4a1bfcdada0457
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -332,7 +337,7 @@ ScriptedImporter:
       y: 4
       width: 58
       height: 82
-    spriteID: b5f20ff88ffdf574980186ac04a926e0
+    spriteID: ad63c6eeb2ffe2b419ee1d11654d66e4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -352,7 +357,7 @@ ScriptedImporter:
       y: 264
       width: 51
       height: 80
-    spriteID: a5d329c48ea819147bf5a3e32dcceadf
+    spriteID: e69f340c3febc9e41922d09cdd57d144
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -372,7 +377,7 @@ ScriptedImporter:
       y: 264
       width: 49
       height: 85
-    spriteID: e99a6811b6f277c47b8ee0ca6c2b547b
+    spriteID: 10c6f1df539c9444683f2c58e8e6447b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -392,7 +397,7 @@ ScriptedImporter:
       y: 357
       width: 45
       height: 90
-    spriteID: bdce17761a6b3f04f8fc14bd1739fc95
+    spriteID: bbd8af4534a82c64882fe6d322cea44d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -412,7 +417,7 @@ ScriptedImporter:
       y: 4
       width: 54
       height: 93
-    spriteID: 2016678ec4d4f694d8a8c7c74a3fc818
+    spriteID: 3558119fe5ceecb49a53d4e6f88b15d8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -432,7 +437,7 @@ ScriptedImporter:
       y: 485
       width: 46
       height: 16
-    spriteID: df2062453f9321c44b5f97daa8dc4556
+    spriteID: c16492d60ced7c4479b844a6be6f9b2a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -452,7 +457,7 @@ ScriptedImporter:
       y: 496
       width: 47
       height: 11
-    spriteID: 5d4897c9037a13a4ea4d834c0da54bfe
+    spriteID: c3cdda620dbd3e14eb246143fca59223
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -477,7 +482,7 @@ ScriptedImporter:
         y: 0
         width: 71
         height: 100
-      spriteId: 581d77859d7f74c4da2eb3e9d7eb8009
+      spriteId: c60f27db5e5430a42b8ecbba67543fcc
     - name: explosion_Frame_1
       frameIndex: 1
       cellRect:
@@ -485,7 +490,7 @@ ScriptedImporter:
         y: 0
         width: 71
         height: 100
-      spriteId: ac4fa696c682bcd42a83863500f4b864
+      spriteId: ea337a66ee152d8488e9e8ecc45dd563
     - name: explosion_Frame_2
       frameIndex: 2
       cellRect:
@@ -493,7 +498,7 @@ ScriptedImporter:
         y: 0
         width: 71
         height: 100
-      spriteId: e727cb93c6de46d45bb728c0155f9010
+      spriteId: 65f8ae79591315a499b0a9b418b0eaf3
     - name: explosion_Frame_3
       frameIndex: 3
       cellRect:
@@ -501,7 +506,7 @@ ScriptedImporter:
         y: 0
         width: 71
         height: 100
-      spriteId: 6bee760bdd2e2554aa755056d0266cdb
+      spriteId: 8cc639a853622be4f81401296bbe0a78
     - name: explosion_Frame_4
       frameIndex: 4
       cellRect:
@@ -509,7 +514,7 @@ ScriptedImporter:
         y: 0
         width: 71
         height: 100
-      spriteId: 257af9ff8021ff4428374a6b9610d32b
+      spriteId: fdaa9d488f4cdc041b065041e77e74e6
     - name: explosion_Frame_5
       frameIndex: 5
       cellRect:
@@ -517,7 +522,7 @@ ScriptedImporter:
         y: 0
         width: 71
         height: 100
-      spriteId: ce735b5a80119f54db5c0816e9fa4980
+      spriteId: 93b58a14c96b8094cb25efaede315f24
     - name: explosion_Frame_6
       frameIndex: 6
       cellRect:
@@ -525,7 +530,7 @@ ScriptedImporter:
         y: 0
         width: 71
         height: 100
-      spriteId: 5d0683166e792ca488af4e544470b574
+      spriteId: c4afb5fd22c74b2449121a3b5ba61639
     - name: explosion_Frame_7
       frameIndex: 7
       cellRect:
@@ -533,7 +538,7 @@ ScriptedImporter:
         y: 0
         width: 71
         height: 100
-      spriteId: 925cb37ddc32bd34eba41f83f8b5272b
+      spriteId: 11d26abfbff82224cad30c7811505b6c
     - name: explosion_Frame_8
       frameIndex: 8
       cellRect:
@@ -541,7 +546,7 @@ ScriptedImporter:
         y: 0
         width: 71
         height: 100
-      spriteId: 9253ff4ccf756a74fa2ad90311718af9
+      spriteId: aa192937f01164a4f8173d5d3b5aaf0b
     - name: explosion_Frame_9
       frameIndex: 9
       cellRect:
@@ -549,7 +554,7 @@ ScriptedImporter:
         y: 0
         width: 71
         height: 100
-      spriteId: a6078f8d80b78db4da223b5202635a21
+      spriteId: c3fe627ee494da249b4a1bfcdada0457
     - name: explosion_Frame_10
       frameIndex: 10
       cellRect:
@@ -557,7 +562,7 @@ ScriptedImporter:
         y: 0
         width: 71
         height: 100
-      spriteId: b5f20ff88ffdf574980186ac04a926e0
+      spriteId: ad63c6eeb2ffe2b419ee1d11654d66e4
     - name: explosion_Frame_11
       frameIndex: 11
       cellRect:
@@ -565,7 +570,7 @@ ScriptedImporter:
         y: 0
         width: 71
         height: 100
-      spriteId: a5d329c48ea819147bf5a3e32dcceadf
+      spriteId: e69f340c3febc9e41922d09cdd57d144
     - name: explosion_Frame_12
       frameIndex: 12
       cellRect:
@@ -573,7 +578,7 @@ ScriptedImporter:
         y: 0
         width: 71
         height: 100
-      spriteId: e99a6811b6f277c47b8ee0ca6c2b547b
+      spriteId: 10c6f1df539c9444683f2c58e8e6447b
     - name: explosion_Frame_13
       frameIndex: 13
       cellRect:
@@ -581,7 +586,7 @@ ScriptedImporter:
         y: 0
         width: 71
         height: 100
-      spriteId: bdce17761a6b3f04f8fc14bd1739fc95
+      spriteId: bbd8af4534a82c64882fe6d322cea44d
     - name: explosion_Frame_14
       frameIndex: 14
       cellRect:
@@ -589,7 +594,7 @@ ScriptedImporter:
         y: 0
         width: 71
         height: 100
-      spriteId: 2016678ec4d4f694d8a8c7c74a3fc818
+      spriteId: 3558119fe5ceecb49a53d4e6f88b15d8
     - name: explosion_Frame_15
       frameIndex: 15
       cellRect:
@@ -597,7 +602,7 @@ ScriptedImporter:
         y: 84
         width: 46
         height: 16
-      spriteId: df2062453f9321c44b5f97daa8dc4556
+      spriteId: c16492d60ced7c4479b844a6be6f9b2a
     - name: explosion_Frame_16
       frameIndex: 16
       cellRect:
@@ -605,10 +610,34 @@ ScriptedImporter:
         y: 88
         width: 47
         height: 11
-      spriteId: 5d4897c9037a13a4ea4d834c0da54bfe
+      spriteId: c3cdda620dbd3e14eb246143fca59223
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 

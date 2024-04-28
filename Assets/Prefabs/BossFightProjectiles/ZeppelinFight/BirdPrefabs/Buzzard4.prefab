@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -373913858, guid: 373d95925149943478e488faf80c1b1a, type: 3}
+  m_Sprite: {fileID: -1187588575, guid: 373d95925149943478e488faf80c1b1a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,9 +102,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatOfThisNote: 0
-  spawnPos: {x: 12, y: 7, z: -4}
+  spawnPos: {x: -12, y: 7, z: -4}
   hitPosition: {x: 0, y: -5, z: -4}
-  removePos: {x: -12, y: -17, z: -4}
+  removePos: {x: 12, y: -17, z: -4}
 --- !u!114 &7396209187976953710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3f33c896ff99534cb0083c711c8577e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 865691633192658861, guid: 1afd4361a3599244ab38921c7a53d5fb, type: 3}
   dealDamage: 10
 --- !u!50 &-5935485340937788003
 Rigidbody2D:

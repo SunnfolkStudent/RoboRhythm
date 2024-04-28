@@ -7,5 +7,4 @@ public class NoteProperties
 {
     public int noteType;
     public float beatNumber;
-    public int holdTime;
 }
