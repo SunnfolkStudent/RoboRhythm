@@ -3,7 +3,11 @@ using UnityEngine;
 
 public class FmodEvents : MonoBehaviour
 {
-    [field: SerializeField] public EventReference ExampleSound { get; private set; }
+    [field: Header("Background Music")]
+    [field: SerializeField] public EventReference MainMenuMusic { get; private set; }
+    
+    [field: Header("Notes")]
+    [field: SerializeField] public EventReference CNote { get; private set; }
     
     public static FmodEvents instance { get; private set; }
 
