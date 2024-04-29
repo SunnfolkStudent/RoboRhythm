@@ -15,6 +15,7 @@ public class RSongPosition : MonoBehaviour
     public float songPosInBeats;
     public  float secPerBeat;
     public float dsptimesong;
+    public float skipTime;
 
     private bool _songStarted;
 
@@ -38,7 +39,7 @@ public class RSongPosition : MonoBehaviour
     {
         if(!_songStarted) return;
         //calculate the position in seconds
-        songPosition = (float) (AudioSettings.dspTime - dsptimesong);
+        songPosition = (float) (AudioSettings.dspTime - dsptimesong + skipTime);
 
         //calculate the position in beatse
         songPosInBeats = (songPosition / secPerBeat) + 1;
