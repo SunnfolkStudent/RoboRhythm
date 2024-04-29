@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameData
 {
     public Vector3 playerPosition;
+    public Vector3 objectPosition;
     public bool hatOn;
     public bool hasAllKeys;
     public bool statueFixed;
@@ -18,6 +19,7 @@ public class GameData
     public GameData()
     {
         playerPosition = new Vector3(36, 58, 0);
+        objectPosition = new Vector3(52.5f, 28, 0);
         hatOn = false;
         hasAllKeys = false;
         statueFixed = false;

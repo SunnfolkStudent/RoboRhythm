@@ -19,7 +19,7 @@ All the wonderful things you can find in this city was probably made by me!
 === BeyondGate ===
 I have never had the pleasure of seeing what’s hidden behind the gate.
 But I have heard tale of the greatest invention ever made is kept there!
-I would give anything to see it!
+I would give anything to see it! #moveobj:true
     ->HowCanHelp
     
 === LookingKeys ===

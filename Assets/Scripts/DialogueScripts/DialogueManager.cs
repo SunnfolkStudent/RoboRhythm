@@ -34,6 +34,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         private Animator layoutAnimator;
 
         [SerializeField] private Animator playerAnimator;
+        [SerializeField] private GameObject moveObject;
         
         public bool dialogueIsPlaying { get; private set; }
         
@@ -52,6 +53,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         private const string KEY_TAG = "key";
         private const string HATON_TAG = "haton";
         private const string HATOFF_TAG = "hatoff";
+        private const string MOVEOBJ_TAG = "moveobj";
 
         private bool hasHat;
 
@@ -308,6 +310,9 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
                         playerAnimator.SetBool("WearingHat", false);
                         hasHat = false;
                         break;
+                    case MOVEOBJ_TAG:
+                        moveObject.transform.position += new Vector3(-7, 0, 0);;
+                        break;
                     default:
                         Debug.LogWarning("Tag came in but is not currently being handled: " + tag);
                         break;
@@ -382,6 +387,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         public void LoadData(GameData data)
         {
             hasHat = data.hatOn;
+            moveObject.transform.position = data.objectPosition;
 
             if (hasHat)
             {
@@ -396,6 +402,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         public void SaveData(GameData data)
         {
             data.hatOn = hasHat;
+            data.objectPosition = moveObject.transform.position;
         }
     
         public void SaveTaskData(GameData data) {}
