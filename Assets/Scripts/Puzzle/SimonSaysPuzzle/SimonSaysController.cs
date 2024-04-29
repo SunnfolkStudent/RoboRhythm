@@ -1,16 +1,19 @@
-using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class Puzzle2Controller : PuzzleControllerBase
 {
-    [SerializeField] private Puzzle2Scrub _scrub;
     [SerializeField] private Button[] _buttons;
     [SerializeField] private Button startButton;
+    private int _difficulty = 8;
+    
+    private List<int> _puzzle = new List<int>();
     
     private int _currentNumber;
+    
 
     private void Start()
     {
@@ -24,12 +27,18 @@ public class Puzzle2Controller : PuzzleControllerBase
     private IEnumerator Puzzle2Coroutine()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        //Create random 15 number puzzle
+        _puzzle.Clear();
+        for (int i = 0; i < _difficulty; i++)
+        {
+            _puzzle.Add(Random.Range(0, 9));
+        }
         
         yield return new WaitForSeconds(0.5f);
         
-        foreach (var number in _scrub.puzzle)
+        foreach (var number in _puzzle)
         {
-            _buttons[number-1].Select();
+            _buttons[number].Select();
             yield return new WaitForSeconds(0.75f);
             EventSystem.current.SetSelectedGameObject(null);
             yield return new WaitForSeconds(0.25f);
@@ -40,7 +49,7 @@ public class Puzzle2Controller : PuzzleControllerBase
 
     public void ButtonMethod(int number)
     {
-        if (number == _scrub.puzzle[_currentNumber])
+        if (number == _puzzle[_currentNumber])
         {
             _currentNumber++;
         } 
@@ -50,7 +59,7 @@ public class Puzzle2Controller : PuzzleControllerBase
             StartCoroutine(Puzzle2Coroutine());
         }
         
-        if (_currentNumber == _scrub.puzzle.Length)
+        if (_currentNumber == _puzzle.Count)
         {
             PuzzleCompleted();
         }
