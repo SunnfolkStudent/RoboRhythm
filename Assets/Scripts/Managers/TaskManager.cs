@@ -44,18 +44,22 @@ public class TaskManager : MonoBehaviour, IDataPersistence
     public void SaveData(GameData data) { }
     
     public void SaveTaskData(GameData data)
-    { 
+    {
         if (data.npcStages.ContainsKey(taskNpcId))
         {
             data.npcStages.Remove(taskNpcId);
         }
-
         if(!string.IsNullOrEmpty(taskNpcId))
         {
             data.npcStages.Add(taskNpcId, "Third");
             Debug.Log("add new stage to npc: " + taskNpcId);
         }
+        if (taskNpcId == "Zither")
+        {
+            data.lampsLit = true;
+        }
         taskNpcId = null;
+        DataPersistenceManager.instance.LoadGame();
     }
     public void LoadTaskData(GameData data) { }
     
