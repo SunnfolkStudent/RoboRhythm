@@ -8,6 +8,7 @@ public class GameData
     public bool hatOn;
     public bool hasAllKeys;
     public bool statueFixed;
+    public bool lampsLit;
 
     public SerializableDictionary<string, string> npcStages;
     public SerializableDictionary<string, bool> tasksList;
@@ -20,6 +21,7 @@ public class GameData
         hatOn = false;
         hasAllKeys = false;
         statueFixed = false;
+        lampsLit = false;
         npcStages = new SerializableDictionary<string, string>();
         tasksList = new SerializableDictionary<string, bool>();
         keysFound = new SerializableDictionary<string, bool>();
