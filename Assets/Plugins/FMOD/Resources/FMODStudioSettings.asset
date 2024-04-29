@@ -479,6 +479,7 @@ MonoBehaviour:
   - Desktop/Master
   Banks:
   - Desktop/BackgroundMusic
+  - Desktop/SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

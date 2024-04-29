@@ -43,33 +43,15 @@ public class NoteScript : MonoBehaviour
             PuzzleEvents.puzzleCompleted?.Invoke();
         }
 
-        switch (noteData.Key)
+        foreach (var reference in FmodEvents.instance.noteReferences)
         {
-            case "C":
-                AudioManager.instance.PlayOneShot(FmodEvents.instance.CNote, transform.position);
+            if (reference.key == noteData.Key)
+            {
+                AudioManager.instance.PlayOneShot(reference.noteEvent, transform.position);
                 break;
-            case "D":
-                AudioManager.instance.PlayOneShot(FmodEvents.instance.DNote, transform.position);
-                break;
-            case "E":
-                AudioManager.instance.PlayOneShot(FmodEvents.instance.ENote, transform.position);
-                break;
-            case "F":
-                AudioManager.instance.PlayOneShot(FmodEvents.instance.FNote, transform.position);
-                break;
-            case "G":
-                AudioManager.instance.PlayOneShot(FmodEvents.instance.GNote, transform.position);
-                break;
-            case "A":
-                AudioManager.instance.PlayOneShot(FmodEvents.instance.ANote, transform.position);
-                break;
-            case "B":
-                AudioManager.instance.PlayOneShot(FmodEvents.instance.BNote, transform.position);
-                break;
-            case "CHigher":
-                AudioManager.instance.PlayOneShot(FmodEvents.instance.CNoteHigher, transform.position);
-                break;
+            }
         }
+        
         Destroy(gameObject);
     }
 }
