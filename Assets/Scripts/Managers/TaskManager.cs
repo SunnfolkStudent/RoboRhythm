@@ -50,8 +50,12 @@ public class TaskManager : MonoBehaviour, IDataPersistence
             data.npcStages.Remove(taskNpcId);
         }
 
-        data.npcStages.Add(taskNpcId, "Third");
-        Debug.Log("add new stage to npc");
+        if(!string.IsNullOrEmpty(taskNpcId))
+        {
+            data.npcStages.Add(taskNpcId, "Third");
+            Debug.Log("add new stage to npc: " + taskNpcId);
+        }
+        taskNpcId = null;
     }
     public void LoadTaskData(GameData data) { }
     

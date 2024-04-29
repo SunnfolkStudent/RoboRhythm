@@ -7,18 +7,22 @@ public class GameData
     public Vector3 playerPosition;
     public bool hatOn;
     public bool hasAllKeys;
+    public bool statueFixed;
 
     public SerializableDictionary<string, string> npcStages;
     public SerializableDictionary<string, bool> tasksList;
     public SerializableDictionary<string, bool> keysFound;
+    public SerializableDictionary<string, bool> statuePiecesFound;
 
     public GameData()
     {
-        playerPosition = Vector3.zero;
+        playerPosition = new Vector3(36, 58, 0);
         hatOn = false;
         hasAllKeys = false;
+        statueFixed = false;
         npcStages = new SerializableDictionary<string, string>();
         tasksList = new SerializableDictionary<string, bool>();
         keysFound = new SerializableDictionary<string, bool>();
+        statuePiecesFound = new SerializableDictionary<string, bool>();
     }
 }

@@ -27,7 +27,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         
         [Header("Dialogue UI")]
         [SerializeField] private GameObject dialoguePanel;
-        [SerializeField] private Animator dialoguePanelAnimator;
         [SerializeField] private GameObject continueIcon;
         [SerializeField] private TextMeshProUGUI dialogueText;
         [SerializeField] private TextMeshProUGUI displayNameText;
@@ -68,8 +67,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             }
             instance = this;
     
-            //_dialogueVariables = new DialogueVariables(loadGlobalsJSON);
-    
             _audioSource = GetComponent<AudioSource>();
             currentAudioInfo = defaultAudioInfo;
             dialoguePanel.SetActive(false);
@@ -83,8 +80,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         private void Start()
         {
             dialogueIsPlaying = false;
-    
-            //layoutAnimator = dialoguePanel.GetComponent<Animator>();
     
             choicesText = new TextMeshProUGUI[choices.Length];
             int index = 0;
@@ -137,44 +132,22 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         {
             dialogueIsPlaying = true;
             PlayerEvents.playerFrozen?.Invoke();
-            StartCoroutine(EnterDialogue(inkJSON));
-        }
-    
-        private IEnumerator EnterDialogue(TextAsset inkJSON)
-        {
             currentStory = new Story(inkJSON.text);
             dialoguePanel.SetActive(true);
-            dialoguePanelAnimator.Play("Enter");
-    
-            //_dialogueVariables.StartListening(currentStory);
-    
             displayNameText.text = "";
-            //portraitAnimator.Play("Default");
-            //layoutAnimator.Play("left");
-            
-            yield return new WaitForSeconds(1);
-    
             ContinueStory();
         }
     
-        private IEnumerator ExitDialogueMode()
+        private void ExitDialogueMode()
         {
             DataPersistenceManager.instance.SaveKeyData();
             DataPersistenceManager.instance.LoadKeyData();
             DataPersistenceManager.instance.SaveGame();
             DataPersistenceManager.instance.LoadGame();
-            
-            yield return new WaitForSeconds(0.2f);
-            
-            //_dialogueVariables.StopListening(currentStory);
-            //PlayerInputScript.GetInstance().RegisterInteractPressed();
-            
-            dialoguePanelAnimator.Play("Exit");
+           
             dialogueText.text = "";
             
             SetCurrentAudioInfo(defaultAudioInfo.id);
-            
-            yield return new WaitForSeconds(1);
             
             dialoguePanel.SetActive(false);
             dialogueIsPlaying = false;
@@ -195,7 +168,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             }
             else
             {
-                StartCoroutine(ExitDialogueMode());
+                ExitDialogueMode();
             }
         }
     
@@ -432,6 +405,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             if (hasHat)
             {
                 TaskManager.GetInstance().TaskComplete("Piccolo"); 
+                Debug.Log("Finished task with piccolo");
             }
         }
     
