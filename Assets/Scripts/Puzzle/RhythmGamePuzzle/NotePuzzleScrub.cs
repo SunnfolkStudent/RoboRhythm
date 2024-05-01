@@ -5,7 +5,7 @@ using UnityEngine;
 public class NoteData
 {
     public char KeyBind;
-    public string Key;
+    public noteEnum Key;
     public float timeToWait;
 }
 

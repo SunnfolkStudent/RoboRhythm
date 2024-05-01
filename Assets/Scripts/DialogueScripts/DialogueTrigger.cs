@@ -66,10 +66,12 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
             currentStage = "First";
         }
 
-        if(givenTask)
+        /*if(givenTask)
         {
             DataPersistenceManager.instance.LoadTaskData();
-        }
+        }*/
+        
+        DataPersistenceManager.instance.LoadTaskData();
         
         switch (currentStage)
         {

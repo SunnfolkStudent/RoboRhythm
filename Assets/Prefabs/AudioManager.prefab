@@ -52,62 +52,111 @@ MonoBehaviour:
       Data3: 244421547
       Data4: -530882966
     Path: event:/Music/BackgroundMusic
-  <CNote>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <DNote>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <ENote>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <FNote>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <GNote>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <ANote>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <BNote>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  <CNoteHigher>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+  noteReferences:
+  - key: 0
+    noteEvent:
+      Guid:
+        Data1: 407578222
+        Data2: 1212977043
+        Data3: -2052061806
+        Data4: -1172470140
+      Path: event:/SFX/Notes/C
+  - key: 1
+    noteEvent:
+      Guid:
+        Data1: 1902757514
+        Data2: 1313436454
+        Data3: -2005384779
+        Data4: -1502978467
+      Path: event:/SFX/Notes/C#
+  - key: 2
+    noteEvent:
+      Guid:
+        Data1: -1498157682
+        Data2: 1274709711
+        Data3: -1294627399
+        Data4: -1848834797
+      Path: event:/SFX/Notes/D
+  - key: 3
+    noteEvent:
+      Guid:
+        Data1: -1049626961
+        Data2: 1293633125
+        Data3: -1121133663
+        Data4: 1482547222
+      Path: event:/SFX/Notes/D#
+  - key: 4
+    noteEvent:
+      Guid:
+        Data1: 1284309376
+        Data2: 1293569165
+        Data3: -414205027
+        Data4: -699112678
+      Path: event:/SFX/Notes/E
+  - key: 5
+    noteEvent:
+      Guid:
+        Data1: 748984259
+        Data2: 1083190707
+        Data3: 1514821305
+        Data4: -623874254
+      Path: event:/SFX/Notes/F
+  - key: 6
+    noteEvent:
+      Guid:
+        Data1: -830443606
+        Data2: 1330518826
+        Data3: 345768364
+        Data4: 161162724
+      Path: event:/SFX/Notes/F#
+  - key: 7
+    noteEvent:
+      Guid:
+        Data1: -1472327240
+        Data2: 1077417016
+        Data3: 1049603246
+        Data4: 469989375
+      Path: event:/SFX/Notes/G
+  - key: 8
+    noteEvent:
+      Guid:
+        Data1: -808471904
+        Data2: 1299143536
+        Data3: -62665579
+        Data4: -595029392
+      Path: event:/SFX/Notes/G#
+  - key: 9
+    noteEvent:
+      Guid:
+        Data1: -1001171600
+        Data2: 1275704025
+        Data3: -670539886
+        Data4: -181486942
+      Path: event:/SFX/Notes/A
+  - key: 10
+    noteEvent:
+      Guid:
+        Data1: 1936097264
+        Data2: 1222227103
+        Data3: 675300232
+        Data4: -1466078647
+      Path: event:/SFX/Notes/A#
+  - key: 11
+    noteEvent:
+      Guid:
+        Data1: 1599957034
+        Data2: 1086716627
+        Data3: 488176312
+        Data4: -184135251
+      Path: event:/SFX/Notes/B
+  - key: 12
+    noteEvent:
+      Guid:
+        Data1: 1947560956
+        Data2: 1257722816
+        Data3: -1819221621
+        Data4: 1435459450
+      Path: event:/SFX/Notes/TopC
 --- !u!114 &5241340902248159462
 MonoBehaviour:
   m_ObjectHideFlags: 0
