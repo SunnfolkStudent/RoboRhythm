@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 294313355}
   - component: {fileID: 294313358}
   - component: {fileID: 294313357}
-  - component: {fileID: 294313360}
+  - component: {fileID: 294313362}
   - component: {fileID: 294313359}
   m_Layer: 5
   m_Name: ChatText
@@ -281,7 +281,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: WHO DO WE HAVE HERE?
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae8fff5d22b207c43b77132e8119e5c0, type: 2}
   m_sharedMaterial: {fileID: -1313564648662042420, guid: ae8fff5d22b207c43b77132e8119e5c0, type: 2}
@@ -337,7 +337,7 @@ MonoBehaviour:
   m_isOrthographic: 1
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
-  m_verticalMapping: 0
+  m_verticalMapping: 1
   m_uvLineOffset: 0
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
@@ -379,7 +379,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &294313360
+--- !u!114 &294313362
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 294313354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 869bf2b85280169418a7b18a6749e7dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d7b6ccb6f0711443b6362cbed518a04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &336121044
@@ -1291,7 +1291,46 @@ MonoBehaviour:
     chatText: BUT ITS TIME TO END THIS WITH OUR SECRET ATTACK!!!
   - beatNumber: 185
     stayTimeBeats: 6
-    chatText: TRY TO DODGE THESE. . . BIRDS!!!
+    chatText: TRY TO DODGE OUR. . . BIRD ARMY!!!
+  - beatNumber: 233
+    stayTimeBeats: 2
+    chatText: HAHAHAHAHA!!!
+  - beatNumber: 306
+    stayTimeBeats: 6
+    chatText: YOU'RE QUITE THE BRAT!!!
+  - beatNumber: 313
+    stayTimeBeats: 6
+    chatText: WHY ARE YOU SO QUICK TO RISK YOUR LIFE?!?
+  - beatNumber: 321
+    stayTimeBeats: 6
+    chatText: BECAUSE SOMEBODY TOLD YOU???
+  - beatNumber: 329
+    stayTimeBeats: 6
+    chatText: DON'T DIE ON THE WHIMS OF SOMEOTHER PERSON!!!
+  - beatNumber: 433
+    stayTimeBeats: 6
+    chatText: WHAT DO YOU HOPE TO ACCOMPLISH?!?
+  - beatNumber: 441
+    stayTimeBeats: 6
+    chatText: WE'VE SEEN WHAT'S ON THE OTHER SIDE OF THE MOUNTAIN!!!
+  - beatNumber: 449
+    stayTimeBeats: 6
+    chatText: THERE IS ONLY DEATH IN THIS WORLD!!!
+  - beatNumber: 457
+    stayTimeBeats: 6
+    chatText: LET US SHOW YOU!!!
+  - beatNumber: 544
+    stayTimeBeats: 6
+    chatText: WAIT!!! NO NO NO!!!
+  - beatNumber: 577
+    stayTimeBeats: 6
+    chatText: OUR SYSTEM'S MALFUNCTIONING!!!
+  - beatNumber: 586
+    stayTimeBeats: 6
+    chatText: YOU BRAT!!! EVERYONE PREPARE FOR A CRASH LANDING!!!
+  - beatNumber: 593
+    stayTimeBeats: 6
+    chatText: NOOOOOOOOOOOOOOOOOOOOOOOO!!!!!
 --- !u!1 &846284158
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,14 +1470,28 @@ MonoBehaviour:
     beatNumber: 41
   - noteType: 2
     beatNumber: 49
-  - noteType: 2
-    beatNumber: 57
   - noteType: 1
-    beatNumber: 65
+    beatNumber: 57
   - noteType: 3
-    beatNumber: 73
+    beatNumber: 65
   - noteType: 2
+    beatNumber: 69
+  - noteType: 2
+    beatNumber: 73
+  - noteType: 1
+    beatNumber: 77
+  - noteType: 3
+    beatNumber: 81
+  - noteType: 2
+    beatNumber: 85
+  - noteType: 1
+    beatNumber: 87
+  - noteType: 2
+    beatNumber: 89
+  - noteType: 3
     beatNumber: 91
+  - noteType: 2
+    beatNumber: 93
   - noteType: 2
     beatNumber: 95
   - noteType: 2
@@ -1449,44 +1502,62 @@ MonoBehaviour:
     beatNumber: 129
   - noteType: 1
     beatNumber: 133
+  - noteType: 2
+    beatNumber: 137
+  - noteType: 3
+    beatNumber: 141
+  - noteType: 4
+    beatNumber: 145
+  - noteType: 3
+    beatNumber: 149
+  - noteType: 2
+    beatNumber: 153
+  - noteType: 1
+    beatNumber: 157
+  - noteType: 2
+    beatNumber: 161
+  - noteType: 1
+    beatNumber: 163
+  - noteType: 2
+    beatNumber: 165
+  - noteType: 2
+    beatNumber: 167
   - noteType: 7
     beatNumber: 191
   - noteType: 5
     beatNumber: 195
   - noteType: 10
     beatNumber: 195
-  - noteType: 5
-    beatNumber: 203
   - noteType: 6
     beatNumber: 204
   - noteType: 7
     beatNumber: 205
-  - noteType: 8
+  - noteType: 9
     beatNumber: 206
-  - noteType: 9
-    beatNumber: 207
   - noteType: 10
-    beatNumber: 208
+    beatNumber: 207
   - noteType: 9
-    beatNumber: 209
-  - noteType: 8
-    beatNumber: 210
+    beatNumber: 208
   - noteType: 7
+    beatNumber: 209
+  - noteType: 6
+    beatNumber: 210
+  - noteType: 5
     beatNumber: 211
   - noteType: 6
     beatNumber: 212
-  - noteType: 5
+  - noteType: 7
     beatNumber: 213
-  - noteType: 6
+  - noteType: 9
     beatNumber: 214
-  - noteType: 7
+  - noteType: 10
     beatNumber: 215
-  - noteType: 8
+  - noteType: 9
     beatNumber: 216
-  - noteType: 9
+  - noteType: 8
     beatNumber: 217
-  - noteType: 10
-    beatNumber: 218
+  - noteType: 2
+    beatNumber: 219
   - noteType: 5
     beatNumber: 219
   - noteType: 10
@@ -1495,62 +1566,330 @@ MonoBehaviour:
     beatNumber: 220
   - noteType: 10
     beatNumber: 220
-  - noteType: 6
+  - noteType: 5
     beatNumber: 221
-  - noteType: 9
+  - noteType: 10
     beatNumber: 221
-  - noteType: 6
+  - noteType: 5
     beatNumber: 222
-  - noteType: 9
+  - noteType: 10
     beatNumber: 222
   - noteType: 5
     beatNumber: 223
   - noteType: 10
     beatNumber: 223
-  - noteType: 6
+  - noteType: 5
     beatNumber: 224
-  - noteType: 9
+  - noteType: 10
     beatNumber: 224
   - noteType: 5
+    beatNumber: 225
+  - noteType: 10
+    beatNumber: 225
+  - noteType: 5
     beatNumber: 226
-  - noteType: 6
-    beatNumber: 226
-  - noteType: 7
-    beatNumber: 226
-  - noteType: 8
-    beatNumber: 226
-  - noteType: 9
+  - noteType: 10
     beatNumber: 226
   - noteType: 5
     beatNumber: 227
-  - noteType: 6
-    beatNumber: 227
-  - noteType: 7
-    beatNumber: 227
-  - noteType: 8
-    beatNumber: 227
-  - noteType: 9
+  - noteType: 10
     beatNumber: 227
   - noteType: 5
     beatNumber: 228
-  - noteType: 6
-    beatNumber: 228
-  - noteType: 7
-    beatNumber: 228
-  - noteType: 8
-    beatNumber: 228
-  - noteType: 9
+  - noteType: 10
     beatNumber: 228
   - noteType: 5
     beatNumber: 229
+  - noteType: 2
+    beatNumber: 229
+  - noteType: 10
+    beatNumber: 229
+  - noteType: 5
+    beatNumber: 230
+  - noteType: 10
+    beatNumber: 230
+  - noteType: 5
+    beatNumber: 231
+  - noteType: 2
+    beatNumber: 231
+  - noteType: 10
+    beatNumber: 231
+  - noteType: 5
+    beatNumber: 232
+  - noteType: 10
+    beatNumber: 232
   - noteType: 6
-    beatNumber: 229
+    beatNumber: 235
   - noteType: 7
-    beatNumber: 229
-  - noteType: 8
-    beatNumber: 229
+    beatNumber: 235
+  - noteType: 2
+    beatNumber: 239
+  - noteType: 6
+    beatNumber: 241
   - noteType: 9
-    beatNumber: 229
+    beatNumber: 241
+  - noteType: 5
+    beatNumber: 241
+  - noteType: 10
+    beatNumber: 241
+  - noteType: 5
+    beatNumber: 242
+  - noteType: 10
+    beatNumber: 242
+  - noteType: 6
+    beatNumber: 242
+  - noteType: 2
+    beatNumber: 243
+  - noteType: 9
+    beatNumber: 242
+  - noteType: 5
+    beatNumber: 243
+  - noteType: 10
+    beatNumber: 243
+  - noteType: 6
+    beatNumber: 243
+  - noteType: 9
+    beatNumber: 243
+  - noteType: 5
+    beatNumber: 244
+  - noteType: 10
+    beatNumber: 244
+  - noteType: 6
+    beatNumber: 244
+  - noteType: 9
+    beatNumber: 244
+  - noteType: 5
+    beatNumber: 245
+  - noteType: 10
+    beatNumber: 245
+  - noteType: 6
+    beatNumber: 245
+  - noteType: 9
+    beatNumber: 245
+  - noteType: 5
+    beatNumber: 246
+  - noteType: 10
+    beatNumber: 246
+  - noteType: 6
+    beatNumber: 246
+  - noteType: 9
+    beatNumber: 246
+  - noteType: 2
+    beatNumber: 247
+  - noteType: 5
+    beatNumber: 247
+  - noteType: 10
+    beatNumber: 247
+  - noteType: 6
+    beatNumber: 247
+  - noteType: 9
+    beatNumber: 247
+  - noteType: 5
+    beatNumber: 248
+  - noteType: 10
+    beatNumber: 248
+  - noteType: 6
+    beatNumber: 248
+  - noteType: 9
+    beatNumber: 248
+  - noteType: 5
+    beatNumber: 249
+  - noteType: 10
+    beatNumber: 249
+  - noteType: 6
+    beatNumber: 249
+  - noteType: 9
+    beatNumber: 249
+  - noteType: 9
+    beatNumber: 251
+  - noteType: 9
+    beatNumber: 252
+  - noteType: 10
+    beatNumber: 253
+  - noteType: 10
+    beatNumber: 254
+  - noteType: 9
+    beatNumber: 255
+  - noteType: 9
+    beatNumber: 256
+  - noteType: 7
+    beatNumber: 257
+  - noteType: 7
+    beatNumber: 258
+  - noteType: 6
+    beatNumber: 259
+  - noteType: 6
+    beatNumber: 260
+  - noteType: 5
+    beatNumber: 261
+  - noteType: 10
+    beatNumber: 262
+  - noteType: 5
+    beatNumber: 262
+  - noteType: 10
+    beatNumber: 262
+  - noteType: 6
+    beatNumber: 263
+  - noteType: 9
+    beatNumber: 263
+  - noteType: 6
+    beatNumber: 264
+  - noteType: 9
+    beatNumber: 264
+  - noteType: 7
+    beatNumber: 265
+  - noteType: 7
+    beatNumber: 265.5
+  - noteType: 7
+    beatNumber: 266
+  - noteType: 7
+    beatNumber: 266.5
+  - noteType: 7
+    beatNumber: 267
+  - noteType: 7
+    beatNumber: 267.5
+  - noteType: 7
+    beatNumber: 268
+  - noteType: 7
+    beatNumber: 268.5
+  - noteType: 2
+    beatNumber: 271
+  - noteType: 2
+    beatNumber: 273
+  - noteType: 5
+    beatNumber: 273
+  - noteType: 6
+    beatNumber: 273
+  - noteType: 9
+    beatNumber: 273
+  - noteType: 10
+    beatNumber: 273
+  - noteType: 1
+    beatNumber: 279
+  - noteType: 1
+    beatNumber: 281
+  - noteType: 5
+    beatNumber: 281
+  - noteType: 7
+    beatNumber: 281
+  - noteType: 9
+    beatNumber: 281
+  - noteType: 10
+    beatNumber: 281
+  - noteType: 0
+    beatNumber: 287
+  - noteType: 0
+    beatNumber: 289
+  - noteType: 6
+    beatNumber: 289
+  - noteType: 7
+    beatNumber: 289
+  - noteType: 9
+    beatNumber: 289
+  - noteType: 10
+    beatNumber: 289
+  - noteType: 1
+    beatNumber: 295
+  - noteType: 1
+    beatNumber: 297
+  - noteType: 5
+    beatNumber: 297
+  - noteType: 7
+    beatNumber: 297
+  - noteType: 9
+    beatNumber: 297
+  - noteType: 10
+    beatNumber: 297
+  - noteType: 2
+    beatNumber: 290
+  - noteType: 2
+    beatNumber: 301
+  - noteType: 5
+    beatNumber: 301
+  - noteType: 6
+    beatNumber: 301
+  - noteType: 9
+    beatNumber: 301
+  - noteType: 10
+    beatNumber: 301
+  - noteType: 2
+    beatNumber: 337
+  - noteType: 7
+    beatNumber: 338
+  - noteType: 2
+    beatNumber: 339
+  - noteType: 8
+    beatNumber: 338
+  - noteType: 1
+    beatNumber: 341
+  - noteType: 5
+    beatNumber: 341
+  - noteType: 7
+    beatNumber: 341
+  - noteType: 9
+    beatNumber: 341
+  - noteType: 10
+    beatNumber: 341
+  - noteType: 3
+    beatNumber: 343
+  - noteType: 5
+    beatNumber: 343
+  - noteType: 6
+    beatNumber: 343
+  - noteType: 7
+    beatNumber: 343
+  - noteType: 10
+    beatNumber: 343
+  - noteType: 1
+    beatNumber: 345
+  - noteType: 5
+    beatNumber: 345
+  - noteType: 7
+    beatNumber: 345
+  - noteType: 9
+    beatNumber: 345
+  - noteType: 10
+    beatNumber: 345
+  - noteType: 2
+    beatNumber: 347
+  - noteType: 1
+    beatNumber: 348
+  - noteType: 2
+    beatNumber: 349
+  - noteType: 3
+    beatNumber: 350
+  - noteType: 2
+    beatNumber: 351
+  - noteType: 1
+    beatNumber: 352
+  - noteType: 2
+    beatNumber: 353
+  - noteType: 2
+    beatNumber: 357
+  - noteType: 0
+    beatNumber: 359
+  - noteType: 4
+    beatNumber: 361
+  - noteType: 2
+    beatNumber: 363
+  - noteType: 1
+    beatNumber: 364
+  - noteType: 0
+    beatNumber: 365
+  - noteType: 1
+    beatNumber: 366
+  - noteType: 2
+    beatNumber: 367
+  - noteType: 2
+    beatNumber: 369
+  - noteType: 5
+    beatNumber: 369
+  - noteType: 6
+    beatNumber: 369
+  - noteType: 9
+    beatNumber: 369
+  - noteType: 10
+    beatNumber: 369
 --- !u!114 &932661831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2304,9 +2643,12 @@ MonoBehaviour:
   - 0
   - 96
   - 168
+  - 304
+  - 432
+  - 560
+  - 350
   playerHitbox: {fileID: 1427791703}
   platformHitbox: {fileID: 365083255}
-  chatSystem: {fileID: 294313354}
 --- !u!1 &1592462712
 GameObject:
   m_ObjectHideFlags: 0

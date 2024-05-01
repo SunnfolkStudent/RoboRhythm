@@ -30,7 +30,11 @@ public class RNoteLogicSpawner : MonoBehaviour
         if (!(nextIndex < noteData.notePropertiesArray.Length)) { return;}
         //Checks If It's The Right Beat For The Note To Spawn
         if(!(noteData.notePropertiesArray[nextIndex].beatNumber < songPosition.songPosInBeats + bossFightSettings.beatsShownInAdvance)) { return; }
-        noteSpawner.SpawnNewNote(noteData.notePropertiesArray[nextIndex].noteType,noteData.notePropertiesArray[nextIndex].beatNumber);
+
+        if (Time.timeSinceLevelLoad > 3)
+        {
+            noteSpawner.SpawnNewNote(noteData.notePropertiesArray[nextIndex].noteType,noteData.notePropertiesArray[nextIndex].beatNumber);
+        }
         nextIndex++;
     }
 }

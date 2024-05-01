@@ -6,7 +6,6 @@ public class SaveSystem : MonoBehaviour
     [SerializeField] private float[] savePoints;
     [SerializeField] private GameObject playerHitbox;
     [SerializeField] private GameObject platformHitbox;
-    [SerializeField] private GameObject chatSystem;
 
     private float _secondsToSaveTo;
     
@@ -45,6 +44,5 @@ public class SaveSystem : MonoBehaviour
     {
         playerHitbox.SetActive(true);
         platformHitbox.SetActive(true);
-        chatSystem.SetActive(true);
     }
 }
