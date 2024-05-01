@@ -304,6 +304,8 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
                         break;
                     case HATON_TAG:
                         playerAnimator.SetBool("WearingHat", true);
+                        TaskManager.GetInstance().TaskComplete("Piccolo"); 
+                        Debug.Log("Finished task with piccolo");
                         hasHat = true;
                         break;
                     case HATOFF_TAG:
@@ -409,11 +411,11 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
 
         public void LoadTaskData(GameData data)
         {
-            if (hasHat)
+            /*if (hasHat)
             {
                 TaskManager.GetInstance().TaskComplete("Piccolo"); 
                 Debug.Log("Finished task with piccolo");
-            }
+            }*/
         }
     
         public void LoadKeyData(GameData data){}

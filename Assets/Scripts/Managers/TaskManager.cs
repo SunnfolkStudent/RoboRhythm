@@ -59,7 +59,7 @@ public class TaskManager : MonoBehaviour, IDataPersistence
             data.lampsLit = true;
         }
         taskNpcId = null;
-        DataPersistenceManager.instance.LoadGame();
+        DataPersistenceManager.instance.SaveGame();
     }
     public void LoadTaskData(GameData data) { }
     

@@ -1199,7 +1199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songLengthInSeconds: 225
   bossHealthBar: {fileID: 782489640}
-  taskId: Piccolo
+  taskId: Bell
 --- !u!1 &800905398
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,13 +1300,13 @@ MonoBehaviour:
     chatText: YOU'RE QUITE THE BRAT!!!
   - beatNumber: 313
     stayTimeBeats: 6
-    chatText: WHY ARE YOU SO QUICK TO RISK YOUR LIFE?!?
+    chatText: WE'VE DONE NOTHING TO YOU!!!
   - beatNumber: 321
     stayTimeBeats: 6
-    chatText: BECAUSE SOMEBODY TOLD YOU???
+    chatText: WHY ARE YOU WILLING TO DIE FOR OTHERS???
   - beatNumber: 329
     stayTimeBeats: 6
-    chatText: DON'T DIE ON THE WHIMS OF SOMEOTHER PERSON!!!
+    chatText: BECAUSE YOU WILL DIE!!!
   - beatNumber: 433
     stayTimeBeats: 6
     chatText: WHAT DO YOU HOPE TO ACCOMPLISH?!?
@@ -1566,6 +1566,8 @@ MonoBehaviour:
     beatNumber: 220
   - noteType: 10
     beatNumber: 220
+  - noteType: 2
+    beatNumber: 221
   - noteType: 5
     beatNumber: 221
   - noteType: 10
@@ -1574,6 +1576,8 @@ MonoBehaviour:
     beatNumber: 222
   - noteType: 10
     beatNumber: 222
+  - noteType: 2
+    beatNumber: 223
   - noteType: 5
     beatNumber: 223
   - noteType: 10
@@ -1582,6 +1586,8 @@ MonoBehaviour:
     beatNumber: 224
   - noteType: 10
     beatNumber: 224
+  - noteType: 2
+    beatNumber: 225
   - noteType: 5
     beatNumber: 225
   - noteType: 10
@@ -1624,6 +1630,8 @@ MonoBehaviour:
     beatNumber: 235
   - noteType: 2
     beatNumber: 239
+  - noteType: 2
+    beatNumber: 241
   - noteType: 6
     beatNumber: 241
   - noteType: 9
@@ -1739,19 +1747,19 @@ MonoBehaviour:
   - noteType: 7
     beatNumber: 265
   - noteType: 7
-    beatNumber: 265.5
+    beatNumber: 2655
   - noteType: 7
     beatNumber: 266
   - noteType: 7
-    beatNumber: 266.5
+    beatNumber: 2665
   - noteType: 7
     beatNumber: 267
   - noteType: 7
-    beatNumber: 267.5
+    beatNumber: 2675
   - noteType: 7
     beatNumber: 268
   - noteType: 7
-    beatNumber: 268.5
+    beatNumber: 2685
   - noteType: 2
     beatNumber: 271
   - noteType: 2
@@ -1890,6 +1898,18 @@ MonoBehaviour:
     beatNumber: 369
   - noteType: 10
     beatNumber: 369
+  - noteType: 2
+    beatNumber: 375
+  - noteType: 2
+    beatNumber: 377
+  - noteType: 0
+    beatNumber: 383
+  - noteType: 0
+    beatNumber: 385
+  - noteType: 2
+    beatNumber: 437
+  - noteType: 2
+    beatNumber: 439
 --- !u!114 &932661831
 MonoBehaviour:
   m_ObjectHideFlags: 0

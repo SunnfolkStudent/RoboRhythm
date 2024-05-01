@@ -6,7 +6,7 @@ public class RBossHealthManager : MonoBehaviour
     [SerializeField] private float songLengthInSeconds;
     [SerializeField] private GameObject bossHealthBar;
 
-    [SerializeField] private string taskId = "Piccolo";
+    [SerializeField] private string taskId;
     
     private RSongPosition _songPosition;
 
@@ -31,6 +31,6 @@ public class RBossHealthManager : MonoBehaviour
     private void BossDefeated()
     {
         TaskManager.GetInstance().TaskComplete(taskId);
-        SceneManager.LoadScene("PlayTestScene");
+        SceneManager.LoadScene("MainCityScene");
     }
 }

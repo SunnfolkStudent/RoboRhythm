@@ -24312,7 +24312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcId: Bell
-  taskCollider: {fileID: 0}
+  taskCollider: {fileID: 1897165439}
   currentStage: First
   givenTask: 0
   visualCue: {fileID: 751690649}
