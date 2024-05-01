@@ -286,7 +286,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puzzle_0
+      name: Pan_Puzzle
       rect:
         serializedVersion: 2
         x: 9
@@ -307,7 +307,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puzzle_1
+      name: Chamberlin_Puzzle
       rect:
         serializedVersion: 2
         x: 64
@@ -454,7 +454,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puzzle_2
+      name: Zither_Puzzle
       rect:
         serializedVersion: 2
         x: 32
@@ -843,16 +843,16 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Banana: 1384391831
+      Chamberlin_Puzzle: 1540729245
       Dirt: 1658257850
       Fence_0: 1039109859
       Fence_1: 405212540
       Fence_2: 1119172744
       Newpaper_1: 425563419
       Newspaper_0: 1055812953
-      Puzzle_0: -628212455
-      Puzzle_1: 1540729245
-      Puzzle_2: 452414031
+      Pan_Puzzle: -628212455
       TrashCan: -495916322
+      Zither_Puzzle: 452414031
       city assets_1: -909589465
       city assets_12: -554326841
       city assets_13: -241716541

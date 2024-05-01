@@ -1,18 +1,19 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class EndBossPortal : MonoBehaviour, IDataPersistence
 {
-    [SerializeField] private int endSceneStartId; 
     [SerializeField] private GameObject visualCue;
+    [SerializeField] private GameObject player;
+    [SerializeField] private Camera cityCamera, clockRoomCamera;
     
     private bool allKeysFound;
-    private bool playerInRange;
+    [SerializeField] private bool playerInRange;
 
     private void Awake()
     {
         playerInRange = false;
         visualCue.SetActive(false);
+        clockRoomCamera.enabled = false;
     }
 
     private void Update()
@@ -24,14 +25,34 @@ public class EndBossPortal : MonoBehaviour, IDataPersistence
                 visualCue.SetActive(true);
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    DataPersistenceManager.instance.SaveGame();
-                    SceneManager.LoadScene(endSceneStartId);
+                    cityCamera.enabled = false;
+                    clockRoomCamera.enabled = true;
+                    player.transform.position = new Vector3(40, 121f, 0);
                 }
             }
             else
             {
                 visualCue.SetActive(false);
             }
+        }
+        
+        
+        if (playerInRange)
+        {
+            visualCue.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                cityCamera.enabled = false;
+                clockRoomCamera.enabled = true;
+                player.transform.position = new Vector3(40, 120.5f, 0);
+
+                //DataPersistenceManager.instance.SaveGame();
+                //SceneManager.LoadScene(endSceneStartId);
+            }
+        }
+        else
+        {
+            visualCue.SetActive(false);
         }
     }
 
