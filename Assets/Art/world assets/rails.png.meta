@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d9296f5181d67094394ac8c5b374b7d2
+guid: 1ae305c0df8ffe34ebef907f712c2d63
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: buildings _0
+      name: rails_0
       rect:
         serializedVersion: 2
-        x: 127
-        y: 423
-        width: 65
-        height: 133
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d55be416cf73ab4996d93d88b9c52de
-      internalID: 1509089813
+      spriteID: 18651bb9f3a888640a50ef88726e97ed
+      internalID: 559889157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buildings _1
+      name: rails_1
       rect:
         serializedVersion: 2
-        x: 224
-        y: 423
-        width: 64
-        height: 133
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 596e1f9d04140a446923797ea5fe85ce
-      internalID: -640776363
+      spriteID: f69632fc1d30a8f4ab413b5a8e461d29
+      internalID: 1905283544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buildings _2
+      name: rails_2
       rect:
         serializedVersion: 2
-        x: 320
-        y: 423
-        width: 65
-        height: 133
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c57ec636eff944848b593a8b3eae8276
-      internalID: -676831095
+      spriteID: d7c9a6aff2ca2e248a98881caf99c938
+      internalID: 421391140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buildings _3
+      name: rails_3
       rect:
         serializedVersion: 2
-        x: 571
-        y: 294
-        width: 107
-        height: 173
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1635e1cfbfddead4caeaa38a5b87fe1b
-      internalID: -1945857217
+      spriteID: b1275a544603a974fb609d87dc8eec77
+      internalID: 685339021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buildings _4
+      name: rails_4
       rect:
         serializedVersion: 2
-        x: 731
-        y: 295
-        width: 106
-        height: 173
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d5c419f6428a9445899affb3abbd807
-      internalID: -1238081797
+      spriteID: 9fc191f41546b5f47949fa72a6c0907f
+      internalID: -577252547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buildings _5
+      name: rails_5
       rect:
         serializedVersion: 2
-        x: 891
-        y: 295
-        width: 107
-        height: 173
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa372bd347f6d0049af13ab46c67a62f
-      internalID: -936793892
+      spriteID: 8c474b0aa8f8e6e4e96ef164843e0761
+      internalID: 1901527836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buildings _6
+      name: rails_6
       rect:
         serializedVersion: 2
-        x: 7
-        y: 86
-        width: 313
-        height: 296
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,113 +237,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a31ac5d26dfb4042ba438437d753108
-      internalID: -13690805
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildings _7
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 104
-        width: 160
-        height: 278
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3cea28f15d2793e429f68238d31b04b1
-      internalID: 1830974853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildings _8
-      rect:
-        serializedVersion: 2
-        x: 570
-        y: 100
-        width: 108
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 948589a23de8928428d8e1c36fb203bc
-      internalID: 1738186
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildings _9
-      rect:
-        serializedVersion: 2
-        x: 698
-        y: 100
-        width: 108
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 068a78acc62991c41851704aea08646e
-      internalID: -131283497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildings _10
-      rect:
-        serializedVersion: 2
-        x: 826
-        y: 100
-        width: 140
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ae402fbeb1b45f439e3f3b785e99bb9
-      internalID: 929072332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildings _11
-      rect:
-        serializedVersion: 2
-        x: 992
-        y: 96
-        width: 191
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13a47acc349498d438a27ee6990b17fe
-      internalID: 1645910520
+      spriteID: 995493e5eabc59140bafa8298b2cb776
+      internalID: 698902123
       vertices: []
       indices: 
       edges: []
@@ -359,18 +254,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      buildings _0: 1509089813
-      buildings _1: -640776363
-      buildings _10: 929072332
-      buildings _11: 1645910520
-      buildings _2: -676831095
-      buildings _3: -1945857217
-      buildings _4: -1238081797
-      buildings _5: -936793892
-      buildings _6: -13690805
-      buildings _7: 1830974853
-      buildings _8: 1738186
-      buildings _9: -131283497
+      rails_0: 559889157
+      rails_1: 1905283544
+      rails_2: 421391140
+      rails_3: 685339021
+      rails_4: -577252547
+      rails_5: 1901527836
+      rails_6: 698902123
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

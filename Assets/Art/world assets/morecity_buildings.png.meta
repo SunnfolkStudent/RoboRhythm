@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d9296f5181d67094394ac8c5b374b7d2
+guid: 226726d6f4657d549a6830221c382572
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: buildings _0
+      name: morecity_buildings_0
       rect:
         serializedVersion: 2
-        x: 127
-        y: 423
-        width: 65
-        height: 133
+        x: 26
+        y: 190
+        width: 76
+        height: 171
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,146 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d55be416cf73ab4996d93d88b9c52de
-      internalID: 1509089813
+      spriteID: e355b89931018604b8bcf1025831bb0a
+      internalID: 2065324023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buildings _1
+      name: morecity_buildings_1
       rect:
         serializedVersion: 2
-        x: 224
-        y: 423
+        x: 136
+        y: 191
+        width: 108
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167bf255f78944c489506839eb7fec82
+      internalID: -578271628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morecity_buildings_2
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 190
+        width: 179
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106127f96393b2049a13106cfe04421a
+      internalID: -467997775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morecity_buildings_3
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 304
+        width: 152
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98928137129aeb4ab27715e81a9f097
+      internalID: 1617234162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morecity_buildings_4
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 71
+        width: 8
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8deb0f05df1114592853a231f61e15
+      internalID: -1278810307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morecity_buildings_5
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 49
+        width: 106
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683f13f42f41b0342b50bd6fe6755900
+      internalID: -675121208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morecity_buildings_6
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 94
+        width: 74
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18b3451dc8f8ac4aa3f292106672cd5
+      internalID: -541979616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morecity_buildings_7
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 119
         width: 64
-        height: 133
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,62 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 596e1f9d04140a446923797ea5fe85ce
-      internalID: -640776363
+      spriteID: d09c07f16bf232848ac60bfdde0ded2f
+      internalID: -44739694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buildings _2
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 423
-        width: 65
-        height: 133
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c57ec636eff944848b593a8b3eae8276
-      internalID: -676831095
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildings _3
-      rect:
-        serializedVersion: 2
-        x: 571
-        y: 294
-        width: 107
-        height: 173
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1635e1cfbfddead4caeaa38a5b87fe1b
-      internalID: -1945857217
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildings _4
+      name: morecity_buildings_8
       rect:
         serializedVersion: 2
         x: 731
-        y: 295
-        width: 106
-        height: 173
+        y: 116
+        width: 64
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,155 +279,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d5c419f6428a9445899affb3abbd807
-      internalID: -1238081797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildings _5
-      rect:
-        serializedVersion: 2
-        x: 891
-        y: 295
-        width: 107
-        height: 173
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa372bd347f6d0049af13ab46c67a62f
-      internalID: -936793892
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildings _6
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 86
-        width: 313
-        height: 296
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a31ac5d26dfb4042ba438437d753108
-      internalID: -13690805
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildings _7
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 104
-        width: 160
-        height: 278
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3cea28f15d2793e429f68238d31b04b1
-      internalID: 1830974853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildings _8
-      rect:
-        serializedVersion: 2
-        x: 570
-        y: 100
-        width: 108
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 948589a23de8928428d8e1c36fb203bc
-      internalID: 1738186
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildings _9
-      rect:
-        serializedVersion: 2
-        x: 698
-        y: 100
-        width: 108
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 068a78acc62991c41851704aea08646e
-      internalID: -131283497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildings _10
-      rect:
-        serializedVersion: 2
-        x: 826
-        y: 100
-        width: 140
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ae402fbeb1b45f439e3f3b785e99bb9
-      internalID: 929072332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buildings _11
-      rect:
-        serializedVersion: 2
-        x: 992
-        y: 96
-        width: 191
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13a47acc349498d438a27ee6990b17fe
-      internalID: 1645910520
+      spriteID: 269758270b54e5642bbeddfdf3893e6e
+      internalID: -1716592241
       vertices: []
       indices: 
       edges: []
@@ -359,18 +296,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      buildings _0: 1509089813
-      buildings _1: -640776363
-      buildings _10: 929072332
-      buildings _11: 1645910520
-      buildings _2: -676831095
-      buildings _3: -1945857217
-      buildings _4: -1238081797
-      buildings _5: -936793892
-      buildings _6: -13690805
-      buildings _7: 1830974853
-      buildings _8: 1738186
-      buildings _9: -131283497
+      morecity_buildings_0: 2065324023
+      morecity_buildings_1: -578271628
+      morecity_buildings_2: -467997775
+      morecity_buildings_3: 1617234162
+      morecity_buildings_4: -1278810307
+      morecity_buildings_5: -675121208
+      morecity_buildings_6: -541979616
+      morecity_buildings_7: -44739694
+      morecity_buildings_8: -1716592241
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
