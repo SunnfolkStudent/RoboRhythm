@@ -1,5 +1,5 @@
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StatueManager : MonoBehaviour, IDataPersistence
 {
@@ -10,6 +10,7 @@ public class StatueManager : MonoBehaviour, IDataPersistence
     [SerializeField] private SpriteRenderer statueHead, statueArm, statueLeg;
     [SerializeField] private bool isFixed;
     private bool playerInRange;
+    private string npcTaskId = "Cornet";
     private Collider2D _collider2D;
 
     private void Start()
@@ -60,8 +61,7 @@ public class StatueManager : MonoBehaviour, IDataPersistence
     private void FixStatue()
     {
         isFixed = true;
-        TaskManager.GetInstance().TaskComplete("Cornet"); 
-        DataPersistenceManager.instance.SaveGame();
+        TaskManager.GetInstance().TaskComplete(npcTaskId);
     }
     
     private void OnTriggerEnter2D(Collider2D collider)

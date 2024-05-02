@@ -23,23 +23,23 @@ Is there anything else I can help you with?
     ->Goodbye
     
 === LookingForKeys ===
-Looking for keys to the gate? Those are quiet rare indeed.
+Looking for <color=\#F8FF30>Keys</color> to the gate? Those are quiet rare indeed.
 
 I do happen to have one in my possession but it is part of my exclusive collection.
 
-You would need to trade me something quiet special for me to give up my key.
+You would need to trade me something quiet special for me to give up my <color=\#F8FF30>Key</color>.
     -> AnythingElse
     
 === Lost ===
 What are you looking for?
     + [The Mines]
-        The mines are just to the left of you!
+        <b>The Mines</b> are right down the stairs and to the left!
         ->AnythingElse
-    +[The Airstrip]
-        That is just to the right of you!
+    +[The Power Plant]
+        <b>The Power Plant</b> is down the stairs and to the right!
         ->AnythingElse
     +[The Gate]
-        That is just behind me!
+        <b>The Gate</b> is just behind me!
         ->AnythingElse
     +[Nevermind.]
         ->AnythingElse

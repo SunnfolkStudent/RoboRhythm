@@ -11,7 +11,7 @@ Is there anything I can help you with?
     
     
 === AnythingElse ===
-Is there anything else I can help you with? #speaker:Piccolo
+Is there anything else I can help you with?
 +[I'm looking for keys to the gate.]
     -> LookingForKeys
     +[I'm lost.]
@@ -22,22 +22,27 @@ Is there anything else I can help you with? #speaker:Piccolo
     ->Goodbye
     
 === LookingForKeys ===
-Looking for keys to the gate? Those are quiet rare indeed.
 I do happen to have one in my possession but it is part of my exclusive collection.
-That hat of yours looks very nice, I will give you my key in exchange. #key:Piccolo
-Thank you for the business!
+
+That hat of yours looks very nice, would you trade it for my <color=\#F8FF30>Key</color>?
+    +[Yes]
+        Wonderful! #hatoff:true #donetalking:Piccolo
+        Pleasure doing business! #key:Piccolo
+    -> AnythingElse
+        +[No thank you.]
+            Let me know if you change your mind.
     -> AnythingElse
     
 === Lost ===
 What are you looking for?
     + [The Mines]
-        The mines are just to the left of you!
+        <b>The Mines</b> are right down the stairs and to the left!
         ->AnythingElse
-    +[The Airstrip]
-        That is just to the right of you!
+    +[The Power Plant]
+        <b>The Power Plant</b> is down the stairs and to the right!
         ->AnythingElse
     +[The Gate]
-        That is just behind me!
+        <b>The Gate</b> is just behind me!
         ->AnythingElse
     +[Nevermind.]
         ->AnythingElse

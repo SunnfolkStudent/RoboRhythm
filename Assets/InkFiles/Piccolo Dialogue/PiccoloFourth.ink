@@ -10,7 +10,7 @@ Is there anything I can help you with? #speaker:Piccolo
     
     
 === AnythingElse ===
-Is there anything else I can help you with? #speaker:Piccolo
+Is there anything else I can help you with?
 +[I'm looking for keys to the gate.]
     -> LookingForKeys
     +[I'm lost.]
@@ -21,7 +21,7 @@ Is there anything else I can help you with? #speaker:Piccolo
     ->Goodbye
     
 === LookingForKeys ===
-Looking for keys to the gate? Those are quiet rare indeed.
+Still looking for <color=\#F8FF30>Keys</color>?
 I have heard the blacksmith holds one.
 He works down near the mine if you want to speak with him.
     -> AnythingElse
@@ -29,13 +29,13 @@ He works down near the mine if you want to speak with him.
 === Lost ===
 What are you looking for?
     + [The Mines]
-        The mines are just to the left of you!
+        <b>The Mines</b> are right down the stairs and to the left!
         ->AnythingElse
-    +[The Airstrip]
-        That is just to the right of you!
+    +[The Power Plant]
+        <b>The Power Plant</b> is down the stairs and to the right!
         ->AnythingElse
     +[The Gate]
-        That is just behind me!
+        <b>The Gate</b> is just behind me!
         ->AnythingElse
     +[Nevermind.]
         ->AnythingElse
@@ -56,3 +56,4 @@ It’s been more than a hundred years, what could survive that long?
 === Goodbye ===
 Come back anytime!
 ->END
+    
