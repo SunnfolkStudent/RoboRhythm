@@ -19,7 +19,7 @@ I’m glad you weren’t hurt.
     ->WhatCanDo
     
 === KeyToGate ===
-I had found another key, but I gave it to The Inventor Chamberlin as thanks for fixing my hand.
+I had found another key, but I gave it to <b>Zither</b> from <b>The Power Plant</b> as thanks for fixing my hand.
     ->WhatCanDo
     
 === BehindGate ===
