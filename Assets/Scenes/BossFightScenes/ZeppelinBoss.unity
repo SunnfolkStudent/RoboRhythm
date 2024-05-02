@@ -1747,19 +1747,19 @@ MonoBehaviour:
   - noteType: 7
     beatNumber: 265
   - noteType: 7
-    beatNumber: 2655
+    beatNumber: 265.5
   - noteType: 7
     beatNumber: 266
   - noteType: 7
-    beatNumber: 2665
+    beatNumber: 266.5
   - noteType: 7
     beatNumber: 267
   - noteType: 7
-    beatNumber: 2675
+    beatNumber: 267.5
   - noteType: 7
     beatNumber: 268
   - noteType: 7
-    beatNumber: 2685
+    beatNumber: 268.5
   - noteType: 2
     beatNumber: 271
   - noteType: 2
@@ -1860,33 +1860,65 @@ MonoBehaviour:
     beatNumber: 345
   - noteType: 2
     beatNumber: 347
+  - noteType: 10
+    beatNumber: 347
   - noteType: 1
+    beatNumber: 348
+  - noteType: 9
     beatNumber: 348
   - noteType: 2
     beatNumber: 349
+  - noteType: 5
+    beatNumber: 349
   - noteType: 3
+    beatNumber: 350
+  - noteType: 6
     beatNumber: 350
   - noteType: 2
     beatNumber: 351
+  - noteType: 5
+    beatNumber: 351
+  - noteType: 10
+    beatNumber: 351
   - noteType: 1
+    beatNumber: 352
+  - noteType: 8
     beatNumber: 352
   - noteType: 2
     beatNumber: 353
+  - noteType: 10
+    beatNumber: 353
   - noteType: 2
+    beatNumber: 357
+  - noteType: 6
     beatNumber: 357
   - noteType: 0
     beatNumber: 359
-  - noteType: 4
+  - noteType: 7
+    beatNumber: 359
+  - noteType: 3
+    beatNumber: 361
+  - noteType: 5
     beatNumber: 361
   - noteType: 2
     beatNumber: 363
+  - noteType: 10
+    beatNumber: 363
   - noteType: 1
+    beatNumber: 364
+  - noteType: 9
     beatNumber: 364
   - noteType: 0
     beatNumber: 365
+  - noteType: 8
+    beatNumber: 365
   - noteType: 1
     beatNumber: 366
+  - noteType: 8
+    beatNumber: 366
   - noteType: 2
+    beatNumber: 367
+  - noteType: 9
     beatNumber: 367
   - noteType: 2
     beatNumber: 369
@@ -1900,16 +1932,198 @@ MonoBehaviour:
     beatNumber: 369
   - noteType: 2
     beatNumber: 375
-  - noteType: 2
+  - noteType: 5
+    beatNumber: 375
+  - noteType: 10
+    beatNumber: 375
+  - noteType: 5
+    beatNumber: 376
+  - noteType: 10
+    beatNumber: 376
+  - noteType: 1
     beatNumber: 377
-  - noteType: 0
+  - noteType: 5
+    beatNumber: 377
+  - noteType: 10
+    beatNumber: 377
+  - noteType: 5
+    beatNumber: 378
+  - noteType: 10
+    beatNumber: 378
+  - noteType: 3
+    beatNumber: 379
+  - noteType: 5
+    beatNumber: 379
+  - noteType: 10
+    beatNumber: 379
+  - noteType: 5
+    beatNumber: 380
+  - noteType: 10
+    beatNumber: 380
+  - noteType: 2
+    beatNumber: 381
+  - noteType: 5
+    beatNumber: 381
+  - noteType: 10
+    beatNumber: 381
+  - noteType: 5
+    beatNumber: 382
+  - noteType: 6
     beatNumber: 383
-  - noteType: 0
+  - noteType: 7
+    beatNumber: 384
+  - noteType: 9
     beatNumber: 385
+  - noteType: 10
+    beatNumber: 386
+  - noteType: 9
+    beatNumber: 387
+  - noteType: 8
+    beatNumber: 388
+  - noteType: 7
+    beatNumber: 387
+  - noteType: 6
+    beatNumber: 388
+  - noteType: 5
+    beatNumber: 389
+  - noteType: 5
+    beatNumber: 390
+  - noteType: 10
+    beatNumber: 390
   - noteType: 2
-    beatNumber: 437
+    beatNumber: 391
+  - noteType: 5
+    beatNumber: 391
+  - noteType: 6
+    beatNumber: 391
+  - noteType: 9
+    beatNumber: 391
+  - noteType: 10
+    beatNumber: 391
+  - noteType: 1
+    beatNumber: 393
+  - noteType: 5
+    beatNumber: 393
+  - noteType: 7
+    beatNumber: 393
+  - noteType: 10
+    beatNumber: 393
+  - noteType: 5
+    beatNumber: 394
+  - noteType: 7
+    beatNumber: 394
+  - noteType: 10
+    beatNumber: 394
+  - noteType: 1
+    beatNumber: 395
+  - noteType: 5
+    beatNumber: 395
+  - noteType: 7
+    beatNumber: 395
+  - noteType: 10
+    beatNumber: 395
+  - noteType: 5
+    beatNumber: 396
+  - noteType: 7
+    beatNumber: 396
+  - noteType: 10
+    beatNumber: 396
+  - noteType: 1
+    beatNumber: 397
+  - noteType: 5
+    beatNumber: 397
+  - noteType: 7
+    beatNumber: 397
+  - noteType: 10
+    beatNumber: 397
+  - noteType: 5
+    beatNumber: 398
+  - noteType: 7
+    beatNumber: 398
+  - noteType: 10
+    beatNumber: 398
+  - noteType: 3
+    beatNumber: 399
+  - noteType: 5
+    beatNumber: 399
+  - noteType: 7
+    beatNumber: 399
+  - noteType: 10
+    beatNumber: 399
   - noteType: 2
-    beatNumber: 439
+    beatNumber: 401
+  - noteType: 5
+    beatNumber: 401
+  - noteType: 10
+    beatNumber: 401
+  - noteType: 2
+    beatNumber: 403
+  - noteType: 5
+    beatNumber: 403
+  - noteType: 10
+    beatNumber: 403
+  - noteType: 3
+    beatNumber: 405
+  - noteType: 5
+    beatNumber: 405
+  - noteType: 10
+    beatNumber: 405
+  - noteType: 1
+    beatNumber: 407
+  - noteType: 5
+    beatNumber: 407
+  - noteType: 10
+    beatNumber: 407
+  - noteType: 2
+    beatNumber: 409
+  - noteType: 5
+    beatNumber: 409
+  - noteType: 10
+    beatNumber: 409
+  - noteType: 1
+    beatNumber: 411
+  - noteType: 5
+    beatNumber: 411
+  - noteType: 10
+    beatNumber: 411
+  - noteType: 3
+    beatNumber: 413
+  - noteType: 5
+    beatNumber: 413
+  - noteType: 10
+    beatNumber: 413
+  - noteType: 2
+    beatNumber: 415
+  - noteType: 5
+    beatNumber: 415
+  - noteType: 10
+    beatNumber: 415
+  - noteType: 2
+    beatNumber: 416
+  - noteType: 7
+    beatNumber: 418
+  - noteType: 2
+    beatNumber: 420
+  - noteType: 8
+    beatNumber: 422
+  - noteType: 0
+    beatNumber: 424
+  - noteType: 5
+    beatNumber: 426
+  - noteType: 2
+    beatNumber: 428
+  - noteType: 2
+    beatNumber: 431
+  - noteType: 5
+    beatNumber: 431
+  - noteType: 6
+    beatNumber: 431
+  - noteType: 9
+    beatNumber: 431
+  - noteType: 10
+    beatNumber: 431
+  - noteType: 2
+    beatNumber: 465
 --- !u!114 &932661831
 MonoBehaviour:
   m_ObjectHideFlags: 0
