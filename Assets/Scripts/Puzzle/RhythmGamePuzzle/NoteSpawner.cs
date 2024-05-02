@@ -8,9 +8,10 @@ public class NoteSpawner
     private GameObject _noteObj;
     
     private List<float> _startTimes = new List<float>();
-    private float xSpawnPosition = 8f;
+    private float xSpawnPosition = 12f;
     private float _minYPosition = -4f;
-    private float _maxYPosition = 1.5f;
+    private float _maxYPosition = 1f;
+    private float _startTimeBuffer = 1.5f;
 
     public NoteSpawner(NotePuzzleScrub notePuzzleScrub, GameObject noteObj)
     {
@@ -21,7 +22,7 @@ public class NoteSpawner
     public void SpawnNotes()
     {
         _startTimes.Clear();
-        float totalTime = Time.time + 3f;
+        float totalTime = Time.time + 1.5f;
         _startTimes.Add(totalTime);
 
         for (int i = 0; i < _notePuzzleScrub.notes.Length - 1; i++)
