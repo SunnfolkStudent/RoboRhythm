@@ -184,20 +184,28 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: ddb4d8c759b1dda46b84c52a8b506fd4, type: 3}
+      propertyPath: m_SortingLayer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: ddb4d8c759b1dda46b84c52a8b506fd4, type: 3}
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: ddb4d8c759b1dda46b84c52a8b506fd4, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -596609229
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ddb4d8c759b1dda46b84c52a8b506fd4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.307691
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ddb4d8c759b1dda46b84c52a8b506fd4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1602283
+      value: -1.37
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ddb4d8c759b1dda46b84c52a8b506fd4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.055578
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ddb4d8c759b1dda46b84c52a8b506fd4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5471,6 +5479,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1151951213}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1481203207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1481203208}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1481203208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481203207}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.76, y: -3.95, z: 9.03889}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1751509447
 GameObject:
   m_ObjectHideFlags: 0
@@ -5550,7 +5589,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -596609229
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1751509451
@@ -5779,15 +5818,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8884916599064242951, guid: ac844d1612c4cb64d8eca17821f187ef, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.307691
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8884916599064242951, guid: ac844d1612c4cb64d8eca17821f187ef, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1497717
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8884916599064242951, guid: ac844d1612c4cb64d8eca17821f187ef, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.94442177
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8884916599064242951, guid: ac844d1612c4cb64d8eca17821f187ef, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5820,10 +5859,6 @@ PrefabInstance:
     - target: {fileID: 8898867766266593719, guid: ac844d1612c4cb64d8eca17821f187ef, type: 3}
       propertyPath: m_Name
       value: PuzzleCamera
-      objectReference: {fileID: 0}
-    - target: {fileID: 8898867766266593719, guid: ac844d1612c4cb64d8eca17821f187ef, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6047,3 +6082,4 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1151951213}
+  - {fileID: 1481203208}
