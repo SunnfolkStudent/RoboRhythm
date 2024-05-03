@@ -2,7 +2,7 @@
 
 === WhatCanDo ===
 
-What can I do for you youngster? #speaker:Old Man Cornet
+What can I do for you youngster? #speaker:Old Man Cornet #audio:Cornet
     +[What can you tell me about this city?]
         -> AboutTheCity
     +[I’m looking for keys to the gate.]

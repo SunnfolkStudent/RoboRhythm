@@ -1,4 +1,4 @@
-What a beautiful hat you have! #speaker:Piccolo
+What a beautiful hat you have! #speaker:Piccolo #audio:Piccolo
 Is there anything I can help you with?
     +[I'm looking for keys to the gate.]
     -> LookingForKeys

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d70c4db76c673b429ec8ac1fd728261, type: 3}
+  m_Name: TomAudio
+  m_EditorClassIdentifier: 
+  id: Tom
+  dialogueTypingSoundClips:
+  - {fileID: 8300000, guid: 0c914a4c7784e4349a9a41f43f703dd3, type: 3}
+  - {fileID: 8300000, guid: c181de1e63257ab48a3428db3c60b949, type: 3}
+  - {fileID: 8300000, guid: 396735f32e1756e4c9b96755df8cdb7e, type: 3}
+  frequencyLevel: 3
+  minPitch: 0.12
+  maxPitch: 0.63
+  stopAudioSource: 1
