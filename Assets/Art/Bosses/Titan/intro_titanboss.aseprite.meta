@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5395bcc81efcb08458fe963afe57d6e0
+guid: c61aaf1bad12c2245a5a42204e3012cf
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -124,8 +124,8 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 31858304
-    name: titanboss_intro
+    guid: -1332192480
+    name: intro_titanboss
     layerFlags: 0
     layerType: 0
     blendMode: 0
