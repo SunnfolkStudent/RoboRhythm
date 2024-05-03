@@ -42,6 +42,7 @@ public class RhythmPuzzleController : PuzzleControllerBase
         
         foreach (var value in puzzleData.rhythm)
         {
+            AudioManager.instance.PlayOneShot(_correctSound.noteEvent, gameObject.transform.position);
             _animator.Play("Light");
             yield return new WaitForSeconds(value);
         }
