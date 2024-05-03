@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2315266771401371832}
   - component: {fileID: 5904308471348169980}
   - component: {fileID: 2077838773958145353}
+  - component: {fileID: -3153004698032419726}
   m_Layer: 0
   m_Name: BoneAttack4
   m_TagString: Untagged
@@ -167,3 +168,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5284437, y: 1.3125}
   m_EdgeRadius: 0
+--- !u!114 &-3153004698032419726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288213079698190485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc4e245b5b1e23b46a94f79078183f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beatOfThisNote: 0
+  spawnPos: {x: 0, y: 0, z: 0}
+  hitPosition: {x: 0, y: 0, z: 0}
