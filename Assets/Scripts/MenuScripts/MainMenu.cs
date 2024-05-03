@@ -38,7 +38,7 @@ public class MainMenu : MonoBehaviour
         DataPersistenceManager.instance.NewGame();
         DataPersistenceManager.instance.SaveGame();
 
-        SceneManager.LoadScene("ProlougeScene");
+        SceneManager.LoadScene("PrologueScene");
     }
     
     public void OnContinueGameClicked()
