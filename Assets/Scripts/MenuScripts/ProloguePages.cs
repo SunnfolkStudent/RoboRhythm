@@ -1,9 +1,10 @@
 using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class ProloguePages : MonoBehaviour
+public class ProloguePages : MonoBehaviour, IDataPersistence
 {
     [SerializeField] private float typingSpeed;
     [SerializeField] private string line;
@@ -14,7 +15,14 @@ public class ProloguePages : MonoBehaviour
     private void Start()
     {
         canContinueToNextPage = false;
-        StartCoroutine(DisplayLine());
+        if(!string.IsNullOrEmpty(line))
+        {
+            StartCoroutine(DisplayLine());
+        }
+        else
+        {
+            canContinueToNextPage = true;
+        }
         if (isFirst)
         {
             AudioManager.instance.SetMusicRegionParameter(MusicRegion.Gearagedy);
@@ -41,10 +49,25 @@ public class ProloguePages : MonoBehaviour
         {
             if (nextPage == null)
             {
-                SceneManager.LoadScene("MainCityScene");
+                if(!string.IsNullOrEmpty(line))
+                {
+                    SceneManager.LoadScene("MainCityScene");
+                }
+                else
+                {
+                    DataPersistenceManager.instance.NewGame();
+                    SceneManager.LoadScene("MainCityScene");
+                }
             }
             nextPage.SetActive(true);
             gameObject.SetActive(false);
         }
+    }
+    
+    public void LoadData(GameData data) { }
+
+    public void SaveData(GameData data)
+    {
+        data.playerPosition = new Vector3(36, 95, 0);
     }
 }

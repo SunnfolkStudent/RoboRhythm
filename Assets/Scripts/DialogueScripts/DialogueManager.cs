@@ -382,19 +382,4 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             data.hatOn = hasHat;
             data.objectPosition = moveObject.transform.position;
         }
-    
-        /*public void SaveTaskData(GameData data) {}
-
-        public void LoadTaskData(GameData data)
-        {
-            if (hasHat)
-            {
-                TaskManager.GetInstance().TaskComplete("Piccolo"); 
-                Debug.Log("Finished task with piccolo");
-            }
-        }
-    
-        public void LoadKeyData(GameData data){}
-
-        public void SaveKeyData(GameData data) { }*/
 }
