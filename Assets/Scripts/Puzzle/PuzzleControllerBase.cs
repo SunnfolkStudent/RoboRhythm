@@ -11,7 +11,17 @@ public class PuzzleControllerBase : MonoBehaviour
     [SerializeField] protected Button victoryButton;
     [SerializeField] protected Button startButton;
     [SerializeField] protected string taskId;
-    
+
+    protected void Start()
+    {
+        AudioManager.instance.StopMusic();
+    }
+
+    protected void OnDestroy()
+    {
+        AudioManager.instance.StartMusic();
+    }
+
     protected void PuzzleCompleted()
     {
         completedPuzzles++;

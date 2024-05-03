@@ -1,7 +1,7 @@
 ->WhatCanDo
 
 === WhatCanDo ===
-What can I do for you? #speaker:Mayor Bell
+What can I do for you? #speaker:Mayor Bell #audio:Bell
     +[Do you know where other keys are?]
         ->HaveAKey
     +[Why were the Sky Pirates attacking you?]

@@ -136,7 +136,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rowNumber: 2
   hitExplosion: {fileID: 865691633192658861, guid: 424db14fdcb068044a27f3b15a3c27fb, type: 3}
-  soundClipNumber: 0
   rRangeInformation:
   - lowerRange: 0.95
     upperRange: 1.05
@@ -206,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 865691633192658861, guid: 1afd4361a3599244ab38921c7a53d5fb, type: 3}
-  dealDamage: 15
+  dealDamage: 10
 --- !u!95 &-6274302224557061414
 Animator:
   serializedVersion: 5

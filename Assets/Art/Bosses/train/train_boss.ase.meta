@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: 8527409664b9ae740862f18b9b1c2afd
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: train_boss_Clip
+    second: {fileID: 7400000, guid: 378af3827a2a1094790b9f410d52b863, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -97,7 +102,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638496438136149483
+  platformSettingsDirtyTick: 638503496440407803
   textureAssetName: 
   singleSpriteImportData:
   - name: 

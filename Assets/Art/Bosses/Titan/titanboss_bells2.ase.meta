@@ -1,0 +1,615 @@
+fileFormatVersion: 2
+guid: 6fc3fbafcd31c66438a860a13035697f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: titanboss_bells2_Frame_0
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 606
+      height: 918
+    spriteID: 6840eb1b50fa5864690c5aaeefa55cd0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: titanboss_bells2_Frame_1
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 930
+      width: 606
+      height: 918
+    spriteID: a62f8ba06e1e4a641bcd581ca009b6ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 930}
+  - name: titanboss_bells2_Frame_2
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1856
+      width: 606
+      height: 918
+    spriteID: 091d787f374e72e4dadfe42d9c9acef9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1856}
+  - name: titanboss_bells2_Frame_3
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2782
+      width: 606
+      height: 918
+    spriteID: 711d3eb662aa9fc449269bc26ab42f4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2782}
+  - name: titanboss_bells2_Frame_4
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 618
+      y: 4
+      width: 606
+      height: 918
+    spriteID: 7cfd13df3a217b44cb639f85dd90488f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 618, y: 4}
+  - name: titanboss_bells2_Frame_5
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 618
+      y: 930
+      width: 606
+      height: 918
+    spriteID: 7f81aea40318e01408a81f3b2c2444d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 618, y: 930}
+  - name: titanboss_bells2_Frame_6
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 618
+      y: 1856
+      width: 606
+      height: 918
+    spriteID: cceb59072d11df548a977b08b0e719be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 618, y: 1856}
+  - name: titanboss_bells2_Frame_7
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 618
+      y: 2782
+      width: 606
+      height: 918
+    spriteID: d840ad80274cd314cbeace7a652bb13d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 618, y: 2782}
+  - name: titanboss_bells2_Frame_8
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1232
+      y: 4
+      width: 606
+      height: 918
+    spriteID: d98c86c698794754d84420185f4b60c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1232, y: 4}
+  - name: titanboss_bells2_Frame_9
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1232
+      y: 930
+      width: 606
+      height: 918
+    spriteID: 1aab9d2081847f6428fd7f1950a32606
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1232, y: 930}
+  - name: titanboss_bells2_Frame_10
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1232
+      y: 1856
+      width: 606
+      height: 918
+    spriteID: e7ccf1dbbfc94bb4cb29b1b385630132
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1232, y: 1856}
+  - name: titanboss_bells2_Frame_11
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1232
+      y: 2782
+      width: 606
+      height: 918
+    spriteID: 452b734844a058140b513f295f6a13c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1232, y: 2782}
+  - name: titanboss_bells2_Frame_12
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1846
+      y: 4
+      width: 606
+      height: 918
+    spriteID: 8dfa2a4c611994c4490f111883774ff8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1846, y: 4}
+  - name: titanboss_bells2_Frame_13
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1846
+      y: 930
+      width: 606
+      height: 918
+    spriteID: d3cb0f2fa1b8aeb48a7e3b6f30a5d36b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1846, y: 930}
+  - name: titanboss_bells2_Frame_14
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1846
+      y: 1856
+      width: 606
+      height: 918
+    spriteID: 73d2c2b7e0d443e44af3120396864a33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1846, y: 1856}
+  - name: titanboss_bells2_Frame_15
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1846
+      y: 2782
+      width: 606
+      height: 918
+    spriteID: 6b66e021e228b144abaa1a763f2e4e2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1846, y: 2782}
+  - name: titanboss_bells2_Frame_16
+    originalName: 
+    pivot: {x: -0.58415836, y: -0.17647061}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2460
+      y: 4
+      width: 606
+      height: 918
+    spriteID: b27659649c65cd74aa0b1457c11048e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2460, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1904839142
+    name: titanboss_bells2
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: titanboss_bells2_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: 6840eb1b50fa5864690c5aaeefa55cd0
+    - name: titanboss_bells2_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: a62f8ba06e1e4a641bcd581ca009b6ca
+    - name: titanboss_bells2_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: 091d787f374e72e4dadfe42d9c9acef9
+    - name: titanboss_bells2_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: 711d3eb662aa9fc449269bc26ab42f4f
+    - name: titanboss_bells2_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: 7cfd13df3a217b44cb639f85dd90488f
+    - name: titanboss_bells2_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: 7f81aea40318e01408a81f3b2c2444d8
+    - name: titanboss_bells2_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: cceb59072d11df548a977b08b0e719be
+    - name: titanboss_bells2_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: d840ad80274cd314cbeace7a652bb13d
+    - name: titanboss_bells2_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: d98c86c698794754d84420185f4b60c6
+    - name: titanboss_bells2_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: 1aab9d2081847f6428fd7f1950a32606
+    - name: titanboss_bells2_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: e7ccf1dbbfc94bb4cb29b1b385630132
+    - name: titanboss_bells2_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: 452b734844a058140b513f295f6a13c5
+    - name: titanboss_bells2_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: 8dfa2a4c611994c4490f111883774ff8
+    - name: titanboss_bells2_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: d3cb0f2fa1b8aeb48a7e3b6f30a5d36b
+    - name: titanboss_bells2_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: 73d2c2b7e0d443e44af3120396864a33
+    - name: titanboss_bells2_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: 6b66e021e228b144abaa1a763f2e4e2a
+    - name: titanboss_bells2_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 1314
+        y: 162
+        width: 606
+        height: 918
+      spriteId: b27659649c65cd74aa0b1457c11048e9
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 1920, y: 1080}
