@@ -5,12 +5,6 @@ public class NotePuzzleController : PuzzleControllerBase
     private NoteSpawner _noteSpawner;
     private NotePuzzleScrub _notePuzzleScrub;
     [SerializeField] private GameObject _noteObj;
-    
-    // Start is called before the first frame update
-    private void Start()
-    {
-        _noteSpawner = new NoteSpawner(_notePuzzleScrub, _noteObj);
-    }
 
     private void OnEnable()
     {

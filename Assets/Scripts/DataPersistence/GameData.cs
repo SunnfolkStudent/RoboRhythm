@@ -18,7 +18,7 @@ public class GameData
 
     public GameData()
     {
-        playerPosition = new Vector3(36, 58, 0);
+        playerPosition = new Vector3(-44, 0, 0);
         objectPosition = new Vector3(52.5f, 28, 0);
         hatOn = false;
         hasAllKeys = false;

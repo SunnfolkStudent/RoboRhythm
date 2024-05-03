@@ -34,10 +34,7 @@ MonoBehaviour:
   - KeyBind: 76
     Key: 12
     timeToWait: 0.5
-  - KeyBind: 0
+  - KeyBind: 65
     Key: 0
     timeToWait: 0.5
-  - KeyBind: 0
-    Key: 0
-    timeToWait: 0
-  speed: 1
+  speed: 4.3
