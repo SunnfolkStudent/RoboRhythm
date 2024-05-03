@@ -86,11 +86,4 @@ public class StatueManager : MonoBehaviour, IDataPersistence
     {
         data.statueFixed = isFixed;
     }
-    
-    public void SaveTaskData(GameData data) { }
-    public void LoadTaskData(GameData data) { }
-    
-    public void LoadKeyData(GameData data){}
-
-    public void SaveKeyData(GameData data) { }
 }

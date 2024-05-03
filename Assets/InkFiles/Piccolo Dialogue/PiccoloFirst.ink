@@ -1,4 +1,4 @@
-Hello little guy! I am the merchant <b>Piccolo</b>!  #speaker:???
+Hello little guy! I am the merchant <b>Piccolo</b>!  #speaker:??? #audio:Piccolo
 I have traveled near and far to sell the best wares that can be found in the known world! #speaker:Piccolo
 Is there anything I can help you with?
     +[I'm looking for keys to the gate.]

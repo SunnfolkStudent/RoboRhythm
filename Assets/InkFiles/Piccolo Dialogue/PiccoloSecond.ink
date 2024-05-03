@@ -1,4 +1,4 @@
-Is there anything I can help you with? #speaker:Piccolo
+Is there anything I can help you with? #speaker:Piccolo #audio:Piccolo
     +[I'm looking for keys to the gate.]
     -> LookingForKeys
     +[I'm lost.]

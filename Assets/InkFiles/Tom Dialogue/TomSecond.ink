@@ -1,7 +1,7 @@
 ->WhatCanDo
 
 === WhatCanDo ===
-What can I do for you little friend? #speaker:Blacksmith Tom
+What can I do for you little friend? #speaker:Blacksmith Tom #audio:Tom
     +[What's happening in the mines?]
         ->InTheMines
     +[Do you have a key to the gate?]

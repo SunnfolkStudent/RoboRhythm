@@ -1,7 +1,7 @@
 ->WhatCanDo
 
 === WhatCanDo ===
-What can I do for you? #speaker:Mayor Bell
+What can I do for you? #speaker:Mayor Bell #audio:Bell
     +[Do you have a key to the gate?]
         ->HaveAKey
     +[What's this about Sky Pirates?]
@@ -10,7 +10,7 @@ What can I do for you? #speaker:Mayor Bell
         ->Goodbye
         
 === HaveAKey ===
-When I took the hat of mayor I was also given the key passed down to all mayors. 
+When I took the hat of mayor I was also given the <color=\#F8FF30>Key</color> passed down to all mayors. 
 I’ve been tasked with keeping it safe from those who wish harm.
     ->WhatCanDo
     
