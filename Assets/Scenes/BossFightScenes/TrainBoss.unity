@@ -360,24 +360,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: fdafdafda
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae8fff5d22b207c43b77132e8119e5c0, type: 2}
-  m_sharedMaterial: {fileID: -1313564648662042420, guid: ae8fff5d22b207c43b77132e8119e5c0, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: f44235c522756e44eaa4d39a50b5a93c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190335
+    rgba: 4278255596
   m_fontColor: {r: 0.92503774, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 0.81886786, g: 0.7756978, b: 0.08497676, a: 1}
-    topRight: {r: 0.8622785, g: 0.8867924, b: 0.10541113, a: 1}
-    bottomLeft: {r: 0.83396226, g: 0.34219292, b: 0.073955104, a: 1}
-    bottomRight: {r: 0.86415094, g: 0.34703404, b: 0.08967595, a: 1}
+    topLeft: {r: 0.21698111, g: 0.1610862, b: 0.0010234982, a: 1}
+    topRight: {r: 0.3301887, g: 0.17489447, b: 0, a: 1}
+    bottomLeft: {r: 0.0754717, g: 0.006763971, b: 0.006763971, a: 1}
+    bottomRight: {r: 0.103773594, g: 0.022796623, b: 0.009300461, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -1414,7 +1414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837f43c6aedf1754d9c0a0554d66c344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  songLengthInSeconds: 225
+  songLengthInSeconds: 150
   bossHealthBar: {fileID: 782489640}
   taskId: Tom
 --- !u!1 &800905398
@@ -1482,9 +1482,72 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   file: {fileID: 4900000, guid: 6b7de1d4625eec84081aef388d37c1e2, type: 3}
   chatInfoHolders:
-  - beatNumber: 9
+  - beatNumber: 21
     stayTimeBeats: 6
-    chatText: OMG IM A TRAIN!!!
+    chatText: GOOD EVENING YOUNG GENTLEMAN!
+  - beatNumber: 29
+    stayTimeBeats: 6
+    chatText: MY NAME IS CLAUDIUS LA CHU!
+  - beatNumber: 37
+    stayTimeBeats: 6
+    chatText: BUT SADLY THIS IS WHERE YOUR TRACK ENDS!
+  - beatNumber: 45
+    stayTimeBeats: 6
+    chatText: TIME TO DEPART!!
+  - beatNumber: 101
+    stayTimeBeats: 6
+    chatText: I WASN'T ALWAYS LIKE THIS YOU KNOW!
+  - beatNumber: 109
+    stayTimeBeats: 6
+    chatText: I USED TO BE THE TOP CABOOSE!!
+  - beatNumber: 117
+    stayTimeBeats: 6
+    chatText: I USED TO BE THE CATS PAJAMAS!!!
+  - beatNumber: 125
+    stayTimeBeats: 6
+    chatText: UNTIL THOSE ABOMINATIONS CAME!!!!!
+  - beatNumber: 233
+    stayTimeBeats: 6
+    chatText: METAL ABOMINATIONS CAME FROM THE SKIES!!
+  - beatNumber: 241
+    stayTimeBeats: 6
+    chatText: THE ENTIRE TOWN WAS HYPNOTIZED!!!
+  - beatNumber: 249
+    stayTimeBeats: 6
+    chatText: AND I WAS ABANDONED. . . TO MY SURPRISE!
+  - beatNumber: 257
+    stayTimeBeats: 6
+    chatText: TO ROT AWAY. . . UNTIL MY DEMISE!!!!
+  - beatNumber: 362
+    stayTimeBeats: 5
+    chatText: SO NOW ILL SET THE TOWN ALIGHT!!!
+  - beatNumber: 369
+    stayTimeBeats: 6
+    chatText: AND WATCH IT BURN. . . TO MY DELIGHT!!
+  - beatNumber: 377
+    stayTimeBeats: 6
+    chatText: AND IF I MAKE IT THROUGH THE NIGHT!!!
+  - beatNumber: 385
+    stayTimeBeats: 7
+    chatText: THIS LOCO MOTIVE. . . WILL COME TO LIFE!!!
+  - beatNumber: 394
+    stayTimeBeats: 5
+    chatText: AND THEN I'LL WATCH. . . FROM HELL!
+  - beatNumber: 401
+    stayTimeBeats: 6
+    chatText: AS THAT STUPID MAYOR RINGS HIS. . . FINAL BELL!!
+  - beatNumber: 409
+    stayTimeBeats: 6
+    chatText: THEY'LL REGRET. . . LEAVING ME TO DWELL!!!
+  - beatNumber: 417
+    stayTimeBeats: 16
+    chatText: 'AS I EXPLODE THIS CITY TO    . . . '
+  - beatNumber: 478
+    stayTimeBeats: 6
+    chatText: I'M TOO UNSTABLE!!!
+  - beatNumber: 486
+    stayTimeBeats: 6
+    chatText: I'M GONNA DERAIL!!!
 --- !u!1 &932661827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,26 +1608,170 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   file: {fileID: 4900000, guid: 11a3d0d101a69de4e878da70376ffda9, type: 3}
   notePropertiesArray:
-  - noteType: 1
-    beatNumber: 17
-  - noteType: 2
-    beatNumber: 19
-  - noteType: 3
-    beatNumber: 21
-  - noteType: 4
+  - noteType: 6
     beatNumber: 23
-  - noteType: 5
+  - noteType: 10
     beatNumber: 25
   - noteType: 6
     beatNumber: 27
-  - noteType: 7
-    beatNumber: 29
-  - noteType: 8
-    beatNumber: 31
-  - noteType: 9
-    beatNumber: 33
   - noteType: 10
+    beatNumber: 29
+  - noteType: 6
+    beatNumber: 31
+  - noteType: 10
+    beatNumber: 33
+  - noteType: 9
+    beatNumber: 34
+  - noteType: 7
     beatNumber: 35
+  - noteType: 6
+    beatNumber: 36
+  - noteType: 7
+    beatNumber: 37
+  - noteType: 9
+    beatNumber: 38
+  - noteType: 10
+    beatNumber: 39
+  - noteType: 9
+    beatNumber: 40
+  - noteType: 7
+    beatNumber: 41
+  - noteType: 6
+    beatNumber: 42
+  - noteType: 7
+    beatNumber: 43
+  - noteType: 9
+    beatNumber: 44
+  - noteType: 10
+    beatNumber: 45
+  - noteType: 9
+    beatNumber: 46
+  - noteType: 7
+    beatNumber: 47
+  - noteType: 6
+    beatNumber: 48
+  - noteType: 7
+    beatNumber: 49
+  - noteType: 9
+    beatNumber: 50
+  - noteType: 10
+    beatNumber: 51
+  - noteType: 3
+    beatNumber: 53
+  - noteType: 6
+    beatNumber: 57
+  - noteType: 10
+    beatNumber: 57
+  - noteType: 3
+    beatNumber: 61
+  - noteType: 6
+    beatNumber: 64
+  - noteType: 10
+    beatNumber: 64
+  - noteType: 2
+    beatNumber: 69
+  - noteType: 6
+    beatNumber: 73
+  - noteType: 10
+    beatNumber: 73
+  - noteType: 4
+    beatNumber: 77
+  - noteType: 3
+    beatNumber: 81
+  - noteType: 6
+    beatNumber: 81
+  - noteType: 10
+    beatNumber: 81
+  - noteType: 3
+    beatNumber: 85
+  - noteType: 11
+    beatNumber: 85
+  - noteType: 12
+    beatNumber: 85
+  - noteType: 14
+    beatNumber: 85
+  - noteType: 15
+    beatNumber: 85
+  - noteType: 3
+    beatNumber: 89
+  - noteType: 2
+    beatNumber: 91
+  - noteType: 3
+    beatNumber: 93
+  - noteType: 4
+    beatNumber: 95
+  - noteType: 3
+    beatNumber: 97
+  - noteType: 3
+    beatNumber: 133
+  - noteType: 11
+    beatNumber: 133
+  - noteType: 12
+    beatNumber: 133
+  - noteType: 14
+    beatNumber: 133
+  - noteType: 15
+    beatNumber: 133
+  - noteType: 3
+    beatNumber: 137
+  - noteType: 11
+    beatNumber: 137
+  - noteType: 12
+    beatNumber: 137
+  - noteType: 14
+    beatNumber: 137
+  - noteType: 15
+    beatNumber: 137
+  - noteType: 4
+    beatNumber: 141
+  - noteType: 11
+    beatNumber: 141
+  - noteType: 12
+    beatNumber: 141
+  - noteType: 13
+    beatNumber: 141
+  - noteType: 15
+    beatNumber: 141
+  - noteType: 2
+    beatNumber: 145
+  - noteType: 11
+    beatNumber: 145
+  - noteType: 13
+    beatNumber: 145
+  - noteType: 14
+    beatNumber: 145
+  - noteType: 15
+    beatNumber: 145
+  - noteType: 5
+    beatNumber: 149
+  - noteType: 11
+    beatNumber: 149
+  - noteType: 12
+    beatNumber: 149
+  - noteType: 13
+    beatNumber: 149
+  - noteType: 14
+    beatNumber: 149
+  - noteType: 3
+    beatNumber: 153
+  - noteType: 11
+    beatNumber: 153
+  - noteType: 12
+    beatNumber: 153
+  - noteType: 14
+    beatNumber: 153
+  - noteType: 15
+    beatNumber: 153
+  - noteType: 1
+    beatNumber: 157
+  - noteType: 12
+    beatNumber: 157
+  - noteType: 13
+    beatNumber: 157
+  - noteType: 14
+    beatNumber: 157
+  - noteType: 15
+    beatNumber: 157
 --- !u!114 &932661831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1594,8 +1801,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421d339a8777c7446b5be0f2ede809ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  songBpm: 160
-  beatsShownInAdvance: 3
+  songBpm: 200
+  beatsShownInAdvance: 4
   noteObjects:
   - {fileID: 8084541212325763255, guid: 1893b516292c6ef4095ca0ae950f4755, type: 3}
   - {fileID: 8084541212325763255, guid: 1eaf956541134cf4f99d7bd8542825ee, type: 3}
@@ -1608,6 +1815,11 @@ MonoBehaviour:
   - {fileID: 8084541212325763255, guid: fb7599cb03b88644f8cd8481f7192ac4, type: 3}
   - {fileID: 8084541212325763255, guid: bff94596256ecd7428fe6dd1d39f7dd5, type: 3}
   - {fileID: 8084541212325763255, guid: a6b170bbcce2ef244ae55753ba341212, type: 3}
+  - {fileID: 8084541212325763255, guid: f8fea0a7e834b914fbb16868ef6355a7, type: 3}
+  - {fileID: 8084541212325763255, guid: a347fe2995ace714d99e47f6eeff8b08, type: 3}
+  - {fileID: 8084541212325763255, guid: 5eb1cd56be4ec174abd931601a0cb430, type: 3}
+  - {fileID: 8084541212325763255, guid: 76119091065effe40947d6ac4b6f25eb, type: 3}
+  - {fileID: 8084541212325763255, guid: 28a93272630ac0e41bfa2fd0f10bd12f, type: 3}
 --- !u!4 &932661833
 Transform:
   m_ObjectHideFlags: 0
@@ -1633,7 +1845,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7a7d31bb4a6cd984eb867e1a33dc77b3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 58393c0f8b0908e49a1aa88283a3bd1c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.25
   m_Pitch: 1
@@ -2269,11 +2481,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   savePoints:
   - 0
-  - 96
-  - 168
-  - 304
-  - 432
-  - 560
+  - 99
+  - 231
+  - 357
   playerHitbox: {fileID: 1427791703}
   platformHitbox: {fileID: 365083255}
 --- !u!114 &1558958065
@@ -2728,7 +2938,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1937903572
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3392,7 +3602,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46f5637c03a71146b546b1195862d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossAnimationHolder: []
+  bossAnimationHolder:
+  - animationName: Frazzled
+    animationBeat: 125
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

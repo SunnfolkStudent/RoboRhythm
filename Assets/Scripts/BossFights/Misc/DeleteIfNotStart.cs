@@ -15,7 +15,7 @@ public class DeleteIfNotStart : MonoBehaviour
 
     private void Update()
     {
-        if (_songPosition.songPosition > 5)
+        if (_songPosition.songPosition > 10)
         {
             Destroy(gameObject);
         }

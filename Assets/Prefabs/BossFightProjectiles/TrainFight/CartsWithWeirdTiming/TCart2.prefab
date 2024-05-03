@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4303668608147588180}
   - component: {fileID: -5848794617356180252}
   m_Layer: 0
-  m_Name: Cart1
+  m_Name: TCart2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 195597203, guid: 86d71e14dbb07be46ae3ef00565b0501, type: 3}
+  m_Sprite: {fileID: 2146794494, guid: 86d71e14dbb07be46ae3ef00565b0501, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,8 +102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatOfThisNote: 0
-  spawnPos: {x: -1, y: 4, z: 0}
-  hitPosition: {x: -5.3, y: -4.5, z: 0}
+  spawnPos: {x: -0.75, y: 4, z: 0}
+  hitPosition: {x: -2, y: -3, z: 0}
 --- !u!114 &1269541802203979366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startScale: 0.3
-  endScale: 3
+  endScale: 2
 --- !u!114 &4303668608147588180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,7 +182,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.4375, y: 1.3125}
+    oldSize: {x: 1.1875, y: 1.3125}
     newSize: {x: 1.1875, y: 1.8125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

@@ -1378,7 +1378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837f43c6aedf1754d9c0a0554d66c344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  songLengthInSeconds: 225
+  songLengthInSeconds: 125
   bossHealthBar: {fileID: 782489640}
   taskId: 
 --- !u!1 &800905398
@@ -1444,80 +1444,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885bb10a9094fc1499e918a81750dc40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  file: {fileID: 4900000, guid: ed1ebd1e3a5a3ce40897ce0035fa7638, type: 3}
+  file: {fileID: 4900000, guid: 9e6d8a8140bf1ae468f1c35767891431, type: 3}
   chatInfoHolders:
-  - beatNumber: 9
-    stayTimeBeats: 6
-    chatText: WHO DO WE HAVE HERE!?!
   - beatNumber: 17
     stayTimeBeats: 6
-    chatText: ANOTHER FOOL COME TO STOP US?!?
+    chatText: OH YOU PITIFUL SOUL
   - beatNumber: 25
     stayTimeBeats: 6
-    chatText: THEN PREPARE TO DIE!!!
+    chatText: TODAY HAS TRUELY BEEN A MISFORTUNE
+  - beatNumber: 33
+    stayTimeBeats: 6
+    chatText: BUT I HAVE A DUTY TO UPHOLD
+  - beatNumber: 41
+    stayTimeBeats: 6
+    chatText: AND SO YOU. . . MUST. . . DIE. . .
   - beatNumber: 97
     stayTimeBeats: 6
-    chatText: HAHAHAHAHAHAHAHAHAHAHA!!!
+    chatText: THIS WORLD IS UNKIND TO PEOPLE LIKE YOU
   - beatNumber: 105
     stayTimeBeats: 6
-    chatText: YOU ARE STRONGER THAN YOU LOOK!!!
+    chatText: STRIVING FOR THE IMPOSSIBLE
   - beatNumber: 113
-    stayTimeBeats: 6
-    chatText: BUT YOU ARE NO MATCH FOR OUR MIGHT!!!
-  - beatNumber: 169
-    stayTimeBeats: 6
-    chatText: WE ARE VERY IMPRESSED!!!
-  - beatNumber: 177
-    stayTimeBeats: 6
-    chatText: BUT ITS TIME TO END THIS WITH OUR SECRET ATTACK!!!
+    stayTimeBeats: 4
+    chatText: BLINDED BY HOPE
   - beatNumber: 185
     stayTimeBeats: 6
-    chatText: TRY TO DODGE OUR. . . BIRD ARMY!!!
-  - beatNumber: 233
-    stayTimeBeats: 2
-    chatText: HAHAHAHAHA!!!
-  - beatNumber: 306
+    chatText: YOU HAVE DONE WELL. . . SMALL ONE
+  - beatNumber: 193
     stayTimeBeats: 6
-    chatText: YOU'RE QUITE THE BRAT!!!
-  - beatNumber: 313
+    chatText: BUT YOUR EFFORTS ARE FUTILE
+  - beatNumber: 201
     stayTimeBeats: 6
-    chatText: WE'VE DONE NOTHING TO YOU!!!
-  - beatNumber: 321
+    chatText: THE DEAD CANNOT DIE
+  - beatNumber: 209
     stayTimeBeats: 6
-    chatText: WHY ARE YOU WILLING TO DIE FOR OTHERS???
-  - beatNumber: 329
-    stayTimeBeats: 6
-    chatText: BECAUSE YOU WILL DIE!!!
-  - beatNumber: 433
-    stayTimeBeats: 6
-    chatText: WHAT DO YOU HOPE TO ACCOMPLISH?!?
-  - beatNumber: 441
-    stayTimeBeats: 6
-    chatText: WE'VE SEEN WHAT'S ON THE OTHER SIDE OF THE MOUNTAIN!!!
-  - beatNumber: 449
-    stayTimeBeats: 6
-    chatText: THERE IS ONLY DEATH IN THIS WORLD!!!
-  - beatNumber: 457
-    stayTimeBeats: 6
-    chatText: LET US SHOW YOU!!!
-  - beatNumber: 489
-    stayTimeBeats: 6
-    chatText: CRAP. . . OUT OF BIRDS!!!
-  - beatNumber: 529
-    stayTimeBeats: 6
-    chatText: WHY WON'T YOU DIE!!!
-  - beatNumber: 561
-    stayTimeBeats: 6
-    chatText: WAIT!!! NO NO NO!!!
-  - beatNumber: 569
-    stayTimeBeats: 6
-    chatText: OUR SYSTEM'S MALFUNCTIONING!!!
-  - beatNumber: 577
-    stayTimeBeats: 6
-    chatText: EVERYONE PREPARE FOR A CRASH LANDING!!!
-  - beatNumber: 585
-    stayTimeBeats: 6
-    chatText: NOOOOOOOOOOOOOOOOOOOOOOOO!!!!!
+    chatText: BUT YOU MUST
 --- !u!1 &885135632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,37 +1574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   file: {fileID: 4900000, guid: 913acc8e2391fad40893b3e75876b568, type: 3}
-  notePropertiesArray:
-  - noteType: 1
-    beatNumber: 17
-  - noteType: 2
-    beatNumber: 19
-  - noteType: 3
-    beatNumber: 21
-  - noteType: 4
-    beatNumber: 23
-  - noteType: 5
-    beatNumber: 25
-  - noteType: 6
-    beatNumber: 27
-  - noteType: 7
-    beatNumber: 29
-  - noteType: 8
-    beatNumber: 31
-  - noteType: 9
-    beatNumber: 33
-  - noteType: 10
-    beatNumber: 35
-  - noteType: 11
-    beatNumber: 37
-  - noteType: 12
-    beatNumber: 39
-  - noteType: 13
-    beatNumber: 41
-  - noteType: 14
-    beatNumber: 43
-  - noteType: 15
-    beatNumber: 45
+  notePropertiesArray: []
 --- !u!114 &932661831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1717,7 +1648,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eaa7fec801c11ad43b2754c467c01455, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 36376e01fa30cef4fa9795cae26ef0aa, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.25
   m_Pitch: 1
@@ -1820,7 +1751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &997982796
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1853,7 +1784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2048,7 +1979,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1346075716
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2081,14 +2012,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 0d8300130330f364cace0d7872ca5e7a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2291,11 +2222,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   savePoints:
   - 0
-  - 96
-  - 168
-  - 304
-  - 432
-  - 560
+  - 90
+  - 183
+  - 250
   playerHitbox: {fileID: 1427791703}
   platformHitbox: {fileID: 365083255}
 --- !u!114 &1558958065
@@ -2509,7 +2438,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1725026485
 RectTransform:
   m_ObjectHideFlags: 0

@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beatOfThisNote: 0
   spawnPos: {x: 0.75, y: 4, z: 0}
-  hitPosition: {x: 2, y: -3, z: 0}
+  hitPosition: {x: 2.5, y: -4.5, z: 0}
 --- !u!114 &1269541802203979366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startScale: 0.3
-  endScale: 2
+  endScale: 3
 --- !u!114 &4303668608147588180
 MonoBehaviour:
   m_ObjectHideFlags: 0
