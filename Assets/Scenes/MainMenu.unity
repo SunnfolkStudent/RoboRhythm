@@ -514,7 +514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f097e909ea60947a507c1457a38430, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSceneName: MainCityScene
   firstMenu: {fileID: 1996128286}
   secondMenu: {fileID: 1705191834}
   bossModeMenu: {fileID: 1674470225}

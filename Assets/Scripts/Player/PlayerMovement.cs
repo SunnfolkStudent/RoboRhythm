@@ -5,6 +5,8 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 {
     [Header("Movement variables")] 
     private bool _frozen;
+    private float _runMoveDuration = 0.08f;
+    private float _walkMoveDuration = 0.15f;
     private float _moveDuration = 0.15f;
     private float _gridSize = 0.5f;
     private bool _isMoving;
@@ -20,6 +22,9 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         PlayerEvents.playerUp += MoveUp;
         PlayerEvents.playerLeft += MoveLeft;
         PlayerEvents.playerRight += MoveRight;
+        
+        PlayerEvents.playerRunning += Run;
+        PlayerEvents.playerNotRunning += StopRunning;
     }
     
     private void OnDisable()
@@ -63,6 +68,16 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         {
             StartCoroutine(Move(Vector2.right));
         }
+    }
+    
+    private void Run()
+    {
+        _moveDuration = _runMoveDuration;
+    }
+    
+    private void StopRunning()
+    {
+        _moveDuration = _walkMoveDuration;
     }
     
     private IEnumerator Move(Vector2 direction)

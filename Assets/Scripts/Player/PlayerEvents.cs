@@ -9,6 +9,8 @@ public static class PlayerEvents
     public static PlayerEvent playerDown;
     public static PlayerEvent playerLeft;
     public static PlayerEvent playerRight;
+    public static PlayerEvent playerRunning;
+    public static PlayerEvent playerNotRunning;
 
     public static PlayerEvent playerMoved;
 

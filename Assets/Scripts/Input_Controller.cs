@@ -49,6 +49,15 @@ public class Input_Controller : MonoBehaviour
         {
             PlayerEvents.playerRight?.Invoke();
         }
+        
+        if (_input.Player.Run.WasPressedThisFrame())
+        {
+            PlayerEvents.playerRunning?.Invoke();
+        }
+        if (_input.Player.Run.WasReleasedThisFrame())
+        {
+            PlayerEvents.playerNotRunning?.Invoke();
+        }
     }
     private void Awake()
     {

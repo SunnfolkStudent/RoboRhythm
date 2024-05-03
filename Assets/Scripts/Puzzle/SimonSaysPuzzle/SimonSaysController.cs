@@ -11,12 +11,25 @@ public class Puzzle2Controller : PuzzleControllerBase
     
     private List<int> _puzzle;
     private SimonSaysScrub _simonSaysScrub;
-    
     private int _currentNumber;
+    private NoteReference _correctSound;
+    private NoteReference _wrongSound;
     
 
     private void Start()
     {
+        foreach (var reference in FmodEvents.instance.noteReferences)
+        {
+            if (reference.key == noteEnum.CSharp)
+            {
+                _wrongSound = reference;
+            }
+            else if (reference.key == noteEnum.TopD)
+            {
+                _correctSound = reference;
+            }
+        }
+        
         //Make every button except startbutton disabled
         foreach (var button in _buttons)
         {
@@ -55,9 +68,11 @@ public class Puzzle2Controller : PuzzleControllerBase
         if (number == _puzzle[_currentNumber])
         {
             _currentNumber++;
+            AudioManager.instance.PlayOneShot(_correctSound.noteEvent, gameObject.transform.position);
         } 
         else
         {
+            AudioManager.instance.PlayOneShot(_wrongSound.noteEvent, gameObject.transform.position);
             _currentNumber = 0;
             StartCoroutine(Puzzle2Coroutine());
         }
