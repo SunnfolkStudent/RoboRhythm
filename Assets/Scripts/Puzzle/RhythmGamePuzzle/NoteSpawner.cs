@@ -22,7 +22,7 @@ public class NoteSpawner
     public void SpawnNotes()
     {
         _startTimes.Clear();
-        float totalTime = Time.time + 1.5f;
+        float totalTime = Time.time + _startTimeBuffer;
         _startTimes.Add(totalTime);
 
         for (int i = 0; i < _notePuzzleScrub.notes.Length - 1; i++)

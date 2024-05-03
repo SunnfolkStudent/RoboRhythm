@@ -33,6 +33,16 @@ public class AudioManager : MonoBehaviour
         _backgroundMusicEventInstance.start();
     }
     
+    public void StopMusic()
+    {
+        _backgroundMusicEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+    
+    public void StartMusic()
+    {
+        _backgroundMusicEventInstance.start();
+    }
+    
     public void SetMusicRegionParameter(MusicRegion region)
     {
         _backgroundMusicEventInstance.setParameterByName("MusicRegion", (float) region);
