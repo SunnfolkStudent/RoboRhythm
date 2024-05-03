@@ -34,4 +34,4 @@ MonoBehaviour:
   - KeyBind: 65
     Key: 0
     timeToWait: 0.5
-  speed: 1
+  speed: 5

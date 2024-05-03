@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class RhythmPuzzleController : PuzzleControllerBase
 {
+    [SerializeField] private ParticleSystem _particleSystem;
+    
     private RhythmPuzzleScrub puzzleData;
     private float _lastClickTime = 0f;
     private int _currentNumber;
@@ -16,6 +18,7 @@ public class RhythmPuzzleController : PuzzleControllerBase
 
     private IEnumerator PuzzleCoroutine()
     {
+        _currentNumber = 0;
         puzzleData = puzzles[completedPuzzles] as RhythmPuzzleScrub;
         
         _lastClickTime = 0f;
@@ -47,7 +50,6 @@ public class RhythmPuzzleController : PuzzleControllerBase
             }
             else
             {
-                _currentNumber = 0;
                 StartCoroutine(PuzzleCoroutine());
                 return;
             }
@@ -58,6 +60,7 @@ public class RhythmPuzzleController : PuzzleControllerBase
             }
         }
         _lastClickTime = currentTime;
+        _particleSystem.Play();
     }
     
     protected override void StartPuzzle()
