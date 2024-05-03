@@ -1416,7 +1416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songLengthInSeconds: 225
   bossHealthBar: {fileID: 782489640}
-  taskId: Bell
+  taskId: Tom
 --- !u!1 &800905398
 GameObject:
   m_ObjectHideFlags: 0
