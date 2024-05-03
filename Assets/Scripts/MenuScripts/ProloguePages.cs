@@ -25,6 +25,7 @@ public class ProloguePages : MonoBehaviour, IDataPersistence
         }
         if (isFirst)
         {
+            AudioManager.instance.StartMusic();
             AudioManager.instance.SetMusicRegionParameter(MusicRegion.Gearagedy);
         }
     }

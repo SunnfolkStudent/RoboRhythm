@@ -14,8 +14,13 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Button newGameButton;
     [SerializeField] private Button continueGameButton;
 
+    [SerializeField] private AudioClip trainMusic;
+    [SerializeField] private AudioClip zeppelinMusic;
+    [SerializeField] private AudioClip skeletonMusic;
+    private AudioSource _audioSource;
     private void Start()
     {
+        _audioSource = GetComponent<AudioSource>();
         firstMenu.SetActive(true);
         secondMenu.SetActive(false);
         bossModeMenu.SetActive(false);
@@ -67,6 +72,25 @@ public class MainMenu : MonoBehaviour
     {
         secondMenu.SetActive(true);
         bossModeMenu.SetActive(false);
+    }
+
+    public void OnTrainMusicClicked()
+    {
+        _audioSource.Stop();
+        AudioManager.instance.StopMusic();
+        _audioSource.PlayOneShot(trainMusic);
+    }
+    public void OnZeppelinMusicClicked()
+    {
+        _audioSource.Stop();
+        AudioManager.instance.StopMusic();
+        _audioSource.PlayOneShot(zeppelinMusic);
+    }
+    public void OnSkeletonMusicClicked()
+    {
+        _audioSource.Stop();
+        AudioManager.instance.StopMusic();
+        _audioSource.PlayOneShot(skeletonMusic);
     }
 
     private void DisableMenuButtons()
