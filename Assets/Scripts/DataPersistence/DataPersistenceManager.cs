@@ -93,7 +93,7 @@ public class DataPersistenceManager : MonoBehaviour
         dataHandler.Save(gameData);
     }
     
-    public void SaveTaskData()
+    /*public void SaveTaskData()
     {
         if (this.gameObject == null)
         {
@@ -168,7 +168,7 @@ public class DataPersistenceManager : MonoBehaviour
         {
             dataPersistenceOBJ.LoadKeyData(gameData);
         }
-    }
+    }*/
 
     private void OnApplicationQuit()
     {

@@ -4,14 +4,34 @@ using UnityEngine.UI;
 
 public class PuzzleControllerBase : MonoBehaviour
 {
-    [SerializeField] private Button victoryButton;
-    [SerializeField] private string taskId;
+    [Header("RunManager")] 
+    [SerializeField] protected PuzzleScrubBase[] puzzles;
+    protected int completedPuzzles;
+    
+    [SerializeField] protected Button victoryButton;
+    [SerializeField] protected Button startButton;
+    [SerializeField] protected string taskId;
     
     protected void PuzzleCompleted()
+    {
+        completedPuzzles++;
+        if (completedPuzzles == puzzles.Length)
+        {
+            CompletePuzzles();
+        }
+        else
+        {
+            startButton.gameObject.SetActive(true);
+        }
+    }
+
+    protected void CompletePuzzles()
     {
         victoryButton.gameObject.SetActive(true);
         TaskManager.GetInstance().TaskComplete(taskId);
     }
+    
+    protected virtual void StartPuzzle() {}
     
     public void VictoryButtonMethod()
     {
@@ -20,5 +40,11 @@ public class PuzzleControllerBase : MonoBehaviour
 
         // Unload the current scene
         PuzzleEvents.unloadPuzzle?.Invoke(currentScene);
+    }
+    
+    public void StartButtonMethod()
+    {
+        startButton.gameObject.SetActive(false);
+        StartPuzzle();
     }
 }

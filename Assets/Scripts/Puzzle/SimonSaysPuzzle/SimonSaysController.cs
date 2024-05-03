@@ -7,10 +7,10 @@ using UnityEngine.EventSystems;
 public class Puzzle2Controller : PuzzleControllerBase
 {
     [SerializeField] private Button[] _buttons;
-    [SerializeField] private Button startButton;
     private int _difficulty = 8;
     
-    private List<int> _puzzle = new List<int>();
+    private List<int> _puzzle;
+    private SimonSaysScrub _simonSaysScrub;
     
     private int _currentNumber;
     
@@ -26,6 +26,9 @@ public class Puzzle2Controller : PuzzleControllerBase
 
     private IEnumerator Puzzle2Coroutine()
     {
+        _simonSaysScrub = puzzles[completedPuzzles] as SimonSaysScrub;
+        _difficulty = _simonSaysScrub.difficulty;
+        
         Cursor.lockState = CursorLockMode.Locked;
         //Create random 15 number puzzle
         _puzzle.Clear();
@@ -65,7 +68,7 @@ public class Puzzle2Controller : PuzzleControllerBase
         }
     }
     
-    public void StartButtonMethod()
+    protected override void StartPuzzle()
     {
         //Make buttons enabled
         foreach (var button in _buttons)
@@ -73,7 +76,6 @@ public class Puzzle2Controller : PuzzleControllerBase
             button.interactable = true;
         }
         
-        startButton.gameObject.SetActive(false);
         StartCoroutine(Puzzle2Coroutine());
     }
 }

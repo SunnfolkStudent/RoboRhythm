@@ -11,21 +11,18 @@ public class RNoteHit : MonoBehaviour
     [SerializeField] private int rowNumber;
     [Header("Other Stuff")]
     [SerializeField] private GameObject hitExplosion;
-    [SerializeField] private int soundClipNumber;
     [Header("Best To Worst Range")]
     [SerializeField] private RRangeInformation[] rRangeInformation;
     
     private RProjectileMovement _projectileMovement;
     private RScoreManager _scoreManager;
     private REffectsManager _effectsManager;
-    private RSoundEffectsManager _soundEffectsManager;
     
     private void Start()
     {
         _projectileMovement = GetComponent<RProjectileMovement>();
         _scoreManager = FindObjectOfType<RScoreManager>();
         _effectsManager = FindObjectOfType<REffectsManager>();
-        _soundEffectsManager = FindObjectOfType<RSoundEffectsManager>();
     }
     private void AttackPressed()
     {

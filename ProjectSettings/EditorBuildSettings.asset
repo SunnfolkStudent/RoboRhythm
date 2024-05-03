@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossFightScenes/TrainBoss.unity
     guid: 80367c09f7f0f624191b19ce388278e9
+  - enabled: 1
+    path: Assets/Scenes/ProlougeScene.unity
+    guid: bc05e422071f1d041aa1075ef15be499
   m_configObjects: {}

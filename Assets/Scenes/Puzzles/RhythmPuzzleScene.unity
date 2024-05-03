@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 234867855}
   - component: {fileID: 234867857}
   - component: {fileID: 234867856}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,14 +420,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1335653444}
-    - target: {fileID: 7349180241441734739, guid: 7a65dc5a1af71c44288a314cafa070a9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartButtonMethod
-      objectReference: {fileID: 0}
-    - target: {fileID: 7349180241441734739, guid: 7a65dc5a1af71c44288a314cafa070a9, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: RhythmPuzzleController, Assembly-CSharp
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -465,10 +457,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1335653444}
-    - target: {fileID: 4046941005978144182, guid: f3c6831f30fb51b4d94942725124dd0a, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: VictoryButtonMethod
-      objectReference: {fileID: 0}
     - target: {fileID: 8856516426334490701, guid: f3c6831f30fb51b4d94942725124dd0a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -582,7 +570,7 @@ GameObject:
   - component: {fileID: 1107675646}
   - component: {fileID: 1107675645}
   - component: {fileID: 1107675644}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -715,7 +703,7 @@ GameObject:
   - component: {fileID: 1183332388}
   - component: {fileID: 1183332387}
   - component: {fileID: 1183332386}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -783,7 +771,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: -596609229
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1183332389
 RectTransform:
@@ -886,8 +874,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -596609229
-  m_SortingLayer: 6
-  m_SortingOrder: 0
+  m_SortingLayer: 7
+  m_SortingOrder: 1
   m_Sprite: {fileID: -6347698550635125402, guid: 512e158a0f823ee42993500dd54ea6b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -926,10 +914,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50b2f8f52b3f63246a3fe497615a2ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzles:
+  - {fileID: 11400000, guid: 50d3301f07d2b734fa4623ae63f4c2d8, type: 2}
+  - {fileID: 11400000, guid: 0668e9086622c6c49a72c6e8261cf9af, type: 2}
+  - {fileID: 11400000, guid: 97d4e9f81e8a145478fb185b9427dff7, type: 2}
   victoryButton: {fileID: 810125257}
-  taskId: 
-  puzzleData: {fileID: 11400000, guid: 50d3301f07d2b734fa4623ae63f4c2d8, type: 2}
   startButton: {fileID: 758512567}
+  taskId: 
 --- !u!1 &1385761608
 GameObject:
   m_ObjectHideFlags: 0

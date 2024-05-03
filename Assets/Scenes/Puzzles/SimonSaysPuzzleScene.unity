@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 64219730}
   - component: {fileID: 64219732}
   - component: {fileID: 64219731}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 65093087}
   - component: {fileID: 65093086}
   - component: {fileID: 65093085}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +337,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: -596609229
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &65093088
 RectTransform:
@@ -380,6 +380,10 @@ PrefabInstance:
     - target: {fileID: 1779978857712249950, guid: 7a65dc5a1af71c44288a314cafa070a9, type: 3}
       propertyPath: m_Name
       value: StartButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779978857712249950, guid: 7a65dc5a1af71c44288a314cafa070a9, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4805037206872298467, guid: 7a65dc5a1af71c44288a314cafa070a9, type: 3}
       propertyPath: m_Pivot.x
@@ -473,6 +477,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Puzzle2Controller, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 8112162858498038474, guid: 7a65dc5a1af71c44288a314cafa070a9, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -495,7 +503,7 @@ GameObject:
   - component: {fileID: 384086145}
   - component: {fileID: 384086144}
   - component: {fileID: 384086143}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Button (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -627,7 +635,7 @@ GameObject:
   - component: {fileID: 429254315}
   - component: {fileID: 429254317}
   - component: {fileID: 429254316}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -761,7 +769,7 @@ GameObject:
   - component: {fileID: 511604231}
   - component: {fileID: 511604233}
   - component: {fileID: 511604232}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -900,7 +908,7 @@ GameObject:
   - component: {fileID: 679350078}
   - component: {fileID: 679350080}
   - component: {fileID: 679350079}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1031,9 +1039,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 65093088}
     m_Modifications:
+    - target: {fileID: 1012795150581052105, guid: f3c6831f30fb51b4d94942725124dd0a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1489684862424137793, guid: f3c6831f30fb51b4d94942725124dd0a, type: 3}
       propertyPath: m_Name
       value: VictoryButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489684862424137793, guid: f3c6831f30fb51b4d94942725124dd0a, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4046941005978144182, guid: f3c6831f30fb51b4d94942725124dd0a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1156,7 +1172,7 @@ GameObject:
   - component: {fileID: 840439431}
   - component: {fileID: 840439430}
   - component: {fileID: 840439429}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Button (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1288,7 +1304,7 @@ GameObject:
   - component: {fileID: 1051551984}
   - component: {fileID: 1051551986}
   - component: {fileID: 1051551985}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1423,7 +1439,7 @@ GameObject:
   - component: {fileID: 1103413306}
   - component: {fileID: 1103413305}
   - component: {fileID: 1103413304}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Button (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1556,7 +1572,7 @@ GameObject:
   - component: {fileID: 1121284374}
   - component: {fileID: 1121284373}
   - component: {fileID: 1121284372}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Button (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1689,7 +1705,7 @@ GameObject:
   - component: {fileID: 1176604188}
   - component: {fileID: 1176604187}
   - component: {fileID: 1176604186}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Button (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1822,7 +1838,7 @@ GameObject:
   - component: {fileID: 1202805444}
   - component: {fileID: 1202805443}
   - component: {fileID: 1202805442}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Button (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1954,7 +1970,7 @@ GameObject:
   - component: {fileID: 1303675256}
   - component: {fileID: 1303675258}
   - component: {fileID: 1303675257}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2089,7 +2105,7 @@ GameObject:
   - component: {fileID: 1393486546}
   - component: {fileID: 1393486545}
   - component: {fileID: 1393486544}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Button (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2222,7 +2238,7 @@ GameObject:
   - component: {fileID: 1502599808}
   - component: {fileID: 1502599807}
   - component: {fileID: 1502599806}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2355,7 +2371,7 @@ GameObject:
   - component: {fileID: 1512093891}
   - component: {fileID: 1512093890}
   - component: {fileID: 1512093889}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Button (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2487,7 +2503,7 @@ GameObject:
   - component: {fileID: 1531877007}
   - component: {fileID: 1531877009}
   - component: {fileID: 1531877008}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2621,7 +2637,7 @@ GameObject:
   - component: {fileID: 1538044166}
   - component: {fileID: 1538044168}
   - component: {fileID: 1538044167}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2821,7 +2837,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f159ce0fa19c65488c84b7527b4ce8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzles:
+  - {fileID: 11400000, guid: df14717354f1be34a8b87685da50d99e, type: 2}
+  - {fileID: 11400000, guid: 3572c2188aaf0b8488bd40fb3a6dbeff, type: 2}
+  - {fileID: 11400000, guid: 8f97f28b7b4428943b1d46e842d7c68d, type: 2}
   victoryButton: {fileID: 2039878478}
+  startButton: {fileID: 818401575}
   taskId: Bell
   _buttons:
   - {fileID: 1502599806}
@@ -2833,7 +2854,6 @@ MonoBehaviour:
   - {fileID: 840439429}
   - {fileID: 1202805442}
   - {fileID: 1121284372}
-  startButton: {fileID: 818401575}
 --- !u!4 &1962957320
 Transform:
   m_ObjectHideFlags: 0
@@ -2860,7 +2880,7 @@ GameObject:
   - component: {fileID: 1970646932}
   - component: {fileID: 1970646934}
   - component: {fileID: 1970646933}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3008,11 +3028,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 2200a2233c4b9eb438ee9a45b24f06d0, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: 2200a2233c4b9eb438ee9a45b24f06d0, type: 3}
       propertyPath: m_SortingLayer
-      value: 6
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 2200a2233c4b9eb438ee9a45b24f06d0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: 2200a2233c4b9eb438ee9a45b24f06d0, type: 3}
       propertyPath: m_SortingLayerID
@@ -3119,10 +3143,6 @@ PrefabInstance:
     - target: {fileID: 8898867766266593719, guid: ac844d1612c4cb64d8eca17821f187ef, type: 3}
       propertyPath: m_Name
       value: Main Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 8898867766266593719, guid: ac844d1612c4cb64d8eca17821f187ef, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

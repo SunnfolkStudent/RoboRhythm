@@ -157,6 +157,14 @@ MonoBehaviour:
         Data3: -1819221621
         Data4: 1435459450
       Path: event:/SFX/Notes/TopC
+  - key: 13
+    noteEvent:
+      Guid:
+        Data1: 1411344615
+        Data2: 1179183223
+        Data3: -95127141
+        Data4: -1829658041
+      Path: event:/SFX/Notes/TopD
 --- !u!114 &5241340902248159462
 MonoBehaviour:
   m_ObjectHideFlags: 0

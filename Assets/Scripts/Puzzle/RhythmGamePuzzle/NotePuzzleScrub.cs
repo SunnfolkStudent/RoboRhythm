@@ -10,7 +10,7 @@ public class NoteData
 }
 
 [CreateAssetMenu(fileName = "NotePuzzleScrub", menuName = "Puzzle/NotePuzzleScrub")]
-public class NotePuzzleScrub : ScriptableObject
+public class NotePuzzleScrub : PuzzleScrubBase
 {
     public NoteData[] notes;
     public float speed = 1.0f;

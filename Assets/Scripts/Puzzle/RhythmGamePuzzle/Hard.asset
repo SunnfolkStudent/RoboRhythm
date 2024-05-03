@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3fc3ec120172ae43b653dfc67d9a1ee, type: 3}
+  m_Name: Hard
+  m_EditorClassIdentifier: 
+  notes:
+  - KeyBind: 76
+    Key: 12
+    timeToWait: 0
+  - KeyBind: 68
+    Key: 7
+    timeToWait: 0.5
+  - KeyBind: 68
+    Key: 7
+    timeToWait: 0
+  - KeyBind: 74
+    Key: 10
+    timeToWait: 0.5
+  - KeyBind: 83
+    Key: 5
+    timeToWait: 0
+  - KeyBind: 68
+    Key: 8
+    timeToWait: 0.5
+  - KeyBind: 68
+    Key: 7
+    timeToWait: 0
+  - KeyBind: 65
+    Key: 3
+    timeToWait: 0.5
+  - KeyBind: 83
+    Key: 5
+    timeToWait: 0
+  - KeyBind: 68
+    Key: 8
+    timeToWait: 0.5
+  - KeyBind: 65
+    Key: 2
+    timeToWait: 0
+  - KeyBind: 83
+    Key: 5
+    timeToWait: 0.5
+  - KeyBind: 83
+    Key: 4
+    timeToWait: 0
+  - KeyBind: 68
+    Key: 7
+    timeToWait: 0.5
+  - KeyBind: 65
+    Key: 0
+    timeToWait: 0
+  - KeyBind: 83
+    Key: 4
+    timeToWait: 0
+  speed: 1

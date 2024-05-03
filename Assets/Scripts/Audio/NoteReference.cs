@@ -15,7 +15,8 @@ public enum noteEnum
     A,
     ASharp,
     B,
-    TopC
+    TopC,
+    TopD
 }
 
 [System.Serializable]
