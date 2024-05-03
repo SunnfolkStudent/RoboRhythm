@@ -227,10 +227,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: dfad
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae8fff5d22b207c43b77132e8119e5c0, type: 2}
-  m_sharedMaterial: {fileID: -1313564648662042420, guid: ae8fff5d22b207c43b77132e8119e5c0, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: adbd8871b29fa424db94c63b7e1b26d3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2364,7 +2364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421d339a8777c7446b5be0f2ede809ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  songBpm: 160
+  songBpm: 140
   beatsShownInAdvance: 3
   noteObjects:
   - {fileID: 8084541212325763255, guid: 9d5db9ff3a1db6e4c9e9bb04929d2e21, type: 3}
@@ -2807,7 +2807,7 @@ Animator:
   m_GameObject: {fileID: 1346075715}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 80add3e8b01e80a4a83233e0754a1e80, type: 2}
+  m_Controller: {fileID: 9100000, guid: a35a11971fcfd2248a2a24e41da27929, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
