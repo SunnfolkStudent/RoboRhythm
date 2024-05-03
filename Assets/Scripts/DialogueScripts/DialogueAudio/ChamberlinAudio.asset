@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d70c4db76c673b429ec8ac1fd728261, type: 3}
+  m_Name: ChamberlinAudio
+  m_EditorClassIdentifier: 
+  id: Chamberlin
+  dialogueTypingSoundClips:
+  - {fileID: 8300000, guid: 02f0cdc5c99a41345a005aed5b68d79c, type: 3}
+  - {fileID: 8300000, guid: e66467e55e0e5a24983767926a57ba1c, type: 3}
+  - {fileID: 8300000, guid: 98174c5aa0dae914d9af20b8d183e3b6, type: 3}
+  frequencyLevel: 2
+  minPitch: 0.7
+  maxPitch: 1
+  stopAudioSource: 0

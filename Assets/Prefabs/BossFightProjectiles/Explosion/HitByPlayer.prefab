@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c374531ff986f9429783a7bfd15baa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionSound: {fileID: 8300000, guid: 76f0aac5439b22b40afe40efe87e11c4, type: 3}
+  explosionSound: {fileID: 8300000, guid: 25f5025243f373e418e6b3bf0917b7c9, type: 3}
 --- !u!82 &5993761604939385989
 AudioSource:
   m_ObjectHideFlags: 0
@@ -240,7 +240,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
-  m_Color: {r: 0.9016105, g: 1, b: 0.8820755, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

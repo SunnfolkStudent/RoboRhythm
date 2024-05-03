@@ -310,6 +310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typingSpeed: 0.05
   line: "There\u2019s a big big world out there."
+  isFirst: 0
   text: {fileID: 1854630945}
   nextPage: {fileID: 1984339391}
 --- !u!114 &373028188
@@ -671,6 +672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typingSpeed: 0.05
   line: "So it\u2019s time you get going yourself."
+  isFirst: 0
   text: {fileID: 1893440882}
   nextPage: {fileID: 373028185}
 --- !u!114 &850550196
@@ -898,6 +900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typingSpeed: 0.05
   line: But I know you can do amazing things on your own.
+  isFirst: 0
   text: {fileID: 1646832720}
   nextPage: {fileID: 1320458485}
 --- !u!114 &1113008754
@@ -991,6 +994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typingSpeed: 0.05
   line: I miss you a lot.
+  isFirst: 0
   text: {fileID: 612251935}
   nextPage: {fileID: 1113008751}
 --- !u!114 &1315405402
@@ -1084,6 +1088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typingSpeed: 0.05
   line: "You\u2019ve always had a calling to learn more about the world."
+  isFirst: 0
   text: {fileID: 132920430}
   nextPage: {fileID: 850550193}
 --- !u!114 &1320458488
@@ -1349,6 +1354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typingSpeed: 0.05
   line: Dear my most beloved creation,
+  isFirst: 1
   text: {fileID: 953677741}
   nextPage: {fileID: 1630218325}
 --- !u!1 &1630218325
@@ -1404,6 +1410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typingSpeed: 0.05
   line: How have you been?
+  isFirst: 0
   text: {fileID: 568149983}
   nextPage: {fileID: 1315405399}
 --- !u!114 &1630218328
@@ -1626,10 +1633,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2213,6 +2220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typingSpeed: 0.05
   line: I hope you get to see it one day.
+  isFirst: 0
   text: {fileID: 1365703684}
   nextPage: {fileID: 0}
 --- !u!114 &1984339394

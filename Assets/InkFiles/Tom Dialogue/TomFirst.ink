@@ -1,4 +1,4 @@
-This area isn’t safe for little robots! #speaker:???
+This area isn’t safe for little robots! #speaker:??? #audio:Tom
 I run the mines and blacksmith here in Haze City, name’s Tom.
 The mine has been unstable for a while, so don’t get too close! #speaker:Blacksmith Tom
 ->WhatCanDo

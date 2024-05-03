@@ -1,7 +1,7 @@
 ->WhatWant
 
 === WhatWant ===
-What do you want? #speaker:Zither
+What do you want? #speaker:Zither #audio:Zither
     +[Do you know where more keys are?]
         ->Looking
     +[Do you know what caused the power out?]

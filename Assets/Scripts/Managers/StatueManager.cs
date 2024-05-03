@@ -4,9 +4,8 @@ using UnityEngine.SceneManagement;
 public class StatueManager : MonoBehaviour, IDataPersistence
 {
     [SerializeField] private GameObject visualCue;
-    [SerializeField] private GameObject backgroundBlock;
     [SerializeField] private GameObject fixedStatue;
-    [SerializeField] private SpriteRenderer statueSpriteRenderer;
+    [SerializeField] private GameObject brokenStatue;
     [SerializeField] private SpriteRenderer statueHead, statueArm, statueLeg;
     [SerializeField] private bool isFixed;
     private bool playerInRange;
@@ -22,16 +21,14 @@ public class StatueManager : MonoBehaviour, IDataPersistence
     {
         if (isFixed)
         {
-            statueSpriteRenderer.enabled = false;
-            _collider2D.enabled = false;
-            backgroundBlock.SetActive(false);
             fixedStatue.SetActive(true);
+            brokenStatue.SetActive(false);
+            _collider2D.enabled = false;
         }
         else
         {
-            statueSpriteRenderer.enabled = true;
-            backgroundBlock.SetActive(true);
             fixedStatue.SetActive(false);
+            brokenStatue.SetActive(true);
         }
         if (playerInRange)
         {
@@ -89,11 +86,4 @@ public class StatueManager : MonoBehaviour, IDataPersistence
     {
         data.statueFixed = isFixed;
     }
-    
-    public void SaveTaskData(GameData data) { }
-    public void LoadTaskData(GameData data) { }
-    
-    public void LoadKeyData(GameData data){}
-
-    public void SaveKeyData(GameData data) { }
 }
