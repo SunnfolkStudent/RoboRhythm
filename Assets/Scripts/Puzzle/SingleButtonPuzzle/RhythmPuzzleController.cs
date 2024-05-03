@@ -1,13 +1,9 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class RhythmPuzzleController : PuzzleControllerBase
 {
-    [SerializeField] private RhythmPuzzleScrub puzzleData;
-    [SerializeField] private Button startButton;
-    
+    private RhythmPuzzleScrub puzzleData;
     private float _lastClickTime = 0f;
     private int _currentNumber;
     private Animator _animator;
@@ -20,6 +16,8 @@ public class RhythmPuzzleController : PuzzleControllerBase
 
     private IEnumerator PuzzleCoroutine()
     {
+        puzzleData = puzzles[completedPuzzles] as RhythmPuzzleScrub;
+        
         _lastClickTime = 0f;
         
         Cursor.lockState = CursorLockMode.Locked;
@@ -62,9 +60,9 @@ public class RhythmPuzzleController : PuzzleControllerBase
         _lastClickTime = currentTime;
     }
     
-    public void StartButtonMethod()
+    protected override void StartPuzzle()
     {
-        startButton.gameObject.SetActive(false);
+        // Make buttons enabled
         StartCoroutine(PuzzleCoroutine());
     }
 }

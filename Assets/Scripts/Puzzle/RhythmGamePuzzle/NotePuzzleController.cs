@@ -1,11 +1,10 @@
 using UnityEngine;
-using UnityEngine.UI;
+ 
 public class NotePuzzleController : PuzzleControllerBase
 {
     private NoteSpawner _noteSpawner;
-    [SerializeField] private NotePuzzleScrub _notePuzzleScrub;
+    private NotePuzzleScrub _notePuzzleScrub;
     [SerializeField] private GameObject _noteObj;
-    [SerializeField] private Button _startButton;
     
     // Start is called before the first frame update
     private void Start()
@@ -16,23 +15,30 @@ public class NotePuzzleController : PuzzleControllerBase
     private void OnEnable()
     {
         PuzzleEvents.resetPuzzle += ResetPuzzle;
-        PuzzleEvents.puzzleCompleted += PuzzleCompleted;
+        PuzzleEvents.puzzleCompleted += PuzzleCompletedCheckpoint;
     }
     
     private void OnDisable()
     {
         PuzzleEvents.resetPuzzle -= ResetPuzzle;
-        PuzzleEvents.puzzleCompleted -= PuzzleCompleted;
-    }
-    
-    public void StartButtonMethod()
-    {
-        _startButton.gameObject.SetActive(false);
-        _noteSpawner.SpawnNotes();
+        PuzzleEvents.puzzleCompleted -= PuzzleCompletedCheckpoint;
     }
     
     private void ResetPuzzle()
     {
-        _startButton.gameObject.SetActive(true);
+        startButton.gameObject.SetActive(true);
+    }
+    
+    private void PuzzleCompletedCheckpoint()
+    {
+        _noteSpawner = null;
+        PuzzleCompleted();
+    }
+    
+    protected override void StartPuzzle()
+    {
+        _noteSpawner ??= new NoteSpawner(puzzles[completedPuzzles] as NotePuzzleScrub, _noteObj);
+
+        _noteSpawner.SpawnNotes();
     }
 }

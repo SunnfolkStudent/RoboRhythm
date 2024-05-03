@@ -10,22 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3fc3ec120172ae43b653dfc67d9a1ee, type: 3}
-  m_Name: NotePuzzleScrub
+  m_Name: Medium
   m_EditorClassIdentifier: 
   notes:
-  - KeyBind: 65
-    Key: C
-    timeToWait: 0.5
-  - KeyBind: 83
-    Key: D
+  - KeyBind: 76
+    Key: 12
     timeToWait: 0.5
   - KeyBind: 68
-    Key: E
+    Key: 7
     timeToWait: 0.5
   - KeyBind: 74
-    Key: G
+    Key: 9
     timeToWait: 0.5
-  - KeyBind: 74
-    Key: G
+  - KeyBind: 65
+    Key: 4
     timeToWait: 0.5
-  speed: 6
+  - KeyBind: 83
+    Key: 5
+    timeToWait: 0.5
+  - KeyBind: 68
+    Key: 7
+    timeToWait: 0.5
+  - KeyBind: 76
+    Key: 12
+    timeToWait: 0.5
+  - KeyBind: 0
+    Key: 0
+    timeToWait: 0.5
+  - KeyBind: 0
+    Key: 0
+    timeToWait: 0
+  speed: 1
