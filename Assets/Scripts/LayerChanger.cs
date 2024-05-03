@@ -1,26 +1,16 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class LayerChanger : MonoBehaviour
 {
-    [SerializeField] private bool playerBehind = false;
+    private bool playerBehind = false;
     private SpriteRenderer _spriteRenderer;
     private TilemapRenderer _tilemapRenderer;
 
     private void Start()
     {
-        if(_spriteRenderer != null)
-        {
-            _spriteRenderer = GetComponent<SpriteRenderer>();
-        }
-        if (_tilemapRenderer != null)
-        {
-            _tilemapRenderer = GetComponent<TilemapRenderer>();
-        }
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _tilemapRenderer = GetComponent<TilemapRenderer>();
         playerBehind = false;
     }
     

@@ -7,7 +7,7 @@ public class ProloguePages : MonoBehaviour
 {
     [SerializeField] private float typingSpeed;
     [SerializeField] private string line;
-    //[SerializeField] private bool isFirst;
+    [SerializeField] private bool isFirst;
     [SerializeField] private TMP_Text text;
     [SerializeField] private GameObject nextPage;
     private bool canContinueToNextPage;
@@ -15,6 +15,10 @@ public class ProloguePages : MonoBehaviour
     {
         canContinueToNextPage = false;
         StartCoroutine(DisplayLine());
+        if (isFirst)
+        {
+            AudioManager.instance.SetMusicRegionParameter(MusicRegion.Gearagedy);
+        }
     }
 
     private IEnumerator DisplayLine()
