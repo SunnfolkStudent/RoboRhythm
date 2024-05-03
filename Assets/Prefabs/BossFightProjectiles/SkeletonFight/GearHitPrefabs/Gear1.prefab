@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: -6274302224557061414}
   - component: {fileID: -5848794617356180252}
   m_Layer: 0
-  m_Name: Torpedo1
+  m_Name: Gear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,13 +34,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8084541212325763255}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.1564345, w: 0.98768836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -18}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2996353885449498910
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 551814532, guid: 71770dfcf1a3f1c43832126eb1746fc1, type: 3}
+  m_Sprite: {fileID: 2125768542, guid: f717d79e618188a4093bf25785098669, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 865691633192658861, guid: 1afd4361a3599244ab38921c7a53d5fb, type: 3}
-  dealDamage: 10
+  dealDamage: 15
 --- !u!95 &-6274302224557061414
 Animator:
   serializedVersion: 5
@@ -216,7 +216,7 @@ Animator:
   m_GameObject: {fileID: 8084541212325763255}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d4de2a3d0d92e6a41ac87e2ab6598c6d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4b527da1033c1134cbe7b1785e56a4dc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -263,7 +263,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.1875, y: 1.8125}
+    oldSize: {x: 1.75, y: 0.875}
     newSize: {x: 1.1875, y: 1.8125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

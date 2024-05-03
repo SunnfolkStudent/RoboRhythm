@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f717d79e618188a4093bf25785098669
+guid: feabcd37a136833488342eaddddda435
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -44,8 +44,8 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
-  spriteMeshType: 1
+  spriteExtrude: 0
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,85 +97,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: titan_projectiles_0
+      name: titanboss_skullmain_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 28
-        width: 22
-        height: 26
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cddde8654caaa9446a0f6be8bbe700ee
-      internalID: 2082834221
+      spriteID: 2fd63b6056b17474fa49651bfdec48f3
+      internalID: 1041449475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: titan_projectiles_1
+      name: titanboss_skullmain_1
       rect:
         serializedVersion: 2
-        x: 45
-        y: 29
-        width: 20
-        height: 24
+        x: 1920
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5732e798c662129468ca68e58c844a36
-      internalID: 1791518267
+      spriteID: 09afcb7a475393a40bad84d24ea88427
+      internalID: 1700115184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: titan_projectiles_3
+      name: titanboss_skullmain_2
       rect:
         serializedVersion: 2
-        x: 41
-        y: 6
-        width: 28
-        height: 14
+        x: 3840
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12c06fb8effa0ea47a41c936e0155dbd
-      internalID: 2125768542
+      spriteID: 90b2d2e4f1ba2dc44b0016685ffdd053
+      internalID: 1040042411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: titan_projectiles_2
+      name: titanboss_skullmain_3
       rect:
         serializedVersion: 2
-        x: 4
-        y: 6
-        width: 28
-        height: 14
+        x: 5760
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 105af64a27b47ae49b487aee80c48e0a
-      internalID: 1580482890
+      spriteID: 51de5b1168438d84fb1cb984834369bd
+      internalID: -1091146692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titanboss_skullmain_4
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6471b90671c22f844ba394d0e264da4a
+      internalID: 29070739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titanboss_skullmain_5
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028050d157c5f214c9f0364a284f62f6
+      internalID: 1158858091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titanboss_skullmain_6
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7c6dd2737e3464780b7326f06a070c
+      internalID: -2017767905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titanboss_skullmain_7
+      rect:
+        serializedVersion: 2
+        x: 13440
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a61a8621256a0149a38d3baf02db054
+      internalID: -1502754778
       vertices: []
       indices: 
       edges: []
@@ -191,10 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      titan_projectiles_0: 2082834221
-      titan_projectiles_1: 1791518267
-      titan_projectiles_2: 1580482890
-      titan_projectiles_3: 2125768542
+      titanboss_skullmain_0: 1041449475
+      titanboss_skullmain_1: 1700115184
+      titanboss_skullmain_2: 1040042411
+      titanboss_skullmain_3: -1091146692
+      titanboss_skullmain_4: 29070739
+      titanboss_skullmain_5: 1158858091
+      titanboss_skullmain_6: -2017767905
+      titanboss_skullmain_7: -1502754778
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
