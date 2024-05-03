@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5120605644361158355}
   - component: {fileID: 5044173674120931326}
   - component: {fileID: 5993761604939385989}
+  - component: {fileID: 5822385745051080167}
   m_Layer: 0
   m_Name: HitByPlayer
   m_TagString: Untagged
@@ -46,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c374531ff986f9429783a7bfd15baa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionSound: {fileID: 8300000, guid: c3fc254e531614b46a21eaaee5f3ece5, type: 3}
+  explosionSound: {fileID: 8300000, guid: 76f0aac5439b22b40afe40efe87e11c4, type: 3}
 --- !u!82 &5993761604939385989
 AudioSource:
   m_ObjectHideFlags: 0
@@ -59,7 +60,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -143,6 +144,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &5822385745051080167
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865691633192658861}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e225f234b4437c84cbfce08ef4ad5413, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3918590171146536682
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,11 +240,11 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9016105, g: 1, b: 0.8820755, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.6875, y: 0.75}
+  m_Size: {x: 3.375, y: 5.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -238,7 +260,7 @@ Animator:
   m_GameObject: {fileID: 3918590171146536682}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e225f234b4437c84cbfce08ef4ad5413, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(RBossFightSettings))]
 [RequireComponent(typeof(AudioSource))]
@@ -29,9 +30,9 @@ public class RSongPosition : MonoBehaviour
 
     private void Start()
     {
+        _audioSource.Play();
         secPerBeat = 60f / bossFightSettings.songBpm;
         dsptimesong = (float) AudioSettings.dspTime;
-        _audioSource.Play();
         _songStarted = true;
     }
     

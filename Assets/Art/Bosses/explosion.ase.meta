@@ -7,7 +7,7 @@ ScriptedImporter:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: explosion_Clip
-    second: {fileID: 7400000, guid: 7f71d194b53a3824a8fff87aa53784c0, type: 2}
+    second: {fileID: 7400000, guid: b1b1b92d65449a4448abbacc3994da85, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -102,7 +102,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638498112588280843
+  platformSettingsDirtyTick: 638502642129917677
   textureAssetName: 
   singleSpriteImportData:
   - name: 

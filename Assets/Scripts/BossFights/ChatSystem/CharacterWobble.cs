@@ -18,7 +18,7 @@ public class CharacterWobble : MonoBehaviour
     }
  
     // Update is called once per frame
-    void Update()
+    void Update()  
     {
         textMesh.ForceMeshUpdate();
         mesh = textMesh.mesh;
