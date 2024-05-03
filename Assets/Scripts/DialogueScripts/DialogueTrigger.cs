@@ -1,11 +1,12 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour, IDataPersistence
 {
     [Header("NPC Information")]
     [SerializeField] private string npcId;
-    [SerializeField] private Collider2D taskCollider;
+    [SerializeField] private List<Collider2D> taskColliders;
     [SerializeField] private string currentStage = "";
     [SerializeField] private bool givenTask;
     
@@ -50,6 +51,7 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
             visualCue.SetActive(true);
             if(Input.GetKeyDown(KeyCode.E))
             {
+                DataPersistenceManager.instance.SaveGame();
                 PickDialogue();
             }
         }
@@ -66,12 +68,10 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
             currentStage = "First";
         }
 
-        /*if(givenTask)
+        if(givenTask)
         {
-            DataPersistenceManager.instance.LoadTaskData();
-        }*/
-        
-        DataPersistenceManager.instance.LoadTaskData();
+            DataPersistenceManager.instance.LoadGame();
+        }
         
         switch (currentStage)
         {
@@ -79,9 +79,12 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
                 DialogueManager.GetInstance().EnterDialogueMode(firstInkJSON);
                 currentStage = "Second";
                 givenTask = true;
-                if(taskCollider != null)
+                if(taskColliders != null)
                 {
-                    taskCollider.enabled = true;
+                    foreach (Collider2D taskCollider in taskColliders)
+                    {
+                        taskCollider.enabled = true;
+                    }
                 }
                 break;
             case SECOND:
@@ -106,9 +109,19 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data)
     {
         data.npcStages.TryGetValue(npcId, out currentStage);
-        if (currentStage == SECOND && taskCollider != null)
+        if (currentStage == SECOND && taskColliders != null)
         {
-            taskCollider.enabled = true;
+            foreach (Collider2D taskCollider in taskColliders)
+            {
+                taskCollider.enabled = true;
+            }
+        }
+        else
+        {
+            foreach (Collider2D taskCollider in taskColliders)
+            {
+                taskCollider.enabled = false;
+            }
         }
         if(string.IsNullOrEmpty(currentStage))
         {
@@ -135,7 +148,6 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
     {
         data.npcStages.TryGetValue(npcId, out currentStage);
     }
-    
 
     private void OnTriggerEnter2D(Collider2D collider)
     {

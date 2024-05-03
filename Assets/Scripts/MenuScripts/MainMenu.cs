@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private string gameSceneName;
-    
     [SerializeField] private GameObject firstMenu;
     [SerializeField] private GameObject secondMenu;
     [SerializeField] private GameObject bossModeMenu;
@@ -40,7 +38,7 @@ public class MainMenu : MonoBehaviour
         DataPersistenceManager.instance.NewGame();
         DataPersistenceManager.instance.SaveGame();
 
-        SceneManager.LoadScene(gameSceneName);
+        SceneManager.LoadScene("ProlougeScene");
     }
     
     public void OnContinueGameClicked()
@@ -49,7 +47,7 @@ public class MainMenu : MonoBehaviour
           
         DataPersistenceManager.instance.SaveGame();
           
-        SceneManager.LoadSceneAsync(gameSceneName);
+        SceneManager.LoadSceneAsync("MainCityScene");
     }
 
     public void OnBossModeClicked()

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
@@ -54,6 +55,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         private const string HATON_TAG = "haton";
         private const string HATOFF_TAG = "hatoff";
         private const string MOVEOBJ_TAG = "moveobj";
+        private const string DONETALKING_TAG = "donetalking";
 
         private bool hasHat;
 
@@ -142,8 +144,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
     
         private void ExitDialogueMode()
         {
-            DataPersistenceManager.instance.SaveKeyData();
-            DataPersistenceManager.instance.LoadKeyData();
             DataPersistenceManager.instance.SaveGame();
             DataPersistenceManager.instance.LoadGame();
            
@@ -315,6 +315,9 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
                     case MOVEOBJ_TAG:
                         moveObject.transform.position += new Vector3(-7, 0, 0);;
                         break;
+                    case DONETALKING_TAG:
+                        TaskManager.GetInstance().UpdateDialogue(tagValue);
+                        break;
                     default:
                         Debug.LogWarning("Tag came in but is not currently being handled: " + tag);
                         break;
@@ -354,38 +357,10 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             if(canContinueToNextLine)
             {
                 currentStory.ChooseChoiceIndex(choiceIndex);
-                //PlayerInputScript.GetInstance().RegisterSubmitPressed();
                 ContinueStory();
             }
         }
-    
-        /*public Ink.Runtime.Object GetVariableState(string variableName)
-        {
-            Ink.Runtime.Object variableValue = null;
-            _dialogueVariables.variables.TryGetValue(variableName, out variableValue);
-            if (variableValue == null)
-            {
-                Debug.LogWarning("Ink Variable was found to be null: " + variableName);
-            }
-    
-            return variableValue;
-        }*/
-
-        private IEnumerator GotKey()
-        {
-            playerAnimator.SetTrigger("GotKey");
-            yield return new WaitForSeconds(1.31f);
-            playerAnimator.Play("Idle");
-        }
-    
-        /*public void OnApplicationQuit()
-        {
-            if(_dialogueVariables != null)
-            {
-                _dialogueVariables.SaveVariable();
-            }
-        }*/
-
+        
         public void LoadData(GameData data)
         {
             hasHat = data.hatOn;
@@ -394,6 +369,8 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             if (hasHat)
             {
                 playerAnimator.SetBool("WearingHat", true);
+                TaskManager.GetInstance().TaskComplete("Piccolo"); 
+                Debug.Log("Finished task with piccolo");
             }
             else if (!hasHat)
             {
@@ -407,18 +384,18 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             data.objectPosition = moveObject.transform.position;
         }
     
-        public void SaveTaskData(GameData data) {}
+        /*public void SaveTaskData(GameData data) {}
 
         public void LoadTaskData(GameData data)
         {
-            /*if (hasHat)
+            if (hasHat)
             {
                 TaskManager.GetInstance().TaskComplete("Piccolo"); 
                 Debug.Log("Finished task with piccolo");
-            }*/
+            }
         }
     
         public void LoadKeyData(GameData data){}
 
-        public void SaveKeyData(GameData data) { }
+        public void SaveKeyData(GameData data) { }*/
 }

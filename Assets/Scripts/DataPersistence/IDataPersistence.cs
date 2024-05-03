@@ -7,9 +7,9 @@ public interface IDataPersistence
     void LoadData(GameData data);
     void SaveData(GameData data);
     
-    void SaveTaskData(GameData data);
+    /*void SaveTaskData(GameData data);
     void LoadTaskData(GameData data);
 
     void SaveKeyData(GameData data);
-    void LoadKeyData(GameData data);
+    void LoadKeyData(GameData data);*/
 }
