@@ -30,7 +30,14 @@ public class RBossHealthManager : MonoBehaviour
 
     private void BossDefeated()
     {
-        TaskManager.GetInstance().TaskComplete(taskId);
-        SceneManager.LoadScene("MainCityScene");
+        if (!string.IsNullOrEmpty(taskId))
+        {
+            TaskManager.GetInstance().TaskComplete(taskId);
+            SceneManager.LoadScene("MainCityScene");
+        }
+        else
+        {
+            SceneManager.LoadScene("EndSscene");
+        }
     }
 }
