@@ -59,7 +59,6 @@ public class TaskManager : MonoBehaviour, IDataPersistence
                 data.npcStages.Remove(taskNpcId);
             }
             data.npcStages.Add(taskNpcId, updatedTask);
-            Debug.Log("add new stage to npc: " + taskNpcId);
         }
         if (taskNpcId == "Zither")
         {
