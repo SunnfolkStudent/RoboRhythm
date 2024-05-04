@@ -21,7 +21,7 @@ public class BellAnimator : MonoBehaviour
         if (_songPosition.songPosInBeats > bossAnimationHolder[_currentIndex].animationBeat)
         {
             Debug.Log("Animation Chage");
-            if (Time.timeSinceLevelLoad > 1)
+            if (Time.timeSinceLevelLoad > .2)
             {
                 _animator.Play(bossAnimationHolder[_currentIndex].animationName);
             }

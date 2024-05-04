@@ -324,7 +324,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: dfad
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae8fff5d22b207c43b77132e8119e5c0, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: adbd8871b29fa424db94c63b7e1b26d3, type: 2}
@@ -1327,7 +1327,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 997982796}
-  m_Father: {fileID: 1703999310}
+  m_Father: {fileID: 1384100393}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1484,10 +1484,7 @@ MonoBehaviour:
     chatText: IMPOSSIBLE
   - beatNumber: 283
     stayTimeBeats: 6
-    chatText: TO THINK I WOULD LOSE
-  - beatNumber: 291
-    stayTimeBeats: 6
-    chatText: He He He. . .
+    chatText: TO THINK I WOULD LOSE!!!
 --- !u!1 &885135632
 GameObject:
   m_ObjectHideFlags: 0
@@ -2204,6 +2201,56 @@ MonoBehaviour:
     beatNumber: 245
   - noteType: 8
     beatNumber: 245.5
+  - noteType: 10
+    beatNumber: 246
+  - noteType: 9
+    beatNumber: 246.5
+  - noteType: 8
+    beatNumber: 247
+  - noteType: 7
+    beatNumber: 247.5
+  - noteType: 8
+    beatNumber: 248
+  - noteType: 6
+    beatNumber: 248.5
+  - noteType: 7
+    beatNumber: 249
+  - noteType: 8
+    beatNumber: 249.5
+  - noteType: 9
+    beatNumber: 250
+  - noteType: 8
+    beatNumber: 250.5
+  - noteType: 10
+    beatNumber: 251
+  - noteType: 9
+    beatNumber: 251.5
+  - noteType: 8
+    beatNumber: 252
+  - noteType: 7
+    beatNumber: 252.5
+  - noteType: 8
+    beatNumber: 253
+  - noteType: 6
+    beatNumber: 253.5
+  - noteType: 7
+    beatNumber: 254
+  - noteType: 8
+    beatNumber: 254.5
+  - noteType: 9
+    beatNumber: 255
+  - noteType: 5
+    beatNumber: 257
+  - noteType: 4
+    beatNumber: 259
+  - noteType: 3
+    beatNumber: 261
+  - noteType: 2
+    beatNumber: 263
+  - noteType: 1
+    beatNumber: 265
+  - noteType: 2
+    beatNumber: 267
 --- !u!114 &932661831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2413,7 +2460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 1}
+  m_Color: {r: 0.4867924, g: 0.094603024, b: 0.3132936, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2699,6 +2746,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fdf7e54b2eeca44ab4b4c84ea52d23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1384100392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1384100393}
+  - component: {fileID: 1384100394}
+  - component: {fileID: 1384100395}
+  m_Layer: 5
+  m_Name: HealthBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1384100393
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384100392}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 782489641}
+  - {fileID: 1725026485}
+  m_Father: {fileID: 1703999310}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1384100394
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384100392}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dc9cfc809d49ee947836e0978379c99f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1384100395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384100392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa43754a688e8645a2f01d5ea2990a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossAnimationHolder:
+  - animationName: HealthBarAppear
+    animationBeat: 269
 --- !u!1 &1427791703
 GameObject:
   m_ObjectHideFlags: 0
@@ -3034,9 +3156,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 782489641}
+  - {fileID: 1384100393}
   - {fileID: 885135633}
-  - {fileID: 1725026485}
   - {fileID: 1086998638}
   - {fileID: 1999334997}
   - {fileID: 1728314206}
@@ -3081,11 +3202,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1703999310}
+  m_Father: {fileID: 1384100393}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.7, y: 75.7}
+  m_AnchoredPosition: {x: -5.699997, y: 75.7}
   m_SizeDelta: {x: 306, y: 26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1725026486
@@ -3394,7 +3515,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1937903572
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3485,7 +3606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 974f9678d2a87724f9a77da2d741c2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showUpBeat: 594
+  showUpBeat: 291
 --- !u!1 &1999334996
 GameObject:
   m_ObjectHideFlags: 0
@@ -4076,8 +4197,6 @@ MonoBehaviour:
     animationBeat: 64
   - animationName: bell_ring
     animationBeat: 113
-  - animationName: bell_ring
-    animationBeat: 185
   - animationName: bell_ring
     animationBeat: 201
   - animationName: bell_ring
