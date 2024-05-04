@@ -520,9 +520,9 @@ MonoBehaviour:
   bossModeMenu: {fileID: 1674470225}
   newGameButton: {fileID: 313767284}
   continueGameButton: {fileID: 1556638125}
-  trainMusic: {fileID: 8300000, guid: 9c0a8c43bfbcd334da960a12c0b6460d, type: 3}
+  trainMusic: {fileID: 8300000, guid: 58393c0f8b0908e49a1aa88283a3bd1c, type: 3}
   zeppelinMusic: {fileID: 8300000, guid: 7a7d31bb4a6cd984eb867e1a33dc77b3, type: 3}
-  skeletonMusic: {fileID: 8300000, guid: e8a52db025957464abb2380f34cc87bb, type: 3}
+  skeletonMusic: {fileID: 8300000, guid: 36376e01fa30cef4fa9795cae26ef0aa, type: 3}
 --- !u!82 &960125216
 AudioSource:
   m_ObjectHideFlags: 0
