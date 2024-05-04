@@ -87,5 +87,15 @@ public class StatueManager : MonoBehaviour, IDataPersistence
     public void SaveData(GameData data)
     {
         data.statueFixed = isFixed;
+
+        if (isFixed)
+        {
+            if (data.npcStages.ContainsKey("Cornet"))
+            {
+                data.npcStages.Remove("Cornet");
+            }
+
+            data.npcStages.Add("Cornet", "Third");
+        }
     }
 }
