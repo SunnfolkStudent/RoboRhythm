@@ -13,11 +13,8 @@ public class RProjectileDamager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("What");
         if (other.name == "PlayerHitBox")
         {
-            Debug.Log("WhatTHeCrap");
-            Debug.Log("Hit");
             _healthManager.TakeDamage(dealDamage);
             Instantiate(explosion,gameObject.transform.position,Quaternion.identity);
             Destroy(gameObject);

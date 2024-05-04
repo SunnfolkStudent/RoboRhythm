@@ -687,7 +687,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c3fc254e531614b46a21eaaee5f3ece5, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1385,10 +1385,10 @@ MonoBehaviour:
     chatText: MY NAME IS CLAUDIUS LA CHU!
   - beatNumber: 37
     stayTimeBeats: 6
-    chatText: BUT SADLY THIS IS WHERE YOUR TRACK ENDS!
+    chatText: SADLY THIS IS WHERE YOUR TRACK ENDS!!
   - beatNumber: 45
     stayTimeBeats: 6
-    chatText: TIME TO DEPART!!
+    chatText: TIME TO DEPART!!!
   - beatNumber: 101
     stayTimeBeats: 6
     chatText: I WASN'T ALWAYS LIKE THIS YOU KNOW!
@@ -1445,7 +1445,7 @@ MonoBehaviour:
     chatText: I CAN'T DIE NOW!!!
   - beatNumber: 471
     stayTimeBeats: 6
-    chatText: MY DREAM!!!!!!!!
+    chatText: MY PURPOSE!!!!!!!!
 --- !u!1 &932661827
 GameObject:
   m_ObjectHideFlags: 0
@@ -3013,7 +3013,6 @@ MonoBehaviour:
   - 99
   - 231
   - 359
-  - 430
   playerHitbox: {fileID: 1427791703}
   platformHitbox: {fileID: 1261300119}
 --- !u!114 &1558958065
@@ -3028,7 +3027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c703f9cc767e58242b813d0f62b7805a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossNumber: 2
+  bossNumber: 1
 --- !u!1 &1592462712
 GameObject:
   m_ObjectHideFlags: 0

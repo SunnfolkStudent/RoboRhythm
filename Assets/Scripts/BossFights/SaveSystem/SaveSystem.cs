@@ -26,16 +26,9 @@ public class SaveSystem : MonoBehaviour
     //Updates Save If SavePoint Hit
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            currentSave += 1;
-            Debug.Log("Delete Later XD");
-        }
-        ;
         if(currentSave == savePoints.Length - 1) return;
         if (_songPosition.songPosInBeats >= savePoints[currentSave + 1])
         {
-            Debug.Log("Checkpoint Hit" + (currentSave + 1) + "Delete Later");
             currentSave += 1;
         }
     }

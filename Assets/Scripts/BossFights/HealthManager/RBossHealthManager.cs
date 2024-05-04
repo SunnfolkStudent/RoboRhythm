@@ -30,6 +30,7 @@ public class RBossHealthManager : MonoBehaviour
 
     private void BossDefeated()
     {
+        SaveSystem.currentSave = 0;
         if (!string.IsNullOrEmpty(taskId))
         {
             TaskManager.GetInstance().TaskComplete(taskId);

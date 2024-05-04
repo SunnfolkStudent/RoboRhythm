@@ -665,7 +665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &548512907
 RectTransform:
   m_ObjectHideFlags: 0
@@ -756,7 +756,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c3fc254e531614b46a21eaaee5f3ece5, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1481,10 +1481,7 @@ MonoBehaviour:
     chatText: A SENTIMENT I KNOW ALL TO WELL
   - beatNumber: 275
     stayTimeBeats: 6
-    chatText: IMPOSSIBLE
-  - beatNumber: 283
-    stayTimeBeats: 6
-    chatText: TO THINK I WOULD LOSE!!!
+    chatText: IMPOSSIBLE!!!
 --- !u!1 &885135632
 GameObject:
   m_ObjectHideFlags: 0
@@ -2249,7 +2246,7 @@ MonoBehaviour:
     beatNumber: 263
   - noteType: 1
     beatNumber: 265
-  - noteType: 2
+  - noteType: 3
     beatNumber: 267
 --- !u!114 &932661831
 MonoBehaviour:
@@ -2655,7 +2652,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1346075716
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2821,6 +2818,78 @@ MonoBehaviour:
   bossAnimationHolder:
   - animationName: HealthBarAppear
     animationBeat: 269
+--- !u!1 &1404035282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1404035283}
+  - component: {fileID: 1404035285}
+  - component: {fileID: 1404035284}
+  m_Layer: 0
+  m_Name: BossGuy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1404035283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404035282}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2043536077}
+  m_Father: {fileID: 1658292118}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1404035284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404035282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa43754a688e8645a2f01d5ea2990a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossAnimationHolder:
+  - animationName: Spook
+    animationBeat: 135
+  - animationName: Death
+    animationBeat: 273
+--- !u!95 &1404035285
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404035282}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 38635180ba368f04cba0e6bde02699c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1427791703
 GameObject:
   m_ObjectHideFlags: 0
@@ -2973,7 +3042,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   savePoints:
   - 0
-  - 40
   - 93
   - 183
   playerHitbox: {fileID: 1427791703}
@@ -2990,7 +3058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c703f9cc767e58242b813d0f62b7805a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossNumber: 2
+  bossNumber: 3
 --- !u!1 &1592462712
 GameObject:
   m_ObjectHideFlags: 0
@@ -3057,9 +3125,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1762729761}
-  - {fileID: 2043536077}
   - {fileID: 7878350319709074274}
   - {fileID: 7878350319307079119}
+  - {fileID: 1404035283}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1703999306
@@ -3606,7 +3674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 974f9678d2a87724f9a77da2d741c2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showUpBeat: 291
+  showUpBeat: 281
 --- !u!1 &1999334996
 GameObject:
   m_ObjectHideFlags: 0
@@ -3709,8 +3777,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294902002
-  m_fontColor: {r: 0.9509201, g: 0, b: 1, a: 1}
+    rgba: 4289186806
+  m_fontColor: {r: 0.96470594, g: 0.7960785, b: 0.654902, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3808,7 +3876,7 @@ Transform:
   m_LocalScale: {x: 0.16666667, y: 0.16666667, z: 0.16666667}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1658292118}
+  m_Father: {fileID: 1404035283}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2043536078
 SpriteRenderer:

@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,7 +25,6 @@ public class RHealthManager : MonoBehaviour
         
         if (playerHealth <= 0)
         {
-            Debug.Log("Fix This Functionality Later");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
