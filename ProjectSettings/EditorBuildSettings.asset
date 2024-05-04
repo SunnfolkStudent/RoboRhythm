@@ -6,17 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/PlayTestScene.unity
-    guid: 44a09c1f4129f1b4ab20da211f9c1292
+    path: Assets/Scenes/MainMenu.unity
+    guid: 44178fa5cbcdbd34396a4105b1a3e13b
+  - enabled: 1
+    path: Assets/Scenes/PrologueScene.unity
+    guid: bc05e422071f1d041aa1075ef15be499
+  - enabled: 1
+    path: Assets/Scenes/MainCityScene.unity
+    guid: de879f2a40c34f2459e20e3ce813342d
   - enabled: 1
     path: Assets/Scenes/BossFightScenes/ZeppelinBoss.unity
     guid: 7049e7a4f7c2b3243b111c7d4f4f6e2b
   - enabled: 1
     path: Assets/Scenes/Puzzles/SimonSaysPuzzleScene.unity
     guid: 15cc22bda88c8de4d94b0fba8143384e
-  - enabled: 1
-    path: Assets/Scenes/MainCityScene.unity
-    guid: de879f2a40c34f2459e20e3ce813342d
   - enabled: 1
     path: Assets/Scenes/Puzzles/GamePuzzleScene.unity
     guid: 089ed4cc0c82c91468aee23b3250a374
@@ -25,13 +28,10 @@ EditorBuildSettings:
     guid: fa198fc6fd6ddb74bb8a629c8e9a7fef
   - enabled: 1
     path: Assets/Scenes/BossFightScenes/SkeletonBoss.unity
-    guid: 2ef1f0122577dba42aee65d41aa220e0
+    guid: 37d8f6dcfaf42a547b3d0eeb87f57f96
   - enabled: 1
     path: Assets/Scenes/BossFightScenes/TrainBoss.unity
-    guid: 80367c09f7f0f624191b19ce388278e9
-  - enabled: 1
-    path: Assets/Scenes/PrologueScene.unity
-    guid: bc05e422071f1d041aa1075ef15be499
+    guid: fa9510071fc2b9d44b07ee3bdc94e8a7
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: 8e4e44267ad7217408d977537f1e67c2

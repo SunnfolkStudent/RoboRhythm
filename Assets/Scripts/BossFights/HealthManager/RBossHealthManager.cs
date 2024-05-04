@@ -37,7 +37,7 @@ public class RBossHealthManager : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("EndSscene");
+            SceneManager.LoadScene("EndScene");
         }
     }
 }
