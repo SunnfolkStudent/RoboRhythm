@@ -21,6 +21,10 @@ Your head has good shape!
 Pan can think of a few hats that would be perfect!
 But sadly Pan is busy with hat orders right now.
 Too busy even to fix <b>ordering system</b>!
+    +[Where is your ordering system?]
+        Right next to my shop's door!
+            ->WhatCan
+    +[I see.]
     ->WhatCan
     
 === HaveKey ===
