@@ -20,7 +20,11 @@ public class PuzzleControllerBase : MonoBehaviour
         _mainSceneName = SceneManager.GetActiveScene().name;
         Scene currentScene = gameObject.scene;
         SceneManager.SetActiveScene(currentScene);
+        
+        RestOfStart();
     }
+    
+    protected virtual void RestOfStart() {}
 
     protected void PuzzleCompleted()
     {

@@ -12,8 +12,7 @@ public class RhythmPuzzleController : PuzzleControllerBase
     private NoteReference _correctSound;
     private NoteReference _wrongSound;
     
-    // Start is called before the first frame update
-    void Start()
+    protected override void RestOfStart()
     {
         foreach (var reference in FmodEvents.instance.noteReferences)
         {

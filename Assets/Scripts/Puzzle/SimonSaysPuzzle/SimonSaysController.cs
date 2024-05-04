@@ -15,8 +15,8 @@ public class Puzzle2Controller : PuzzleControllerBase
     private NoteReference _correctSound;
     private NoteReference _wrongSound;
     
-
-    private void Start()
+    
+    protected override void RestOfStart()
     {
         foreach (var reference in FmodEvents.instance.noteReferences)
         {
