@@ -1,5 +1,5 @@
 This area isn’t safe for little robots! #speaker:??? #audio:Tom
-I run the mines and blacksmith here in Haze City, name’s Tom.
+I run the mines and blacksmith here in Hazy City, name’s Tom.
 The mine has been unstable for a while, so don’t get too close! #speaker:Blacksmith Tom
 ->WhatCanDo
 
@@ -27,7 +27,7 @@ It’s amazing workmanship, I don’t think I could make something so impressive
     
 === BehindGate ===
 I have seen many interesting relics from beyond the wall come out of the mines.
-I would love to see more of what behind it, but of course with only one <color=\#F8FF30>Key</color> that’s impossible.
+I would love to see more of what's behind it, but of course with only one <color=\#F8FF30>Key</color> that’s impossible.
     ->WhatCanDo
     
 === Goodbye ===
