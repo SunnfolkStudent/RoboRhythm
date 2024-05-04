@@ -361,6 +361,41 @@ MonoBehaviour:
       Data3: 1403837075
       Data4: -2018918568
     Path: event:/SFX/Chords/puzzle48
+  buttonClick:
+    Guid:
+      Data1: -471963729
+      Data2: 1318040484
+      Data3: -1031251037
+      Data4: -1905503971
+    Path: event:/SFX/MiscSFX/ButtonPress
+  pushStoneStatue:
+    Guid:
+      Data1: 1106704178
+      Data2: 1157711704
+      Data3: 1367781814
+      Data4: 1731322395
+    Path: event:/SFX/MiscSFX/StoneStatuePushing
+  pickingUpStone:
+    Guid:
+      Data1: 752839218
+      Data2: 1187900009
+      Data3: 1194996915
+      Data4: 1498869654
+    Path: event:/SFX/MiscSFX/PickingUpStone
+  stonesFalling:
+    Guid:
+      Data1: -1408671671
+      Data2: 1109730517
+      Data3: -1287163998
+      Data4: 448975336
+    Path: event:/SFX/MiscSFX/StoneFalling
+  doorMoving:
+    Guid:
+      Data1: 1786670582
+      Data2: 1112650390
+      Data3: 723942036
+      Data4: -578408198
+    Path: event:/SFX/MiscSFX/DoorMoving
 --- !u!114 &5241340902248159462
 MonoBehaviour:
   m_ObjectHideFlags: 0
