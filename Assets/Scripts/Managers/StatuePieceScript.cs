@@ -38,6 +38,7 @@ public class StatuePieceScript : MonoBehaviour, IDataPersistence
 
     private void PickUpObject()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.pickingUpStone, gameObject.transform.position);
         _spriteRenderer.enabled = false;
         _collider2D.enabled = false;
         isFound = true;

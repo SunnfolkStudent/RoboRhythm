@@ -45,7 +45,6 @@ public class TaskManager : MonoBehaviour, IDataPersistence
     {
         keyGotId = keyId;
         DataPersistenceManager.instance.SaveGame();
-        keyGotId = "";
     }
     
     public void LoadData(GameData data) { }
@@ -54,15 +53,17 @@ public class TaskManager : MonoBehaviour, IDataPersistence
     {
         if(!string.IsNullOrEmpty(taskNpcId))
         {
+            if (data.tasksList.ContainsKey(taskNpcId))
+            {
+                data.tasksList.Remove(taskNpcId);
+            }
+            data.tasksList.Add(taskNpcId, true);
+            
             if (data.npcStages.ContainsKey(taskNpcId))
             {
                 data.npcStages.Remove(taskNpcId);
             }
             data.npcStages.Add(taskNpcId, updatedTask);
-        }
-        if (taskNpcId == "Zither")
-        {
-            data.lampsLit = true;
         }
         
         if(!string.IsNullOrEmpty(keyGotId))
@@ -74,6 +75,8 @@ public class TaskManager : MonoBehaviour, IDataPersistence
 
             data.keysFound.Add(keyGotId, true);
             keyGotId = "";
+            updatedTask = "";
+            taskNpcId = "";
         }
     }
 }

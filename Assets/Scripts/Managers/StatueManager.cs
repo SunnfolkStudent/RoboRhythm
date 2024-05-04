@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 
 public class StatueManager : MonoBehaviour, IDataPersistence
@@ -56,8 +57,10 @@ public class StatueManager : MonoBehaviour, IDataPersistence
 
     private void FixStatue()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.stonesFalling, gameObject.transform.position);
         isFixed = true;
         TaskManager.GetInstance().TaskComplete(npcTaskId);
+        Debug.Log("update task manager from finishing statue");
     }
     
     private void OnTriggerEnter2D(Collider2D collider)

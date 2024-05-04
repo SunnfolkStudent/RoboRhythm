@@ -25,6 +25,9 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
     
     [SerializeField] private bool playerInRange;
 
+    private bool taskDone;
+    private bool keyGot;
+
     private void Awake()
     {
         playerInRange = false;

@@ -289,7 +289,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
                         hasHat = false;
                         break;
                     case MOVEOBJ_TAG:
-                        moveObject.transform.position += new Vector3(-7, 0, 0);;
+                        moveObject.transform.position += new Vector3(0, -4, 0);;
                         break;
                     case DONETALKING_TAG:
                         TaskManager.GetInstance().UpdateDialogue(tagValue);
@@ -339,7 +339,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             if (hasHat)
             {
                 playerAnimator.SetBool("WearingHat", true);
-                TaskManager.GetInstance().TaskComplete("Piccolo"); 
             }
             else if (!hasHat)
             {
@@ -351,5 +350,11 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         {
             data.hatOn = hasHat;
             data.objectPosition = moveObject.transform.position;
+            
+            if (data.npcStages.ContainsKey("Piccolo"))
+            {
+                data.npcStages.Remove("Piccolo");
+            }
+            data.npcStages.Add("Piccolo", "Third");
         }
 }

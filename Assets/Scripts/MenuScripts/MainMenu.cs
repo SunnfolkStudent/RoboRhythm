@@ -31,12 +31,14 @@ public class MainMenu : MonoBehaviour
 
     public void OnStartClicked()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
         secondMenu.SetActive(true);
         firstMenu.SetActive(false);
     }
     
     public void OnNewGameClicked()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
         DisableMenuButtons();
         DataPersistenceManager.instance.NewGame();
         DataPersistenceManager.instance.SaveGame();
@@ -47,6 +49,7 @@ public class MainMenu : MonoBehaviour
     
     public void OnContinueGameClicked()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
         DisableMenuButtons();
           
         DataPersistenceManager.instance.SaveGame();
@@ -56,37 +59,42 @@ public class MainMenu : MonoBehaviour
 
     public void OnBossModeClicked()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
         bossModeMenu.SetActive(true);
         secondMenu.SetActive(false);
     }
 
     public void OnQuitClicked()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
         DataPersistenceManager.instance.SaveGame();
         Application.Quit();
-        Debug.Log("Application quit");
     }
 
     public void OnExitClicked()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
         secondMenu.SetActive(true);
         bossModeMenu.SetActive(false);
     }
 
     public void OnTrainMusicClicked()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
         _audioSource.Stop();
         AudioManager.instance.StopMusic();
         _audioSource.PlayOneShot(trainMusic);
     }
     public void OnZeppelinMusicClicked()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
         _audioSource.Stop();
         AudioManager.instance.StopMusic();
         _audioSource.PlayOneShot(zeppelinMusic);
     }
     public void OnSkeletonMusicClicked()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
         _audioSource.Stop();
         AudioManager.instance.StopMusic();
         _audioSource.PlayOneShot(skeletonMusic);
