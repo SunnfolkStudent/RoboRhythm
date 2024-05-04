@@ -23,7 +23,7 @@ It’s amazing workmanship, I don’t think I could make something so impressive
     
 === BehindGate ===
 I have seen many interesting relics from beyond the wall come out of the mines.
-I would love to see more of what behind it, but of course with only one <color=\#F8FF30>Key</color> that’s impossible.
+I would love to see more of what's behind it, but of course with only one <color=\#F8FF30>Key</color> that’s impossible.
     ->WhatCanDo
     
 === Goodbye ===

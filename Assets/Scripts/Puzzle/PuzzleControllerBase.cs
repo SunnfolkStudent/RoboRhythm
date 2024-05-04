@@ -12,15 +12,19 @@ public class PuzzleControllerBase : MonoBehaviour
     [SerializeField] protected Button startButton;
     [SerializeField] protected string taskId;
 
+    private string _mainSceneName;
+
     protected void Start()
     {
         AudioManager.instance.StopMusic();
+        _mainSceneName = SceneManager.GetActiveScene().name;
+        Scene currentScene = gameObject.scene;
+        SceneManager.SetActiveScene(currentScene);
+        
+        RestOfStart();
     }
-
-    protected void OnDestroy()
-    {
-        AudioManager.instance.StartMusic();
-    }
+    
+    protected virtual void RestOfStart() {}
 
     protected void PuzzleCompleted()
     {
@@ -45,6 +49,16 @@ public class PuzzleControllerBase : MonoBehaviour
     
     public void VictoryButtonMethod()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
+        
+        Scene mainScene = SceneManager.GetSceneByName(_mainSceneName);
+        if (mainScene.IsValid())
+        {
+            SceneManager.SetActiveScene(mainScene);
+        }
+        
+        AudioManager.instance.StartMusic();
+        
         // Get the current scene
         Scene currentScene = gameObject.scene;
 
@@ -54,6 +68,8 @@ public class PuzzleControllerBase : MonoBehaviour
     
     public void StartButtonMethod()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
+        
         startButton.gameObject.SetActive(false);
         StartPuzzle();
     }

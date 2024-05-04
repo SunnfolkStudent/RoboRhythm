@@ -3,7 +3,7 @@ using UnityEngine.Tilemaps;
 
 public class LayerChanger : MonoBehaviour
 {
-    private bool playerBehind = false;
+    private bool playerBehind;
     private SpriteRenderer _spriteRenderer;
     private TilemapRenderer _tilemapRenderer;
 

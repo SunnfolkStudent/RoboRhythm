@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,11 +12,6 @@ public class KeyManager : MonoBehaviour, IDataPersistence
     private void Start()
     {
         image = GetComponent<Image>();
-    }
-
-    public void KeyObtained(string keyId)
-    {
-        image.enabled = true;
     }
 
     public void LoadData(GameData data)
@@ -43,22 +35,4 @@ public class KeyManager : MonoBehaviour, IDataPersistence
         }
         data.keysFound.Add(keyId, keyObtained);
     }
-    
-    public void SaveTaskData(GameData data) { }
-
-    public void LoadTaskData(GameData data) { }
-
-    public void LoadKeyData(GameData data)
-    {
-        data.keysFound.TryGetValue(keyId, out keyObtained);
-        if (keyObtained)
-        {
-            image.enabled = true;
-        }
-        else
-        {
-            image.enabled = false;
-        }
-    }
-    public void SaveKeyData(GameData data){}
 }

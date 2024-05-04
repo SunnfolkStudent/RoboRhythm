@@ -24,7 +24,7 @@ I had found another key, but I gave it to <b>Zither</b> from <b>The Power Plant<
     
 === BehindGate ===
 I have seen many interesting relics from beyond the wall come out of the mines.
-I would love to see more of what behind it, but of course with only one <color=\#F8FF30>Key</color> that’s impossible.
+I would love to see more of what's behind it, but of course with only one <color=\#F8FF30>Key</color> that’s impossible.
     ->WhatCanDo
     
 === Goodbye ===

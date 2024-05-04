@@ -28,7 +28,7 @@ That hat of yours looks very nice, would you trade it for my <color=\#F8FF30>Key
     +[Yes]
         Wonderful! #hatoff:true #donetalking:Piccolo
         Pleasure doing business! #key:Piccolo
-    -> AnythingElse
+    -> AnythingElse2
         +[No thank you.]
             Let me know if you change your mind.
     -> AnythingElse
@@ -59,6 +59,43 @@ I think if there is anything beyond the gate, it’s long dead.
 It’s been more than a hundred years, what could survive that long?
 
     ->AnythingElse
+    
+    
+=== AnythingElse2 ===
+Is there anything else I can help you with?
+    +[I'm lost.]
+    ->Lost2
+    +[Do you know what’s behind the gate?]
+    ->BehindTheGate2
+    +[Goodbye.]
+    ->Goodbye
+    
+    === Lost2 ===
+What are you looking for?
+    + [The Mines]
+        <b>The Mines</b> are right down the stairs and to the left!
+        ->AnythingElse2
+    +[The Power Plant]
+        <b>The Power Plant</b> is down the stairs and to the right!
+        ->AnythingElse2
+    +[The Gate]
+        <b>The Gate</b> is just behind me!
+        ->AnythingElse2
+    +[Nevermind.]
+        ->AnythingElse2
+        
+=== BehindTheGate2 ===
+There are many theories and rumors on why the gate has been locked up.
+
+Some say there is a terrible beast on the other side, waiting for it to open again.
+
+Others say the land beyond is inhospitable and had to be closed for safety.
+
+I think if there is anything beyond the gate, it’s long dead.
+
+It’s been more than a hundred years, what could survive that long?
+
+    ->AnythingElse2
     
 === Goodbye ===
 Come back anytime!

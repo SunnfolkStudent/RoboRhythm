@@ -6,6 +6,7 @@ public class NoteSpawner
 {
     private NotePuzzleScrub _notePuzzleScrub;
     private GameObject _noteObj;
+    private Vector3 _startPosition;
     
     private List<float> _startTimes = new List<float>();
     private float xSpawnPosition = 10f;
@@ -13,10 +14,11 @@ public class NoteSpawner
     private float _maxYPosition = 1.4f;
     private float _startTimeBuffer = 1f;
 
-    public NoteSpawner(NotePuzzleScrub notePuzzleScrub, GameObject noteObj)
+    public NoteSpawner(NotePuzzleScrub notePuzzleScrub, GameObject noteObj, Vector3 startPosition)
     {
         _notePuzzleScrub = notePuzzleScrub;
         _noteObj = noteObj;
+        _startPosition = startPosition;
     }
     
     public void SpawnNotes()
@@ -51,7 +53,6 @@ public class NoteSpawner
             for (int j = 0; j < 6; j++)
             {
                 spawnPositions.Add(_minYPosition + intervalDistance * j);
-                Debug.Log(_minYPosition + intervalDistance * j);
             }
 
             switch (_notePuzzleScrub.notes[i].KeyBind)
@@ -77,7 +78,7 @@ public class NoteSpawner
             }
 
             // Set the position of the note
-            var position = new Vector3(xSpawnPosition, ySpawnPosition, 0);
+            var position = _startPosition + new Vector3(xSpawnPosition, ySpawnPosition, 20);
             note.transform.position = position;
 
             NoteScript noteScript = note.GetComponent<NoteScript>();

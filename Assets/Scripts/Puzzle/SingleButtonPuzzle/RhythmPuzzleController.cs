@@ -12,8 +12,7 @@ public class RhythmPuzzleController : PuzzleControllerBase
     private NoteReference _correctSound;
     private NoteReference _wrongSound;
     
-    // Start is called before the first frame update
-    void Start()
+    protected override void RestOfStart()
     {
         foreach (var reference in FmodEvents.instance.noteReferences)
         {
@@ -59,10 +58,9 @@ public class RhythmPuzzleController : PuzzleControllerBase
         if (_lastClickTime != 0f)
         {
             float timeBetweenClicks = currentTime - _lastClickTime;
-            Debug.Log("Time between clicks: " + timeBetweenClicks + " seconds");
 
-            if (timeBetweenClicks > (puzzleData.rhythm[_currentNumber] - 0.10 * puzzleData.rhythm[_currentNumber]) 
-                && timeBetweenClicks < (puzzleData.rhythm[_currentNumber] + 0.10 * puzzleData.rhythm[_currentNumber]))
+            if (timeBetweenClicks > (puzzleData.rhythm[_currentNumber] - 0.14 * puzzleData.rhythm[_currentNumber]) 
+                && timeBetweenClicks < (puzzleData.rhythm[_currentNumber] + 0.14 * puzzleData.rhythm[_currentNumber]))
             {
                 _currentNumber++;
             }

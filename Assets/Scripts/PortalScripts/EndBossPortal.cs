@@ -4,56 +4,39 @@ public class EndBossPortal : MonoBehaviour, IDataPersistence
 {
     [SerializeField] private GameObject visualCue;
     [SerializeField] private GameObject player;
-    [SerializeField] private Camera cityCamera, clockRoomCamera;
     
-    private bool allKeysFound;
     [SerializeField] private bool playerInRange;
+
+    private bool allKeysFound;
 
     private void Awake()
     {
         playerInRange = false;
         visualCue.SetActive(false);
-        clockRoomCamera.enabled = false;
     }
 
     private void Update()
     {
-        if(allKeysFound)
-        {
-            if (playerInRange)
-            {
-                visualCue.SetActive(true);
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    cityCamera.enabled = false;
-                    clockRoomCamera.enabled = true;
-                    player.transform.position = new Vector3(40, 121f, 0);
-                }
-            }
-            else
-            {
-                visualCue.SetActive(false);
-            }
-        }
-        
-        
-        if (playerInRange)
+        if(playerInRange && AllKeysFound())
         {
             visualCue.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
-                cityCamera.enabled = false;
-                clockRoomCamera.enabled = true;
-                player.transform.position = new Vector3(40, 120.5f, 0);
-
-                //DataPersistenceManager.instance.SaveGame();
-                //SceneManager.LoadScene(endSceneStartId);
+                AudioManager.instance.PlayOneShot(FmodEvents.instance.doorMoving, gameObject.transform.position);
+                player.transform.position = new Vector3(40, 121f, 0);
             }
-        }
-        else
+        }else
         {
             visualCue.SetActive(false);
         }
+    }
+
+    private bool AllKeysFound()
+    {
+        DataPersistenceManager.instance.SaveGame();
+        DataPersistenceManager.instance.LoadGame();
+
+        return allKeysFound;
     }
 
     public void LoadData(GameData data)
@@ -61,16 +44,6 @@ public class EndBossPortal : MonoBehaviour, IDataPersistence
         allKeysFound = data.hasAllKeys;
     }
     public void SaveData(GameData data)
-    {
-        data.hasAllKeys = allKeysFound;
-    }
-    public void SaveTaskData(GameData data) { }
-    public void LoadTaskData(GameData data) { }
-    public void LoadKeyData(GameData data)
-    {
-        allKeysFound = data.hasAllKeys;
-    }
-    public void SaveKeyData(GameData data)
     {
         data.hasAllKeys = allKeysFound;
     }

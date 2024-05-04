@@ -1,5 +1,5 @@
+using FMODUnity;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class StatueManager : MonoBehaviour, IDataPersistence
 {
@@ -57,8 +57,10 @@ public class StatueManager : MonoBehaviour, IDataPersistence
 
     private void FixStatue()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.stonesFalling, gameObject.transform.position);
         isFixed = true;
         TaskManager.GetInstance().TaskComplete(npcTaskId);
+        Debug.Log("update task manager from finishing statue");
     }
     
     private void OnTriggerEnter2D(Collider2D collider)
@@ -85,5 +87,15 @@ public class StatueManager : MonoBehaviour, IDataPersistence
     public void SaveData(GameData data)
     {
         data.statueFixed = isFixed;
+
+        if (isFixed)
+        {
+            if (data.npcStages.ContainsKey("Cornet"))
+            {
+                data.npcStages.Remove("Cornet");
+            }
+
+            data.npcStages.Add("Cornet", "Third");
+        }
     }
 }

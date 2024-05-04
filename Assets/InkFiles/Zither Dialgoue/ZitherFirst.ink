@@ -1,5 +1,5 @@
 Greetings. I am Zither. #speaker:??? #audio:Zither
-I run The Power Plant here in <b>Haze City</b>. #speaker:Zither
+I run The Power Plant here in <b>Hazy City</b>. #speaker:Zither
 I’m currently preoccupied with a power outage that took out the street lamps.
     ->WhatWant
 

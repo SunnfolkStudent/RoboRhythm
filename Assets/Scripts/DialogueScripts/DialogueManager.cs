@@ -27,11 +27,8 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         
         [Header("Dialogue UI")]
         [SerializeField] private GameObject dialoguePanel;
-        [SerializeField] private GameObject continueIcon;
         [SerializeField] private TextMeshProUGUI dialogueText;
         [SerializeField] private TextMeshProUGUI displayNameText;
-        [SerializeField] private Animator portraitAnimator;
-        private Animator layoutAnimator;
 
         [SerializeField] private Animator playerAnimator;
         [SerializeField] private GameObject moveObject;
@@ -47,8 +44,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         private Coroutine displayLineCoroutine;
     
         private const string SPEAKER_TAG = "speaker";
-        private const string PORTRAIT_TAG = "portrait";
-        private const string LAYOUT_TAG = "layout";
         private const string AUDIO_TAG = "audio";
         private const string KEY_TAG = "key";
         private const string HATON_TAG = "haton";
@@ -57,10 +52,8 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         private const string DONETALKING_TAG = "donetalking";
 
         private bool hasHat;
-
+        
         private string keyGot;
-    
-        private DialogueVariables _dialogueVariables;
         
         private void Awake()
         {
@@ -179,20 +172,12 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             dialogueText.maxVisibleCharacters = 0;
     
             HideChoices();
-            continueIcon.SetActive(false);
             canContinueToNextLine = false;
     
             bool isAddingRichTextTag = false;
             
             foreach (char letter in line.ToCharArray())
             {
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    Debug.Log("Dialogue Skipped");
-                    dialogueText.maxVisibleCharacters = line.Length;
-                    break;
-                }
-    
                 if (letter == '<' || isAddingRichTextTag)
                 {
                     isAddingRichTextTag = true;
@@ -210,7 +195,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             }
     
             DisplayChoices();
-            continueIcon.SetActive(true);
             canContinueToNextLine = true;
         }
     
@@ -286,12 +270,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
                     case SPEAKER_TAG:
                         displayNameText.text = tagValue;
                         break;
-                    case PORTRAIT_TAG:
-                        portraitAnimator.Play(tagValue);
-                        break;
-                    case LAYOUT_TAG:
-                        layoutAnimator.Play(tagValue);
-                        break;
                     case AUDIO_TAG:
                         SetCurrentAudioInfo(tagValue);
                         break;
@@ -304,7 +282,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
                     case HATON_TAG:
                         playerAnimator.SetBool("WearingHat", true);
                         TaskManager.GetInstance().TaskComplete("Piccolo"); 
-                        Debug.Log("Finished task with piccolo");
                         hasHat = true;
                         break;
                     case HATOFF_TAG:
@@ -312,7 +289,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
                         hasHat = false;
                         break;
                     case MOVEOBJ_TAG:
-                        moveObject.transform.position += new Vector3(-7, 0, 0);;
+                        moveObject.transform.position += new Vector3(0, -4, 0);;
                         break;
                     case DONETALKING_TAG:
                         TaskManager.GetInstance().UpdateDialogue(tagValue);
@@ -327,12 +304,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         private void DisplayChoices()
         {
             List<Choice> currentChoices = currentStory.currentChoices;
-    
-            if (currentChoices.Count > choices.Length)
-            {
-                Debug.LogError("More choices were given than the UI can support. Number of choices given: " 
-                               + currentChoices);
-            }
     
             int index = 0;
     
@@ -368,8 +339,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             if (hasHat)
             {
                 playerAnimator.SetBool("WearingHat", true);
-                TaskManager.GetInstance().TaskComplete("Piccolo"); 
-                Debug.Log("Finished task with piccolo");
             }
             else if (!hasHat)
             {
@@ -381,5 +350,14 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         {
             data.hatOn = hasHat;
             data.objectPosition = moveObject.transform.position;
+            if(hasHat)
+            {
+                if (data.npcStages.ContainsKey("Piccolo"))
+                {
+                    data.npcStages.Remove("Piccolo");
+                }
+
+                data.npcStages.Add("Piccolo", "Third");
+            }
         }
 }

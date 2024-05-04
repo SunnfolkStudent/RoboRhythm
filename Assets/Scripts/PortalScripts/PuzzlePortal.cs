@@ -1,8 +1,5 @@
-using System;
-using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 public class PuzzlePortal : MonoBehaviour, IDataPersistence
 {
@@ -14,6 +11,7 @@ public class PuzzlePortal : MonoBehaviour, IDataPersistence
     [SerializeField] private GameObject visualCue;
     
     private string npcStage;
+    private bool puzzleActive;
 
     [SerializeField] private bool playerInRange;
 
@@ -21,6 +19,7 @@ public class PuzzlePortal : MonoBehaviour, IDataPersistence
     {
         playerInRange = false;
         visualCue.SetActive(false);
+        puzzleActive = false;
     }
 
     private void OnEnable()
@@ -38,9 +37,11 @@ public class PuzzlePortal : MonoBehaviour, IDataPersistence
         if (playerInRange)
         {
             visualCue.SetActive(true);
-            if(Input.GetKeyDown(KeyCode.E))
+            if(Input.GetKeyDown(KeyCode.E) && !puzzleActive)
             {
                 DataPersistenceManager.instance.SaveGame();
+                PlayerEvents.playerFrozen?.Invoke();
+                puzzleActive = true;
                 SceneManager.LoadScene(sceneId, LoadSceneMode.Additive);
             }
         }
@@ -71,21 +72,6 @@ public class PuzzlePortal : MonoBehaviour, IDataPersistence
         data.tasksList.Add(taskId, taskDone);
     }
     
-    public void SaveTaskData(GameData data) { }
-
-    public void LoadTaskData(GameData data)
-    {
-        data.tasksList.TryGetValue(taskId, out taskDone);
-        data.npcStages.TryGetValue(taskId, out npcStage);
-        if (!taskDone)
-        {
-            _collider.enabled = false;
-        }
-    }
-    
-    public void LoadKeyData(GameData data){}
-    public void SaveKeyData(GameData data){}
-    
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.tag == "Player")
@@ -105,5 +91,7 @@ public class PuzzlePortal : MonoBehaviour, IDataPersistence
     private void UnLoadPuzzle(Scene sceneName)
     {
         SceneManager.UnloadScene(sceneName);
+        puzzleActive = false;
+        PlayerEvents.playerUnfrozen?.Invoke();
     }
 }

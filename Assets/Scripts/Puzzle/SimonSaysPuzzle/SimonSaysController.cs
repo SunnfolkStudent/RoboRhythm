@@ -8,15 +8,15 @@ public class Puzzle2Controller : PuzzleControllerBase
 {
     [SerializeField] private Button[] _buttons;
     private int _difficulty = 8;
-    
-    private List<int> _puzzle;
+
+    private List<int> _puzzle = new List<int>();
     private SimonSaysScrub _simonSaysScrub;
     private int _currentNumber;
     private NoteReference _correctSound;
     private NoteReference _wrongSound;
     
-
-    private void Start()
+    
+    protected override void RestOfStart()
     {
         foreach (var reference in FmodEvents.instance.noteReferences)
         {
@@ -39,22 +39,14 @@ public class Puzzle2Controller : PuzzleControllerBase
 
     private IEnumerator Puzzle2Coroutine()
     {
-        _simonSaysScrub = puzzles[completedPuzzles] as SimonSaysScrub;
-        _difficulty = _simonSaysScrub.difficulty;
-        
         Cursor.lockState = CursorLockMode.Locked;
-        //Create random 15 number puzzle
-        _puzzle.Clear();
-        for (int i = 0; i < _difficulty; i++)
-        {
-            _puzzle.Add(Random.Range(0, 9));
-        }
         
         yield return new WaitForSeconds(0.5f);
         
         foreach (var number in _puzzle)
         {
             _buttons[number].Select();
+            AudioManager.instance.PlayOneShot(_correctSound.noteEvent, gameObject.transform.position);
             yield return new WaitForSeconds(0.75f);
             EventSystem.current.SetSelectedGameObject(null);
             yield return new WaitForSeconds(0.25f);
@@ -79,6 +71,7 @@ public class Puzzle2Controller : PuzzleControllerBase
         
         if (_currentNumber == _puzzle.Count)
         {
+            _currentNumber = 0;
             PuzzleCompleted();
         }
     }
@@ -89,6 +82,19 @@ public class Puzzle2Controller : PuzzleControllerBase
         foreach (var button in _buttons)
         {
             button.interactable = true;
+        }
+        
+        _simonSaysScrub = puzzles[completedPuzzles] as SimonSaysScrub;
+        _difficulty = _simonSaysScrub.difficulty;
+        
+        if (puzzles.Length > 0)
+        {
+            _puzzle.Clear();
+        }
+        
+        for (int i = 0; i < _difficulty; i++)
+        {
+            _puzzle.Add(Random.Range(0, 9));
         }
         
         StartCoroutine(Puzzle2Coroutine());

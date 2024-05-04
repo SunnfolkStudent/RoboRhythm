@@ -6,18 +6,51 @@ public class PlayerController : MonoBehaviour
     private PlayerAnimation _playerAnimation;
     private PlayerMovement _playerMovement;
     private Input_Controller _inputController;
-
-
+    private PlayerSound _playerSound;
+    
     private void Start()
     {
         PlayerEvents.returnPlayer?.Invoke(gameObject);
         
         _playerAnimation = GetComponent<PlayerAnimation>();
         _playerMovement = GetComponent<PlayerMovement>();
+        _playerSound = GetComponent<PlayerSound>();
     }
 
     private void Update()
     {
+        print(_playerMovement.isRunning);
+        print(_playerMovement.isMoving);
+        
         _playerAnimation.UpdateAnimation(_playerMovement.moveVector);
+        
+        if (_playerMovement.isMoving)
+        {
+            if (!_playerSound.StepsArePlaying())
+            {
+                _playerSound.PlayFootsteps();
+            }
+
+            if (_playerMovement.isRunning)
+            {
+                print(_playerSound.GetFootstepsParameter() != Footsteps.Run);
+                if (_playerSound.GetFootstepsParameter() != Footsteps.Run)
+                {
+                    _playerSound.SetFootstepsParameter(Footsteps.Run);
+                }
+            }
+            else
+            {
+                print(_playerSound.GetFootstepsParameter() != Footsteps.Walk);
+                if (_playerSound.GetFootstepsParameter() != Footsteps.Walk)
+                {
+                    _playerSound.SetFootstepsParameter(Footsteps.Walk);
+                }
+            }
+        }
+        else
+        {
+            _playerSound.StopFootsteps();
+        }
     }
 }
