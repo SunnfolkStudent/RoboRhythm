@@ -73,4 +73,23 @@ public class PuzzleControllerBase : MonoBehaviour
         startButton.gameObject.SetActive(false);
         StartPuzzle();
     }
+    
+    public void ExitButtonMethod()
+    {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
+        
+        Scene mainScene = SceneManager.GetSceneByName(_mainSceneName);
+        if (mainScene.IsValid())
+        {
+            SceneManager.SetActiveScene(mainScene);
+        }
+        
+        AudioManager.instance.StartMusic();
+        
+        // Get the current scene
+        Scene currentScene = gameObject.scene;
+
+        // Unload the current scene
+        PuzzleEvents.unloadPuzzle?.Invoke(currentScene);
+    }
 }

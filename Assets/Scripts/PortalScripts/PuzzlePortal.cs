@@ -90,7 +90,10 @@ public class PuzzlePortal : MonoBehaviour, IDataPersistence
     
     private void UnLoadPuzzle(Scene sceneName)
     {
-        SceneManager.UnloadScene(sceneName);
+        if (sceneName.IsValid())
+        {
+            SceneManager.UnloadScene(sceneName);
+        }
         puzzleActive = false;
         PlayerEvents.playerUnfrozen?.Invoke();
     }

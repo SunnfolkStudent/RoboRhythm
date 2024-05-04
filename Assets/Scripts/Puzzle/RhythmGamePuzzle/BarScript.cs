@@ -24,7 +24,6 @@ public class BarScript : MonoBehaviour
     
     private void OnKeyPressed(char key)
     {
-        print("Key Hit");
         bool oneIsNote = false;
         
         // Define the center of the box
@@ -39,33 +38,27 @@ public class BarScript : MonoBehaviour
         // Loop through all the objects hit by the box
         foreach (var hit in hits)
         {
-            print("hi");
             // Try to get the NoteScript component
             NoteScript noteScript = hit.GetComponent<NoteScript>();
 
             // Check if the NoteScript component exists
             if (noteScript != null)
             {
-                print("hi2");
                 char Note = noteScript.noteData.KeyBind;
 
                 if (Note == key)
                 {
-                    print("hi3");
                     oneIsNote = true;
                     noteParticles.transform.position = hit.transform.position;
                     noteParticles.Play();
-                    print("hi4");
                     hit.gameObject.GetComponent<NoteScript>().NoteHit();
                     _colourChanger.ChangeColour(colorChangeObject, Color.green);
-                    print("hi5");
                 }
             }
         }
 
         if (!oneIsNote)
         {
-            print("No note hit, resetting puzzle");
             PuzzleEvents.resetPuzzle?.Invoke();
         }
     }
