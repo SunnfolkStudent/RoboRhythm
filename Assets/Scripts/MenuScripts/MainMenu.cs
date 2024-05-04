@@ -18,6 +18,7 @@ public class MainMenu : MonoBehaviour
     private AudioSource _audioSource;
     private void Start()
     {
+        AudioManager.instance.SetMusicRegionParameter(MusicRegion.MainMenu);
         _audioSource = GetComponent<AudioSource>();
         firstMenu.SetActive(true);
         secondMenu.SetActive(false);

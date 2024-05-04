@@ -1,3 +1,4 @@
+using System;
 using FMOD.Studio;
 using UnityEngine;
 
@@ -43,5 +44,10 @@ public class PlayerSound : MonoBehaviour
     {
         _playerSteps.getParameterByName("Movement", out float footsteps);
         return (Footsteps) footsteps;
+    }
+
+    private void OnDestroy()
+    {
+        _playerSteps.release();
     }
 }

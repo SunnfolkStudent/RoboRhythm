@@ -18,7 +18,7 @@ public class BossPortal : MonoBehaviour, IDataPersistence
     {
         playerInRange = false;
         visualCue.SetActive(false);
-        
+        SaveSystem.currentSave = 0;
     }
 
     private void Update()
