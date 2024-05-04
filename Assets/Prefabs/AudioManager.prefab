@@ -396,6 +396,20 @@ MonoBehaviour:
       Data3: 723942036
       Data4: -578408198
     Path: event:/SFX/MiscSFX/DoorMoving
+  walk:
+    Guid:
+      Data1: -481937094
+      Data2: 1253847624
+      Data3: -583499086
+      Data4: -1555321314
+    Path: event:/SFX/PlayerSFX/FootstepsWalk
+  run:
+    Guid:
+      Data1: -1320474678
+      Data2: 1320259595
+      Data3: -125193327
+      Data4: 305015885
+    Path: event:/SFX/PlayerSFX/FootstepsRun
 --- !u!114 &5241340902248159462
 MonoBehaviour:
   m_ObjectHideFlags: 0

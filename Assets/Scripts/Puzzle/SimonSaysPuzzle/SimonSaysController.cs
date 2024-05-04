@@ -46,6 +46,7 @@ public class Puzzle2Controller : PuzzleControllerBase
         foreach (var number in _puzzle)
         {
             _buttons[number].Select();
+            AudioManager.instance.PlayOneShot(_correctSound.noteEvent, gameObject.transform.position);
             yield return new WaitForSeconds(0.75f);
             EventSystem.current.SetSelectedGameObject(null);
             yield return new WaitForSeconds(0.25f);

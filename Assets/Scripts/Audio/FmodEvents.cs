@@ -19,6 +19,7 @@ public class FmodEvents : MonoBehaviour
     [field: SerializeField] public EventReference pickingUpStone;
     [field: SerializeField] public EventReference stonesFalling;
     [field: SerializeField] public EventReference doorMoving;
+    [field: SerializeField] public EventReference steps;
     
     public static FmodEvents instance { get; private set; }
 

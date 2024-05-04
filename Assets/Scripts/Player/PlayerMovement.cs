@@ -9,7 +9,8 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     private float _walkMoveDuration = 0.15f;
     private float _moveDuration = 0.15f;
     private float _gridSize = 0.5f;
-    private bool _isMoving;
+    public bool isRunning { get; private set; }
+    public bool isMoving {get; private set; }
     
     [HideInInspector] public Vector2 moveVector = Vector2.zero;
 
@@ -40,7 +41,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
 
     private void MoveUp()
     {
-        if (!_isMoving && !_frozen)
+        if (!isMoving && !_frozen)
         {
             StartCoroutine(Move(Vector2.up));
         }
@@ -48,7 +49,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     
     private void MoveDown()
     {
-        if (!_isMoving && !_frozen)
+        if (!isMoving && !_frozen)
         {
             StartCoroutine(Move(Vector2.down));
         }   
@@ -56,7 +57,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     
     private void MoveLeft()
     {
-        if (!_isMoving && !_frozen)
+        if (!isMoving && !_frozen)
         {
             StartCoroutine(Move(Vector2.left));
         }
@@ -64,7 +65,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     
     private void MoveRight()
     {
-        if (!_isMoving && !_frozen)
+        if (!isMoving && !_frozen)
         {
             StartCoroutine(Move(Vector2.right));
         }
@@ -73,16 +74,18 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     private void Run()
     {
         _moveDuration = _runMoveDuration;
+        isRunning = true;
     }
     
     private void StopRunning()
     {
         _moveDuration = _walkMoveDuration;
+        isRunning = false;
     }
     
     private IEnumerator Move(Vector2 direction)
     {
-        _isMoving = true;
+        isMoving = true;
         moveVector = direction;
         
         Vector2 startPosition = transform.position;
@@ -90,7 +93,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         
         if (CheckForCollision(endPosition))
         {
-            _isMoving = false;
+            isMoving = false;
             StartCoroutine(TurnOffMovement());
             yield break;
         }
@@ -107,7 +110,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         PlayerEvents.playerMoved?.Invoke();
         
         StartCoroutine(TurnOffMovement());
-        _isMoving = false; 
+        isMoving = false; 
     }
 
     private bool CheckForCollision(Vector2 direction)
@@ -126,7 +129,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     private IEnumerator TurnOffMovement()
     {
         yield return new WaitForSeconds(0.05f);
-        if (_isMoving)
+        if (isMoving)
         {
             yield break;
         }

@@ -49,6 +49,8 @@ public class PuzzleControllerBase : MonoBehaviour
     
     public void VictoryButtonMethod()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
+        
         Scene mainScene = SceneManager.GetSceneByName(_mainSceneName);
         if (mainScene.IsValid())
         {
@@ -66,6 +68,8 @@ public class PuzzleControllerBase : MonoBehaviour
     
     public void StartButtonMethod()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
+        
         startButton.gameObject.SetActive(false);
         StartPuzzle();
     }
