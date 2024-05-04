@@ -576,111 +576,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1185906619}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &365083255
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 365083257}
-  - component: {fileID: 365083256}
-  - component: {fileID: 365083258}
-  m_Layer: 0
-  m_Name: PlayerPlatform
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!61 &365083256
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 365083255}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.57599926, y: -0.5207019}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 14.680233, y: 0.8523207}
-  m_EdgeRadius: 0
---- !u!4 &365083257
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 365083255}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03, y: -4.98, z: 2.142799}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &365083258
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 365083255}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &548512906
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,7 +596,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &548512907
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1541,13 +1436,16 @@ MonoBehaviour:
     chatText: THEY'LL REGRET. . . LEAVING ME TO DWELL!!!
   - beatNumber: 417
     stayTimeBeats: 16
-    chatText: 'AS I EXPLODE THIS CITY TO    . . . '
-  - beatNumber: 478
+    chatText: AS I EXPLODE THIS CITY IN MY LAST FAREWELL!
+  - beatNumber: 455
     stayTimeBeats: 6
-    chatText: I'M TOO UNSTABLE!!!
-  - beatNumber: 486
+    chatText: I'M TOO UNSTABLE I'M GONNA DERAIL!!!
+  - beatNumber: 463
     stayTimeBeats: 6
-    chatText: I'M GONNA DERAIL!!!
+    chatText: I CAN'T DIE NOW!!!
+  - beatNumber: 471
+    stayTimeBeats: 6
+    chatText: MY DREAM!!!!!!!!
 --- !u!1 &932661827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1772,6 +1670,532 @@ MonoBehaviour:
     beatNumber: 157
   - noteType: 15
     beatNumber: 157
+  - noteType: 3
+    beatNumber: 161
+  - noteType: 11
+    beatNumber: 161
+  - noteType: 12
+    beatNumber: 161
+  - noteType: 14
+    beatNumber: 161
+  - noteType: 15
+    beatNumber: 161
+  - noteType: 3
+    beatNumber: 165
+  - noteType: 11
+    beatNumber: 165
+  - noteType: 12
+    beatNumber: 165
+  - noteType: 14
+    beatNumber: 165
+  - noteType: 15
+    beatNumber: 165
+  - noteType: 15
+    beatNumber: 167
+  - noteType: 14
+    beatNumber: 169
+  - noteType: 13
+    beatNumber: 171
+  - noteType: 12
+    beatNumber: 173
+  - noteType: 11
+    beatNumber: 175
+  - noteType: 12
+    beatNumber: 177
+  - noteType: 13
+    beatNumber: 179
+  - noteType: 14
+    beatNumber: 181
+  - noteType: 15
+    beatNumber: 183
+  - noteType: 14
+    beatNumber: 185
+  - noteType: 13
+    beatNumber: 187
+  - noteType: 12
+    beatNumber: 189
+  - noteType: 11
+    beatNumber: 191
+  - noteType: 12
+    beatNumber: 193
+  - noteType: 13
+    beatNumber: 195
+  - noteType: 14
+    beatNumber: 197
+  - noteType: 15
+    beatNumber: 198
+  - noteType: 3
+    beatNumber: 201
+  - noteType: 11
+    beatNumber: 201
+  - noteType: 12
+    beatNumber: 201
+  - noteType: 14
+    beatNumber: 201
+  - noteType: 15
+    beatNumber: 201
+  - noteType: 1
+    beatNumber: 205
+  - noteType: 12
+    beatNumber: 205
+  - noteType: 13
+    beatNumber: 205
+  - noteType: 14
+    beatNumber: 205
+  - noteType: 15
+    beatNumber: 205
+  - noteType: 3
+    beatNumber: 209
+  - noteType: 11
+    beatNumber: 209
+  - noteType: 12
+    beatNumber: 209
+  - noteType: 14
+    beatNumber: 209
+  - noteType: 15
+    beatNumber: 209
+  - noteType: 5
+    beatNumber: 213
+  - noteType: 11
+    beatNumber: 213
+  - noteType: 12
+    beatNumber: 213
+  - noteType: 13
+    beatNumber: 213
+  - noteType: 14
+    beatNumber: 213
+  - noteType: 3
+    beatNumber: 217
+  - noteType: 11
+    beatNumber: 217
+  - noteType: 12
+    beatNumber: 217
+  - noteType: 14
+    beatNumber: 217
+  - noteType: 15
+    beatNumber: 217
+  - noteType: 3
+    beatNumber: 221
+  - noteType: 11
+    beatNumber: 221
+  - noteType: 12
+    beatNumber: 221
+  - noteType: 14
+    beatNumber: 221
+  - noteType: 15
+    beatNumber: 221
+  - noteType: 3
+    beatNumber: 267
+  - noteType: 11
+    beatNumber: 267
+  - noteType: 4
+    beatNumber: 269
+  - noteType: 13
+    beatNumber: 269
+  - noteType: 5
+    beatNumber: 271
+  - noteType: 11
+    beatNumber: 271
+  - noteType: 4
+    beatNumber: 273
+  - noteType: 11
+    beatNumber: 273
+  - noteType: 3
+    beatNumber: 275
+  - noteType: 15
+    beatNumber: 275
+  - noteType: 2
+    beatNumber: 277
+  - noteType: 14
+    beatNumber: 277
+  - noteType: 1
+    beatNumber: 279
+  - noteType: 15
+    beatNumber: 279
+  - noteType: 2
+    beatNumber: 281
+  - noteType: 11
+    beatNumber: 281
+  - noteType: 3
+    beatNumber: 283
+  - noteType: 15
+    beatNumber: 283
+  - noteType: 4
+    beatNumber: 285
+  - noteType: 12
+    beatNumber: 285
+  - noteType: 5
+    beatNumber: 287
+  - noteType: 12
+    beatNumber: 287
+  - noteType: 4
+    beatNumber: 289
+  - noteType: 11
+    beatNumber: 289
+  - noteType: 3
+    beatNumber: 291
+  - noteType: 11
+    beatNumber: 291
+  - noteType: 12
+    beatNumber: 291
+  - noteType: 14
+    beatNumber: 291
+  - noteType: 15
+    beatNumber: 291
+  - noteType: 4
+    beatNumber: 295
+  - noteType: 11
+    beatNumber: 295
+  - noteType: 12
+    beatNumber: 295
+  - noteType: 13
+    beatNumber: 295
+  - noteType: 15
+    beatNumber: 295
+  - noteType: 2
+    beatNumber: 299
+  - noteType: 11
+    beatNumber: 299
+  - noteType: 13
+    beatNumber: 299
+  - noteType: 14
+    beatNumber: 299
+  - noteType: 15
+    beatNumber: 299
+  - noteType: 4
+    beatNumber: 303
+  - noteType: 11
+    beatNumber: 303
+  - noteType: 12
+    beatNumber: 303
+  - noteType: 13
+    beatNumber: 303
+  - noteType: 15
+    beatNumber: 303
+  - noteType: 2
+    beatNumber: 307
+  - noteType: 11
+    beatNumber: 307
+  - noteType: 13
+    beatNumber: 307
+  - noteType: 14
+    beatNumber: 307
+  - noteType: 15
+    beatNumber: 307
+  - noteType: 5
+    beatNumber: 311
+  - noteType: 11
+    beatNumber: 311
+  - noteType: 12
+    beatNumber: 311
+  - noteType: 13
+    beatNumber: 311
+  - noteType: 14
+    beatNumber: 311
+  - noteType: 3
+    beatNumber: 315
+  - noteType: 11
+    beatNumber: 315
+  - noteType: 12
+    beatNumber: 315
+  - noteType: 14
+    beatNumber: 315
+  - noteType: 15
+    beatNumber: 315
+  - noteType: 4
+    beatNumber: 319
+  - noteType: 11
+    beatNumber: 319
+  - noteType: 12
+    beatNumber: 319
+  - noteType: 13
+    beatNumber: 319
+  - noteType: 15
+    beatNumber: 319
+  - noteType: 3
+    beatNumber: 323
+  - noteType: 11
+    beatNumber: 323
+  - noteType: 15
+    beatNumber: 323
+  - noteType: 2
+    beatNumber: 325
+  - noteType: 11
+    beatNumber: 325
+  - noteType: 15
+    beatNumber: 325
+  - noteType: 3
+    beatNumber: 327
+  - noteType: 11
+    beatNumber: 327
+  - noteType: 15
+    beatNumber: 327
+  - noteType: 4
+    beatNumber: 329
+  - noteType: 11
+    beatNumber: 329
+  - noteType: 15
+    beatNumber: 329
+  - noteType: 3
+    beatNumber: 331
+  - noteType: 11
+    beatNumber: 331
+  - noteType: 15
+    beatNumber: 331
+  - noteType: 2
+    beatNumber: 333
+  - noteType: 11
+    beatNumber: 333
+  - noteType: 15
+    beatNumber: 333
+  - noteType: 3
+    beatNumber: 335
+  - noteType: 11
+    beatNumber: 335
+  - noteType: 15
+    beatNumber: 335
+  - noteType: 4
+    beatNumber: 337
+  - noteType: 11
+    beatNumber: 337
+  - noteType: 15
+    beatNumber: 337
+  - noteType: 3
+    beatNumber: 339
+  - noteType: 11
+    beatNumber: 339
+  - noteType: 12
+    beatNumber: 339
+  - noteType: 14
+    beatNumber: 339
+  - noteType: 15
+    beatNumber: 339
+  - noteType: 2
+    beatNumber: 343
+  - noteType: 11
+    beatNumber: 343
+  - noteType: 13
+    beatNumber: 343
+  - noteType: 14
+    beatNumber: 343
+  - noteType: 15
+    beatNumber: 343
+  - noteType: 4
+    beatNumber: 347
+  - noteType: 11
+    beatNumber: 347
+  - noteType: 12
+    beatNumber: 347
+  - noteType: 13
+    beatNumber: 347
+  - noteType: 15
+    beatNumber: 347
+  - noteType: 3
+    beatNumber: 351
+  - noteType: 11
+    beatNumber: 351
+  - noteType: 15
+    beatNumber: 352
+  - noteType: 2
+    beatNumber: 353
+  - noteType: 11
+    beatNumber: 353
+  - noteType: 15
+    beatNumber: 354
+  - noteType: 4
+    beatNumber: 355
+  - noteType: 11
+    beatNumber: 355
+  - noteType: 15
+    beatNumber: 355
+  - noteType: 3
+    beatNumber: 357
+  - noteType: 11
+    beatNumber: 357
+  - noteType: 15
+    beatNumber: 357
+  - noteType: 11
+    beatNumber: 395
+  - noteType: 12
+    beatNumber: 396
+  - noteType: 14
+    beatNumber: 397
+  - noteType: 15
+    beatNumber: 398
+  - noteType: 14
+    beatNumber: 399
+  - noteType: 12
+    beatNumber: 400
+  - noteType: 11
+    beatNumber: 401
+  - noteType: 12
+    beatNumber: 402
+  - noteType: 14
+    beatNumber: 403
+  - noteType: 15
+    beatNumber: 404
+  - noteType: 14
+    beatNumber: 405
+  - noteType: 12
+    beatNumber: 406
+  - noteType: 11
+    beatNumber: 407
+  - noteType: 12
+    beatNumber: 408
+  - noteType: 14
+    beatNumber: 409
+  - noteType: 15
+    beatNumber: 410
+  - noteType: 14
+    beatNumber: 411
+  - noteType: 12
+    beatNumber: 412
+  - noteType: 11
+    beatNumber: 413
+  - noteType: 12
+    beatNumber: 414
+  - noteType: 14
+    beatNumber: 415
+  - noteType: 15
+    beatNumber: 416
+  - noteType: 14
+    beatNumber: 417
+  - noteType: 12
+    beatNumber: 418
+  - noteType: 11
+    beatNumber: 419
+  - noteType: 12
+    beatNumber: 420
+  - noteType: 14
+    beatNumber: 421
+  - noteType: 15
+    beatNumber: 422
+  - noteType: 14
+    beatNumber: 423
+  - noteType: 12
+    beatNumber: 424
+  - noteType: 11
+    beatNumber: 425
+  - noteType: 12
+    beatNumber: 426
+  - noteType: 14
+    beatNumber: 427
+  - noteType: 15
+    beatNumber: 428
+  - noteType: 14
+    beatNumber: 429
+  - noteType: 12
+    beatNumber: 430
+  - noteType: 11
+    beatNumber: 431
+  - noteType: 12
+    beatNumber: 432
+  - noteType: 3
+    beatNumber: 435
+  - noteType: 11
+    beatNumber: 435
+  - noteType: 12
+    beatNumber: 435
+  - noteType: 14
+    beatNumber: 435
+  - noteType: 15
+    beatNumber: 435
+  - noteType: 3
+    beatNumber: 437
+  - noteType: 2
+    beatNumber: 439
+  - noteType: 11
+    beatNumber: 439
+  - noteType: 13
+    beatNumber: 439
+  - noteType: 14
+    beatNumber: 439
+  - noteType: 15
+    beatNumber: 439
+  - noteType: 2
+    beatNumber: 441
+  - noteType: 1
+    beatNumber: 443
+  - noteType: 12
+    beatNumber: 443
+  - noteType: 13
+    beatNumber: 443
+  - noteType: 14
+    beatNumber: 443
+  - noteType: 15
+    beatNumber: 443
+  - noteType: 1
+    beatNumber: 445
+  - noteType: 2
+    beatNumber: 447
+  - noteType: 11
+    beatNumber: 447
+  - noteType: 13
+    beatNumber: 447
+  - noteType: 14
+    beatNumber: 447
+  - noteType: 15
+    beatNumber: 447
+  - noteType: 2
+    beatNumber: 449
+  - noteType: 3
+    beatNumber: 451
+  - noteType: 11
+    beatNumber: 451
+  - noteType: 12
+    beatNumber: 451
+  - noteType: 14
+    beatNumber: 451
+  - noteType: 15
+    beatNumber: 451
+  - noteType: 3
+    beatNumber: 453
+  - noteType: 4
+    beatNumber: 455
+  - noteType: 11
+    beatNumber: 455
+  - noteType: 12
+    beatNumber: 455
+  - noteType: 13
+    beatNumber: 455
+  - noteType: 15
+    beatNumber: 455
+  - noteType: 4
+    beatNumber: 457
+  - noteType: 5
+    beatNumber: 459
+  - noteType: 11
+    beatNumber: 459
+  - noteType: 12
+    beatNumber: 459
+  - noteType: 13
+    beatNumber: 459
+  - noteType: 14
+    beatNumber: 459
+  - noteType: 5
+    beatNumber: 461
+  - noteType: 4
+    beatNumber: 463
+  - noteType: 11
+    beatNumber: 463
+  - noteType: 12
+    beatNumber: 463
+  - noteType: 13
+    beatNumber: 463
+  - noteType: 15
+    beatNumber: 463
+  - noteType: 4
+    beatNumber: 465
+  - noteType: 3
+    beatNumber: 467
+  - noteType: 11
+    beatNumber: 467
+  - noteType: 12
+    beatNumber: 467
+  - noteType: 14
+    beatNumber: 467
+  - noteType: 15
+    beatNumber: 467
 --- !u!114 &932661831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2219,6 +2643,111 @@ Transform:
   - {fileID: 336121048}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1261300119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1261300122}
+  - component: {fileID: 1261300121}
+  - component: {fileID: 1261300120}
+  m_Layer: 0
+  m_Name: PlayerPlatform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!50 &1261300120
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261300119}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &1261300121
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261300119}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.57599926, y: -0.5207019}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 14.680233, y: 0.8523207}
+  m_EdgeRadius: 0
+--- !u!4 &1261300122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261300119}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.03, y: -4.98, z: 2.142799}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1346075715
 GameObject:
   m_ObjectHideFlags: 0
@@ -2238,7 +2767,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1346075716
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2346,7 +2875,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1427791704
 Transform:
   m_ObjectHideFlags: 0
@@ -2394,7 +2923,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.37724066}
+  m_Offset: {x: 0.0129218325, y: 0.37724066}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2405,7 +2934,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.60771275}
+  m_Size: {x: 0.18293546, y: 0.60771275}
   m_EdgeRadius: 0
 --- !u!50 &1427791706
 Rigidbody2D:
@@ -2483,9 +3012,10 @@ MonoBehaviour:
   - 0
   - 99
   - 231
-  - 357
+  - 359
+  - 430
   playerHitbox: {fileID: 1427791703}
-  platformHitbox: {fileID: 365083255}
+  platformHitbox: {fileID: 1261300119}
 --- !u!114 &1558958065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3029,7 +3559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 974f9678d2a87724f9a77da2d741c2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showUpBeat: 594
+  showUpBeat: 485
 --- !u!1 &1999334996
 GameObject:
   m_ObjectHideFlags: 0
@@ -3459,7 +3989,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &7878350319977885094
 MonoBehaviour:
@@ -3605,6 +4135,12 @@ MonoBehaviour:
   bossAnimationHolder:
   - animationName: Frazzled
     animationBeat: 125
+  - animationName: Angry
+    animationBeat: 233
+  - animationName: SuperAngry
+    animationBeat: 359
+  - animationName: Death
+    animationBeat: 453
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3614,7 +4150,7 @@ SceneRoots:
   - {fileID: 7878350319977885088}
   - {fileID: 1658292118}
   - {fileID: 1592462713}
-  - {fileID: 365083257}
+  - {fileID: 1261300122}
   - {fileID: 1894602335}
   - {fileID: 1703999310}
   - {fileID: 1185906619}
