@@ -19,6 +19,10 @@ Good for you.
 === Lights ===
 A surge in the wiring took out the generator used for the street lighting.
 This wouldn’t be that strange if I hadn’t fixed that generator just last week.
+    +[Where is the generator?]
+        Its panel is behind me on that wall.
+        ->WhatWant
+    +[I see.]
     ->WhatWant
     
 === Goodbye ===

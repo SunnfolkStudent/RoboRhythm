@@ -14,14 +14,8 @@ public class ProloguePages : MonoBehaviour, IDataPersistence
     private void Start()
     {
         canContinueToNextPage = false;
-        if(!string.IsNullOrEmpty(line))
-        {
-            StartCoroutine(DisplayLine());
-        }
-        else
-        {
-            canContinueToNextPage = true;
-        }
+        StartCoroutine(DisplayLine());
+        StartCoroutine(TimeForNextPage());
         if (isFirst)
         {
             AudioManager.instance.StartMusic();
@@ -47,21 +41,24 @@ public class ProloguePages : MonoBehaviour, IDataPersistence
     {
         if (canContinueToNextPage && Input.anyKey)
         {
-            if (nextPage == null)
-            {
-                if(!string.IsNullOrEmpty(line))
-                {
-                    SceneManager.LoadScene("MainCityScene");
-                }
-                else
-                {
-                    DataPersistenceManager.instance.NewGame();
-                    SceneManager.LoadScene("MainCityScene");
-                }
-            }
-            nextPage.SetActive(true);
-            gameObject.SetActive(false);
+            Continue();
         }
+    }
+
+    private IEnumerator TimeForNextPage()
+    {
+        yield return new WaitForSeconds(6);
+        Continue();
+    }
+
+    private void Continue()
+    {
+        if (nextPage == null)
+        {
+            SceneManager.LoadScene("MainCityScene");
+        }
+        nextPage.SetActive(true);
+        gameObject.SetActive(false);
     }
     
     public void LoadData(GameData data) { }
