@@ -30,7 +30,7 @@ public class PlayerSound : MonoBehaviour
     
     public void SetFootstepsParameter(Footsteps footsteps)
     {
-        _playerSteps.setParameterByName("Footsteps", (float) footsteps);
+        _playerSteps.setParameterByName("Movement", (float) footsteps);
     }
 
     public bool StepsArePlaying()
@@ -41,7 +41,7 @@ public class PlayerSound : MonoBehaviour
     
     public Footsteps GetFootstepsParameter()
     {
-        _playerSteps.getParameterByName("Footsteps", out float footsteps);
+        _playerSteps.getParameterByName("Movement", out float footsteps);
         return (Footsteps) footsteps;
     }
 }

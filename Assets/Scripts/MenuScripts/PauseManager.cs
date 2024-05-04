@@ -13,7 +13,7 @@ public class PauseManager : MonoBehaviour
     
     public void ResumeGame()
     {
-        print("hI");
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
         Time.timeScale = 1;
         GameEvents.gameUnpaused?.Invoke();
         GameEvents.unloadScene?.Invoke("PauseMenu");
@@ -21,6 +21,7 @@ public class PauseManager : MonoBehaviour
     
     public void BackToMenu()
     {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
         SceneManager.LoadScene("MainMenu");
     }
 }

@@ -19,9 +19,6 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        print(_playerMovement.isRunning);
-        print(_playerMovement.isMoving);
-        
         _playerAnimation.UpdateAnimation(_playerMovement.moveVector);
         
         if (_playerMovement.isMoving)
@@ -33,7 +30,6 @@ public class PlayerController : MonoBehaviour
 
             if (_playerMovement.isRunning)
             {
-                print(_playerSound.GetFootstepsParameter() != Footsteps.Run);
                 if (_playerSound.GetFootstepsParameter() != Footsteps.Run)
                 {
                     _playerSound.SetFootstepsParameter(Footsteps.Run);
@@ -41,7 +37,6 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                print(_playerSound.GetFootstepsParameter() != Footsteps.Walk);
                 if (_playerSound.GetFootstepsParameter() != Footsteps.Walk)
                 {
                     _playerSound.SetFootstepsParameter(Footsteps.Walk);

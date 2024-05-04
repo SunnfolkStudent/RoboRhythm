@@ -1849,6 +1849,10 @@ PrefabInstance:
       value: event:/SFX/PlayerSFX/Steps
       objectReference: {fileID: 0}
     - target: {fileID: 2562216993427359169, guid: 52353c37d7057c94f95213fb9143b4ec, type: 3}
+      propertyPath: buttonClick.Path
+      value: event:/SFX/MiscSFX/ButtonPressTimeline
+      objectReference: {fileID: 0}
+    - target: {fileID: 2562216993427359169, guid: 52353c37d7057c94f95213fb9143b4ec, type: 3}
       propertyPath: steps.Guid.Data1
       value: 966352897
       objectReference: {fileID: 0}
@@ -1863,6 +1867,22 @@ PrefabInstance:
     - target: {fileID: 2562216993427359169, guid: 52353c37d7057c94f95213fb9143b4ec, type: 3}
       propertyPath: steps.Guid.Data4
       value: 1348263987
+      objectReference: {fileID: 0}
+    - target: {fileID: 2562216993427359169, guid: 52353c37d7057c94f95213fb9143b4ec, type: 3}
+      propertyPath: buttonClick.Guid.Data1
+      value: 1817118626
+      objectReference: {fileID: 0}
+    - target: {fileID: 2562216993427359169, guid: 52353c37d7057c94f95213fb9143b4ec, type: 3}
+      propertyPath: buttonClick.Guid.Data2
+      value: 1213295960
+      objectReference: {fileID: 0}
+    - target: {fileID: 2562216993427359169, guid: 52353c37d7057c94f95213fb9143b4ec, type: 3}
+      propertyPath: buttonClick.Guid.Data3
+      value: -1638138699
+      objectReference: {fileID: 0}
+    - target: {fileID: 2562216993427359169, guid: 52353c37d7057c94f95213fb9143b4ec, type: 3}
+      propertyPath: buttonClick.Guid.Data4
+      value: -563695975
       objectReference: {fileID: 0}
     - target: {fileID: 4478508842590796158, guid: 52353c37d7057c94f95213fb9143b4ec, type: 3}
       propertyPath: m_Name
