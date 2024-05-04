@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class ClockRoomManager : MonoBehaviour
 {
-    [SerializeField] private int endSceneStartId;
     [SerializeField] private GameObject visualCue;
     private bool playerInRange;
     
@@ -15,7 +14,7 @@ public class ClockRoomManager : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.E))
             {
                 DataPersistenceManager.instance.SaveGame();
-                SceneManager.LoadScene(endSceneStartId);
+                SceneManager.LoadScene("SkeletonBoss");
             }
         }
         else
