@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Cornet
   dialogueTypingSoundClips:
-  - {fileID: 8300000, guid: e5bc489261f0026419b31356891c0ac7, type: 3}
-  - {fileID: 8300000, guid: 8b0c6a0fc56a10d41b1820629d2d5446, type: 3}
-  - {fileID: 8300000, guid: da1c898aafaba5049b5480a6c86c668c, type: 3}
+  - {fileID: 8300000, guid: 9c67f3fde72daff41b9e1c3aadca83c5, type: 3}
+  - {fileID: 8300000, guid: a01082c400953da458d1c77aee63b24f, type: 3}
+  - {fileID: 8300000, guid: f07fa0dca1f5c884d8a0e9a7442a943f, type: 3}
   frequencyLevel: 5
   minPitch: 0.5
   maxPitch: 1

@@ -9,27 +9,45 @@ public class RhythmPuzzleController : PuzzleControllerBase
     private float _lastClickTime = 0f;
     private int _currentNumber;
     private Animator _animator;
+    private NoteReference _correctSound;
+    private NoteReference _wrongSound;
     
     // Start is called before the first frame update
     void Start()
     {
+        foreach (var reference in FmodEvents.instance.noteReferences)
+        {
+            if (reference.key == noteEnum.CSharp)
+            {
+                _wrongSound = reference;
+            }
+            else if (reference.key == noteEnum.TopD)
+            {
+                _correctSound = reference;
+            }
+        }
+        
         _animator = GetComponent<Animator>();
     }
 
     private IEnumerator PuzzleCoroutine()
     {
         _currentNumber = 0;
-        puzzleData = puzzles[completedPuzzles] as RhythmPuzzleScrub;
-        
         _lastClickTime = 0f;
+        puzzleData = puzzles[completedPuzzles] as RhythmPuzzleScrub;
         
         Cursor.lockState = CursorLockMode.Locked;
         
+        yield return new WaitForSeconds(0.5f);
+        
         foreach (var value in puzzleData.rhythm)
         {
+            AudioManager.instance.PlayOneShot(_correctSound.noteEvent, gameObject.transform.position);
             _animator.Play("Light");
             yield return new WaitForSeconds(value);
         }
+        
+        yield return new WaitForSeconds(0.5f);
         
         Cursor.lockState = CursorLockMode.None;
     }
@@ -50,6 +68,7 @@ public class RhythmPuzzleController : PuzzleControllerBase
             }
             else
             {
+                AudioManager.instance.PlayOneShot(_wrongSound.noteEvent, gameObject.transform.position);
                 StartCoroutine(PuzzleCoroutine());
                 return;
             }
@@ -60,6 +79,7 @@ public class RhythmPuzzleController : PuzzleControllerBase
             }
         }
         _lastClickTime = currentTime;
+        AudioManager.instance.PlayOneShot(_correctSound.noteEvent, gameObject.transform.position);
         _particleSystem.Play();
     }
     

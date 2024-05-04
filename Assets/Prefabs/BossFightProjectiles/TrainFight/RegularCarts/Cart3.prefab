@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1269541802203979366}
   - component: {fileID: 4463396415846672444}
   - component: {fileID: 4303668608147588180}
-  - component: {fileID: -6274302224557061414}
   - component: {fileID: -5848794617356180252}
   m_Layer: 0
   m_Name: Cart3
@@ -104,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beatOfThisNote: 0
   spawnPos: {x: 0, y: 4, z: 0}
-  hitPosition: {x: 0, y: -3, z: 0}
+  hitPosition: {x: 0, y: -4.5, z: 0}
 --- !u!114 &1269541802203979366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startScale: 0.3
-  endScale: 2
+  endScale: 3
 --- !u!114 &4303668608147588180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,27 +146,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 865691633192658861, guid: 1afd4361a3599244ab38921c7a53d5fb, type: 3}
   dealDamage: 10
---- !u!95 &-6274302224557061414
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8084541212325763255}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f570611baf6def418a22ef1e09e9342, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &-5848794617356180252
 BoxCollider2D:
   m_ObjectHideFlags: 0
