@@ -350,11 +350,14 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         {
             data.hatOn = hasHat;
             data.objectPosition = moveObject.transform.position;
-            
-            if (data.npcStages.ContainsKey("Piccolo"))
+            if(hasHat)
             {
-                data.npcStages.Remove("Piccolo");
+                if (data.npcStages.ContainsKey("Piccolo"))
+                {
+                    data.npcStages.Remove("Piccolo");
+                }
+
+                data.npcStages.Add("Piccolo", "Third");
             }
-            data.npcStages.Add("Piccolo", "Third");
         }
 }
