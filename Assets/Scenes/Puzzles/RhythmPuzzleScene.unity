@@ -5819,7 +5819,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 97d4e9f81e8a145478fb185b9427dff7, type: 2}
   victoryButton: {fileID: 810125257}
   startButton: {fileID: 758512567}
-  taskId: 
+  taskId: Pan
   _particleSystem: {fileID: 1020242895}
 --- !u!1 &1385761608
 GameObject:

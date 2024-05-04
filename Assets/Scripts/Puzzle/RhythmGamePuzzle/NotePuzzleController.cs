@@ -31,7 +31,12 @@ public class NotePuzzleController : PuzzleControllerBase
     
     protected override void StartPuzzle()
     {
-        _noteSpawner ??= new NoteSpawner(puzzles[completedPuzzles] as NotePuzzleScrub, _noteObj);
+        if (_noteSpawner != null)
+        {
+            print("NoteSpawner already exists!");
+        }
+        
+        _noteSpawner ??= new NoteSpawner(puzzles[completedPuzzles] as NotePuzzleScrub, _noteObj, transform.position);
 
         _noteSpawner.SpawnNotes();
     }

@@ -12,14 +12,14 @@ public class PuzzleControllerBase : MonoBehaviour
     [SerializeField] protected Button startButton;
     [SerializeField] protected string taskId;
 
+    private Scene _mainScene;
+
     protected void Start()
     {
         AudioManager.instance.StopMusic();
-    }
-
-    protected void OnDestroy()
-    {
-        AudioManager.instance.StartMusic();
+        _mainScene = SceneManager.GetActiveScene();
+        Scene currentScene = gameObject.scene;
+        SceneManager.SetActiveScene(currentScene);
     }
 
     protected void PuzzleCompleted()
@@ -45,6 +45,10 @@ public class PuzzleControllerBase : MonoBehaviour
     
     public void VictoryButtonMethod()
     {
+        SceneManager.SetActiveScene(_mainScene);
+        
+        AudioManager.instance.StartMusic();
+        
         // Get the current scene
         Scene currentScene = gameObject.scene;
 

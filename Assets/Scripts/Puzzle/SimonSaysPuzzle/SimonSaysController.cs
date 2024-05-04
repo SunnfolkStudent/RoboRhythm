@@ -44,7 +44,12 @@ public class Puzzle2Controller : PuzzleControllerBase
         
         Cursor.lockState = CursorLockMode.Locked;
         //Create random 15 number puzzle
-        _puzzle.Clear();
+
+        if (puzzles.Length > 0)
+        {
+            _puzzle.Clear();
+        }
+        
         for (int i = 0; i < _difficulty; i++)
         {
             _puzzle.Add(Random.Range(0, 9));
