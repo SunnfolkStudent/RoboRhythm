@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class TaskManager : MonoBehaviour, IDataPersistence
 {
@@ -62,10 +61,6 @@ public class TaskManager : MonoBehaviour, IDataPersistence
             data.npcStages.Add(taskNpcId, updatedTask);
             Debug.Log("add new stage to npc: " + taskNpcId);
         }
-        else
-        {
-            Debug.Log("NPCId Empty");
-        }
         if (taskNpcId == "Zither")
         {
             data.lampsLit = true;
@@ -82,44 +77,4 @@ public class TaskManager : MonoBehaviour, IDataPersistence
             keyGotId = "";
         }
     }
-    
-    /*public void SaveTaskData(GameData data)
-    {
-        if (data.npcStages.ContainsKey(taskNpcId))
-        {
-            data.npcStages.Remove(taskNpcId);
-        }
-        if(!string.IsNullOrEmpty(taskNpcId))
-        {
-            data.npcStages.Add(taskNpcId, "Third");
-            Debug.Log("add new stage to npc: " + taskNpcId);
-        }
-        else
-        {
-            Debug.Log("NPCId Empty");
-        }
-        if (taskNpcId == "Zither")
-        {
-            data.lampsLit = true;
-        }
-        taskNpcId = null;
-        
-        DataPersistenceManager.instance.SaveGame();
-        DataPersistenceManager.instance.LoadTaskData();
-    }
-    public void LoadTaskData(GameData data) { }
-    
-    public void LoadKeyData(GameData data){}
-
-    public void SaveKeyData(GameData data)
-    {
-        if (data.keysFound.ContainsKey(keyGotId))
-        {
-            data.keysFound.Remove(keyGotId, out falseKey);
-        }
-        if(keyGotId != "")
-        {
-            data.keysFound.Add(keyGotId, true);
-        }
-    }*/
 }

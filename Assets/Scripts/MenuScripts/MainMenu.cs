@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -43,6 +41,7 @@ public class MainMenu : MonoBehaviour
         DataPersistenceManager.instance.NewGame();
         DataPersistenceManager.instance.SaveGame();
 
+        AudioManager.instance.StopMusic();
         SceneManager.LoadScene("PrologueScene");
     }
     

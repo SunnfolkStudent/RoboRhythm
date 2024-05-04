@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,20 +32,6 @@ public class EndBossManager : MonoBehaviour, IDataPersistence
     }
 
     public void SaveData(GameData data)
-    {
-        data.hasAllKeys = allKeysFound;
-    }
-    
-    public void SaveTaskData(GameData data) { }
-
-    public void LoadTaskData(GameData data) { }
-
-    public void LoadKeyData(GameData data)
-    {
-        allKeysFound = data.hasAllKeys;
-    }
-
-    public void SaveKeyData(GameData data)
     {
         data.hasAllKeys = allKeysFound;
     }

@@ -25,8 +25,4 @@ public class LampManager : MonoBehaviour, IDataPersistence
     {
         data.lampsLit = isLit;
     }
-    public void SaveTaskData(GameData data) { }
-    public void LoadTaskData(GameData data) { }
-    public void LoadKeyData(GameData data) { }
-    public void SaveKeyData(GameData data) { }
 }

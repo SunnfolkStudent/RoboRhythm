@@ -63,11 +63,6 @@ public class StatuePieceScript : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data)
     {
         data.statuePiecesFound.TryGetValue(statuePieceId, out isFound);
-        /*if (isFound)
-        {
-            _spriteRenderer.sprite = null;
-            _collider2D.enabled = false;
-        }*/
     }
 
     public void SaveData(GameData data)
@@ -78,11 +73,4 @@ public class StatuePieceScript : MonoBehaviour, IDataPersistence
         }
         data.statuePiecesFound.Add(statuePieceId, isFound);
     }
-    
-    public void SaveTaskData(GameData data) { }
-    public void LoadTaskData(GameData data) { }
-    
-    public void LoadKeyData(GameData data){}
-
-    public void SaveKeyData(GameData data) { }
 }

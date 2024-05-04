@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -59,21 +58,6 @@ public class BossPortal : MonoBehaviour, IDataPersistence
 
         data.tasksList.Add(taskId, taskDone);
     }
-    
-    public void SaveTaskData(GameData data) { }
-
-    public void LoadTaskData(GameData data)
-    {
-        data.tasksList.TryGetValue(taskId, out taskDone);
-        data.npcStages.TryGetValue(taskId, out npcStage);
-        if (!taskDone)
-        {
-            _collider.enabled = false;
-        }
-    }
-    
-    public void LoadKeyData(GameData data){}
-    public void SaveKeyData(GameData data){}
     
     private void OnTriggerEnter2D(Collider2D collider)
     {

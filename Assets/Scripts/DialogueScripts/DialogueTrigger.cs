@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -142,13 +141,6 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
         data.npcStages.Add(npcId, currentStage);
     }
 
-    public void SaveTaskData(GameData data) { }
-
-    public void LoadTaskData(GameData data)
-    {
-        data.npcStages.TryGetValue(npcId, out currentStage);
-    }
-
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.tag == "Player")
@@ -164,7 +156,4 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
             playerInRange = false;
         }
     }
-    
-    public void LoadKeyData(GameData data){}
-    public void SaveKeyData(GameData data){}
 }
