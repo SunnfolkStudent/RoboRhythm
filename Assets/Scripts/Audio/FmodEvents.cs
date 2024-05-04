@@ -8,6 +8,10 @@ public class FmodEvents : MonoBehaviour
     
     //[field: Header("Notes")]
     [field: SerializeField] public NoteReference[] noteReferences;
+    [field: SerializeField] public EventReference[] chordReferencesPuzzle1;
+    [field: SerializeField] public EventReference[] chordReferencesPuzzle2;
+    [field: SerializeField] public EventReference[] chordReferencesPuzzle3;
+    [field: SerializeField] public EventReference[] chordReferencesPuzzle4;
     
     public static FmodEvents instance { get; private set; }
 

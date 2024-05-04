@@ -59,7 +59,6 @@ public class RhythmPuzzleController : PuzzleControllerBase
         if (_lastClickTime != 0f)
         {
             float timeBetweenClicks = currentTime - _lastClickTime;
-            Debug.Log("Time between clicks: " + timeBetweenClicks + " seconds");
 
             if (timeBetweenClicks > (puzzleData.rhythm[_currentNumber] - 0.14 * puzzleData.rhythm[_currentNumber]) 
                 && timeBetweenClicks < (puzzleData.rhythm[_currentNumber] + 0.14 * puzzleData.rhythm[_currentNumber]))
