@@ -48,6 +48,7 @@ public class PlayerSound : MonoBehaviour
 
     private void OnDestroy()
     {
+        _playerSteps.stop(STOP_MODE.ALLOWFADEOUT);
         _playerSteps.release();
     }
 }
