@@ -16,12 +16,13 @@ public class PauseManager : MonoBehaviour
         AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
         Time.timeScale = 1;
         GameEvents.gameUnpaused?.Invoke();
-        GameEvents.unloadScene?.Invoke("PauseMenu");
+        GameEvents.unPauseGame?.Invoke();
     }
     
     public void BackToMenu()
     {
         AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
+        GameEvents.goingToMainMenu?.Invoke();
         SceneManager.LoadScene("MainMenu");
     }
 }

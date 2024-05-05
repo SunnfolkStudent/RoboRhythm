@@ -58,6 +58,11 @@ public class Input_Controller : MonoBehaviour
         {
             PlayerEvents.playerNotRunning?.Invoke();
         }
+
+        if (_input.UI.Pause.WasPressedThisFrame())
+        {
+            GameEvents.pausePressed?.Invoke();
+        }
     }
     private void Awake()
     {

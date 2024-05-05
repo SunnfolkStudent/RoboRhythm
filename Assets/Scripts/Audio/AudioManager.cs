@@ -21,7 +21,17 @@ public class AudioManager : MonoBehaviour
         
         DontDestroyOnLoad(gameObject);
     }
+
+    private void OnEnable()
+    {
+        GameEvents.goingToMainMenu += PlayMenuMusic;
+    }
     
+    private void OnDisable()
+    {
+        GameEvents.goingToMainMenu -= PlayMenuMusic;
+    }
+
     private void Start()
     {
         InitializeBGM(FmodEvents.instance.BackgroundMusic);
@@ -57,5 +67,10 @@ public class AudioManager : MonoBehaviour
     {
         EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
         return eventInstance;
+    }
+    
+    private void PlayMenuMusic()
+    {
+        SetMusicRegionParameter(MusicRegion.MainMenu);
     }
 }
