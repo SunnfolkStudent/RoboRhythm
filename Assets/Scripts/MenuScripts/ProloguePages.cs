@@ -13,6 +13,7 @@ public class ProloguePages : MonoBehaviour, IDataPersistence
     private bool canContinueToNextPage;
     private void Start()
     {
+        Debug.Log("start of page");
         canContinueToNextPage = false;
         StartCoroutine(DisplayLine());
         StartCoroutine(TimeForNextPage());
@@ -25,6 +26,7 @@ public class ProloguePages : MonoBehaviour, IDataPersistence
 
     private IEnumerator DisplayLine()
     {
+        Debug.Log("display line coroutine start");
         text.text = line;
         text.maxVisibleCharacters = 0;
             
@@ -47,18 +49,23 @@ public class ProloguePages : MonoBehaviour, IDataPersistence
 
     private IEnumerator TimeForNextPage()
     {
-        yield return new WaitForSeconds(6);
+        Debug.Log("next page coroutine start");
+        yield return new WaitForSeconds(7.5f);
         Continue();
     }
 
     private void Continue()
     {
+        Debug.Log("continue");
         if (nextPage == null)
         {
             SceneManager.LoadScene("MainCityScene");
         }
-        nextPage.SetActive(true);
-        gameObject.SetActive(false);
+        else
+        {
+            nextPage.SetActive(true);
+            gameObject.SetActive(false);
+        }
     }
     
     public void LoadData(GameData data) { }

@@ -5,6 +5,7 @@ public class RBossHealthManager : MonoBehaviour
 {
     [SerializeField] private float songLengthInSeconds;
     [SerializeField] private GameObject bossHealthBar;
+    [SerializeField] private TaskManager _taskManager;
 
     [SerializeField] private string taskId;
     
@@ -33,7 +34,7 @@ public class RBossHealthManager : MonoBehaviour
         SaveSystem.currentSave = 0;
         if (!string.IsNullOrEmpty(taskId))
         {
-            TaskManager.GetInstance().TaskComplete(taskId);
+            _taskManager.TaskComplete(taskId);
             SceneManager.LoadScene("MainCityScene");
         }
         else

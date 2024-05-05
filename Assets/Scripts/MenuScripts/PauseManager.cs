@@ -22,6 +22,7 @@ public class PauseManager : MonoBehaviour
     public void BackToMenu()
     {
         AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
+        DataPersistenceManager.instance.SaveGame();
         GameEvents.goingToMainMenu?.Invoke();
         SceneManager.LoadScene("MainMenu");
     }

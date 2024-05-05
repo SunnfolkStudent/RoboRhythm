@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
@@ -32,6 +33,8 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
 
         [SerializeField] private Animator playerAnimator;
         [SerializeField] private GameObject moveObject;
+
+        [SerializeField] private TaskManager _taskManager;
         
         public bool dialogueIsPlaying { get; private set; }
         
@@ -277,11 +280,11 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
                         Debug.Log("Key Obtained: " + tagValue);
                         keyGot = tagValue;
                         playerAnimator.SetTrigger("GotKey");
-                        TaskManager.GetInstance().KeyObtained(tagValue);
+                        _taskManager.KeyObtained(tagValue);
                         break;
                     case HATON_TAG:
                         playerAnimator.SetBool("WearingHat", true);
-                        TaskManager.GetInstance().TaskComplete("Piccolo"); 
+                        _taskManager.TaskComplete("Piccolo"); 
                         hasHat = true;
                         break;
                     case HATOFF_TAG:
@@ -292,7 +295,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
                         moveObject.transform.position += new Vector3(0, -4, 0);;
                         break;
                     case DONETALKING_TAG:
-                        TaskManager.GetInstance().UpdateDialogue(tagValue);
+                        _taskManager.UpdateDialogue(tagValue);
                         break;
                     default:
                         Debug.LogWarning("Tag came in but is not currently being handled: " + tag);

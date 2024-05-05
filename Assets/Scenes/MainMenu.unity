@@ -175,13 +175,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4174175647800468345, guid: dec4f3caa6381de41b01895e3e5929ac, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8272075411387323785, guid: dec4f3caa6381de41b01895e3e5929ac, type: 3}
       propertyPath: nonoScenes.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8272075411387323785, guid: dec4f3caa6381de41b01895e3e5929ac, type: 3}
       propertyPath: nonoScenes.Array.data[4]
       value: PrologueScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272075411387323785, guid: dec4f3caa6381de41b01895e3e5929ac, type: 3}
+      propertyPath: nonoScenes.Array.data[5]
+      value: EndScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -816,37 +824,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172279729}
   m_CullTransparentMesh: 1
---- !u!1 &1185866605
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1185866606}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1185866606
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185866605}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1241165988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1953,6 +1930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4478508842590796158, guid: 52353c37d7057c94f95213fb9143b4ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6695389426438135283, guid: 52353c37d7057c94f95213fb9143b4ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.307691
@@ -2260,11 +2241,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3339982401489652505, guid: 05acc1a7ac9acb14c93856630f22ee9d, type: 3}
       propertyPath: useEncryption
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5463107552043165240, guid: 05acc1a7ac9acb14c93856630f22ee9d, type: 3}
       propertyPath: m_Name
       value: DataPersistenceManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463107552043165240, guid: 05acc1a7ac9acb14c93856630f22ee9d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2280,6 +2265,5 @@ SceneRoots:
   - {fileID: 585730992}
   - {fileID: 960125214}
   - {fileID: 6511454485347440250}
-  - {fileID: 1185866606}
   - {fileID: 1955215490}
   - {fileID: 210320761}

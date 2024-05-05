@@ -8,6 +8,7 @@ public class StatueManager : MonoBehaviour, IDataPersistence
     [SerializeField] private GameObject brokenStatue;
     [SerializeField] private SpriteRenderer statueHead, statueArm, statueLeg;
     [SerializeField] private bool isFixed;
+    [SerializeField] private TaskManager _taskManager;
     private bool playerInRange;
     private string npcTaskId = "Cornet";
     private Collider2D _collider2D;
@@ -59,7 +60,7 @@ public class StatueManager : MonoBehaviour, IDataPersistence
     {
         AudioManager.instance.PlayOneShot(FmodEvents.instance.stonesFalling, gameObject.transform.position);
         isFixed = true;
-        TaskManager.GetInstance().TaskComplete(npcTaskId);
+        _taskManager.TaskComplete(npcTaskId);
         Debug.Log("update task manager from finishing statue");
     }
     

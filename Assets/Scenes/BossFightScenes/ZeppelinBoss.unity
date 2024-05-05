@@ -1448,6 +1448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songLengthInSeconds: 225
   bossHealthBar: {fileID: 782489640}
+  _taskManager: {fileID: 820969912}
   taskId: Bell
 --- !u!1 &800905398
 GameObject:
@@ -1586,6 +1587,74 @@ MonoBehaviour:
   - beatNumber: 585
     stayTimeBeats: 6
     chatText: NOOOOOOOOOOOOOOOOOOOOOOOO!!!!!
+--- !u!1001 &820969911
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 900906751973175984, guid: 345648a5daa79ea4d9a3d649f5ea35a6, type: 3}
+      propertyPath: m_Name
+      value: TaskManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693195288522511875, guid: 345648a5daa79ea4d9a3d649f5ea35a6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693195288522511875, guid: 345648a5daa79ea4d9a3d649f5ea35a6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693195288522511875, guid: 345648a5daa79ea4d9a3d649f5ea35a6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693195288522511875, guid: 345648a5daa79ea4d9a3d649f5ea35a6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693195288522511875, guid: 345648a5daa79ea4d9a3d649f5ea35a6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693195288522511875, guid: 345648a5daa79ea4d9a3d649f5ea35a6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693195288522511875, guid: 345648a5daa79ea4d9a3d649f5ea35a6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693195288522511875, guid: 345648a5daa79ea4d9a3d649f5ea35a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693195288522511875, guid: 345648a5daa79ea4d9a3d649f5ea35a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693195288522511875, guid: 345648a5daa79ea4d9a3d649f5ea35a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 345648a5daa79ea4d9a3d649f5ea35a6, type: 3}
+--- !u!114 &820969912 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4742845741713742506, guid: 345648a5daa79ea4d9a3d649f5ea35a6, type: 3}
+  m_PrefabInstance: {fileID: 820969911}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf756f45cd2c3e845b8afea5fbd76e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &932661827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1927,19 +1996,19 @@ MonoBehaviour:
   - noteType: 7
     beatNumber: 265
   - noteType: 7
-    beatNumber: 265.5
+    beatNumber: 2655
   - noteType: 7
     beatNumber: 266
   - noteType: 7
-    beatNumber: 266.5
+    beatNumber: 2665
   - noteType: 7
     beatNumber: 267
   - noteType: 7
-    beatNumber: 267.5
+    beatNumber: 2675
   - noteType: 7
     beatNumber: 268
   - noteType: 7
-    beatNumber: 268.5
+    beatNumber: 2685
   - noteType: 2
     beatNumber: 271
   - noteType: 2
@@ -4442,3 +4511,4 @@ SceneRoots:
   - {fileID: 1703999310}
   - {fileID: 1185906619}
   - {fileID: 1558958063}
+  - {fileID: 820969911}

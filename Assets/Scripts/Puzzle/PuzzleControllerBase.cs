@@ -11,6 +11,7 @@ public class PuzzleControllerBase : MonoBehaviour
     [SerializeField] protected Button victoryButton;
     [SerializeField] protected Button startButton;
     [SerializeField] protected string taskId;
+    [SerializeField] private TaskManager _taskManager;
 
     private string _mainSceneName;
 
@@ -42,7 +43,7 @@ public class PuzzleControllerBase : MonoBehaviour
     protected void CompletePuzzles()
     {
         victoryButton.gameObject.SetActive(true);
-        TaskManager.GetInstance().TaskComplete(taskId);
+        _taskManager.TaskComplete(taskId);
     }
     
     protected virtual void StartPuzzle() {}

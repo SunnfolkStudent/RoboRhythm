@@ -8,24 +8,6 @@ public class TaskManager : MonoBehaviour, IDataPersistence
     private bool falseKey = false;
     private string updatedTask;
     
-    private static TaskManager instance;
-
-    private void Awake()
-    {
-        if (instance != null)
-        {
-            Debug.Log("Found more than one Task Manager in scene");
-            Destroy(this.gameObject);
-            return;
-        }
-        instance = this;
-        DontDestroyOnLoad(this.gameObject);
-    }
-    
-    public static TaskManager GetInstance()
-    {
-        return instance;
-    }
 
     public void TaskComplete(string taskId)
     {
