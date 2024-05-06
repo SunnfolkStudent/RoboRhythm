@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ProloguePages : MonoBehaviour, IDataPersistence
 {
-    [SerializeField] private float typingSpeed;
+    private float typingSpeed = 0.06f;
     [SerializeField] private string line;
     [SerializeField] private bool isFirst;
     [SerializeField] private TMP_Text text;

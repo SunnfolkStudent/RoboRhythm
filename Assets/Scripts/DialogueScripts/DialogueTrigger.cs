@@ -103,9 +103,7 @@ public class DialogueTrigger : MonoBehaviour, IDataPersistence
                 Debug.LogWarning("Stage isn't registered");
                 break;
         }
-        
         DataPersistenceManager.instance.SaveGame();
-        DataPersistenceManager.instance.LoadGame();
     }
     
     public void LoadData(GameData data)

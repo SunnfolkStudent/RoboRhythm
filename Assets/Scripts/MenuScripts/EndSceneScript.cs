@@ -19,7 +19,7 @@ public class EndSceneScript : MonoBehaviour
 
     private IEnumerator GoToNextPanel()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(7.5f);
         if (nextPage == null)
         {
             DataPersistenceManager.instance.NewGame();
