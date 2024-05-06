@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class CityCameraScript : MonoBehaviour
 {
-    [SerializeField] private Camera clockRoomCamera;
-    [SerializeField] private Camera mainCamera;
-    private bool playerInRoom;
+    [SerializeField] private GameObject clockRoomCamera;
+    [SerializeField] private GameObject mainCamera;
+    [SerializeField] private bool playerInRoom;
     
 
     private void OnTriggerStay2D(Collider2D other)
@@ -31,14 +31,14 @@ public class CityCameraScript : MonoBehaviour
     {
         if (playerInRoom)
         {
-            clockRoomCamera.enabled = true;
-            mainCamera.enabled = false;
+            clockRoomCamera.SetActive(true);
+            mainCamera.SetActive(false);
         }
 
         if (!playerInRoom)
         {
-            clockRoomCamera.enabled = false;
-            mainCamera.enabled = true;
+            clockRoomCamera.SetActive(false);
+            mainCamera.SetActive(true);
         }
     }
 }

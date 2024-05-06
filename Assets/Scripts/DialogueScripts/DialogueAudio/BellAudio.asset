@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Bell
   dialogueTypingSoundClips:
-  - {fileID: 8300000, guid: d095e3afb79d7f14fb371a6c7be9862b, type: 3}
   - {fileID: 8300000, guid: 2f03f898a8c810846bf32161fc980da0, type: 3}
-  - {fileID: 8300000, guid: 8c34d43fb0dca3843b3ea9d321520e47, type: 3}
   frequencyLevel: 5
-  minPitch: 0.8
+  minPitch: 0.4
   maxPitch: 1
   stopAudioSource: 1
+  audioVolume: 0.8

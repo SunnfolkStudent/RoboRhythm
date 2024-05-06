@@ -1996,19 +1996,19 @@ MonoBehaviour:
   - noteType: 7
     beatNumber: 265
   - noteType: 7
-    beatNumber: 265.5
+    beatNumber: 2655
   - noteType: 7
     beatNumber: 266
   - noteType: 7
-    beatNumber: 266.5
+    beatNumber: 2665
   - noteType: 7
     beatNumber: 267
   - noteType: 7
-    beatNumber: 267.5
+    beatNumber: 2675
   - noteType: 7
     beatNumber: 268
   - noteType: 7
-    beatNumber: 268.5
+    beatNumber: 2685
   - noteType: 2
     beatNumber: 271
   - noteType: 2
@@ -3423,7 +3423,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 320, y: 180}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96

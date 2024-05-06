@@ -1811,7 +1811,7 @@ Transform:
   m_GameObject: {fileID: 143903328}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.69, z: 0}
+  m_LocalPosition: {x: 0, y: 3.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7010,7 +7010,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -7360,8 +7360,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c758bc67e92c6f740936b2988581ce1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clockRoomCamera: {fileID: 2040940869}
-  mainCamera: {fileID: 789657663}
+  clockRoomCamera: {fileID: 2040940867}
+  mainCamera: {fileID: 789657662}
+  playerInRoom: 0
 --- !u!4 &407679280
 Transform:
   m_ObjectHideFlags: 0
@@ -9807,6 +9808,7 @@ GameObject:
   - component: {fileID: 519468717}
   - component: {fileID: 519468720}
   - component: {fileID: 519468719}
+  - component: {fileID: 519468721}
   m_Layer: 0
   m_Name: clockroom_floor
   m_TagString: Untagged
@@ -9916,7 +9918,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.093229294, y: 2.9499435}
+  m_Offset: {x: -0.093229294, y: 0.7366524}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9927,7 +9929,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4293709, y: 1.1899261}
+  m_Size: {x: 3.4293709, y: 2.811592}
   m_EdgeRadius: 0
 --- !u!114 &519468720
 MonoBehaviour:
@@ -9942,6 +9944,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 143903328}
+--- !u!61 &519468721
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519468716}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -6.2279816}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 20, y: 11.25}
+    newSize: {x: 20, y: 11.25}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20, y: 1.3612976}
+  m_EdgeRadius: 0
 --- !u!1 &525937969
 GameObject:
   m_ObjectHideFlags: 0
@@ -14140,11 +14187,9 @@ PolygonCollider2D:
       - {x: -10.571249, y: -2.5814176}
       - {x: -33.688385, y: -2.7024853}
       - {x: -48.614223, y: -2.6659117}
-      - {x: -49.17318, y: -16.262663}
-      - {x: -32.347626, y: -16.349934}
-      - {x: 14.284335, y: -16.874634}
-      - {x: 49.48482, y: -16.823381}
-      - {x: 49.79313, y: 7.2506075}
+      - {x: -48.88046, y: -17.872625}
+      - {x: 49.48482, y: -18.140623}
+      - {x: 49.500404, y: 7.1042485}
   m_UseDelaunayMesh: 0
 --- !u!1 &788592730
 GameObject:
@@ -48656,15 +48701,17 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.19152832, y: 3.9801636}
-      - {x: -2.75, y: 5.625}
+    - - {x: -2.3745346, y: 1.5869904}
+      - {x: -0.17421722, y: 1.7220688}
+      - {x: 0.003856659, y: 5.818634}
       - {x: -10, y: 5.625}
       - {x: -14.2709255, y: -8.954979}
       - {x: 0.15281487, y: -5.536392}
       - {x: -9.324318, y: -5.344589}
       - {x: -5.273117, y: -1.4818573}
-    - - {x: 2.75, y: 5.625}
-      - {x: -0.16887283, y: 4.1090317}
+    - - {x: 0.017654419, y: 5.8616486}
+      - {x: -0.08275604, y: 1.7218475}
+      - {x: 2.3377457, y: 1.6726532}
       - {x: 9.38308, y: -5.3370667}
       - {x: 0.22182846, y: -5.536392}
       - {x: 15.244995, y: -6.856949}
@@ -60368,7 +60415,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.75
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
