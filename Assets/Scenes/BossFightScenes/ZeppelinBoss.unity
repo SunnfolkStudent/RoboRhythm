@@ -148,7 +148,7 @@ Transform:
   m_GameObject: {fileID: 121225998}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -733,7 +733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &548512907
 RectTransform:
   m_ObjectHideFlags: 0
@@ -766,7 +766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.8584906, g: 0.09313814, b: 0.09313814, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1996,19 +1996,19 @@ MonoBehaviour:
   - noteType: 7
     beatNumber: 265
   - noteType: 7
-    beatNumber: 2655
+    beatNumber: 265.5
   - noteType: 7
     beatNumber: 266
   - noteType: 7
-    beatNumber: 2665
+    beatNumber: 266.5
   - noteType: 7
     beatNumber: 267
   - noteType: 7
-    beatNumber: 2675
+    beatNumber: 267.5
   - noteType: 7
     beatNumber: 268
   - noteType: 7
-    beatNumber: 2685
+    beatNumber: 268.5
   - noteType: 2
     beatNumber: 271
   - noteType: 2
@@ -2932,7 +2932,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1346075716
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3824,7 +3824,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1937903572
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4283,7 +4283,7 @@ Transform:
   m_GameObject: {fileID: 6969460405615030266}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.6, z: -2}
+  m_LocalPosition: {x: 0, y: -5.69, z: -3}
   m_LocalScale: {x: 0.16666667, y: 0.16666667, z: 0.16666667}
   m_ConstrainProportionsScale: 1
   m_Children: []
