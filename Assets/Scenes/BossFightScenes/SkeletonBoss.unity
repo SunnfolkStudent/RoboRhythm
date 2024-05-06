@@ -265,6 +265,81 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &241436685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 241436686}
+  - component: {fileID: 241436688}
+  - component: {fileID: 241436687}
+  m_Layer: 5
+  m_Name: TopBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &241436686
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241436685}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1703999310}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 140.00003}
+  m_SizeDelta: {x: 500, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &241436687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241436685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &241436688
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241436685}
+  m_CullTransparentMesh: 1
 --- !u!1 &294313354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,6 +1164,81 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
+--- !u!1 &664262591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 664262592}
+  - component: {fileID: 664262594}
+  - component: {fileID: 664262593}
+  m_Layer: 5
+  m_Name: BottomBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &664262592
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664262591}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1703999310}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -140}
+  m_SizeDelta: {x: 500, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &664262593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664262591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &664262594
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664262591}
+  m_CullTransparentMesh: 1
 --- !u!1 &684840213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1582,19 +1732,19 @@ MonoBehaviour:
   - noteType: 8
     beatNumber: 49
   - noteType: 8
-    beatNumber: 495
+    beatNumber: 49.5
   - noteType: 8
     beatNumber: 50
   - noteType: 8
-    beatNumber: 505
+    beatNumber: 50.5
   - noteType: 8
     beatNumber: 51
   - noteType: 8
-    beatNumber: 515
+    beatNumber: 51.5
   - noteType: 8
     beatNumber: 52
   - noteType: 8
-    beatNumber: 525
+    beatNumber: 52.5
   - noteType: 7
     beatNumber: 53
   - noteType: 8
@@ -1602,11 +1752,11 @@ MonoBehaviour:
   - noteType: 9
     beatNumber: 53
   - noteType: 7
-    beatNumber: 535
+    beatNumber: 53.5
   - noteType: 8
-    beatNumber: 535
+    beatNumber: 53.5
   - noteType: 9
-    beatNumber: 535
+    beatNumber: 53.5
   - noteType: 7
     beatNumber: 54
   - noteType: 8
@@ -1614,11 +1764,11 @@ MonoBehaviour:
   - noteType: 9
     beatNumber: 54
   - noteType: 7
-    beatNumber: 545
+    beatNumber: 54.5
   - noteType: 8
-    beatNumber: 545
+    beatNumber: 54.5
   - noteType: 9
-    beatNumber: 545
+    beatNumber: 54.5
   - noteType: 7
     beatNumber: 55
   - noteType: 8
@@ -1626,11 +1776,11 @@ MonoBehaviour:
   - noteType: 9
     beatNumber: 55
   - noteType: 7
-    beatNumber: 555
+    beatNumber: 55.5
   - noteType: 8
-    beatNumber: 555
+    beatNumber: 55.5
   - noteType: 9
-    beatNumber: 555
+    beatNumber: 55.5
   - noteType: 7
     beatNumber: 56
   - noteType: 8
@@ -1786,23 +1936,23 @@ MonoBehaviour:
   - noteType: 7
     beatNumber: 81
   - noteType: 7
-    beatNumber: 815
+    beatNumber: 81.5
   - noteType: 7
     beatNumber: 82
   - noteType: 7
-    beatNumber: 825
+    beatNumber: 82.5
   - noteType: 8
     beatNumber: 83
   - noteType: 9
-    beatNumber: 835
+    beatNumber: 83.5
   - noteType: 8
     beatNumber: 84
   - noteType: 7
-    beatNumber: 845
+    beatNumber: 84.5
   - noteType: 8
     beatNumber: 85
   - noteType: 9
-    beatNumber: 855
+    beatNumber: 85.5
   - noteType: 8
     beatNumber: 86
   - noteType: 6
@@ -1810,17 +1960,17 @@ MonoBehaviour:
   - noteType: 10
     beatNumber: 87
   - noteType: 6
-    beatNumber: 875
+    beatNumber: 87.5
   - noteType: 10
-    beatNumber: 875
+    beatNumber: 87.5
   - noteType: 6
     beatNumber: 88
   - noteType: 10
     beatNumber: 88
   - noteType: 6
-    beatNumber: 885
+    beatNumber: 88.5
   - noteType: 10
-    beatNumber: 885
+    beatNumber: 88.5
   - noteType: 11
     beatNumber: 89
   - noteType: 13
@@ -1844,63 +1994,63 @@ MonoBehaviour:
   - noteType: 10
     beatNumber: 119
   - noteType: 9
-    beatNumber: 1195
+    beatNumber: 119.5
   - noteType: 10
     beatNumber: 120
   - noteType: 9
-    beatNumber: 1205
+    beatNumber: 120.5
   - noteType: 8
     beatNumber: 121
   - noteType: 6
-    beatNumber: 1215
+    beatNumber: 121.5
   - noteType: 7
     beatNumber: 122
   - noteType: 8
-    beatNumber: 1225
+    beatNumber: 122.5
   - noteType: 9
     beatNumber: 123
   - noteType: 8
-    beatNumber: 1235
+    beatNumber: 123.5
   - noteType: 10
     beatNumber: 124
   - noteType: 9
-    beatNumber: 1245
+    beatNumber: 124.5
   - noteType: 8
     beatNumber: 125
   - noteType: 7
-    beatNumber: 1255
+    beatNumber: 125.5
   - noteType: 8
     beatNumber: 126
   - noteType: 6
-    beatNumber: 1265
+    beatNumber: 126.5
   - noteType: 7
     beatNumber: 127
   - noteType: 10
-    beatNumber: 1275
+    beatNumber: 127.5
   - noteType: 9
     beatNumber: 128
   - noteType: 6
-    beatNumber: 1285
+    beatNumber: 128.5
   - noteType: 7
     beatNumber: 129
   - noteType: 8
-    beatNumber: 1295
+    beatNumber: 129.5
   - noteType: 9
     beatNumber: 130
   - noteType: 8
-    beatNumber: 1305
+    beatNumber: 130.5
   - noteType: 10
     beatNumber: 131
   - noteType: 9
-    beatNumber: 1315
+    beatNumber: 131.5
   - noteType: 8
     beatNumber: 132
   - noteType: 7
-    beatNumber: 1325
+    beatNumber: 132.5
   - noteType: 8
     beatNumber: 133
   - noteType: 6
-    beatNumber: 1335
+    beatNumber: 133.5
   - noteType: 7
     beatNumber: 134
   - noteType: 11
@@ -1978,19 +2128,19 @@ MonoBehaviour:
   - noteType: 10
     beatNumber: 167
   - noteType: 9
-    beatNumber: 1675
+    beatNumber: 167.5
   - noteType: 8
     beatNumber: 168
   - noteType: 7
-    beatNumber: 1685
+    beatNumber: 168.5
   - noteType: 8
     beatNumber: 169
   - noteType: 6
-    beatNumber: 1695
+    beatNumber: 169.5
   - noteType: 7
     beatNumber: 170
   - noteType: 8
-    beatNumber: 1705
+    beatNumber: 170.5
   - noteType: 6
     beatNumber: 171
   - noteType: 7
@@ -2000,19 +2150,19 @@ MonoBehaviour:
   - noteType: 9
     beatNumber: 171
   - noteType: 10
-    beatNumber: 1715
+    beatNumber: 171.5
   - noteType: 9
     beatNumber: 172
   - noteType: 8
-    beatNumber: 1725
+    beatNumber: 172.5
   - noteType: 7
     beatNumber: 173
   - noteType: 8
-    beatNumber: 1735
+    beatNumber: 173.5
   - noteType: 6
     beatNumber: 174
   - noteType: 6
-    beatNumber: 1745
+    beatNumber: 174.5
   - noteType: 6
     beatNumber: 175
   - noteType: 7
@@ -2022,27 +2172,27 @@ MonoBehaviour:
   - noteType: 10
     beatNumber: 175
   - noteType: 6
-    beatNumber: 1755
+    beatNumber: 175.5
   - noteType: 7
     beatNumber: 176
   - noteType: 8
-    beatNumber: 1765
+    beatNumber: 176.5
   - noteType: 9
     beatNumber: 177
   - noteType: 8
-    beatNumber: 1775
+    beatNumber: 177.5
   - noteType: 10
     beatNumber: 178
   - noteType: 9
-    beatNumber: 1785
+    beatNumber: 178.5
   - noteType: 8
     beatNumber: 179
   - noteType: 7
-    beatNumber: 1795
+    beatNumber: 179.5
   - noteType: 8
     beatNumber: 180
   - noteType: 9
-    beatNumber: 1805
+    beatNumber: 180.5
   - noteType: 6
     beatNumber: 181
   - noteType: 8
@@ -2070,49 +2220,49 @@ MonoBehaviour:
   - noteType: 10
     beatNumber: 217
   - noteType: 10
-    beatNumber: 2175
+    beatNumber: 217.5
   - noteType: 9
     beatNumber: 217
   - noteType: 9
-    beatNumber: 2175
+    beatNumber: 217.5
   - noteType: 8
     beatNumber: 218
   - noteType: 8
-    beatNumber: 2185
+    beatNumber: 218.5
   - noteType: 7
     beatNumber: 219
   - noteType: 7
-    beatNumber: 2195
+    beatNumber: 219.5
   - noteType: 8
     beatNumber: 220
   - noteType: 6
-    beatNumber: 2205
+    beatNumber: 220.5
   - noteType: 7
     beatNumber: 221
   - noteType: 8
-    beatNumber: 2215
+    beatNumber: 221.5
   - noteType: 9
     beatNumber: 222
   - noteType: 8
-    beatNumber: 2225
+    beatNumber: 222.5
   - noteType: 10
     beatNumber: 223
   - noteType: 6
-    beatNumber: 2235
+    beatNumber: 223.5
   - noteType: 7
-    beatNumber: 2235
+    beatNumber: 223.5
   - noteType: 9
-    beatNumber: 2235
+    beatNumber: 223.5
   - noteType: 10
-    beatNumber: 2235
+    beatNumber: 223.5
   - noteType: 6
     beatNumber: 224
   - noteType: 10
     beatNumber: 224
   - noteType: 6
-    beatNumber: 2245
+    beatNumber: 224.5
   - noteType: 10
-    beatNumber: 2245
+    beatNumber: 224.5
   - noteType: 6
     beatNumber: 225
   - noteType: 11
@@ -2124,27 +2274,27 @@ MonoBehaviour:
   - noteType: 15
     beatNumber: 225
   - noteType: 7
-    beatNumber: 2255
+    beatNumber: 225.5
   - noteType: 8
     beatNumber: 226
   - noteType: 10
-    beatNumber: 2265
+    beatNumber: 226.5
   - noteType: 10
     beatNumber: 227
   - noteType: 9
-    beatNumber: 2275
+    beatNumber: 227.5
   - noteType: 8
     beatNumber: 228
   - noteType: 7
-    beatNumber: 2285
+    beatNumber: 228.5
   - noteType: 8
     beatNumber: 229
   - noteType: 6
-    beatNumber: 2295
+    beatNumber: 229.5
   - noteType: 7
     beatNumber: 230
   - noteType: 8
-    beatNumber: 2305
+    beatNumber: 230.5
   - noteType: 9
     beatNumber: 231
   - noteType: 11
@@ -2158,83 +2308,83 @@ MonoBehaviour:
   - noteType: 10
     beatNumber: 235
   - noteType: 9
-    beatNumber: 2355
+    beatNumber: 235.5
   - noteType: 8
     beatNumber: 236
   - noteType: 7
-    beatNumber: 2365
+    beatNumber: 236.5
   - noteType: 8
     beatNumber: 237
   - noteType: 6
-    beatNumber: 2375
+    beatNumber: 237.5
   - noteType: 7
     beatNumber: 238
   - noteType: 8
-    beatNumber: 2385
+    beatNumber: 238.5
   - noteType: 9
     beatNumber: 239
   - noteType: 8
-    beatNumber: 2395
+    beatNumber: 239.5
   - noteType: 10
     beatNumber: 240
   - noteType: 9
-    beatNumber: 2405
+    beatNumber: 240.5
   - noteType: 8
     beatNumber: 241
   - noteType: 6
-    beatNumber: 2415
+    beatNumber: 241.5
   - noteType: 7
     beatNumber: 242
   - noteType: 8
-    beatNumber: 2425
+    beatNumber: 242.5
   - noteType: 10
     beatNumber: 243
   - noteType: 9
-    beatNumber: 2435
+    beatNumber: 243.5
   - noteType: 8
     beatNumber: 244
   - noteType: 6
-    beatNumber: 2445
+    beatNumber: 244.5
   - noteType: 7
     beatNumber: 245
   - noteType: 8
-    beatNumber: 2455
+    beatNumber: 245.5
   - noteType: 10
     beatNumber: 246
   - noteType: 9
-    beatNumber: 2465
+    beatNumber: 246.5
   - noteType: 8
     beatNumber: 247
   - noteType: 7
-    beatNumber: 2475
+    beatNumber: 247.5
   - noteType: 8
     beatNumber: 248
   - noteType: 6
-    beatNumber: 2485
+    beatNumber: 248.5
   - noteType: 7
     beatNumber: 249
   - noteType: 8
-    beatNumber: 2495
+    beatNumber: 249.5
   - noteType: 9
     beatNumber: 250
   - noteType: 8
-    beatNumber: 2505
+    beatNumber: 250.5
   - noteType: 10
     beatNumber: 251
   - noteType: 9
-    beatNumber: 2515
+    beatNumber: 251.5
   - noteType: 8
     beatNumber: 252
   - noteType: 7
-    beatNumber: 2525
+    beatNumber: 252.5
   - noteType: 8
     beatNumber: 253
   - noteType: 6
-    beatNumber: 2535
+    beatNumber: 253.5
   - noteType: 7
     beatNumber: 254
   - noteType: 8
-    beatNumber: 2545
+    beatNumber: 254.5
   - noteType: 9
     beatNumber: 255
   - noteType: 5
@@ -3184,7 +3334,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 320, y: 180}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3234,6 +3384,8 @@ RectTransform:
   - {fileID: 548512907}
   - {fileID: 1346075716}
   - {fileID: 1937903572}
+  - {fileID: 241436686}
+  - {fileID: 664262592}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

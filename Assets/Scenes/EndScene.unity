@@ -516,7 +516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFirst: 0
   nextPage: {fileID: 0}
-  timeToWait: 15
+  timeToWait: 20
 --- !u!114 &591137601
 MonoBehaviour:
   m_ObjectHideFlags: 0
