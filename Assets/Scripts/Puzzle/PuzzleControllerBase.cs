@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -14,6 +15,8 @@ public class PuzzleControllerBase : MonoBehaviour
     [SerializeField] private TaskManager _taskManager;
 
     private string _mainSceneName;
+    
+    [SerializeField] private TMP_Text puzzlesCompletedText;
 
     protected void Start()
     {
@@ -30,6 +33,7 @@ public class PuzzleControllerBase : MonoBehaviour
     protected void PuzzleCompleted()
     {
         completedPuzzles++;
+        puzzlesCompletedText.text = completedPuzzles + "/" + puzzles.Length;
         if (completedPuzzles == puzzles.Length)
         {
             CompletePuzzles();

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +9,14 @@ public class StarterHouseManager : MonoBehaviour
     [SerializeField] private Camera houseCamera;
     [SerializeField] private Camera mainCamera;
     [SerializeField] private bool playerInHouse;
-    
+
+
+    private void Start()
+    {
+        ReloadOnFirstLoad._trainReload = false;
+        ReloadOnFirstLoad._zeppelinReload = false;
+        ReloadOnFirstLoad._skeletonReload = false;
+    }
 
     private void OnTriggerStay2D(Collider2D other)
     {

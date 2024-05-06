@@ -191,6 +191,10 @@ PrefabInstance:
       propertyPath: nonoScenes.Array.data[5]
       value: EndScene
       objectReference: {fileID: 0}
+    - target: {fileID: 8272075411387323785, guid: dec4f3caa6381de41b01895e3e5929ac, type: 3}
+      propertyPath: nonoScenes.Array.data[6]
+      value: PauseScene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

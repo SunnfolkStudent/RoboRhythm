@@ -5,9 +5,9 @@ public class ReloadOnFirstLoad : MonoBehaviour
 {
     [Header("Train 1, Zeppelin 2, Skeleton 3")]
     [SerializeField] private int bossNumber;
-    private static bool _trainReload;
-    private static bool _zeppelinReload;
-    private static bool _skeletonReload;
+    public static bool _trainReload;
+    public static bool _zeppelinReload;
+    public static bool _skeletonReload;
     void Awake()
     {
         switch (bossNumber)
