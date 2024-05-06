@@ -18,7 +18,15 @@ public class PlayerSound : MonoBehaviour
         
         _playerSteps = AudioManager.instance.CreateEventInstance(FmodEvents.instance.steps);
     }
-    
+
+    private void Update()
+    {
+        if (Time.timeScale == 0)
+        {
+            _playerSteps.stop(STOP_MODE.ALLOWFADEOUT);
+        }
+    }
+
     public void PlayFootsteps()
     {
         _playerSteps.start();
