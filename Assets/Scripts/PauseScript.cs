@@ -38,6 +38,7 @@ public class PauseScript : MonoBehaviour
     {
         if (SceneManager.GetSceneByName("PauseScene").isLoaded)
         {
+            Time.timeScale = 1;
             SceneManager.UnloadSceneAsync("PauseScene");
             return;
         }

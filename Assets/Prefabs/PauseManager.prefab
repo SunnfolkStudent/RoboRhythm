@@ -49,3 +49,8 @@ MonoBehaviour:
   - TrainBoss
   - ZeppelinBoss
   - MainMenu
+  - PrologueScene
+  - EndScene
+  - GamePuzzleScene
+  - RhythmPuzzleScene
+  - SimonSaysPuzzleScene
