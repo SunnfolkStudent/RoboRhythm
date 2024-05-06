@@ -5,15 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class ProloguePages : MonoBehaviour, IDataPersistence
 {
-    private float typingSpeed = 0.06f;
+    private float typingSpeed = 0.055f;
     [SerializeField] private string line;
     [SerializeField] private bool isFirst;
     [SerializeField] private TMP_Text text;
     [SerializeField] private GameObject nextPage;
+    [SerializeField] private bool dontContinue;
     private bool canContinueToNextPage;
     private void Start()
     {
-        Debug.Log("start of page");
         canContinueToNextPage = false;
         StartCoroutine(DisplayLine());
         StartCoroutine(TimeForNextPage());
@@ -26,7 +26,6 @@ public class ProloguePages : MonoBehaviour, IDataPersistence
 
     private IEnumerator DisplayLine()
     {
-        Debug.Log("display line coroutine start");
         text.text = line;
         text.maxVisibleCharacters = 0;
             
@@ -35,8 +34,10 @@ public class ProloguePages : MonoBehaviour, IDataPersistence
             text.maxVisibleCharacters++;
             yield return new WaitForSeconds(typingSpeed);
         }
-        
-        canContinueToNextPage = true;
+        if(!dontContinue)
+        {
+            canContinueToNextPage = true;
+        }
     }
 
     private void Update()
@@ -49,14 +50,12 @@ public class ProloguePages : MonoBehaviour, IDataPersistence
 
     private IEnumerator TimeForNextPage()
     {
-        Debug.Log("next page coroutine start");
         yield return new WaitForSeconds(7.5f);
         Continue();
     }
 
     private void Continue()
     {
-        Debug.Log("continue");
         if (nextPage == null)
         {
             SceneManager.LoadScene("MainCityScene");

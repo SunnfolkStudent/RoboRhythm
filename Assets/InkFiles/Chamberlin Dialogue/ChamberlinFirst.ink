@@ -1,12 +1,10 @@
 Welcome to my Great Machine Menagerie! #speaker:??? #audio:Chamberlin
 
 I am The Great Inventor Chamberlin!
-
-Everything you see here is something I’ve made. #speaker:Chamberlin
     ->WhatBrings
 
 === WhatBrings ===
-Can I ask what brings you here?
+Can I ask what brings you here? #speaker:Chamberlin
     +[I want to explore the world.]
         ->Explore
     +[Just traveling through.]
