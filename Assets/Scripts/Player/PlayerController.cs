@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        _playerAnimation.UpdateAnimation(_playerMovement.moveVector);
+        _playerAnimation.UpdateAnimation(_playerMovement.moveVector, _playerMovement.isRunning);
         
         if (_playerMovement.moveVector != Vector2.zero)
         {

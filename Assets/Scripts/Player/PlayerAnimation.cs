@@ -12,6 +12,9 @@ public class PlayerAnimation : MonoBehaviour
     [HideInInspector] public int verticalParamID;
     [HideInInspector] public int isMovingParamID; 
     
+    private float _baseSpeed = 1.0f;
+    private float _runSpeed = 1.5f;
+    
     // Start is called before the first frame update
     void Awake()
     {
@@ -31,8 +34,17 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
-    public void UpdateAnimation(Vector2 moveVector)
+    public void UpdateAnimation(Vector2 moveVector, bool isRunning)
     {
+        if (isRunning)
+        {
+            _animator.speed = _runSpeed;
+        }
+        else
+        {
+            _animator.speed = _baseSpeed;
+        }
+        
         if (moveVector != Vector2.zero)
         {
             _animator.SetFloat(horizontalParamID, moveVector.x);
