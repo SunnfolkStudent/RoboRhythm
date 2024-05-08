@@ -20,7 +20,7 @@ public class NotePuzzleController : PuzzleControllerBase
     
     private void ResetPuzzle()
     {
-        startButton.gameObject.SetActive(true);
+        StartPuzzle();
     }
     
     private void PuzzleCompletedCheckpoint()

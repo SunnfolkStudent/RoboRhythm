@@ -8,6 +8,11 @@ public class AudioManager : MonoBehaviour
     
     private EventInstance _backgroundMusicEventInstance;
 
+    private Bus _musicBus;
+    
+    [Range(0,1)]
+    private float _musicVolume = 1f;
+
     private void Awake()
     {
         if (instance == null)
@@ -20,6 +25,8 @@ public class AudioManager : MonoBehaviour
         }
         
         DontDestroyOnLoad(gameObject);
+        
+        _musicBus = RuntimeManager.GetBus("bus:/Music");
     }
 
     private void OnEnable()
@@ -41,6 +48,12 @@ public class AudioManager : MonoBehaviour
     {
         _backgroundMusicEventInstance = RuntimeManager.CreateInstance(bgmEventReference);
         _backgroundMusicEventInstance.start();
+    }
+    
+    public void SetMusicVolume(float volume)
+    {
+        _musicVolume = volume;
+        _musicBus.setVolume(_musicVolume);
     }
     
     public void StopMusic()

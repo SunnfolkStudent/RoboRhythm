@@ -20,7 +20,7 @@ public class PuzzleControllerBase : MonoBehaviour
 
     protected void Start()
     {
-        AudioManager.instance.StopMusic();
+        AudioManager.instance.SetMusicVolume(0.5f);
         _mainSceneName = SceneManager.GetActiveScene().name;
         Scene currentScene = gameObject.scene;
         SceneManager.SetActiveScene(currentScene);
@@ -52,25 +52,6 @@ public class PuzzleControllerBase : MonoBehaviour
     
     protected virtual void StartPuzzle() {}
     
-    public void VictoryButtonMethod()
-    {
-        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
-        
-        Scene mainScene = SceneManager.GetSceneByName(_mainSceneName);
-        if (mainScene.IsValid())
-        {
-            SceneManager.SetActiveScene(mainScene);
-        }
-        
-        AudioManager.instance.StartMusic();
-        
-        // Get the current scene
-        Scene currentScene = gameObject.scene;
-
-        // Unload the current scene
-        PuzzleEvents.unloadPuzzle?.Invoke(currentScene);
-    }
-    
     public void StartButtonMethod()
     {
         AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
@@ -89,7 +70,7 @@ public class PuzzleControllerBase : MonoBehaviour
             SceneManager.SetActiveScene(mainScene);
         }
         
-        AudioManager.instance.StartMusic();
+        AudioManager.instance.SetMusicVolume(1f);
         
         // Get the current scene
         Scene currentScene = gameObject.scene;

@@ -63,6 +63,11 @@ public class Input_Controller : MonoBehaviour
         {
             GameEvents.pausePressed?.Invoke();
         }
+
+        if (_input.Puzzle.SpaceKey.WasPressedThisFrame())
+        {
+            PuzzleEvents.spacePressed?.Invoke();
+        }
     }
     private void Awake()
     {

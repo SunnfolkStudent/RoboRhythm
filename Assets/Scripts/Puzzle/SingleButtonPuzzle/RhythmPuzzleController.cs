@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ public class RhythmPuzzleController : PuzzleControllerBase
     private RhythmPuzzleScrub puzzleData;
     private float _lastClickTime = 0f;
     private int _currentNumber;
+    private bool _isPlaying;
     private Animator _animator;
     private NoteReference _correctSound;
     private NoteReference _wrongSound;
@@ -29,8 +31,19 @@ public class RhythmPuzzleController : PuzzleControllerBase
         _animator = GetComponent<Animator>();
     }
 
+    private void OnEnable()
+    {
+        PuzzleEvents.spacePressed += ButtonMethod;
+    }
+    
+    private void OnDisable()
+    {
+        PuzzleEvents.spacePressed -= ButtonMethod;
+    }
+
     private IEnumerator PuzzleCoroutine()
     {
+        _isPlaying = true;
         _currentNumber = 0;
         _lastClickTime = 0f;
         puzzleData = puzzles[completedPuzzles] as RhythmPuzzleScrub;
@@ -49,10 +62,16 @@ public class RhythmPuzzleController : PuzzleControllerBase
         yield return new WaitForSeconds(0.5f);
         
         Cursor.lockState = CursorLockMode.None;
+        _isPlaying = false;
     }
 
     public void ButtonMethod()
     {
+        if (_isPlaying)
+        {
+            return;
+        }
+        
         _animator.Play("ButtonDown");
         float currentTime = Time.time;
         if (_lastClickTime != 0f)

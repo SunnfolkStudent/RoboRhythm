@@ -80,6 +80,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SpaceKey"",
+                    ""type"": ""Button"",
+                    ""id"": ""40fed7df-6041-4d5f-8cd8-0e942e2230bf"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -146,6 +155,17 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""LKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a15cd9cb-0d71-4c3f-9f11-56bb01fac472"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SpaceKey"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -609,6 +629,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Puzzle_JKey = m_Puzzle.FindAction("JKey", throwIfNotFound: true);
         m_Puzzle_KKey = m_Puzzle.FindAction("KKey", throwIfNotFound: true);
         m_Puzzle_LKey = m_Puzzle.FindAction("LKey", throwIfNotFound: true);
+        m_Puzzle_SpaceKey = m_Puzzle.FindAction("SpaceKey", throwIfNotFound: true);
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Up = m_Player.FindAction("Up", throwIfNotFound: true);
@@ -696,6 +717,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Puzzle_JKey;
     private readonly InputAction m_Puzzle_KKey;
     private readonly InputAction m_Puzzle_LKey;
+    private readonly InputAction m_Puzzle_SpaceKey;
     public struct PuzzleActions
     {
         private @Controls m_Wrapper;
@@ -706,6 +728,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @JKey => m_Wrapper.m_Puzzle_JKey;
         public InputAction @KKey => m_Wrapper.m_Puzzle_KKey;
         public InputAction @LKey => m_Wrapper.m_Puzzle_LKey;
+        public InputAction @SpaceKey => m_Wrapper.m_Puzzle_SpaceKey;
         public InputActionMap Get() { return m_Wrapper.m_Puzzle; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -733,6 +756,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @LKey.started += instance.OnLKey;
             @LKey.performed += instance.OnLKey;
             @LKey.canceled += instance.OnLKey;
+            @SpaceKey.started += instance.OnSpaceKey;
+            @SpaceKey.performed += instance.OnSpaceKey;
+            @SpaceKey.canceled += instance.OnSpaceKey;
         }
 
         private void UnregisterCallbacks(IPuzzleActions instance)
@@ -755,6 +781,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @LKey.started -= instance.OnLKey;
             @LKey.performed -= instance.OnLKey;
             @LKey.canceled -= instance.OnLKey;
+            @SpaceKey.started -= instance.OnSpaceKey;
+            @SpaceKey.performed -= instance.OnSpaceKey;
+            @SpaceKey.canceled -= instance.OnSpaceKey;
         }
 
         public void RemoveCallbacks(IPuzzleActions instance)
@@ -1006,6 +1035,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnJKey(InputAction.CallbackContext context);
         void OnKKey(InputAction.CallbackContext context);
         void OnLKey(InputAction.CallbackContext context);
+        void OnSpaceKey(InputAction.CallbackContext context);
     }
     public interface IPlayerActions
     {
