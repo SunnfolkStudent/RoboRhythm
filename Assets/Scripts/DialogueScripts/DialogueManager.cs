@@ -29,6 +29,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         [SerializeField] private GameObject dialoguePanel;
         [SerializeField] private TextMeshProUGUI dialogueText;
         [SerializeField] private TextMeshProUGUI displayNameText;
+        [SerializeField] private GameObject continueIcon;
 
         [SerializeField] private Animator playerAnimator;
         [SerializeField] private GameObject moveObject;
@@ -59,10 +60,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         
         private void Awake()
         {
-            if (instance != null)
-            {
-                Debug.Log("Found more than one Dialogue Manager in scene");
-            }
             instance = this;
     
             _audioSource = GetComponent<AudioSource>();
@@ -107,10 +104,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             {
                 this.currentAudioInfo = audioInfo;
             }
-            else
-            {
-                Debug.LogWarning("Failed to find audio info for id" + id);
-            }
         }
     
         private void Update()
@@ -120,9 +113,12 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
                 return;
             }
     
-            if (currentStory.currentChoices.Count == 0 && canContinueToNextLine && Input.GetKeyDown(KeyCode.E))
+            if (currentStory.currentChoices.Count == 0 && canContinueToNextLine)
             {
-                ContinueStory();
+                if(Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+                {
+                    ContinueStory();
+                }
             }
         }
 
@@ -172,6 +168,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         {
             dialogueText.text = line;
             dialogueText.maxVisibleCharacters = 0;
+            continueIcon.SetActive(false);
     
             HideChoices();
             canContinueToNextLine = false;
@@ -196,6 +193,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
                 }
             }
     
+            continueIcon.SetActive(true);
             DisplayChoices();
             canContinueToNextLine = true;
         }
@@ -262,10 +260,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             foreach (string tag in currentTags)
             {
                 string[] splitTag = tag.Split(':');
-                if (splitTag.Length != 2)
-                {
-                    Debug.LogError("Tag could not be parsed: " + tag);
-                }
     
                 string tagKey = splitTag[0].Trim();
                 string tagValue = splitTag[1].Trim();
@@ -279,7 +273,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
                         SetCurrentAudioInfo(tagValue);
                         break;
                     case KEY_TAG:
-                        Debug.Log("Key Obtained: " + tagValue);
                         keyGot = tagValue;
                         playerAnimator.SetTrigger("GotKey");
                         _taskManager.KeyObtained(tagValue);
@@ -300,7 +293,6 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
                         _taskManager.UpdateDialogue(tagValue);
                         break;
                     default:
-                        Debug.LogWarning("Tag came in but is not currently being handled: " + tag);
                         break;
                 }
             }

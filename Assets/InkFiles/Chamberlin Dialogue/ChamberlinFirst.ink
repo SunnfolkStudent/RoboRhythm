@@ -4,7 +4,7 @@ I am The Great Inventor Chamberlin!
     ->WhatBrings
 
 === WhatBrings ===
-Can I ask what brings you here? #speaker:Chamberlin
+Can I ask what brings you here? #speaker:Chamberlin #moveobj:true
     +[I want to explore the world.]
         ->Explore
     +[Just traveling through.]
