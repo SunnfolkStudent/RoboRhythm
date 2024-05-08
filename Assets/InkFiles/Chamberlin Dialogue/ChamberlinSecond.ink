@@ -11,7 +11,7 @@ How can my genius be of use? #speaker:Chamberlin #audio:Chamberlin
         
 === GetKey ===
 To get my <color=\#F8FF30>Key</color> you need to help me with one of my inventions.
-It’s just behind me, go over and press <b>E</b> to start.
+It’s just behind me to the left, go over and press <b>E</b> to start.
     ->HowCanHelp
     
 === WhatCity ===

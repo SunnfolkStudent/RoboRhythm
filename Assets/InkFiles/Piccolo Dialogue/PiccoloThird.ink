@@ -79,7 +79,7 @@ What are you looking for?
         <b>The Power Plant</b> is down the stairs and to the right!
         ->AnythingElse2
     +[The Gate]
-        <b>The Gate</b> is just behind me!
+        <b>The Gate</b> is just behind <b>The Statue</b>!
         ->AnythingElse2
     +[Nevermind.]
         ->AnythingElse2

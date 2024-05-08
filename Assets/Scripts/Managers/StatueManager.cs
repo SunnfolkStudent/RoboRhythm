@@ -61,7 +61,6 @@ public class StatueManager : MonoBehaviour, IDataPersistence
         AudioManager.instance.PlayOneShot(FmodEvents.instance.stonesFalling, gameObject.transform.position);
         isFixed = true;
         _taskManager.TaskComplete(npcTaskId);
-        Debug.Log("update task manager from finishing statue");
     }
     
     private void OnTriggerEnter2D(Collider2D collider)
