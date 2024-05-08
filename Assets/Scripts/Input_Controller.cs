@@ -33,22 +33,40 @@ public class Input_Controller : MonoBehaviour
         
         
 
-        if (_input.Player.Up.IsPressed())
+        if (_input.Player.Up.WasPressedThisFrame())
         {
-            PlayerEvents.playerUp?.Invoke();
+            PlayerEvents.playerMovePress?.Invoke(Vector2.up);
         }
-        if (_input.Player.Down.IsPressed())
+        if (_input.Player.Down.WasPressedThisFrame())
         {
-            PlayerEvents.playerDown?.Invoke();
+            PlayerEvents.playerMovePress?.Invoke(Vector2.down);
         }
-        if (_input.Player.Left.IsPressed())
+        if (_input.Player.Left.WasPressedThisFrame())
         {
-            PlayerEvents.playerLeft?.Invoke();
+            PlayerEvents.playerMovePress?.Invoke(Vector2.left);
         }
-        if (_input.Player.Right.IsPressed())
+        if (_input.Player.Right.WasPressedThisFrame())
         {
-            PlayerEvents.playerRight?.Invoke();
+            PlayerEvents.playerMovePress?.Invoke(Vector2.right);
         }
+
+        if (_input.Player.Right.WasReleasedThisFrame())
+        {
+            PlayerEvents.playerMoveRelease?.Invoke(Vector2.right);
+        }
+        if (_input.Player.Left.WasReleasedThisFrame())
+        {
+            PlayerEvents.playerMoveRelease?.Invoke(Vector2.left);
+        }
+        if (_input.Player.Up.WasReleasedThisFrame())
+        {
+            PlayerEvents.playerMoveRelease?.Invoke(Vector2.up);
+        }
+        if (_input.Player.Down.WasReleasedThisFrame())
+        {
+            PlayerEvents.playerMoveRelease?.Invoke(Vector2.down);
+        }
+        
         
         if (_input.Player.Run.WasPressedThisFrame())
         {

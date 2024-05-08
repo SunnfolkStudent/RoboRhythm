@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     {
         _playerAnimation.UpdateAnimation(_playerMovement.moveVector);
         
-        if (_playerMovement.isMoving)
+        if (_playerMovement.moveVector != Vector2.zero)
         {
             if (!_playerSound.StepsArePlaying())
             {

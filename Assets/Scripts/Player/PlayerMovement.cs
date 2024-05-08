@@ -1,4 +1,6 @@
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour, IDataPersistence
@@ -12,6 +14,9 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     public bool isRunning { get; private set; }
     public bool isMoving {get; private set; }
     
+    private List<Vector2> _moveQueue = new List<Vector2>();
+    private int _framesToWait = 0;
+    
     [HideInInspector] public Vector2 moveVector = Vector2.zero;
 
     private void OnEnable()
@@ -19,10 +24,8 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         PlayerEvents.playerFrozen += FreezePlayer;
         PlayerEvents.playerUnfrozen += UnfreezePlayer;
         
-        PlayerEvents.playerDown += MoveDown;
-        PlayerEvents.playerUp += MoveUp;
-        PlayerEvents.playerLeft += MoveLeft;
-        PlayerEvents.playerRight += MoveRight;
+        PlayerEvents.playerMovePress += PlayerMovePress;
+        PlayerEvents.playerMoveRelease += PlayerMoveRelease;
         
         PlayerEvents.playerRunning += Run;
         PlayerEvents.playerNotRunning += StopRunning;
@@ -33,42 +36,54 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         PlayerEvents.playerFrozen -= FreezePlayer;
         PlayerEvents.playerUnfrozen -= UnfreezePlayer;
         
-        PlayerEvents.playerDown -= MoveDown;
-        PlayerEvents.playerUp -= MoveUp;
-        PlayerEvents.playerLeft -= MoveLeft;
-        PlayerEvents.playerRight -= MoveRight;
+        PlayerEvents.playerMovePress -= PlayerMovePress;
+        PlayerEvents.playerMoveRelease -= PlayerMoveRelease;
+        
+        PlayerEvents.playerRunning -= Run;
+        PlayerEvents.playerNotRunning -= StopRunning;
+    }
+    
+    private void Update()
+    {
+        if (_moveQueue.Count > 0 && !isMoving && !_frozen)
+        {
+            StartCoroutine(Move(_moveQueue.Last()));
+        }
+
+        if (_framesToWait == 0)
+        {
+            if (!isMoving)
+            {
+                moveVector = Vector2.zero;
+                _framesToWait = -1;
+            }
+            else
+            {
+                _framesToWait = -1;
+            }
+        }
+        else
+        {
+            _framesToWait--;
+        }
     }
 
-    private void MoveUp()
+    private void PlayerMovePress(Vector2 direction)
     {
-        if (!isMoving && !_frozen)
+        foreach (var value in _moveQueue)
         {
-            StartCoroutine(Move(Vector2.up));
+            if (value == direction)
+            {
+                return;
+            }
         }
+        
+        _moveQueue.Add(direction);
     }
     
-    private void MoveDown()
+    private void PlayerMoveRelease(Vector2 direction)
     {
-        if (!isMoving && !_frozen)
-        {
-            StartCoroutine(Move(Vector2.down));
-        }   
-    }
-    
-    private void MoveLeft()
-    {
-        if (!isMoving && !_frozen)
-        {
-            StartCoroutine(Move(Vector2.left));
-        }
-    }
-    
-    private void MoveRight()
-    {
-        if (!isMoving && !_frozen)
-        {
-            StartCoroutine(Move(Vector2.right));
-        }
+        _moveQueue.Remove(direction);
     }
     
     private void Run()
@@ -94,7 +109,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         if (CheckForCollision(endPosition))
         {
             isMoving = false;
-            StartCoroutine(TurnOffMovement());
+            _framesToWait = 1;
             yield break;
         }
         
@@ -109,7 +124,7 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
         transform.position = endPosition;
         PlayerEvents.playerMoved?.Invoke();
         
-        StartCoroutine(TurnOffMovement());
+        _framesToWait = 1;
         isMoving = false; 
     }
 
@@ -124,16 +139,6 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
             }
         }
         return false;
-    }
-    
-    private IEnumerator TurnOffMovement()
-    {
-        yield return new WaitForSeconds(0.05f);
-        if (isMoving)
-        {
-            yield break;
-        }
-        moveVector = Vector2.zero;
     }
     
     private void FreezePlayer()
