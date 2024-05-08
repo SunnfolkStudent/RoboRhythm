@@ -6179,7 +6179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press Space
+  m_text: Press Space For Button
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae8fff5d22b207c43b77132e8119e5c0, type: 2}
   m_sharedMaterial: {fileID: -1313564648662042420, guid: ae8fff5d22b207c43b77132e8119e5c0, type: 2}
@@ -6212,7 +6212,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
