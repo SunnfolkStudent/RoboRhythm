@@ -14,6 +14,7 @@ public class TaskManager : MonoBehaviour, IDataPersistence
         taskNpcId = taskId;
         updatedTask = "Third";
         DataPersistenceManager.instance.SaveGame();
+        DataPersistenceManager.instance.LoadGame();
     }
 
     public void UpdateDialogue(string taskId)
@@ -21,12 +22,14 @@ public class TaskManager : MonoBehaviour, IDataPersistence
         taskNpcId = taskId;
         updatedTask = "Fourth";
         DataPersistenceManager.instance.SaveGame();
+        DataPersistenceManager.instance.LoadGame();
     }
 
     public void KeyObtained(string keyId)
     {
         keyGotId = keyId;
         DataPersistenceManager.instance.SaveGame();
+        DataPersistenceManager.instance.LoadGame();
     }
     
     public void LoadData(GameData data) { }
@@ -56,9 +59,9 @@ public class TaskManager : MonoBehaviour, IDataPersistence
             }
 
             data.keysFound.Add(keyGotId, true);
-            keyGotId = "";
-            updatedTask = "";
-            taskNpcId = "";
         }
+        keyGotId = "";
+        updatedTask = "";
+        taskNpcId = "";
     }
 }

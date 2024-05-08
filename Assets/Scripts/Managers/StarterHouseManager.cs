@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +7,7 @@ public class StarterHouseManager : MonoBehaviour
     [SerializeField] private GameObject innerHouse;
     [SerializeField] private Camera houseCamera;
     [SerializeField] private Camera mainCamera;
-    [SerializeField] private bool playerInHouse;
+    private bool playerInHouse;
 
 
     private void Start()

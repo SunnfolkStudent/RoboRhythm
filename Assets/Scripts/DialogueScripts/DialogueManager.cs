@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
@@ -208,6 +207,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
             float minPitch = currentAudioInfo.minPitch;
             float maxPitch = currentAudioInfo.maxPitch;
             bool stopAudioSource = currentAudioInfo.stopAudioSource;
+            float audioVolume = currentAudioInfo.audioVolume;
             
             if (currentDisplayedCharacterCount % frequencyLevel == 0)
             {
@@ -243,6 +243,8 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
                     soundClip = dialogueTypingSoundClips[randomIndex];
                     _audioSource.pitch = Random.Range(minPitch, maxPitch);
                 }
+
+                _audioSource.volume = audioVolume;
                 _audioSource.PlayOneShot(soundClip);
             }
         }

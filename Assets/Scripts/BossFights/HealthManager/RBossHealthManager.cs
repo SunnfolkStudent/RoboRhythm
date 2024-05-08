@@ -35,6 +35,8 @@ public class RBossHealthManager : MonoBehaviour
         if (!string.IsNullOrEmpty(taskId))
         {
             _taskManager.TaskComplete(taskId);
+            AudioManager.instance.StartMusic();
+            AudioManager.instance.SetMusicRegionParameter(MusicRegion.SteamWanderer);
             SceneManager.LoadScene("MainCityScene");
         }
         else

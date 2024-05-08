@@ -6,6 +6,7 @@ public class EndSceneScript : MonoBehaviour
 {
     [SerializeField] private bool isFirst;
     [SerializeField] private GameObject nextPage;
+    [SerializeField] private float timeToWait;
     private void Start()
     {
         if (isFirst)
@@ -19,7 +20,7 @@ public class EndSceneScript : MonoBehaviour
 
     private IEnumerator GoToNextPanel()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(timeToWait);
         if (nextPage == null)
         {
             DataPersistenceManager.instance.NewGame();
