@@ -57,11 +57,6 @@ public class SimonSaysController : PuzzleControllerBase
 
     public void ButtonMethod(int number)
     {
-        if (!_puzzleStarted)
-        {
-            return;
-        }
-        
         if (number == _puzzle[_currentNumber])
         {
             _currentNumber++;
@@ -77,6 +72,12 @@ public class SimonSaysController : PuzzleControllerBase
         if (_currentNumber == _puzzle.Count)
         {
             _currentNumber = 0;
+            
+            foreach (var button in _buttons)
+            {
+                button.interactable = false;
+            }
+            
             PuzzleCompleted();
         }
     }
