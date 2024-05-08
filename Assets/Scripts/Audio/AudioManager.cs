@@ -11,7 +11,7 @@ public class AudioManager : MonoBehaviour
     private Bus _musicBus;
     
     [Range(0,1)]
-    private float _musicVolume = 1f;
+    public float musicVolume = 0.7f;
 
     private void Awake()
     {
@@ -52,8 +52,7 @@ public class AudioManager : MonoBehaviour
     
     public void SetMusicVolume(float volume)
     {
-        _musicVolume = volume;
-        _musicBus.setVolume(_musicVolume);
+        _musicBus.setVolume(volume);
     }
     
     public void StopMusic()

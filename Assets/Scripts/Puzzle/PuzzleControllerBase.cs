@@ -20,7 +20,7 @@ public class PuzzleControllerBase : MonoBehaviour
 
     protected void Start()
     {
-        AudioManager.instance.SetMusicVolume(0.5f);
+        AudioManager.instance.SetMusicVolume(0.23f);
         _mainSceneName = SceneManager.GetActiveScene().name;
         Scene currentScene = gameObject.scene;
         SceneManager.SetActiveScene(currentScene);
@@ -70,7 +70,7 @@ public class PuzzleControllerBase : MonoBehaviour
             SceneManager.SetActiveScene(mainScene);
         }
         
-        AudioManager.instance.SetMusicVolume(1f);
+        AudioManager.instance.SetMusicVolume(AudioManager.instance.musicVolume);
         
         // Get the current scene
         Scene currentScene = gameObject.scene;

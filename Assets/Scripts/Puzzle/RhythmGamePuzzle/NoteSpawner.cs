@@ -12,7 +12,7 @@ public class NoteSpawner
     private float xSpawnPosition = 10f;
     private float _minYPosition = -3.3f;
     private float _maxYPosition = 1.4f;
-    private float _startTimeBuffer = 1f;
+    private float _startTimeBuffer = 0f;
 
     public NoteSpawner(NotePuzzleScrub notePuzzleScrub, GameObject noteObj, Vector3 startPosition)
     {
