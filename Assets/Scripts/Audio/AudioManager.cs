@@ -1,3 +1,4 @@
+using System;
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
@@ -8,10 +9,16 @@ public class AudioManager : MonoBehaviour
     
     private EventInstance _backgroundMusicEventInstance;
 
+    private Bus _masterBus;
     private Bus _musicBus;
+    private Bus _sfxBus;
     
     [Range(0,1)]
+    public float masterVolume = 1f;
+    [Range(0,1)]
     public float musicVolume = 0.7f;
+    [Range(0,1)]
+    public float sfxVolume = 1f;
 
     private void Awake()
     {
@@ -27,8 +34,10 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         
         _musicBus = RuntimeManager.GetBus("bus:/Music");
+        _sfxBus = RuntimeManager.GetBus("bus:/SFX");
+        _masterBus = RuntimeManager.GetBus("bus:/");
     }
-
+    
     private void OnEnable()
     {
         GameEvents.goingToMainMenu += PlayMenuMusic;
@@ -38,21 +47,23 @@ public class AudioManager : MonoBehaviour
     {
         GameEvents.goingToMainMenu -= PlayMenuMusic;
     }
-
+    
     private void Start()
     {
         InitializeBGM(FmodEvents.instance.BackgroundMusic);
+    }
+
+    private void Update()
+    {
+        _masterBus.setVolume(masterVolume);
+        _musicBus.setVolume(musicVolume);
+        _sfxBus.setVolume(sfxVolume);
     }
 
     private void InitializeBGM(EventReference bgmEventReference)
     {
         _backgroundMusicEventInstance = RuntimeManager.CreateInstance(bgmEventReference);
         _backgroundMusicEventInstance.start();
-    }
-    
-    public void SetMusicVolume(float volume)
-    {
-        _musicBus.setVolume(volume);
     }
     
     public void StopMusic()

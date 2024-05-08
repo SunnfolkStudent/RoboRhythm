@@ -9,6 +9,7 @@ public class PuzzleControllerBase : MonoBehaviour
     [SerializeField] protected PuzzleScrubBase[] puzzles;
     protected int completedPuzzles;
     
+    [SerializeField] private TMP_Text puzzlesCompletedText;
     [SerializeField] protected Button victoryButton;
     [SerializeField] protected Button startButton;
     [SerializeField] protected string taskId;
@@ -16,11 +17,12 @@ public class PuzzleControllerBase : MonoBehaviour
 
     private string _mainSceneName;
     
-    [SerializeField] private TMP_Text puzzlesCompletedText;
+    private float _tempMusicVolume;
 
     protected void Start()
     {
-        AudioManager.instance.SetMusicVolume(0.23f);
+        _tempMusicVolume = AudioManager.instance.musicVolume;
+        AudioManager.instance.musicVolume /= 2;
         _mainSceneName = SceneManager.GetActiveScene().name;
         Scene currentScene = gameObject.scene;
         SceneManager.SetActiveScene(currentScene);
@@ -70,7 +72,7 @@ public class PuzzleControllerBase : MonoBehaviour
             SceneManager.SetActiveScene(mainScene);
         }
         
-        AudioManager.instance.SetMusicVolume(AudioManager.instance.musicVolume);
+        AudioManager.instance.musicVolume = _tempMusicVolume;
         
         // Get the current scene
         Scene currentScene = gameObject.scene;

@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject firstMenu;
     [SerializeField] private GameObject secondMenu;
     [SerializeField] private GameObject bossModeMenu;
+    [SerializeField] private GameObject volumeMenu;
     
     
     [SerializeField] private Button newGameButton;
@@ -24,6 +25,7 @@ public class MainMenu : MonoBehaviour
         firstMenu.SetActive(true);
         secondMenu.SetActive(false);
         bossModeMenu.SetActive(false);
+        volumeMenu.SetActive(false);
         
         if (!DataPersistenceManager.instance.HasGameData())
         {
@@ -65,6 +67,13 @@ public class MainMenu : MonoBehaviour
         bossModeMenu.SetActive(true);
         secondMenu.SetActive(false);
     }
+    
+    public void OnVolumeClicked()
+    {
+        AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
+        volumeMenu.SetActive(true);
+        secondMenu.SetActive(false);
+    }
 
     public void OnQuitClicked()
     {
@@ -78,6 +87,7 @@ public class MainMenu : MonoBehaviour
         AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
         secondMenu.SetActive(true);
         bossModeMenu.SetActive(false);
+        volumeMenu.SetActive(false);
     }
 
     public void OnTrainMusicClicked()
