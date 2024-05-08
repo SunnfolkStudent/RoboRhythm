@@ -18,7 +18,6 @@ public class BossAnimation : MonoBehaviour
         if (_currentIndex > bossAnimationHolder.Length - 1) return;
         if (_songPosition.songPosInBeats > bossAnimationHolder[_currentIndex].animationBeat)
         {
-            Debug.Log("Animation Chage");
             _animator.Play(bossAnimationHolder[_currentIndex].animationName,1);
             _currentIndex += 1;
         }

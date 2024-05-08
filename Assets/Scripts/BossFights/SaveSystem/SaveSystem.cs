@@ -20,7 +20,7 @@ public class SaveSystem : MonoBehaviour
         _secondsToSaveTo = savePoints[currentSave] * _songPosition.secPerBeat;
         _songSource.time = _secondsToSaveTo;
         _songPosition.skipTime = _secondsToSaveTo;
-        Invoke("ActivateHitBoxes",.5f);
+        Invoke("ActivateHitBoxes",4f);
     }
 
     //Updates Save If SavePoint Hit
