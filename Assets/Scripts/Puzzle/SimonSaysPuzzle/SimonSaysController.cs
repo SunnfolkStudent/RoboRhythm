@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class Puzzle2Controller : PuzzleControllerBase
+public class SimonSaysController : PuzzleControllerBase
 {
     [SerializeField] private Button[] _buttons;
     private int _difficulty = 8;
@@ -57,6 +57,11 @@ public class Puzzle2Controller : PuzzleControllerBase
 
     public void ButtonMethod(int number)
     {
+        if (!_puzzleStarted)
+        {
+            return;
+        }
+        
         if (number == _puzzle[_currentNumber])
         {
             _currentNumber++;
