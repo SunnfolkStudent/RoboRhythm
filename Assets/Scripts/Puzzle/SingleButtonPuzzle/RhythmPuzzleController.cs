@@ -67,7 +67,7 @@ public class RhythmPuzzleController : PuzzleControllerBase
 
     public void ButtonMethod()
     {
-        if (_isPlaying)
+        if (_isPlaying || !_puzzleStarted)
         {
             return;
         }

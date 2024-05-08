@@ -18,6 +18,7 @@ public class PuzzleControllerBase : MonoBehaviour
     private string _mainSceneName;
     
     private float _tempMusicVolume;
+    protected bool _puzzleStarted;
 
     protected void Start()
     {
@@ -34,6 +35,7 @@ public class PuzzleControllerBase : MonoBehaviour
 
     protected void PuzzleCompleted()
     {
+        _puzzleStarted = false;
         completedPuzzles++;
         puzzlesCompletedText.text = completedPuzzles + "/" + puzzles.Length;
         if (completedPuzzles == puzzles.Length)
@@ -59,6 +61,7 @@ public class PuzzleControllerBase : MonoBehaviour
         AudioManager.instance.PlayOneShot(FmodEvents.instance.buttonClick, gameObject.transform.position);
         
         startButton.gameObject.SetActive(false);
+        _puzzleStarted = true;
         StartPuzzle();
     }
     

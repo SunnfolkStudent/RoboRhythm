@@ -521,7 +521,6 @@ Transform:
   - {fileID: 2083250698}
   - {fileID: 695963447}
   - {fileID: 1751509451}
-  - {fileID: 1756639781}
   - {fileID: 1229196552}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -537,6 +536,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3934d7bd57a814468214affe6c6bef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1177583540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8898867766266593719, guid: ac844d1612c4cb64d8eca17821f187ef, type: 3}
+  m_PrefabInstance: {fileID: 2083250696}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1215694259
 GameObject:
   m_ObjectHideFlags: 0
@@ -5758,61 +5762,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1756639779
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1756639781}
-  - component: {fileID: 1756639780}
-  m_Layer: 0
-  m_Name: PuzzleController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1756639780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1756639779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc500934c7d82da45966717dc1bff9e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  puzzles:
-  - {fileID: 11400000, guid: d597a5e7d32fcb6458af791bc3ca2685, type: 2}
-  - {fileID: 11400000, guid: d42eefd5b7f788340ae655d20be34246, type: 2}
-  - {fileID: 11400000, guid: fc14b5b0a4025c84786aa849b91bc011, type: 2}
-  - {fileID: 11400000, guid: d864527657e8d3e41b01880fd1b4c412, type: 2}
-  victoryButton: {fileID: 646030126}
-  startButton: {fileID: 858617839}
-  taskId: Chamberlin
-  _taskManager: {fileID: 1298249611}
-  puzzlesCompletedText: {fileID: 1616728959}
-  _noteObj: {fileID: 7567445131934640033, guid: 4f6f52c57119eee4e9d2a3d16c2510bf, type: 3}
---- !u!4 &1756639781
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1756639779}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1151951213}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1853099325
 GameObject:
   m_ObjectHideFlags: 0
@@ -5823,7 +5772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1853099326}
   - component: {fileID: 1853099327}
-  - component: {fileID: 1853099328}
+  - component: {fileID: 1853099330}
   - component: {fileID: 1853099329}
   m_Layer: 0
   m_Name: Bar
@@ -5899,20 +5848,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1853099328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1853099325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc765747799371042951dcb7a22318f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorChangeObject: {fileID: 1029466954}
-  noteParticles: {fileID: 1229196554}
 --- !u!61 &1853099329
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5958,6 +5893,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1853099330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853099325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc500934c7d82da45966717dc1bff9e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzles:
+  - {fileID: 11400000, guid: d597a5e7d32fcb6458af791bc3ca2685, type: 2}
+  - {fileID: 11400000, guid: d42eefd5b7f788340ae655d20be34246, type: 2}
+  - {fileID: 11400000, guid: fc14b5b0a4025c84786aa849b91bc011, type: 2}
+  - {fileID: 11400000, guid: d864527657e8d3e41b01880fd1b4c412, type: 2}
+  puzzlesCompletedText: {fileID: 1616728959}
+  victoryButton: {fileID: 646030126}
+  startButton: {fileID: 858617839}
+  taskId: Chamberlin
+  _taskManager: {fileID: 1298249611}
+  _noteObj: {fileID: 7567445131934640033, guid: 4f6f52c57119eee4e9d2a3d16c2510bf, type: 3}
+  colorChangeObject: {fileID: 1029466954}
+  noteParticles: {fileID: 1229196554}
+  camera: {fileID: 1177583540}
 --- !u!1001 &2083250696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6124,7 +6085,15 @@ PrefabInstance:
     - target: {fileID: 7349180241441734739, guid: 7a65dc5a1af71c44288a314cafa070a9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1756639780}
+      objectReference: {fileID: 1853099330}
+    - target: {fileID: 7349180241441734739, guid: 7a65dc5a1af71c44288a314cafa070a9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartButtonMethod
+      objectReference: {fileID: 0}
+    - target: {fileID: 7349180241441734739, guid: 7a65dc5a1af71c44288a314cafa070a9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PuzzleControllerBase, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8112162858498038474, guid: 7a65dc5a1af71c44288a314cafa070a9, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -6157,7 +6126,7 @@ PrefabInstance:
     - target: {fileID: 4046941005978144182, guid: f3c6831f30fb51b4d94942725124dd0a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1756639780}
+      objectReference: {fileID: 1853099330}
     - target: {fileID: 4046941005978144182, guid: f3c6831f30fb51b4d94942725124dd0a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ExitButtonMethod
@@ -6258,7 +6227,11 @@ PrefabInstance:
     - target: {fileID: 238696489931430680, guid: ee457ed1615562545a47f40e43d51b95, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1756639780}
+      objectReference: {fileID: 1853099330}
+    - target: {fileID: 238696489931430680, guid: ee457ed1615562545a47f40e43d51b95, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitButtonMethod
+      objectReference: {fileID: 0}
     - target: {fileID: 1356617743907738647, guid: ee457ed1615562545a47f40e43d51b95, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
