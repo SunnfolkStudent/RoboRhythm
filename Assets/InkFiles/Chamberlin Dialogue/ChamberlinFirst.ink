@@ -1,4 +1,4 @@
-Welcome to my Great Machine Menagerie! #speaker:??? #audio:Chamberlin
+Welcome to my Great Machine Menagerie! #speaker:??? #audio:Chamberlin #moveobj:true
 
 I am The Great Inventor Chamberlin!
     ->WhatBrings

@@ -1,7 +1,7 @@
     ->HowCanHelp
 
 === HowCanHelp ===
-How can my genius be of use? #speaker:Chamberlin #audio:Chamberlin
+How can my genius be of use? #speaker:Chamberlin #audio:Chamberlin #moveobj:true
     +[What do I need to do to get a key?]
         ->GetKey
     +[What city is this?]

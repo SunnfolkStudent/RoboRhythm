@@ -645,7 +645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFirst: 1
   nextPage: {fileID: 422913177}
-  timeToWait: 8.46
+  timeToWait: 7.46
 --- !u!1 &698782157
 GameObject:
   m_ObjectHideFlags: 0

@@ -287,12 +287,10 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
                         hasHat = false;
                         break;
                     case MOVEOBJ_TAG:
-                        moveObject.transform.position += new Vector3(0, -4, 0);;
+                        moveObject.transform.position = new Vector3(52.5f, 24, 0);
                         break;
                     case DONETALKING_TAG:
                         _taskManager.UpdateDialogue(tagValue);
-                        break;
-                    default:
                         break;
                 }
             }
