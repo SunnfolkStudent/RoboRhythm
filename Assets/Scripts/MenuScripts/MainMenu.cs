@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -30,6 +31,14 @@ public class MainMenu : MonoBehaviour
         if (!DataPersistenceManager.instance.HasGameData())
         {
             continueGameButton.interactable = false;
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            OnQuitClicked();
         }
     }
 

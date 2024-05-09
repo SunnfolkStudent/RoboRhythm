@@ -3168,8 +3168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   savePoints:
   - 0
-  - 93
-  - 183
+  - 94
+  - 184
   playerHitbox: {fileID: 1427791703}
   platformHitbox: {fileID: 365083255}
 --- !u!114 &1558958065
